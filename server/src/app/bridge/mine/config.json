@@ -1,0 +1,6 @@
+{
+  "debug": false,
+  "jarPath": "server.jar",
+  "printClassLoadInfo": false,
+  "dumpClass": false
+}
