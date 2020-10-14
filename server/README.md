@@ -1,9 +1,32 @@
-# demo-minecraft-panel
+# my_midway_project
 
-this is a simple template for midway examples.
-you can push it to midway-examples after created or find bugs.
-this template not include tslint and @types package.this can be find in package called midway-demo-lib.
+{{description}}
 
-这是一个最精简的用于提交到 midway-examples 的代码模板。
-通常用于复现代码 bug 或者创建一个 demo 提交到 midway-exmaples。
-这个模板不包括 tslint，以及常见的 @types 等，这些都被包括在一个叫 midway-demo-lib 的包中。
+## QuickStart
+
+<!-- add docs here for user -->
+
+see [midway docs][midway] for more detail.
+
+### Development
+
+```bash
+$ npm i
+$ npm run dev
+$ open http://localhost:7001/
+```
+
+### Deploy
+
+```bash
+$ npm start
+$ npm stop
+```
+
+### npm scripts
+
+- Use `npm run lint` to check code style.
+- Use `npm test` to run unit test.
+
+
+[midway]: https://midwayjs.org
