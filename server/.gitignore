@@ -5,11 +5,10 @@ node_modules/
 package-lock.json
 yarn.lock
 coverage/
-dist/
 .idea/
 run/
 .DS_Store
 *.sw*
 *.un~
-.tsbuildinfo
-.tsbuildinfo.*
+typings/
+.nyc_output/

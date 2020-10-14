@@ -1,51 +1,47 @@
 {
-  "name": "my_midway_project",
+  "name": "init",
   "version": "1.0.0",
-  "description": "{{description}}",
+  "description": "",
   "private": true,
+  "egg": {
+    "declarations": true
+  },
   "dependencies": {
-    "@midwayjs/web": "^2.3.0",
-    "@midwayjs/decorator": "^2.3.0",
-    "egg": "^2.0.0",
-    "egg-scripts": "^2.10.0",
-    "midway": "^2.3.0"
+    "egg": "^2.15.1",
+    "egg-scripts": "^2.11.0",
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
-    "@midwayjs/cli": "^1.0.0",
-    "@midwayjs/egg-ts-helper": "^1.0.1",
-    "@midwayjs/mock": "^2.3.0",
-    "@types/jest": "^26.0.10",
-    "@types/node": "14",
-    "cross-env": "^6.0.0",
-    "mwts": "^1.0.5",
-    "jest": "^26.4.0",
-    "ts-jest": "^26.2.0",
-    "typescript": "^3.9.0"
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0"
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=10.0.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=midway-server-my_midway_project --framework=midway",
-    "stop": "egg-scripts stop --title=midway-server-my_midway_project",
-    "start_build": "npm run build && cross-env NODE_ENV=development midway-bin dev",
-    "dev": "cross-env ets && cross-env NODE_ENV=local midway-bin dev --ts",
-    "debug": "cross-env NODE_ENV=local midway-bin debug --ts",
-    "test": "midway-bin test",
-    "cov": "midway-bin cov",
-    "lint": "mwts check",
-    "lint:fix": "mwts fix",
-    "ci": "npm run cov",
-    "build": "midway-bin build -c"
+    "start": "egg-scripts start --daemon --title=egg-server-init",
+    "stop": "egg-scripts stop --title=egg-server-init",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
   },
-  "midway-bin-clean": [
-    ".vscode/.tsbuildinfo",
-    "dist"
-  ],
+  "ci": {
+    "version": "10"
+  },
   "repository": {
     "type": "git",
     "url": ""
   },
-  "author": "anonymous",
+  "author": "niesc_smeics",
   "license": "MIT"
 }

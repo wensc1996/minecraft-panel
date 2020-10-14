@@ -1,22 +1,15 @@
-import { provide } from 'midway';
-let mysqlModual = require('mysql')
-interface IBaseInfo {
-    host: string,
-    user: string,
-    password: string,
-    database: string
-}
 
-@provide('mysql')
+let mysqlModual = require('mysql')
+
 export class Mysql {
     private mysqlConn : any
-    private baseInfo : IBaseInfo = {
+    private baseInfo = {
         host : 'localhost',
         user : 'root',
         password : 'nsc9988893589',
         database : 'mcpanel'
     }
-    async setBaseInfo(baseInfo : IBaseInfo){
+    async setBaseInfo(baseInfo){
         this.baseInfo = baseInfo
     }
     async action (sql, sqlParams) {
