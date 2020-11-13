@@ -18,9 +18,12 @@
         "mongodb": "^3.6.2",
         "mysql": "^2.18.1",
         "scss": "^0.2.4",
-        "vue-cli": "^2.9.6",
+        "socket.io-client": "^3.0.1",
         "vue": "^2.5.2",
-        "vue-router": "^3.4.6"
+        "vue-cli": "^2.9.6",
+        "vue-router": "^3.4.6",
+        "vue-socket.io": "^3.0.10",
+        "vuex": "^3.5.1"
     },
     "devDependencies": {
         "autoprefixer": "^7.1.2",

@@ -27,6 +27,7 @@ module.exports = {
         'eol-last': 'off',// 关闭结尾换行的警告,
         // 缩进风格
         'indent': [2, 4],
+        "space-before-function-paren": 0, // 函数括号前的空格去掉错误提示
         // allow debugger during development
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
     }

@@ -24,6 +24,20 @@ module.exports = appInfo => {
         }
     }
 
+    config.io = {
+        init: { }, // passed to engine.io
+        namespace: {
+            '/': {
+                connectionMiddleware: [],
+                packetMiddleware: [],
+            },
+            '/example': {
+                connectionMiddleware: [],
+                packetMiddleware: [],
+            },
+        },
+    };
+
     // add your user config here
     const userConfig = {
         // myAppName: 'egg',

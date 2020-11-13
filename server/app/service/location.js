@@ -1,0 +1,26 @@
+const Service = require('egg').Service;
+const Mysql = require('../../src/mysql/connection')
+const Response = require('../../src/response')
+
+class LocationService extends Service {
+    async getLocationList(options) {
+        let mysql = new Mysql()
+        let res = await mysql.action('select * from location where user_id = ?', options.userId)
+        if(res){
+            return new Response({code: 1, msg: '获取坐标列表成功', data : res})
+        }else{
+            return new Response({code: -1, msg: '获取坐标列表成功'})
+        }
+    }
+    async addLocation(options){
+        let mysql = new Mysql()
+        let res = await mysql.action('insert into location (user_id, coordinate, remarks, name, create_time) values (?, ?, ?, ?, ?)', [options.userId, options.coordinate, options.remarks, options.name, options.createTime])
+        if(res){
+            return new Response({code: 1, msg: '新增坐标成功', data : ''})
+        }else{
+            return new Response({code: -1, msg: '新增坐标失败'})
+        }
+    }
+}
+  
+module.exports = LocationService;

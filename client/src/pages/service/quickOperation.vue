@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div quickOperation>
         <el-table
             :data="tableData">
             <el-table-column
@@ -44,7 +44,7 @@
 </template>
 <script>
 export default {
-    data () {
+    data() {
         return {
             tableData: [{
                 name: '王小虎',
@@ -90,8 +90,17 @@ export default {
                 zip: 200333
             }]
         }
+    },
+    methods: {
+    },
+    mounted() {
     }
 }
 </script>
 <style lang="scss">
+    div[quickOperation]{
+        .el-table td, .el-table th{
+            padding: 6px 0;
+        }
+    }
 </style>

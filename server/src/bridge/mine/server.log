@@ -1,810 +1,146 @@
-2020-10-10 14:45:01 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 14:45:01 [INFO] Using 64-bit JVM
-2020-10-10 14:45:01 [INFO] Loading properties
-2020-10-10 14:45:01 [WARNING] server.properties does not exist
-2020-10-10 14:45:01 [INFO] Generating new properties file
-2020-10-10 14:45:01 [INFO] Default game type: SURVIVAL
-2020-10-10 14:45:01 [INFO] Generating keypair
-2020-10-10 14:45:01 [INFO] Starting Minecraft server on *:25565
-2020-10-10 14:45:01 [WARNING] Failed to load white-list: java.io.FileNotFoundException: .\white-list.txt (系统找不到指定的文件。)
-2020-10-10 14:45:01 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 14:45:01 [INFO] Preparing level "world"
-2020-10-10 14:45:02 [INFO] Preparing start region for level 0
-2020-10-10 14:45:03 [INFO] Preparing spawn area: 9%
-2020-10-10 14:45:04 [INFO] Preparing spawn area: 22%
-2020-10-10 14:45:05 [INFO] Preparing spawn area: 42%
-2020-10-10 14:45:06 [INFO] Preparing spawn area: 68%
-2020-10-10 14:45:07 [INFO] Preparing spawn area: 91%
-2020-10-10 14:45:07 [INFO] World seed is -4852181259136913542
-2020-10-10 14:45:08 [INFO] Done (6.025s)! For help, type "help" or "?"
-2020-10-10 14:45:08 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 14:45:17 [INFO] Stopping server
-2020-10-10 14:45:17 [INFO] Saving players
-2020-10-10 14:45:17 [INFO] Saving worlds
-2020-10-10 14:45:17 [INFO] Closing listening thread
-2020-10-10 14:45:19 [INFO] Finished saving all worlds in 1.73 seconds
-2020-10-10 14:45:19 [INFO] Saving world maps...
-2020-10-10 14:45:20 [INFO] Finished saving world maps
-2020-10-10 14:45:20 [INFO] Stopping server
-2020-10-10 14:45:20 [INFO] Saving players
-2020-10-10 14:45:31 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 14:45:31 [INFO] Using 64-bit JVM
-2020-10-10 14:45:31 [INFO] Loading properties
-2020-10-10 14:45:31 [INFO] Default game type: SURVIVAL
-2020-10-10 14:45:31 [INFO] Generating keypair
-2020-10-10 14:45:31 [INFO] Starting Minecraft server on *:25565
-2020-10-10 14:45:31 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 14:45:31 [INFO] Preparing level "world"
-2020-10-10 14:45:31 [INFO] Preparing start region for level 0
-2020-10-10 14:45:32 [INFO] Preparing spawn area: 52%
-2020-10-10 14:45:32 [INFO] World seed is -4852181259136913542
-2020-10-10 14:45:32 [INFO] Done (1.530s)! For help, type "help" or "?"
-2020-10-10 14:45:32 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 14:45:32 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
-2020-10-10 14:46:04 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 14:46:04 [INFO] /ban <name> [reason ...]
-2020-10-10 14:46:04 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 14:46:04 [INFO] /banlist [ips|players]
-2020-10-10 14:46:04 [INFO] /clear <player> [item] [data]
-2020-10-10 14:46:04 [INFO] /debug <start|stop>
-2020-10-10 14:46:04 [INFO] /defaultgamemode <mode>
-2020-10-10 14:46:04 [INFO] /deop <player>
-2020-10-10 15:00:14 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 15:00:14 [INFO] Using 64-bit JVM
-2020-10-10 15:00:14 [INFO] Loading properties
-2020-10-10 15:00:14 [INFO] Default game type: SURVIVAL
-2020-10-10 15:00:14 [INFO] Generating keypair
-2020-10-10 15:00:14 [INFO] Starting Minecraft server on *:25565
-2020-10-10 15:00:14 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 15:00:14 [INFO] Preparing level "world"
-2020-10-10 15:00:14 [INFO] Preparing start region for level 0
-2020-10-10 15:00:15 [INFO] Preparing spawn area: 33%
-2020-10-10 15:00:16 [INFO] World seed is -4852181259136913542
-2020-10-10 15:00:16 [INFO] Done (1.833s)! For help, type "help" or "?"
-2020-10-10 15:00:16 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 15:00:16 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
-2020-10-10 15:00:16 [INFO] Stopping server
-2020-10-10 15:00:16 [INFO] Saving players
-2020-10-10 15:00:16 [INFO] Saving worlds
-2020-10-10 15:02:35 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 15:02:35 [INFO] Using 64-bit JVM
-2020-10-10 15:02:35 [INFO] Loading properties
-2020-10-10 15:02:35 [INFO] Default game type: SURVIVAL
-2020-10-10 15:02:35 [INFO] Generating keypair
-2020-10-10 15:02:35 [INFO] Starting Minecraft server on *:25565
-2020-10-10 15:02:35 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 15:02:35 [INFO] Preparing level "world"
-2020-10-10 15:02:35 [INFO] Preparing start region for level 0
-2020-10-10 15:02:36 [INFO] Preparing spawn area: 35%
-2020-10-10 15:02:37 [INFO] World seed is -4852181259136913542
-2020-10-10 15:02:37 [INFO] Done (1.918s)! For help, type "help" or "?"
-2020-10-10 15:02:37 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 15:02:37 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
-2020-10-10 15:02:37 [INFO] Stopping server
-2020-10-10 15:03:24 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 15:03:24 [INFO] Using 64-bit JVM
-2020-10-10 15:03:24 [INFO] Loading properties
-2020-10-10 15:03:24 [INFO] Default game type: SURVIVAL
-2020-10-10 15:03:24 [INFO] Generating keypair
-2020-10-10 15:03:24 [INFO] Starting Minecraft server on *:25565
-2020-10-10 15:03:24 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 15:03:24 [INFO] Preparing level "world"
-2020-10-10 15:03:24 [INFO] Preparing start region for level 0
-2020-10-10 15:03:25 [INFO] Preparing spawn area: 40%
-2020-10-10 15:03:26 [INFO] World seed is -4852181259136913542
-2020-10-10 15:03:26 [INFO] Done (1.841s)! For help, type "help" or "?"
-2020-10-10 15:03:26 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 15:03:26 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
-2020-10-10 15:03:26 [INFO] Stopping server
-2020-10-10 15:04:16 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 15:04:16 [INFO] Using 64-bit JVM
-2020-10-10 15:04:16 [INFO] Loading properties
-2020-10-10 15:04:16 [INFO] Default game type: SURVIVAL
-2020-10-10 15:04:16 [INFO] Generating keypair
-2020-10-10 15:04:16 [INFO] Starting Minecraft server on *:25565
-2020-10-10 15:04:17 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 15:04:17 [INFO] Preparing level "world"
-2020-10-10 15:04:17 [INFO] Preparing start region for level 0
-2020-10-10 15:04:18 [INFO] Preparing spawn area: 26%
-2020-10-10 15:04:18 [INFO] World seed is -4852181259136913542
-2020-10-10 15:04:18 [INFO] Done (1.875s)! For help, type "help" or "?"
-2020-10-10 15:04:18 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 15:04:19 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
-2020-10-10 15:04:19 [INFO] Stopping server
-2020-10-10 15:04:19 [INFO] Saving players
-2020-10-10 15:04:50 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 15:04:50 [INFO] Using 64-bit JVM
-2020-10-10 15:04:50 [INFO] Loading properties
-2020-10-10 15:04:50 [INFO] Default game type: SURVIVAL
-2020-10-10 15:04:50 [INFO] Generating keypair
-2020-10-10 15:04:50 [INFO] Starting Minecraft server on *:25565
-2020-10-10 15:04:50 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 15:04:50 [INFO] Preparing level "world"
-2020-10-10 15:04:50 [INFO] Preparing start region for level 0
-2020-10-10 15:04:51 [INFO] Preparing spawn area: 44%
-2020-10-10 15:04:52 [INFO] World seed is -4852181259136913542
-2020-10-10 15:04:52 [INFO] Done (1.644s)! For help, type "help" or "?"
-2020-10-10 15:04:52 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 15:04:52 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
-2020-10-10 15:05:41 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 15:05:41 [INFO] Using 64-bit JVM
-2020-10-10 15:05:41 [INFO] Loading properties
-2020-10-10 15:05:41 [INFO] Default game type: SURVIVAL
-2020-10-10 15:05:41 [INFO] Generating keypair
-2020-10-10 15:05:41 [INFO] Starting Minecraft server on *:25565
-2020-10-10 15:05:41 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 15:05:41 [INFO] Preparing level "world"
-2020-10-10 15:05:42 [INFO] Preparing start region for level 0
-2020-10-10 15:05:43 [INFO] Preparing spawn area: 33%
-2020-10-10 15:05:43 [INFO] World seed is -4852181259136913542
-2020-10-10 15:05:43 [INFO] Done (1.936s)! For help, type "help" or "?"
-2020-10-10 15:05:43 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 15:05:43 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
-2020-10-10 15:05:44 [INFO] Stopping server
-2020-10-10 15:07:24 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 15:07:24 [INFO] Using 64-bit JVM
-2020-10-10 15:07:24 [INFO] Loading properties
-2020-10-10 15:07:24 [INFO] Default game type: SURVIVAL
-2020-10-10 15:07:24 [INFO] Generating keypair
-2020-10-10 15:07:24 [INFO] Starting Minecraft server on *:25565
-2020-10-10 15:07:24 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 15:07:24 [INFO] Preparing level "world"
-2020-10-10 15:07:25 [INFO] Preparing start region for level 0
-2020-10-10 15:07:26 [INFO] Preparing spawn area: 14%
-2020-10-10 15:07:27 [INFO] Preparing spawn area: 34%
-2020-10-10 15:07:28 [INFO] Preparing spawn area: 57%
-2020-10-10 15:07:29 [INFO] Preparing spawn area: 77%
-2020-10-10 15:07:30 [INFO] Preparing spawn area: 96%
-2020-10-10 15:07:30 [INFO] World seed is 1707284274860044699
-2020-10-10 15:07:30 [INFO] Done (6.032s)! For help, type "help" or "?"
-2020-10-10 15:07:30 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 15:09:29 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 15:09:29 [INFO] Using 64-bit JVM
-2020-10-10 15:09:29 [INFO] Loading properties
-2020-10-10 15:09:29 [INFO] Default game type: SURVIVAL
-2020-10-10 15:09:29 [INFO] Generating keypair
-2020-10-10 15:09:29 [INFO] Starting Minecraft server on *:25565
-2020-10-10 15:09:29 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 15:09:29 [INFO] Preparing level "world"
-2020-10-10 15:09:29 [INFO] Preparing start region for level 0
-2020-10-10 15:09:30 [INFO] Preparing spawn area: 40%
-2020-10-10 15:09:31 [INFO] World seed is 1707284274860044699
-2020-10-10 15:09:31 [INFO] Done (1.843s)! For help, type "help" or "?"
-2020-10-10 15:09:31 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 15:10:25 [INFO] Stopping server
-2020-10-10 15:10:25 [INFO] Saving players
-2020-10-10 15:10:25 [INFO] Saving worlds
-2020-10-10 15:13:53 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 15:13:53 [INFO] Using 64-bit JVM
-2020-10-10 15:13:53 [INFO] Loading properties
-2020-10-10 15:13:53 [INFO] Default game type: SURVIVAL
-2020-10-10 15:13:53 [INFO] Generating keypair
-2020-10-10 15:13:53 [INFO] Starting Minecraft server on *:25565
-2020-10-10 15:13:53 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 15:13:53 [INFO] Preparing level "world"
-2020-10-10 15:13:54 [INFO] Preparing start region for level 0
-2020-10-10 15:13:55 [INFO] Preparing spawn area: 39%
-2020-10-10 15:13:55 [INFO] World seed is 1707284274860044699
-2020-10-10 15:13:55 [INFO] Done (1.918s)! For help, type "help" or "?"
-2020-10-10 15:13:55 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 15:17:16 [INFO] Stopping server
-2020-10-10 15:17:21 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 15:17:21 [INFO] Using 64-bit JVM
-2020-10-10 15:17:21 [INFO] Loading properties
-2020-10-10 15:17:21 [INFO] Default game type: SURVIVAL
-2020-10-10 15:17:21 [INFO] Generating keypair
-2020-10-10 15:17:21 [INFO] Starting Minecraft server on *:25565
-2020-10-10 15:17:21 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 15:17:21 [INFO] Preparing level "world"
-2020-10-10 15:17:21 [INFO] Preparing start region for level 0
-2020-10-10 15:17:22 [INFO] Preparing spawn area: 39%
-2020-10-10 15:17:23 [INFO] World seed is 1707284274860044699
-2020-10-10 15:17:23 [INFO] Done (1.846s)! For help, type "help" or "?"
-2020-10-10 15:17:23 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 15:21:43 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 15:21:43 [INFO] Using 64-bit JVM
-2020-10-10 15:21:43 [INFO] Loading properties
-2020-10-10 15:21:43 [INFO] Default game type: SURVIVAL
-2020-10-10 15:21:43 [INFO] Generating keypair
-2020-10-10 15:21:44 [INFO] Starting Minecraft server on *:25565
-2020-10-10 15:21:44 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 15:21:44 [INFO] Preparing level "world"
-2020-10-10 15:21:44 [INFO] Preparing start region for level 0
-2020-10-10 15:21:45 [INFO] Preparing spawn area: 26%
-2020-10-10 15:21:46 [INFO] Preparing spawn area: 80%
-2020-10-10 15:21:46 [INFO] World seed is 1707284274860044699
-2020-10-10 15:21:46 [INFO] Done (2.323s)! For help, type "help" or "?"
-2020-10-10 15:21:46 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 15:23:38 [INFO] Stopping server
-2020-10-10 15:23:38 [INFO] Closing listening thread
-2020-10-10 15:23:38 [INFO] Saving players
-2020-10-10 15:23:57 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 15:23:57 [INFO] Using 64-bit JVM
-2020-10-10 15:23:57 [INFO] Loading properties
-2020-10-10 15:23:57 [INFO] Default game type: SURVIVAL
-2020-10-10 15:23:57 [INFO] Generating keypair
-2020-10-10 15:23:57 [INFO] Starting Minecraft server on *:25565
-2020-10-10 15:23:57 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 15:23:57 [INFO] Preparing level "world"
-2020-10-10 15:23:57 [INFO] Preparing start region for level 0
-2020-10-10 15:23:58 [INFO] Preparing spawn area: 42%
-2020-10-10 15:23:59 [INFO] World seed is 1707284274860044699
-2020-10-10 15:23:59 [INFO] Done (2.072s)! For help, type "help" or "?"
-2020-10-10 15:23:59 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 15:24:19 [INFO] Stopping server
-2020-10-10 15:49:15 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 15:49:15 [INFO] Using 64-bit JVM
-2020-10-10 15:49:15 [INFO] Loading properties
-2020-10-10 15:49:15 [INFO] Default game type: SURVIVAL
-2020-10-10 15:49:15 [INFO] Generating keypair
-2020-10-10 15:49:15 [INFO] Starting Minecraft server on *:25565
-2020-10-10 15:49:15 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 15:49:15 [INFO] Preparing level "world"
-2020-10-10 15:49:15 [INFO] Preparing start region for level 0
-2020-10-10 15:49:16 [INFO] Preparing spawn area: 31%
-2020-10-10 15:49:17 [INFO] World seed is 1707284274860044699
-2020-10-10 15:49:17 [INFO] Done (2.051s)! For help, type "help" or "?"
-2020-10-10 15:49:17 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 15:59:32 [INFO] Stopping server
-2020-10-10 15:59:38 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 15:59:38 [INFO] Using 64-bit JVM
-2020-10-10 15:59:38 [INFO] Loading properties
-2020-10-10 15:59:38 [INFO] Default game type: SURVIVAL
-2020-10-10 15:59:38 [INFO] Generating keypair
-2020-10-10 15:59:38 [INFO] Starting Minecraft server on *:25565
-2020-10-10 15:59:38 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 15:59:38 [INFO] Preparing level "world"
-2020-10-10 15:59:38 [INFO] Preparing start region for level 0
-2020-10-10 15:59:39 [INFO] Preparing spawn area: 30%
-2020-10-10 15:59:40 [INFO] World seed is 1707284274860044699
-2020-10-10 15:59:40 [INFO] Done (1.964s)! For help, type "help" or "?"
-2020-10-10 15:59:40 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:00:16 [INFO] Stopping server
-2020-10-10 16:00:27 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:00:27 [INFO] Using 64-bit JVM
-2020-10-10 16:00:27 [INFO] Loading properties
-2020-10-10 16:00:27 [INFO] Default game type: SURVIVAL
-2020-10-10 16:00:27 [INFO] Generating keypair
-2020-10-10 16:00:27 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:00:27 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:00:27 [INFO] Preparing level "world"
-2020-10-10 16:00:27 [INFO] Preparing start region for level 0
-2020-10-10 16:00:28 [INFO] Preparing spawn area: 36%
-2020-10-10 16:00:29 [INFO] World seed is 1707284274860044699
-2020-10-10 16:00:29 [INFO] Done (2.042s)! For help, type "help" or "?"
-2020-10-10 16:00:29 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:03:25 [INFO] Stopping server
-2020-10-10 16:03:25 [INFO] Closing listening thread
-2020-10-10 16:03:25 [INFO] Saving players
-2020-10-10 16:03:25 [INFO] Saving worlds
-2020-10-10 16:04:38 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:04:38 [INFO] Using 64-bit JVM
-2020-10-10 16:04:38 [INFO] Loading properties
-2020-10-10 16:04:38 [INFO] Default game type: SURVIVAL
-2020-10-10 16:04:38 [INFO] Generating keypair
-2020-10-10 16:04:39 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:04:39 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:04:39 [INFO] Preparing level "world"
-2020-10-10 16:04:39 [INFO] Preparing start region for level 0
-2020-10-10 16:04:40 [INFO] Preparing spawn area: 38%
-2020-10-10 16:04:41 [INFO] World seed is 1707284274860044699
-2020-10-10 16:04:41 [INFO] Done (1.860s)! For help, type "help" or "?"
-2020-10-10 16:04:41 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:12:24 [INFO] Stopping server
-2020-10-10 16:12:30 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:12:30 [INFO] Using 64-bit JVM
-2020-10-10 16:12:30 [INFO] Loading properties
-2020-10-10 16:12:30 [INFO] Default game type: SURVIVAL
-2020-10-10 16:12:30 [INFO] Generating keypair
-2020-10-10 16:12:30 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:12:30 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:12:30 [INFO] Preparing level "world"
-2020-10-10 16:12:30 [INFO] Preparing start region for level 0
-2020-10-10 16:12:31 [INFO] Preparing spawn area: 37%
-2020-10-10 16:12:32 [INFO] World seed is 1707284274860044699
-2020-10-10 16:12:32 [INFO] Done (2.020s)! For help, type "help" or "?"
-2020-10-10 16:12:32 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:12:41 [INFO] Stopping server
-2020-10-10 16:12:41 [INFO] Saving players
-2020-10-10 16:13:19 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:13:19 [INFO] Using 64-bit JVM
-2020-10-10 16:13:19 [INFO] Loading properties
-2020-10-10 16:13:19 [INFO] Default game type: SURVIVAL
-2020-10-10 16:13:19 [INFO] Generating keypair
-2020-10-10 16:13:19 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:13:19 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:13:19 [INFO] Preparing level "world"
-2020-10-10 16:13:19 [INFO] Preparing start region for level 0
-2020-10-10 16:13:20 [INFO] Preparing spawn area: 27%
-2020-10-10 16:13:21 [INFO] World seed is 1707284274860044699
-2020-10-10 16:13:21 [INFO] Done (2.071s)! For help, type "help" or "?"
-2020-10-10 16:13:21 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:15:29 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:15:29 [INFO] Using 64-bit JVM
-2020-10-10 16:15:29 [INFO] Loading properties
-2020-10-10 16:15:30 [INFO] Default game type: SURVIVAL
-2020-10-10 16:15:30 [INFO] Generating keypair
-2020-10-10 16:15:30 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:15:30 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:15:30 [INFO] Preparing level "world"
-2020-10-10 16:15:30 [INFO] Preparing start region for level 0
-2020-10-10 16:15:31 [INFO] Preparing spawn area: 43%
-2020-10-10 16:15:32 [INFO] World seed is 1707284274860044699
-2020-10-10 16:15:32 [INFO] Done (1.782s)! For help, type "help" or "?"
-2020-10-10 16:15:32 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:15:54 [INFO] Stopping server
-2020-10-10 16:15:54 [INFO] Closing listening thread
-2020-10-10 16:15:54 [INFO] Saving players
-2020-10-10 16:16:24 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:16:24 [INFO] Using 64-bit JVM
-2020-10-10 16:16:24 [INFO] Loading properties
-2020-10-10 16:16:24 [INFO] Default game type: SURVIVAL
-2020-10-10 16:16:24 [INFO] Generating keypair
-2020-10-10 16:16:25 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:16:25 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:16:25 [INFO] Preparing level "world"
-2020-10-10 16:16:25 [INFO] Preparing start region for level 0
-2020-10-10 16:16:26 [INFO] Preparing spawn area: 56%
-2020-10-10 16:16:26 [INFO] World seed is 1707284274860044699
-2020-10-10 16:16:26 [INFO] Done (1.663s)! For help, type "help" or "?"
-2020-10-10 16:16:26 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:18:36 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:18:36 [INFO] Using 64-bit JVM
-2020-10-10 16:18:36 [INFO] Loading properties
-2020-10-10 16:18:36 [INFO] Default game type: SURVIVAL
-2020-10-10 16:18:36 [INFO] Generating keypair
-2020-10-10 16:18:36 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:18:36 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:18:36 [INFO] Preparing level "world"
-2020-10-10 16:18:37 [INFO] Preparing start region for level 0
-2020-10-10 16:18:38 [INFO] Preparing spawn area: 66%
-2020-10-10 16:18:38 [INFO] World seed is 1707284274860044699
-2020-10-10 16:18:38 [INFO] Done (1.471s)! For help, type "help" or "?"
-2020-10-10 16:18:38 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:20:08 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:20:08 [INFO] Using 64-bit JVM
-2020-10-10 16:20:08 [INFO] Loading properties
-2020-10-10 16:20:08 [INFO] Default game type: SURVIVAL
-2020-10-10 16:20:08 [INFO] Generating keypair
-2020-10-10 16:20:08 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:20:08 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:20:08 [INFO] Preparing level "world"
-2020-10-10 16:20:08 [INFO] Preparing start region for level 0
-2020-10-10 16:20:09 [INFO] Preparing spawn area: 55%
-2020-10-10 16:20:10 [INFO] World seed is 1707284274860044699
-2020-10-10 16:20:10 [INFO] Done (1.626s)! For help, type "help" or "?"
-2020-10-10 16:20:10 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:20:29 [INFO] Stopping server
-2020-10-10 16:25:21 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:25:21 [INFO] Using 64-bit JVM
-2020-10-10 16:25:21 [INFO] Loading properties
-2020-10-10 16:25:21 [INFO] Default game type: SURVIVAL
-2020-10-10 16:25:21 [INFO] Generating keypair
-2020-10-10 16:25:21 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:25:21 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:25:21 [INFO] Preparing level "world"
-2020-10-10 16:25:21 [INFO] Preparing start region for level 0
-2020-10-10 16:25:22 [INFO] Preparing spawn area: 58%
-2020-10-10 16:25:23 [INFO] World seed is 1707284274860044699
-2020-10-10 16:25:23 [INFO] Done (1.600s)! For help, type "help" or "?"
-2020-10-10 16:25:23 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:33:18 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:33:18 [INFO] Using 64-bit JVM
-2020-10-10 16:33:18 [INFO] Loading properties
-2020-10-10 16:33:18 [INFO] Default game type: SURVIVAL
-2020-10-10 16:33:18 [INFO] Generating keypair
-2020-10-10 16:33:18 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:33:18 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:33:18 [INFO] Preparing level "world"
-2020-10-10 16:33:18 [INFO] Preparing start region for level 0
-2020-10-10 16:33:19 [INFO] Preparing spawn area: 58%
-2020-10-10 16:33:19 [INFO] World seed is 1707284274860044699
-2020-10-10 16:33:19 [INFO] Done (1.615s)! For help, type "help" or "?"
-2020-10-10 16:33:19 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:33:30 [INFO] Stopping server
-2020-10-10 16:33:30 [INFO] Saving players
-2020-10-10 16:33:30 [INFO] Saving worlds
-2020-10-10 16:33:30 [INFO] Closing listening thread
-2020-10-10 16:35:10 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:35:10 [INFO] Using 64-bit JVM
-2020-10-10 16:35:10 [INFO] Loading properties
-2020-10-10 16:35:10 [INFO] Default game type: SURVIVAL
-2020-10-10 16:35:10 [INFO] Generating keypair
-2020-10-10 16:35:11 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:35:11 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:35:11 [INFO] Preparing level "world"
-2020-10-10 16:35:11 [INFO] Preparing start region for level 0
-2020-10-10 16:35:12 [INFO] Preparing spawn area: 66%
-2020-10-10 16:35:12 [INFO] World seed is 1707284274860044699
-2020-10-10 16:35:12 [INFO] Done (1.463s)! For help, type "help" or "?"
-2020-10-10 16:35:12 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:36:23 [INFO] Stopping server
-2020-10-10 16:36:23 [INFO] Saving players
-2020-10-10 16:36:23 [INFO] Closing listening thread
-2020-10-10 16:36:23 [INFO] Saving worlds
-2020-10-10 16:37:02 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:37:02 [INFO] Using 64-bit JVM
-2020-10-10 16:37:02 [INFO] Loading properties
-2020-10-10 16:37:02 [INFO] Default game type: SURVIVAL
-2020-10-10 16:37:02 [INFO] Generating keypair
-2020-10-10 16:37:02 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:37:02 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:37:02 [INFO] Preparing level "world"
-2020-10-10 16:37:02 [INFO] Preparing start region for level 0
-2020-10-10 16:37:03 [INFO] Preparing spawn area: 44%
-2020-10-10 16:37:04 [INFO] World seed is 1707284274860044699
-2020-10-10 16:37:04 [INFO] Done (1.701s)! For help, type "help" or "?"
-2020-10-10 16:37:04 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:39:34 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:39:34 [INFO] Using 64-bit JVM
-2020-10-10 16:39:34 [INFO] Loading properties
-2020-10-10 16:39:34 [INFO] Default game type: SURVIVAL
-2020-10-10 16:39:34 [INFO] Generating keypair
-2020-10-10 16:39:34 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:39:34 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:39:34 [INFO] Preparing level "world"
-2020-10-10 16:39:34 [INFO] Preparing start region for level 0
-2020-10-10 16:39:35 [INFO] Preparing spawn area: 52%
-2020-10-10 16:39:36 [INFO] World seed is 1707284274860044699
-2020-10-10 16:39:36 [INFO] Done (1.657s)! For help, type "help" or "?"
-2020-10-10 16:39:36 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:39:59 [INFO] Stopping server
-2020-10-10 16:39:59 [INFO] Saving players
-2020-10-10 16:39:59 [INFO] Saving worlds
-2020-10-10 16:39:59 [INFO] Closing listening thread
-2020-10-10 16:40:16 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:40:16 [INFO] Using 64-bit JVM
-2020-10-10 16:40:16 [INFO] Loading properties
-2020-10-10 16:40:16 [INFO] Default game type: SURVIVAL
-2020-10-10 16:40:16 [INFO] Generating keypair
-2020-10-10 16:40:16 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:40:16 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:40:16 [INFO] Preparing level "world"
-2020-10-10 16:40:16 [INFO] Preparing start region for level 0
-2020-10-10 16:40:17 [INFO] Preparing spawn area: 57%
-2020-10-10 16:40:18 [INFO] World seed is 1707284274860044699
-2020-10-10 16:40:18 [INFO] Done (1.590s)! For help, type "help" or "?"
-2020-10-10 16:40:18 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:42:59 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:42:59 [INFO] Using 64-bit JVM
-2020-10-10 16:42:59 [INFO] Loading properties
-2020-10-10 16:42:59 [INFO] Default game type: SURVIVAL
-2020-10-10 16:42:59 [INFO] Generating keypair
-2020-10-10 16:43:00 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:43:00 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:43:00 [INFO] Preparing level "world"
-2020-10-10 16:43:00 [INFO] Preparing start region for level 0
-2020-10-10 16:43:01 [INFO] Preparing spawn area: 52%
-2020-10-10 16:43:01 [INFO] World seed is 1707284274860044699
-2020-10-10 16:43:01 [INFO] Done (1.659s)! For help, type "help" or "?"
-2020-10-10 16:43:01 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:43:39 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:43:39 [INFO] Using 64-bit JVM
-2020-10-10 16:43:39 [INFO] Loading properties
-2020-10-10 16:43:40 [INFO] Default game type: SURVIVAL
-2020-10-10 16:43:40 [INFO] Generating keypair
-2020-10-10 16:43:40 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:43:40 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:43:40 [INFO] Preparing level "world"
-2020-10-10 16:43:40 [INFO] Preparing start region for level 0
-2020-10-10 16:43:41 [INFO] Preparing spawn area: 66%
-2020-10-10 16:43:41 [INFO] World seed is 1707284274860044699
-2020-10-10 16:43:41 [INFO] Done (1.487s)! For help, type "help" or "?"
-2020-10-10 16:43:41 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:44:36 [INFO] Stopping server
-2020-10-10 16:44:36 [INFO] Saving players
-2020-10-10 16:44:36 [INFO] Saving worlds
-2020-10-10 16:44:36 [INFO] Closing listening thread
-2020-10-10 16:45:16 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:45:16 [INFO] Using 64-bit JVM
-2020-10-10 16:45:16 [INFO] Loading properties
-2020-10-10 16:45:16 [INFO] Default game type: SURVIVAL
-2020-10-10 16:45:16 [INFO] Generating keypair
-2020-10-10 16:45:16 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:45:16 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:45:16 [INFO] Preparing level "world"
-2020-10-10 16:45:17 [INFO] Preparing start region for level 0
-2020-10-10 16:45:18 [INFO] Preparing spawn area: 57%
-2020-10-10 16:46:26 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:46:26 [INFO] Using 64-bit JVM
-2020-10-10 16:46:26 [INFO] Loading properties
-2020-10-10 16:46:26 [INFO] Default game type: SURVIVAL
-2020-10-10 16:46:26 [INFO] Generating keypair
-2020-10-10 16:46:26 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:46:26 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:46:26 [INFO] Preparing level "world"
-2020-10-10 16:46:26 [INFO] Preparing start region for level 0
-2020-10-10 16:46:27 [INFO] Preparing spawn area: 69%
-2020-10-10 16:46:28 [INFO] World seed is 1707284274860044699
-2020-10-10 16:46:28 [INFO] Done (1.458s)! For help, type "help" or "?"
-2020-10-10 16:46:28 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:47:45 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:47:45 [INFO] Using 64-bit JVM
-2020-10-10 16:47:45 [INFO] Loading properties
-2020-10-10 16:47:45 [INFO] Default game type: SURVIVAL
-2020-10-10 16:47:45 [INFO] Generating keypair
-2020-10-10 16:47:45 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:47:45 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:47:45 [INFO] Preparing level "world"
-2020-10-10 16:47:45 [INFO] Preparing start region for level 0
-2020-10-10 16:47:46 [INFO] Preparing spawn area: 68%
-2020-10-10 16:47:47 [INFO] World seed is 1707284274860044699
-2020-10-10 16:47:47 [INFO] Done (1.500s)! For help, type "help" or "?"
-2020-10-10 16:47:47 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:47:47 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:47:47 [INFO] /ban <name> [reason ...]
-2020-10-10 16:47:47 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:47:47 [INFO] /banlist [ips|players]
-2020-10-10 16:47:47 [INFO] /clear <player> [item] [data]
-2020-10-10 16:47:47 [INFO] /debug <start|stop>
-2020-10-10 16:47:47 [INFO] /defaultgamemode <mode>
-2020-10-10 16:47:47 [INFO] /deop <player>
-2020-10-10 16:49:04 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:49:04 [INFO] Using 64-bit JVM
-2020-10-10 16:49:04 [INFO] Loading properties
-2020-10-10 16:49:04 [INFO] Default game type: SURVIVAL
-2020-10-10 16:49:04 [INFO] Generating keypair
-2020-10-10 16:49:04 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:49:04 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:49:04 [INFO] Preparing level "world"
-2020-10-10 16:49:04 [INFO] Preparing start region for level 0
-2020-10-10 16:49:05 [INFO] Preparing spawn area: 60%
-2020-10-10 16:49:06 [INFO] World seed is 1707284274860044699
-2020-10-10 16:49:06 [INFO] Done (1.549s)! For help, type "help" or "?"
-2020-10-10 16:49:06 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:49:26 [INFO] Stopping server
-2020-10-10 16:49:26 [INFO] Saving players
-2020-10-10 16:49:26 [INFO] Closing listening thread
-2020-10-10 16:49:26 [INFO] Saving worlds
-2020-10-10 16:49:36 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:49:36 [INFO] Using 64-bit JVM
-2020-10-10 16:49:36 [INFO] Loading properties
-2020-10-10 16:49:36 [INFO] Default game type: SURVIVAL
-2020-10-10 16:49:36 [INFO] Generating keypair
-2020-10-10 16:49:36 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:49:36 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:49:36 [INFO] Preparing level "world"
-2020-10-10 16:49:36 [INFO] Preparing start region for level 0
-2020-10-10 16:49:37 [INFO] Preparing spawn area: 47%
-2020-10-10 16:49:38 [INFO] World seed is 1707284274860044699
-2020-10-10 16:49:38 [INFO] Done (1.736s)! For help, type "help" or "?"
-2020-10-10 16:49:38 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:49:38 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:49:38 [INFO] /ban <name> [reason ...]
-2020-10-10 16:49:38 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:49:38 [INFO] /banlist [ips|players]
-2020-10-10 16:49:38 [INFO] /clear <player> [item] [data]
-2020-10-10 16:49:38 [INFO] /debug <start|stop>
-2020-10-10 16:49:38 [INFO] /defaultgamemode <mode>
-2020-10-10 16:49:38 [INFO] /deop <player>
-2020-10-10 16:51:09 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:51:09 [INFO] Using 64-bit JVM
-2020-10-10 16:51:09 [INFO] Loading properties
-2020-10-10 16:51:09 [INFO] Default game type: SURVIVAL
-2020-10-10 16:51:09 [INFO] Generating keypair
-2020-10-10 16:51:09 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:51:09 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:51:09 [INFO] Preparing level "world"
-2020-10-10 16:51:09 [INFO] Preparing start region for level 0
-2020-10-10 16:51:10 [INFO] Preparing spawn area: 68%
-2020-10-10 16:51:10 [INFO] World seed is 1707284274860044699
-2020-10-10 16:51:10 [INFO] Done (1.493s)! For help, type "help" or "?"
-2020-10-10 16:51:10 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:53:03 [INFO] Stopping server
-2020-10-10 16:53:03 [INFO] Saving players
-2020-10-10 16:53:03 [INFO] Saving worlds
-2020-10-10 16:53:03 [INFO] Closing listening thread
-2020-10-10 16:53:08 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:53:08 [INFO] Using 64-bit JVM
-2020-10-10 16:53:08 [INFO] Loading properties
-2020-10-10 16:53:08 [INFO] Default game type: SURVIVAL
-2020-10-10 16:53:08 [INFO] Generating keypair
-2020-10-10 16:53:08 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:53:08 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:53:08 [INFO] Preparing level "world"
-2020-10-10 16:53:08 [INFO] Preparing start region for level 0
-2020-10-10 16:53:09 [INFO] Preparing spawn area: 68%
-2020-10-10 16:53:10 [INFO] World seed is 1707284274860044699
-2020-10-10 16:53:10 [INFO] Done (1.461s)! For help, type "help" or "?"
-2020-10-10 16:53:10 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:53:10 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:53:10 [INFO] /ban <name> [reason ...]
-2020-10-10 16:53:10 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:53:10 [INFO] /banlist [ips|players]
-2020-10-10 16:53:10 [INFO] /clear <player> [item] [data]
-2020-10-10 16:53:10 [INFO] /debug <start|stop>
-2020-10-10 16:53:10 [INFO] /defaultgamemode <mode>
-2020-10-10 16:53:10 [INFO] /deop <player>
-2020-10-10 16:54:06 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
-2020-10-10 16:54:06 [INFO] Using 64-bit JVM
-2020-10-10 16:54:06 [INFO] Loading properties
-2020-10-10 16:54:06 [INFO] Default game type: SURVIVAL
-2020-10-10 16:54:06 [INFO] Generating keypair
-2020-10-10 16:54:06 [INFO] Starting Minecraft server on *:25565
-2020-10-10 16:54:06 [INFO] White-list is ALL-INCLUSIVE
-2020-10-10 16:54:06 [INFO] Preparing level "world"
-2020-10-10 16:54:06 [INFO] Preparing start region for level 0
-2020-10-10 16:54:07 [INFO] Preparing spawn area: 58%
-2020-10-10 16:54:07 [INFO] World seed is 1707284274860044699
-2020-10-10 16:54:07 [INFO] Done (1.583s)! For help, type "help" or "?"
-2020-10-10 16:54:07 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
-2020-10-10 16:54:08 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:54:08 [INFO] /ban <name> [reason ...]
-2020-10-10 16:54:08 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:54:08 [INFO] /banlist [ips|players]
-2020-10-10 16:54:08 [INFO] /clear <player> [item] [data]
-2020-10-10 16:54:08 [INFO] /debug <start|stop>
-2020-10-10 16:54:08 [INFO] /defaultgamemode <mode>
-2020-10-10 16:54:08 [INFO] /deop <player>
-2020-10-10 16:54:12 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:54:12 [INFO] /ban <name> [reason ...]
-2020-10-10 16:54:12 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:54:12 [INFO] /banlist [ips|players]
-2020-10-10 16:54:12 [INFO] /clear <player> [item] [data]
-2020-10-10 16:54:12 [INFO] /debug <start|stop>
-2020-10-10 16:54:12 [INFO] /defaultgamemode <mode>
-2020-10-10 16:54:12 [INFO] /deop <player>
-2020-10-10 16:54:17 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:54:17 [INFO] /ban <name> [reason ...]
-2020-10-10 16:54:17 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:54:17 [INFO] /banlist [ips|players]
-2020-10-10 16:54:17 [INFO] /clear <player> [item] [data]
-2020-10-10 16:54:17 [INFO] /debug <start|stop>
-2020-10-10 16:54:17 [INFO] /defaultgamemode <mode>
-2020-10-10 16:54:17 [INFO] /deop <player>
-2020-10-10 16:54:22 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:54:22 [INFO] /ban <name> [reason ...]
-2020-10-10 16:54:22 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:54:22 [INFO] /banlist [ips|players]
-2020-10-10 16:54:22 [INFO] /clear <player> [item] [data]
-2020-10-10 16:54:22 [INFO] /debug <start|stop>
-2020-10-10 16:54:22 [INFO] /defaultgamemode <mode>
-2020-10-10 16:54:22 [INFO] /deop <player>
-2020-10-10 16:54:27 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:54:27 [INFO] /ban <name> [reason ...]
-2020-10-10 16:54:27 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:54:27 [INFO] /banlist [ips|players]
-2020-10-10 16:54:27 [INFO] /clear <player> [item] [data]
-2020-10-10 16:54:27 [INFO] /debug <start|stop>
-2020-10-10 16:54:27 [INFO] /defaultgamemode <mode>
-2020-10-10 16:54:27 [INFO] /deop <player>
-2020-10-10 16:54:32 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:54:32 [INFO] /ban <name> [reason ...]
-2020-10-10 16:54:32 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:54:32 [INFO] /banlist [ips|players]
-2020-10-10 16:54:32 [INFO] /clear <player> [item] [data]
-2020-10-10 16:54:32 [INFO] /debug <start|stop>
-2020-10-10 16:54:32 [INFO] /defaultgamemode <mode>
-2020-10-10 16:54:32 [INFO] /deop <player>
-2020-10-10 16:54:37 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:54:37 [INFO] /ban <name> [reason ...]
-2020-10-10 16:54:37 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:54:37 [INFO] /banlist [ips|players]
-2020-10-10 16:54:37 [INFO] /clear <player> [item] [data]
-2020-10-10 16:54:37 [INFO] /debug <start|stop>
-2020-10-10 16:54:37 [INFO] /defaultgamemode <mode>
-2020-10-10 16:54:37 [INFO] /deop <player>
-2020-10-10 16:54:42 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:54:42 [INFO] /ban <name> [reason ...]
-2020-10-10 16:54:42 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:54:42 [INFO] /banlist [ips|players]
-2020-10-10 16:54:42 [INFO] /clear <player> [item] [data]
-2020-10-10 16:54:42 [INFO] /debug <start|stop>
-2020-10-10 16:54:42 [INFO] /defaultgamemode <mode>
-2020-10-10 16:54:42 [INFO] /deop <player>
-2020-10-10 16:54:47 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:54:47 [INFO] /ban <name> [reason ...]
-2020-10-10 16:54:47 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:54:47 [INFO] /banlist [ips|players]
-2020-10-10 16:54:47 [INFO] /clear <player> [item] [data]
-2020-10-10 16:54:47 [INFO] /debug <start|stop>
-2020-10-10 16:54:47 [INFO] /defaultgamemode <mode>
-2020-10-10 16:54:47 [INFO] /deop <player>
-2020-10-10 16:54:53 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:54:53 [INFO] /ban <name> [reason ...]
-2020-10-10 16:54:53 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:54:53 [INFO] /banlist [ips|players]
-2020-10-10 16:54:53 [INFO] /clear <player> [item] [data]
-2020-10-10 16:54:53 [INFO] /debug <start|stop>
-2020-10-10 16:54:53 [INFO] /defaultgamemode <mode>
-2020-10-10 16:54:53 [INFO] /deop <player>
-2020-10-10 16:54:58 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:54:58 [INFO] /ban <name> [reason ...]
-2020-10-10 16:54:58 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:54:58 [INFO] /banlist [ips|players]
-2020-10-10 16:54:58 [INFO] /clear <player> [item] [data]
-2020-10-10 16:54:58 [INFO] /debug <start|stop>
-2020-10-10 16:54:58 [INFO] /defaultgamemode <mode>
-2020-10-10 16:54:58 [INFO] /deop <player>
-2020-10-10 16:55:02 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:55:02 [INFO] /ban <name> [reason ...]
-2020-10-10 16:55:02 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:55:02 [INFO] /banlist [ips|players]
-2020-10-10 16:55:02 [INFO] /clear <player> [item] [data]
-2020-10-10 16:55:02 [INFO] /debug <start|stop>
-2020-10-10 16:55:02 [INFO] /defaultgamemode <mode>
-2020-10-10 16:55:02 [INFO] /deop <player>
-2020-10-10 16:55:07 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:55:07 [INFO] /ban <name> [reason ...]
-2020-10-10 16:55:07 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:55:07 [INFO] /banlist [ips|players]
-2020-10-10 16:55:07 [INFO] /clear <player> [item] [data]
-2020-10-10 16:55:07 [INFO] /debug <start|stop>
-2020-10-10 16:55:07 [INFO] /defaultgamemode <mode>
-2020-10-10 16:55:07 [INFO] /deop <player>
-2020-10-10 16:55:13 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:55:13 [INFO] /ban <name> [reason ...]
-2020-10-10 16:55:13 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:55:13 [INFO] /banlist [ips|players]
-2020-10-10 16:55:13 [INFO] /clear <player> [item] [data]
-2020-10-10 16:55:13 [INFO] /debug <start|stop>
-2020-10-10 16:55:13 [INFO] /defaultgamemode <mode>
-2020-10-10 16:55:13 [INFO] /deop <player>
-2020-10-10 16:55:18 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:55:18 [INFO] /ban <name> [reason ...]
-2020-10-10 16:55:18 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:55:18 [INFO] /banlist [ips|players]
-2020-10-10 16:55:18 [INFO] /clear <player> [item] [data]
-2020-10-10 16:55:18 [INFO] /debug <start|stop>
-2020-10-10 16:55:18 [INFO] /defaultgamemode <mode>
-2020-10-10 16:55:18 [INFO] /deop <player>
-2020-10-10 16:55:23 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:55:23 [INFO] /ban <name> [reason ...]
-2020-10-10 16:55:23 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:55:23 [INFO] /banlist [ips|players]
-2020-10-10 16:55:23 [INFO] /clear <player> [item] [data]
-2020-10-10 16:55:23 [INFO] /debug <start|stop>
-2020-10-10 16:55:23 [INFO] /defaultgamemode <mode>
-2020-10-10 16:55:23 [INFO] /deop <player>
-2020-10-10 16:55:28 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:55:28 [INFO] /ban <name> [reason ...]
-2020-10-10 16:55:28 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:55:28 [INFO] /banlist [ips|players]
-2020-10-10 16:55:28 [INFO] /clear <player> [item] [data]
-2020-10-10 16:55:28 [INFO] /debug <start|stop>
-2020-10-10 16:55:28 [INFO] /defaultgamemode <mode>
-2020-10-10 16:55:28 [INFO] /deop <player>
-2020-10-10 16:55:33 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:55:33 [INFO] /ban <name> [reason ...]
-2020-10-10 16:55:33 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:55:33 [INFO] /banlist [ips|players]
-2020-10-10 16:55:33 [INFO] /clear <player> [item] [data]
-2020-10-10 16:55:33 [INFO] /debug <start|stop>
-2020-10-10 16:55:33 [INFO] /defaultgamemode <mode>
-2020-10-10 16:55:33 [INFO] /deop <player>
-2020-10-10 16:55:38 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:55:38 [INFO] /ban <name> [reason ...]
-2020-10-10 16:55:38 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:55:38 [INFO] /banlist [ips|players]
-2020-10-10 16:55:38 [INFO] /clear <player> [item] [data]
-2020-10-10 16:55:38 [INFO] /debug <start|stop>
-2020-10-10 16:55:38 [INFO] /defaultgamemode <mode>
-2020-10-10 16:55:38 [INFO] /deop <player>
-2020-10-10 16:55:43 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:55:43 [INFO] /ban <name> [reason ...]
-2020-10-10 16:55:43 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:55:43 [INFO] /banlist [ips|players]
-2020-10-10 16:55:43 [INFO] /clear <player> [item] [data]
-2020-10-10 16:55:43 [INFO] /debug <start|stop>
-2020-10-10 16:55:43 [INFO] /defaultgamemode <mode>
-2020-10-10 16:55:43 [INFO] /deop <player>
-2020-10-10 16:55:48 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:55:48 [INFO] /ban <name> [reason ...]
-2020-10-10 16:55:48 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:55:48 [INFO] /banlist [ips|players]
-2020-10-10 16:55:48 [INFO] /clear <player> [item] [data]
-2020-10-10 16:55:48 [INFO] /debug <start|stop>
-2020-10-10 16:55:48 [INFO] /defaultgamemode <mode>
-2020-10-10 16:55:48 [INFO] /deop <player>
-2020-10-10 16:55:53 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
-2020-10-10 16:55:53 [INFO] /ban <name> [reason ...]
-2020-10-10 16:55:53 [INFO] /ban-ip <address|name> [reason ...]
-2020-10-10 16:55:53 [INFO] /banlist [ips|players]
-2020-10-10 16:55:53 [INFO] /clear <player> [item] [data]
-2020-10-10 16:55:53 [INFO] /debug <start|stop>
-2020-10-10 16:55:53 [INFO] /defaultgamemode <mode>
-2020-10-10 16:55:53 [INFO] /deop <player>
-2020-10-10 16:55:56 [INFO] Stopping server
-2020-10-10 16:55:56 [INFO] Saving players
-2020-10-10 16:55:56 [INFO] Saving worlds
-2020-10-10 16:55:56 [INFO] Closing listening thread
+2020-10-20 13:26:20 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-10-20 13:26:20 [INFO] Using 64-bit JVM
+2020-10-20 13:26:20 [INFO] Loading properties
+2020-10-20 13:26:20 [WARNING] server.properties does not exist
+2020-10-20 13:26:20 [INFO] Generating new properties file
+2020-10-20 13:26:20 [INFO] Default game type: SURVIVAL
+2020-10-20 13:26:20 [INFO] Generating keypair
+2020-10-20 13:26:20 [INFO] Starting Minecraft server on *:25565
+2020-10-20 13:26:21 [WARNING] Failed to load white-list: java.io.FileNotFoundException: .\white-list.txt (系统找不到指定的文件。)
+2020-10-20 13:26:21 [INFO] White-list is ALL-INCLUSIVE
+2020-10-20 13:26:21 [INFO] Preparing level "world"
+2020-10-20 13:26:21 [INFO] Preparing start region for level 0
+2020-10-20 13:26:22 [INFO] Preparing spawn area: 14%
+2020-10-20 13:26:23 [INFO] Preparing spawn area: 43%
+2020-10-20 13:26:24 [INFO] Preparing spawn area: 72%
+2020-10-20 13:26:25 [INFO] Preparing spawn area: 99%
+2020-10-20 13:26:25 [INFO] World seed is -2494924977332813473
+2020-10-20 13:26:25 [INFO] Done (4.573s)! For help, type "help" or "?"
+2020-10-20 13:26:25 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-10-20 13:27:21 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-10-20 13:27:21 [INFO] Using 64-bit JVM
+2020-10-20 13:27:21 [INFO] Loading properties
+2020-10-20 13:27:21 [INFO] Default game type: SURVIVAL
+2020-10-20 13:27:21 [INFO] Generating keypair
+2020-10-20 13:27:21 [INFO] Starting Minecraft server on *:25565
+2020-10-20 13:27:21 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-10-20 13:27:21 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-10-20 13:27:21 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-10-20 13:27:21 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-10-20 13:27:21 [INFO] White-list is ALL-INCLUSIVE
+2020-10-20 13:27:21 [INFO] Preparing level "world"
+2020-10-20 13:27:21 [WARNING] Unable to find spawn biome
+2020-10-20 13:27:25 [INFO] Preparing start region for level 0
+2020-10-20 13:27:26 [INFO] Preparing spawn area: 25%
+2020-10-20 13:27:27 [INFO] Preparing spawn area: 44%
+2020-10-20 13:27:28 [INFO] Preparing spawn area: 62%
+2020-10-20 13:27:29 [INFO] Preparing spawn area: 83%
+2020-10-20 13:27:30 [INFO] Preparing spawn area: 97%
+2020-10-20 13:27:30 [INFO] World seed is 4186729344235144118
+2020-10-20 13:27:30 [INFO] Done (8.585s)! For help, type "help" or "?"
+2020-10-20 13:27:30 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-10-20 13:27:50 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-10-20 13:27:53 [INFO] wensc[/127.0.0.1:60460] logged in with entity id 2260 at (70.5, 64.0, 97.5)
+2020-10-20 13:27:53 [INFO] wensc joined the game
+2020-10-20 13:29:37 [INFO] There are 1/20 players online:
+2020-10-20 13:29:37 [INFO] wensc
+2020-10-20 13:29:47 [INFO] There are 1/20 players online:
+2020-10-20 13:29:47 [INFO] wensc
+2020-10-20 13:29:57 [INFO] Command 'tp' not available
+2020-10-20 13:30:02 [INFO] --- Showing help page 1 of 6 (/help <page>) ---
+2020-10-20 13:30:02 [INFO] /ban <name> [reason ...]
+2020-10-20 13:30:02 [INFO] /ban-ip <address|name> [reason ...]
+2020-10-20 13:30:02 [INFO] /banlist [ips|players]
+2020-10-20 13:30:02 [INFO] /clear <player> [item] [data]
+2020-10-20 13:30:02 [INFO] /debug <start|stop>
+2020-10-20 13:30:02 [INFO] /defaultgamemode <mode>
+2020-10-20 13:30:02 [INFO] /deop <player>
+2020-10-20 13:30:09 [INFO] You do not have permission to use this command
+2020-10-20 13:30:16 [INFO] --- Showing help page 2 of 6 (/help <page>) ---
+2020-10-20 13:30:16 [INFO] /difficulty <new difficulty>
+2020-10-20 13:30:16 [INFO] /effect <player> <effect> [seconds] [amplifier]
+2020-10-20 13:30:16 [INFO] /enchant <player> <enchantment ID> [level]
+2020-10-20 13:30:16 [INFO] /gamemode <mode> [player]
+2020-10-20 13:30:16 [INFO] /gamerule <rule name> <value> OR /gamerule <rule name>
+2020-10-20 13:30:16 [INFO] /give <player> <item> [amount] [data]
+2020-10-20 13:30:17 [INFO] /help [page|command name]
+2020-10-20 13:30:27 [INFO] --- Showing help page 3 of 6 (/help <page>) ---
+2020-10-20 13:30:27 [INFO] /kick <player> [reason ...]
+2020-10-20 13:30:27 [INFO] /kill
+2020-10-20 13:30:27 [INFO] /list
+2020-10-20 13:30:27 [INFO] /me <action ...>
+2020-10-20 13:30:27 [INFO] /op <player>
+2020-10-20 13:30:27 [INFO] /pardon <name>
+2020-10-20 13:30:27 [INFO] /pardon-ip <address>
+2020-10-20 13:30:38 [INFO] Command 'op' not available
+2020-10-20 13:30:43 [INFO] Usage: /me <action ...>
+2020-10-20 13:30:50 [INFO] * Server jump
+2020-10-20 13:31:15 [INFO] * Server hhu
+2020-10-20 13:31:27 [INFO] You must specify which player you wish to perform this action on.
+2020-10-20 13:31:33 [INFO] You must specify which player you wish to perform this action on.
+2020-10-20 13:31:48 [INFO] You must specify which player you wish to perform this action on.
+2020-10-20 13:31:55 [INFO] --- Showing help page 4 of 6 (/help <page>) ---
+2020-10-20 13:31:55 [INFO] /playsound <sound> <player> [x] [y] [z] [volume] [pitch] [minimumVolume]
+2020-10-20 13:31:55 [INFO] /save-all
+2020-10-20 13:31:55 [INFO] /save-off
+2020-10-20 13:31:55 [INFO] /save-on
+2020-10-20 13:31:55 [INFO] /say <message ...>
+2020-10-20 13:31:55 [INFO] /scoreboard <objectives|players|teams>
+2020-10-20 13:31:55 [INFO] /seed
+2020-10-20 13:32:08 [INFO] [Server] wensc hello
+2020-10-20 13:32:33 [INFO] --- Showing help page 5 of 6 (/help <page>) ---
+2020-10-20 13:32:33 [INFO] /setidletimeout <Minutes until kick>
+2020-10-20 13:32:33 [INFO] /spawnpoint OR /spawnpoint <player> OR /spawnpoint <player> <x> <y> <z>
+2020-10-20 13:32:33 [INFO] /spreadplayers <x> <z> <spreadDistance> <maxRange> <respectTeams true|false> <player ...>
+2020-10-20 13:32:33 [INFO] /stop
+2020-10-20 13:32:33 [INFO] /tell <player> <private message ...>
+2020-10-20 13:32:33 [INFO] /testfor <player>
+2020-10-20 13:32:33 [INFO] /time <set|add> <value>
+2020-10-20 13:32:55 [INFO] Set wensc's spawn point to (70, 64, 97)
+2020-10-20 13:33:16 [INFO] /testfor is only usable by commandblocks with analog output
+2020-10-20 13:33:43 [INFO] You do not have permission to use this command
+2020-10-20 13:33:50 [INFO] --- Showing help page 6 of 6 (/help <page>) ---
+2020-10-20 13:33:50 [INFO] /toggledownfall
+2020-10-20 13:33:50 [INFO] /tp [target player] <destination player> OR /tp [target player] <x> <y> <z>
+2020-10-20 13:33:50 [INFO] /weather <clear/rain/thunder> [duration in seconds]
+2020-10-20 13:33:50 [INFO] /whitelist <on|off|list|add|remove|reload>
+2020-10-20 13:33:50 [INFO] /xp <amount> [player] OR /xp <amount>L [player]
+2020-10-20 13:34:07 [INFO] You do not have permission to use this command
+2020-10-20 13:34:20 [INFO] Command 'tp' not available
+2020-10-20 13:35:16 [INFO] You must specify which player you wish to perform this action on.
+2020-10-20 13:35:22 [INFO] You must specify which player you wish to perform this action on.
+2020-10-20 13:35:25 [INFO] You must specify which player you wish to perform this action on.
+2020-10-20 13:35:30 [INFO] You must specify which player you wish to perform this action on.
+2020-10-20 13:35:48 [INFO] Unknown command. Try /help for a list of commands
+2020-10-20 13:36:28 [INFO] wensc tried to swim in lava
+2020-10-20 13:37:04 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-10-20 13:37:11 [INFO] wensc tried to swim in lava
+2020-10-20 13:37:25 [INFO] wensc tried to swim in lava
+2020-10-20 13:38:10 [WARNING] Skipping Entity with id 89
+2020-10-20 13:39:45 [INFO] wensc was slain by Zombie
+2020-10-20 13:40:46 [INFO] wensc was slain by Skeleton
+2020-10-20 13:41:57 [INFO] wensc lost connection: disconnect.quitting
+2020-10-20 13:41:57 [INFO] wensc left the game
+2020-10-20 13:42:00 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-10-29 16:25:21 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-10-29 16:25:21 [INFO] Using 64-bit JVM
+2020-10-29 16:25:21 [INFO] Loading properties
+2020-10-29 16:25:21 [INFO] Default game type: SURVIVAL
+2020-10-29 16:25:21 [INFO] Generating keypair
+2020-10-29 16:25:22 [INFO] Starting Minecraft server on *:25565
+2020-10-29 16:25:22 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-10-29 16:25:22 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-10-29 16:25:22 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-10-29 16:25:22 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-10-29 16:25:22 [INFO] White-list is ALL-INCLUSIVE
+2020-10-29 16:25:22 [INFO] Preparing level "world"
+2020-10-29 16:25:23 [INFO] Preparing start region for level 0
+2020-10-29 16:25:24 [INFO] Preparing spawn area: 3%
+2020-10-29 16:25:25 [INFO] Preparing spawn area: 47%
+2020-10-29 16:25:26 [INFO] World seed is 4186729344235144118
+2020-10-29 16:25:26 [INFO] Done (4.019s)! For help, type "help" or "?"
+2020-10-29 16:25:26 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-10-29 16:26:55 [INFO] Stopping server
+2020-10-29 16:26:55 [INFO] Saving players
+2020-10-29 16:26:55 [INFO] Saving worlds
+2020-10-29 16:26:55 [INFO] Closing listening thread

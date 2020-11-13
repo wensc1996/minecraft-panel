@@ -2,7 +2,7 @@
 
 const { exec, spawn } = require('child_process');
 
-const java = spawn('java', ['-Xmx1024M', '-Xms1024M', '-jar', './minecraft_server.jar', 'nogui']);
+const java = spawn('java', ['-Xmx1024M', '-Xms1024M', '-jar', './自己做的振金核心.jar', 'nogui']);
 var iconv = require("iconv-lite")
 
 function myTest (cmd) {
