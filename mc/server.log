@@ -1,0 +1,52 @@
+2020-11-16 17:11:01 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-16 17:11:01 [INFO] Using 64-bit JVM
+2020-11-16 17:11:01 [INFO] Loading properties
+2020-11-16 17:11:01 [WARNING] server.properties does not exist
+2020-11-16 17:11:01 [INFO] Generating new properties file
+2020-11-16 17:11:01 [INFO] Default game type: SURVIVAL
+2020-11-16 17:11:01 [INFO] Generating keypair
+2020-11-16 17:11:01 [INFO] Starting Minecraft server on *:25565
+2020-11-16 17:11:01 [WARNING] Failed to load white-list: java.io.FileNotFoundException: .\white-list.txt (系统找不到指定的文件。)
+2020-11-16 17:11:01 [INFO] White-list is ALL-INCLUSIVE
+2020-11-16 17:11:01 [INFO] Preparing level "world"
+2020-11-16 17:11:01 [WARNING] Unable to find spawn biome
+2020-11-16 17:11:02 [INFO] Preparing start region for level 0
+2020-11-16 17:11:03 [INFO] Preparing spawn area: 14%
+2020-11-16 17:11:04 [INFO] Preparing spawn area: 41%
+2020-11-16 17:11:05 [INFO] Preparing spawn area: 72%
+2020-11-16 17:11:06 [INFO] Preparing spawn area: 86%
+2020-11-16 17:11:06 [INFO] World seed is 5403490603294774545
+2020-11-16 17:11:06 [INFO] Done (5.387s)! For help, type "help" or "?"
+2020-11-16 17:11:06 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-16 17:11:07 [INFO] There are 0/20 players online:
+2020-11-16 17:11:07 [INFO] 
+2020-11-16 17:11:49 [INFO] Stopping server
+2020-11-16 17:11:49 [INFO] Saving players
+2020-11-16 17:11:49 [INFO] Saving worlds
+2020-11-16 17:11:49 [INFO] Closing listening thread
+2020-11-16 17:12:58 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-16 17:12:58 [INFO] Using 64-bit JVM
+2020-11-16 17:12:58 [INFO] Loading properties
+2020-11-16 17:12:58 [INFO] Default game type: SURVIVAL
+2020-11-16 17:12:58 [INFO] Generating keypair
+2020-11-16 17:12:58 [INFO] Starting Minecraft server on *:25565
+2020-11-16 17:12:58 [INFO] White-list is ALL-INCLUSIVE
+2020-11-16 17:12:58 [INFO] Preparing level "world"
+2020-11-16 17:12:59 [INFO] Preparing start region for level 0
+2020-11-16 17:13:00 [INFO] Preparing spawn area: 6%
+2020-11-16 17:13:01 [INFO] Preparing spawn area: 21%
+2020-11-16 17:13:02 [INFO] Preparing spawn area: 43%
+2020-11-16 17:13:03 [INFO] Preparing spawn area: 65%
+2020-11-16 17:13:04 [INFO] Preparing spawn area: 91%
+2020-11-16 17:13:04 [INFO] World seed is -3459048919746078631
+2020-11-16 17:13:04 [INFO] Done (6.085s)! For help, type "help" or "?"
+2020-11-16 17:13:04 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-16 17:13:04 [INFO] There are 0/20 players online:
+2020-11-16 17:13:04 [INFO] 
+2020-11-16 17:13:11 [INFO] There are 0/20 players online:
+2020-11-16 17:13:11 [INFO] 
+2020-11-16 17:23:11 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-16 17:29:53 [INFO] Stopping server
+2020-11-16 17:29:53 [INFO] Saving players
+2020-11-16 17:29:53 [INFO] Saving worlds
+2020-11-16 17:29:53 [INFO] Closing listening thread

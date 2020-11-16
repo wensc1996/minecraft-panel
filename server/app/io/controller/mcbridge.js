@@ -3,15 +3,17 @@
 
 const Controller = require('egg').Controller;
 const { exec, spawn } = require('child_process');
-const java = spawn('java', ['-Xmx1024M', '-Xms1024M', '-jar', __dirname.replace(/\\app\\io\\controller/, '')+'\\src\\bridge\\mine\\server.jar', 'nogui']);
+// const java = spawn('cd', ["server/src/bridge/mine"]);
+const path = require("path")
+const java = spawn('java', ['-Xmx1024M', '-Xms1024M', '-jar', path.join(__dirname,'../../../../mc')+'\\server.jar', 'nogui'], {cwd: path.join(__dirname,'../../../../mc')});
 let flag = false
 class minecraft {
     start(){
         return new Promise((resolve, rejects)=>{
-            const java = spawn('java', ['-Xmx1024M', '-Xms1024M', '-jar', __dirname.replace(/\\app\\io\\controller/, '')+'\\src\\bridge\\mine\\server.jar', 'nogui']);
+            // const java = spawn('java', ['-Xmx1024M', '-Xms1024M', '-jar', __dirname.replace(/\\app\\io\\controller/, '')+'\\src\\bridge\\mine\\server.jar', 'nogui']);
             var iconv = require("iconv-lite")
             java.stdin.setEncoding('utf8');
-            java.stdin.write('/help\n');
+            // java.stdin.write('/help\n');
             java.stdout.on('data', (data) => {
                 // console.log(iconv.decode(Buffer.from(data, 'binary'), 'cp936'));
                 resolve(iconv.decode(Buffer.from(data, 'binary'), 'cp936'))
@@ -38,11 +40,12 @@ class DefaultController extends Controller {
         // let res = await mc.start()
         // console.log(res)
         // return res
-
         
         var iconv = require("iconv-lite")
         java.stdin.setEncoding('utf8');
         java.stdin.write(message+'\n');
+
+        
         if(flag == false){
             java.stdout.on('data', (data) => {
                 // console.log(iconv.decode(Buffer.from(data, 'binary'), 'cp936'));
@@ -56,6 +59,7 @@ class DefaultController extends Controller {
             java.on('close', (code) => {
                 console.log({code: -1, msg: '子进程退出，退出码'})
             });
+            
             flag = true
         }
     }

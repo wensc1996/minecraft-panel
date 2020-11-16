@@ -18,7 +18,8 @@ export default {
         return {
             cmd: '',
             msgContainer: [],
-            id: ''
+            id: '',
+            isAskedPlayer: false
         }
     },
     mounted () {
@@ -35,7 +36,7 @@ export default {
         // 方法名与服务端的保持一致
         res: function (res) {
         // 以下对接收来的数据进行操作
-            console.log(res)
+            this.resultFilter(res)
             this.msgContainer.push(res)
         }
     },
@@ -45,7 +46,14 @@ export default {
             this.$socket.emit('thread', this.cmd)
         },
         resultFilter(res) {
-
+            if (/There are \d+\/\d+ players online/.test(res)) {
+                this.isAskedPlayer = true
+            }
+            if (this.isAskedPlayer) {
+                console.log('player:' + res)
+                this.isAskedPlayer = false
+            }
+            console.log(res)
         },
         listPlayers() {
             this.$socket.emit('thread', '/list')
