@@ -32,7 +32,9 @@ class minecraft {
 class DefaultController extends Controller {
     
     async thread() {
+        const room = 'wensc'
         const { ctx, app } = this;
+        ctx.socket.join(room);
         const message = ctx.args[0];
         console.log('登录了' + message)
 
@@ -49,12 +51,15 @@ class DefaultController extends Controller {
         if(flag == false){
             java.stdout.on('data', (data) => {
                 // console.log(iconv.decode(Buffer.from(data, 'binary'), 'cp936'));
-                ctx.socket.emit('res', iconv.decode(Buffer.from(data, 'binary'), 'cp936'));
+                ctx.app.io.of('/').to(room).emit('wensc', iconv.decode(Buffer.from(data, 'binary'), 'cp936'));
+                // ctx.socket.emit('wensc', iconv.decode(Buffer.from(data, 'binary'), 'cp936'));
                 // return new Response({code: 1, msg: '获取成功', data : iconv.decode(Buffer.from(data, 'binary'), 'cp936')})
             });
             java.stderr.on('data', (data) => {
                 // console.error(`stderr: ${data}`);
-                ctx.socket.emit('res', iconv.decode(Buffer.from(data, 'binary'), 'cp936'));
+                // console.log(iconv.decode(Buffer.from(data, 'binary'), 'cp936'))
+                // ctx.socket.emit('wensc', iconv.decode(Buffer.from(data, 'binary'), 'cp936'));
+                ctx.app.io.of('/').to(room).emit('wensc', iconv.decode(Buffer.from(data, 'binary'), 'cp936'));
             });
             java.on('close', (code) => {
                 console.log({code: -1, msg: '子进程退出，退出码'})

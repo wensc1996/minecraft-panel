@@ -1,2 +1,3 @@
 World Achievements
 ------------------
+achievement.explorer taken by nancy on Day 7

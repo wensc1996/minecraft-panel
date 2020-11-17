@@ -1,10 +1,10 @@
 <template>
     <div quickOperation>
         <el-table
-            :data="tableData">
+            :data="players" @row-click="executeCommand">
             <el-table-column
-            prop="name"
-            label="姓名">
+            prop='name'
+            label="玩家">
             </el-table-column>
             <el-table-column
             label="存档">
@@ -13,11 +13,6 @@
             <el-table-column
             label="回档">
                 <el-button>回档</el-button>
-            </el-table-column>
-            <el-table-column
-            prop="delete"
-            label="删除角色">
-                <el-button>删除</el-button>
             </el-table-column>
             <el-table-column
             prop="kick"
@@ -30,7 +25,7 @@
                 <el-button>随机传送</el-button>
             </el-table-column>
             <el-table-column
-            prop="reborn"
+            prop="home"
             label="回家">
                 <el-button>回家</el-button>
             </el-table-column>
@@ -46,52 +41,42 @@
 export default {
     data() {
         return {
-            tableData: [{
-                name: '王小虎',
-                province: '上海',
-                city: '普陀区',
-                address: '上海市普陀区金沙江路 1518 弄',
-                zip: 200333
-            }, {
-                name: '王小虎',
-                province: '上海',
-                city: '普陀区',
-                address: '上海市普陀区金沙江路 1518 弄',
-                zip: 200333
-            }, {
-                name: '王小虎',
-                province: '上海',
-                city: '普陀区',
-                address: '上海市普陀区金沙江路 1518 弄',
-                zip: 200333
-            }, {
-                name: '王小虎',
-                province: '上海',
-                city: '普陀区',
-                address: '上海市普陀区金沙江路 1518 弄',
-                zip: 200333
-            }, {
-                name: '王小虎',
-                province: '上海',
-                city: '普陀区',
-                address: '上海市普陀区金沙江路 1518 弄',
-                zip: 200333
-            }, {
-                name: '王小虎',
-                province: '上海',
-                city: '普陀区',
-                address: '上海市普陀区金沙江路 1518 弄',
-                zip: 200333
-            }, {
-                name: '王小虎',
-                province: '上海',
-                city: '普陀区',
-                address: '上海市普陀区金沙江路 1518 弄',
-                zip: 200333
-            }]
+            players: []
         }
     },
     methods: {
+        executeCommand(row, column, event) {
+            switch (column.property) {
+            case 'random':
+                this.randomTeleport(row.name)
+                break
+            case 'reborn':
+                this.reborn(row.name)
+                break
+            }
+        },
+        teleport(e) {
+            console.log(e)
+            // this.$socket.emit('thread', '')
+        },
+        randomTeleport(name) {
+            console.log('thread', `/spreadplayers 0 0 0 100000 false ${name}`)
+            this.$socket.emit('thread', `/spreadplayers 0 0 0 100000 false ${name}`)
+        },
+        reborn(name) {
+            this.$socket.emit('thread', `/spawnpoint ${name}`)
+        }
+    },
+    watch: {
+        '$store.state.players'(val) {
+            if (val.length > 0) {
+                this.players = val.map((item) => {
+                    return {
+                        name: item
+                    }
+                })
+            }
+        }
     },
     mounted() {
     }

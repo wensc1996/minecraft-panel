@@ -11,24 +11,29 @@
                     <el-tab-pane label="坐标管理">
                         <el-form :inline="true" :model="formInline" class="demo-form-inline">
                             <el-form-item label="纪录当前坐标点：">
-                                <el-input v-model="formInline.user" placeholder="请输入地点备注名称"></el-input>
+                                <el-input v-model="formInline.remark" placeholder="请输入地点备注名称"></el-input>
                             </el-form-item>
                             <el-form-item>
-                                <el-button type="primary" @click="onSubmit">纪录</el-button>
+                                <el-button type="primary" @click="recordCoordinate">纪录</el-button>
                             </el-form-item>
                         </el-form>
                         <el-table
-                            :data="tableData"
+                            :data="coordinateTable"
                             stripe
                             style="width: 100%">
                             <el-table-column
-                            prop="date"
+                            prop="create_time"
                             label="坐标名称"
+                            width="200">
+                            </el-table-column>
+                            <el-table-column
+                            prop="coordinate"
+                            label="坐标点"
                             width="180">
                             </el-table-column>
                             <el-table-column
                             prop="name"
-                            label="坐标点"
+                            label="坐标名称"
                             width="180">
                             </el-table-column>
                             <el-table-column
@@ -72,25 +77,9 @@ export default {
             activeNames: ['1'],
             formInline: {
                 user: '',
-                region: ''
+                remark: ''
             },
-            tableData: [{
-                date: '2016-05-02',
-                name: '王小虎',
-                address: '上海市普陀区金沙江路 1518 弄'
-            }, {
-                date: '2016-05-04',
-                name: '王小虎',
-                address: '上海市普陀区金沙江路 1517 弄'
-            }, {
-                date: '2016-05-01',
-                name: '王小虎',
-                address: '上海市普陀区金沙江路 1519 弄'
-            }, {
-                date: '2016-05-03',
-                name: '王小虎',
-                address: '上海市普陀区金沙江路 1516 弄'
-            }],
+            coordinateTable: [],
             labelPosition: 'right',
             formLabelAlign: {
                 name: '',
@@ -105,7 +94,18 @@ export default {
         },
         onSubmit () {
             console.log('submit!')
+        },
+        async getLocation() {
+            let res = await this.post('wensc/getLocationList', {userId: 1001})
+            this.coordinateTable = res.data.data
+        },
+        recordCoordinate() {
+            console.log(this.formInline.remark)
         }
+    },
+    mounted() {
+        this.getLocation()
+        this.$bus.$emit('record', '')
     }
 }
 </script>

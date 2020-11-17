@@ -2,3 +2,1236 @@
 2020-11-16 17:11:27 [INFO] Squid (id=212) hit by reverse_drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 8.0->6.0
 2020-11-16 17:13:11 [INFO] Wolf attacked Chicken dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 4.0->1.0
 2020-11-16 17:13:13 [INFO] Wolf attacked Chicken dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 1.0->0.0
+2020-11-17 08:50:12 [INFO] Sheep (id=23) hit by fall taking 8.1 raw damage vs 0.0 protection, resulting in a loss of 8.1 health: 8.0->0.0
+2020-11-17 09:56:01 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 09:56:04 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 09:56:35 [INFO] Zombie attacked Cow with Wooden Shovel dealing 6.0 raw damage vs 0.0 protection, resulting in a loss of 6.0 health: 20.0->14.0
+2020-11-17 09:56:36 [INFO] Zombie attacked Cow with Wooden Shovel dealing 6.0 raw damage vs 0.0 protection, resulting in a loss of 6.0 health: 14.0->8.0
+2020-11-17 09:56:37 [INFO] Zombie attacked Cow with Wooden Shovel dealing 6.0 raw damage vs 0.0 protection, resulting in a loss of 6.0 health: 8.0->2.0
+2020-11-17 09:56:38 [INFO] Zombie attacked Cow with Wooden Shovel dealing 6.0 raw damage vs 0.0 protection, resulting in a loss of 6.0 health: 2.0->0.0
+2020-11-17 09:56:42 [INFO] Zombie attacked wensc dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 09:56:43 [INFO] Zombie attacked wensc dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 09:56:56 [INFO] Spider attacked Chicken dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 4.0->0.0
+2020-11-17 09:57:48 [INFO] Zombie attacked Pig dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 10.0->5.0
+2020-11-17 09:57:50 [INFO] Zombie attacked Pig dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 09:57:54 [INFO] Zombie attacked Pig dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 09:58:07 [INFO] Skeleton attacked Spider with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 12.0->7.0
+2020-11-17 09:58:09 [INFO] Spider attacked Skeleton dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 09:58:10 [INFO] Skeleton attacked Spider with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 7.0->2.0
+2020-11-17 09:58:11 [INFO] Spider attacked Skeleton dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 09:58:13 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 09:58:14 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 09:58:46 [INFO] Zombie attacked wensc dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 09:58:47 [INFO] Zombie attacked wensc dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 10:00:50 [INFO] Skeleton attacked wensc with item.clubWood.name dealing 6.0 raw damage vs 0.0 protection, resulting in a loss of 6.0 health: 6.0->0.0
+2020-11-17 10:02:35 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:02:36 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:02:54 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:02:54 [INFO] Skeleton attacked wensc with item.clubWood.name dealing 6.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 2.0->0.0
+2020-11-17 10:04:02 [INFO] Skeleton (id=31191) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 10:04:02 [INFO] Skeleton (id=30253) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 10:04:03 [INFO] Skeleton (id=31191) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 10:04:03 [INFO] Skeleton (id=30253) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 10:04:04 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 10:04:04 [INFO] Skeleton (id=31191) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 10:04:04 [INFO] Skeleton (id=30253) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 10:04:05 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 10:04:05 [INFO] Skeleton (id=31191) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 10:04:05 [INFO] Skeleton (id=30253) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 10:04:06 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 10:04:06 [INFO] Skeleton (id=31191) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 10:04:06 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 10:04:06 [INFO] Skeleton (id=30253) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 10:04:07 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 10:04:07 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 10:04:07 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 10:04:07 [INFO] Skeleton (id=31191) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 10:04:07 [INFO] Skeleton (id=30253) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 10:04:08 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 10:04:08 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 10:04:08 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 10:04:08 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 10:04:09 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 10:04:09 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 10:04:10 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 10:04:10 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 10:04:11 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 10:04:11 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 10:04:11 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 10:04:11 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 10:04:12 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 10:04:12 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 10:04:12 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 10:04:13 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 10:04:13 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 10:04:14 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 10:04:14 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 10:04:14 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 10:04:15 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 10:04:15 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 10:04:15 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 10:04:16 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 10:04:16 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 10:04:17 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 10:04:17 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 10:04:17 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 10:04:18 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 10:04:18 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 10:04:19 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 10:04:19 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 10:04:19 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 10:04:20 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 10:04:20 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 10:04:20 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 10:04:21 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 10:04:21 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 10:04:21 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 10:04:22 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 10:04:22 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 10:04:22 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 10:04:23 [INFO] Zombie (id=32305) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 10:04:23 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 10:04:23 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 10:04:24 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 10:04:25 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 10:04:25 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 10:04:26 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 10:04:26 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 10:04:27 [INFO] Zombie (id=31257) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 10:04:27 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 10:04:28 [INFO] Zombie (id=33036) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 10:05:09 [INFO] entity.Blob.name (id=34687) hit by fall taking 8.2 raw damage vs 0.0 protection, resulting in a loss of 8.2 health: 1.0->0.0
+2020-11-17 10:11:29 [INFO] Spider (id=61234) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 12.0->8.0
+2020-11-17 10:11:29 [INFO] Spider (id=61234) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 8.0->4.0
+2020-11-17 10:11:30 [INFO] Spider (id=61234) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 4.0->0.0
+2020-11-17 10:14:40 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:14:42 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:14:43 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:14:44 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:16:45 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:16:46 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:16:49 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:16:50 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:18:49 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:18:50 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:18:53 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:18:54 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:20:55 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:20:56 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:20:59 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:21:00 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:23:14 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:23:15 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:23:16 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:23:17 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:23:29 [INFO] Spider (id=79275) hit by fall taking 2.4 raw damage vs 0.0 protection, resulting in a loss of 2.4 health: 12.0->9.6
+2020-11-17 10:23:33 [INFO] Zombie attacked Sheep dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 8.0->3.0
+2020-11-17 10:23:42 [INFO] Zombie attacked Sheep dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 3.0->0.0
+2020-11-17 10:24:01 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 10:24:02 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 10:24:02 [INFO] Skeleton (id=81216) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 10:24:02 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 10:24:03 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 10:24:03 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 10:24:03 [INFO] Skeleton (id=81216) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 10:24:03 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 10:24:04 [INFO] Skeleton (id=79576) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 10:24:04 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 10:24:04 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 10:24:04 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 10:24:05 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 10:24:05 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 10:24:05 [INFO] Skeleton (id=79576) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 10:24:05 [INFO] Skeleton (id=81216) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 10:24:05 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 10:24:06 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 10:24:06 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 10:24:06 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 10:24:06 [INFO] Skeleton (id=79576) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 10:24:06 [INFO] Skeleton (id=81216) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 10:24:06 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 10:24:07 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 10:24:07 [INFO] Skeleton (id=79576) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 10:24:07 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 10:24:07 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 10:24:07 [INFO] Skeleton (id=81216) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 10:24:07 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 10:24:08 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 10:24:08 [INFO] Skeleton (id=79576) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 10:24:08 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 10:24:08 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 10:24:08 [INFO] Skeleton (id=81216) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 10:24:08 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 10:24:09 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 10:24:09 [INFO] Skeleton (id=79576) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 10:24:09 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 10:24:09 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 10:24:09 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 10:24:10 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 10:24:10 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 10:24:10 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 10:24:11 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 10:24:11 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 10:24:11 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 10:24:11 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 10:24:11 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 10:24:12 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 10:24:12 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 10:24:12 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 10:24:13 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 10:24:13 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 10:24:13 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 10:24:13 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 10:24:13 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 10:24:13 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 10:24:14 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 10:24:14 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 10:24:14 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 10:24:14 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 10:24:14 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 10:24:15 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 10:24:15 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 10:24:15 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 10:24:15 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 10:24:15 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 10:24:16 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 10:24:16 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 10:24:16 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 10:24:17 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 10:24:17 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 10:24:17 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 10:24:17 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 10:24:17 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 10:24:18 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 10:24:18 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 10:24:18 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 10:24:18 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 10:24:18 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 10:24:19 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 10:24:19 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 10:24:19 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 10:24:19 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 10:24:20 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 10:24:20 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 10:24:20 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 10:24:20 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 10:24:20 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 10:24:21 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 10:24:21 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 10:24:21 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 10:24:21 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 10:24:22 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 10:24:22 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 10:24:22 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 10:24:22 [INFO] Zombie (id=81008) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 10:24:22 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 10:24:23 [INFO] Zombie (id=80987) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 10:24:23 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 10:24:23 [INFO] Zombie (id=80982) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 10:24:23 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 10:24:24 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 10:24:24 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 10:24:25 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 10:24:25 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 10:24:26 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 10:24:27 [INFO] Zombie (id=79419) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 10:24:27 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 10:24:28 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 10:24:30 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 10:24:31 [INFO] Zombie (id=79458) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 10:28:33 [INFO] entity.Ooze.name (id=98256) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 10:29:09 [INFO] Spider (id=100729) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 12.0->8.0
+2020-11-17 10:29:09 [INFO] Spider (id=100729) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 8.0->4.0
+2020-11-17 10:29:10 [INFO] Spider (id=100729) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 4.0->0.0
+2020-11-17 10:32:35 [INFO] entity.Blob.name (id=119920) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 4.0->0.0
+2020-11-17 10:32:37 [INFO] entity.Blob.name (id=120632) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 10:32:37 [INFO] entity.Blob.name (id=120633) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 10:32:37 [INFO] entity.Blob.name (id=120634) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 10:34:41 [INFO] entity.Jelly.name (id=130610) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 10:35:18 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:35:19 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:35:20 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:35:21 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:37:22 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:37:23 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:37:26 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:37:27 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:39:29 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:39:30 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:39:33 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:39:34 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:41:33 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:41:34 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:41:37 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:41:38 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:43:39 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:43:40 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:43:41 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 10:43:42 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 10:44:01 [INFO] Zombie (id=138083) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 10:44:02 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 10:44:02 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 10:44:02 [INFO] Zombie (id=138083) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 10:44:03 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 10:44:03 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 10:44:03 [INFO] Zombie (id=138083) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 10:44:04 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 10:44:04 [INFO] Zombie (id=138083) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 10:44:04 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 10:44:05 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 10:44:05 [INFO] Zombie (id=138083) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 10:44:05 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 10:44:06 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 10:44:06 [INFO] Zombie (id=138083) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 10:44:06 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 10:44:07 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 10:44:07 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 10:44:08 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 10:44:08 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 10:44:09 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 10:44:10 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 10:44:10 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 10:44:11 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 10:44:11 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 10:44:12 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 10:44:13 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 10:44:13 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 10:44:14 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 10:44:14 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 10:44:15 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 10:44:15 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 10:44:16 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 10:44:17 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 10:44:17 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 10:44:18 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 10:44:18 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 10:44:19 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 10:44:19 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 10:44:20 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 10:44:20 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 10:44:20 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 10:44:21 [INFO] Zombie (id=138086) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 10:44:22 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 10:44:22 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 10:44:23 [INFO] Zombie (id=138202) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 10:50:05 [INFO] entity.Hellhound.name (id=161626) hit by fall taking 1.7 raw damage vs 0.0 protection, resulting in a loss of 1.7 health: 20.0->18.3
+2020-11-17 10:50:06 [INFO] Bat (id=161689) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 3.0->0.0
+2020-11-17 10:50:07 [INFO] entity.Hellhound.name (id=161627) hit by fall taking 1.7 raw damage vs 0.0 protection, resulting in a loss of 1.7 health: 20.0->18.3
+2020-11-17 10:51:16 [INFO] Bat (id=170743) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 3.0->0.0
+2020-11-17 10:52:17 [INFO] Bat (id=181786) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 3.0->0.0
+2020-11-17 10:52:23 [INFO] entity.VampireBat.name (id=182031) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 3.0->0.0
+2020-11-17 10:53:02 [INFO] entity.Jelly.name (id=188520) hit by fall taking 4.7 raw damage vs 0.0 protection, resulting in a loss of 4.7 health: 1.0->0.0
+2020-11-17 10:54:20 [INFO] entity.Jelly.name (id=199277) hit by fall taking 8.2 raw damage vs 0.0 protection, resulting in a loss of 8.2 health: 1.0->0.0
+2020-11-17 10:54:49 [INFO] Ocelot attacked Chicken dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 4.0->1.0
+2020-11-17 10:54:51 [INFO] Ocelot attacked Chicken dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 1.0->0.0
+2020-11-17 10:55:11 [INFO] Enderman (id=203142) hit by drown taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 40.0->39.0
+2020-11-17 10:55:13 [INFO] Squid (id=195408) hit by reverse_drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 10.0->8.0
+2020-11-17 10:55:14 [INFO] Squid (id=195408) hit by reverse_drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 8.0->6.0
+2020-11-17 10:55:15 [INFO] Squid (id=195408) hit by reverse_drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 6.0->4.0
+2020-11-17 10:55:16 [INFO] Squid (id=195408) hit by reverse_drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 4.0->2.0
+2020-11-17 10:56:14 [INFO] entity.Jelly.name (id=212682) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 16.0->12.0
+2020-11-17 10:56:15 [INFO] entity.Jelly.name (id=212682) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 12.0->8.0
+2020-11-17 10:56:15 [INFO] entity.Jelly.name (id=212682) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 8.0->4.0
+2020-11-17 10:56:16 [INFO] entity.Jelly.name (id=212682) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 4.0->0.0
+2020-11-17 10:56:16 [INFO] Zombie attacked wensc dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 10:56:17 [INFO] entity.Jelly.name (id=213390) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 4.0->0.0
+2020-11-17 10:56:17 [INFO] entity.Jelly.name (id=213391) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 4.0->0.0
+2020-11-17 10:56:17 [INFO] entity.Jelly.name (id=213392) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 4.0->0.0
+2020-11-17 10:56:17 [INFO] entity.Jelly.name (id=213393) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 4.0->0.0
+2020-11-17 10:56:17 [INFO] Zombie attacked wensc dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 10:56:18 [INFO] entity.Jelly.name (id=214141) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 10:56:18 [INFO] entity.Jelly.name (id=214142) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 10:56:18 [INFO] entity.Jelly.name (id=214143) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 10:56:18 [INFO] entity.Jelly.name (id=214144) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 10:56:18 [INFO] entity.Jelly.name (id=214145) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 10:56:18 [INFO] entity.Jelly.name (id=214146) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 10:56:18 [INFO] entity.Jelly.name (id=214147) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 10:56:18 [INFO] entity.Jelly.name (id=214148) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 10:56:18 [INFO] entity.Jelly.name (id=214149) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 10:56:18 [INFO] entity.Jelly.name (id=214150) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 10:56:18 [INFO] entity.Jelly.name (id=214151) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 10:56:18 [INFO] entity.Jelly.name (id=214152) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 10:56:18 [INFO] entity.Jelly.name (id=214153) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 10:56:22 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 10:56:23 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 10:56:31 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 20.0->15.0
+2020-11-17 10:56:34 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 17.0->12.0
+2020-11-17 10:56:36 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 12.0->7.0
+2020-11-17 10:56:37 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 7.0->2.0
+2020-11-17 10:56:38 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 2.0->0.0
+2020-11-17 10:56:51 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 20.0->15.0
+2020-11-17 10:56:52 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 15.0->10.0
+2020-11-17 10:56:59 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 10.0->5.0
+2020-11-17 10:57:00 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 5.0->0.0
+2020-11-17 10:57:14 [INFO] Zombie attacked Sheep dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 8.0->3.0
+2020-11-17 10:57:15 [INFO] Zombie attacked Sheep dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 3.0->0.0
+2020-11-17 10:57:19 [INFO] Ocelot attacked Chicken dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 4.0->1.0
+2020-11-17 10:57:20 [INFO] Ocelot attacked Chicken dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 1.0->0.0
+2020-11-17 10:58:51 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 10:58:51 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 10:58:58 [INFO] Zombie attacked wensc dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 10:58:59 [INFO] Zombie attacked wensc dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 10:59:15 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 20.0->15.0
+2020-11-17 10:59:17 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 15.0->10.0
+2020-11-17 10:59:18 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 10.0->5.0
+2020-11-17 10:59:19 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 5.0->0.0
+2020-11-17 11:01:06 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 11:01:07 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 11:01:14 [INFO] Zombie attacked wensc dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 11:01:15 [INFO] Zombie attacked wensc dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 11:03:11 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 11:03:12 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 11:03:17 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 11:03:17 [INFO] Skeleton attacked Spider with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 12.0->7.0
+2020-11-17 11:03:20 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 2.0->0.0
+2020-11-17 11:03:21 [INFO] Spider attacked Skeleton dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 11:03:22 [INFO] Spider attacked Skeleton dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 11:04:51 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 11:04:51 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 11:04:52 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 11:04:52 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 11:04:53 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 11:04:53 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 11:04:54 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 11:04:54 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 11:04:55 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 11:04:55 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 11:04:56 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 11:04:56 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 11:04:57 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 11:04:57 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 11:04:58 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 11:04:58 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 11:04:59 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 11:04:59 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 11:05:00 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 11:05:00 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 11:05:01 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 11:05:01 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 11:05:02 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 11:05:02 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 11:05:03 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 11:05:04 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 11:05:04 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 11:05:05 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 11:05:05 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 11:05:06 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 11:05:07 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 11:05:07 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 11:05:07 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 11:05:08 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 11:05:08 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 11:05:09 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 11:05:09 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 11:05:10 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 11:05:10 [INFO] Zombie (id=216236) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 11:05:11 [INFO] Zombie (id=216237) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 11:09:26 [INFO] entity.Blob.name (id=247291) hit by fall taking 4.7 raw damage vs 0.0 protection, resulting in a loss of 4.7 health: 16.0->11.3
+2020-11-17 11:11:42 [INFO] entity.Jelly.name (id=264624) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 4.0->0.0
+2020-11-17 11:11:43 [INFO] entity.Jelly.name (id=265015) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 11:11:43 [INFO] entity.Jelly.name (id=265016) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 11:11:43 [INFO] entity.Jelly.name (id=265017) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 11:12:48 [INFO] Skeleton (id=272232) hit by inWall taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 11:12:49 [INFO] Skeleton (id=272232) hit by inWall taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 11:12:49 [INFO] Skeleton (id=272232) hit by inWall taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 11:12:50 [INFO] Skeleton (id=272232) hit by inWall taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 11:12:51 [INFO] Skeleton (id=272232) hit by inWall taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 11:12:51 [INFO] Skeleton (id=272232) hit by inWall taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 11:14:55 [INFO] entity.Jelly.name (id=289846) hit by fall taking 4.7 raw damage vs 0.0 protection, resulting in a loss of 4.7 health: 1.0->0.0
+2020-11-17 11:16:14 [INFO] entity.Jelly.name (id=299205) hit by fall taking 21.5 raw damage vs 0.0 protection, resulting in a loss of 21.5 health: 1.0->0.0
+2020-11-17 11:16:25 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 11:16:27 [INFO] entity.WoodSpider.name attacked wensc dealing 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 11:16:28 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 11:16:28 [INFO] entity.WoodSpider.name attacked wensc dealing 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 11:16:29 [INFO] entity.WoodSpider.name attacked wensc dealing 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 11:16:30 [INFO] entity.WoodSpider.name attacked wensc dealing 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 11:16:31 [INFO] entity.WoodSpider.name attacked wensc dealing 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 11:16:32 [INFO] entity.WoodSpider.name attacked wensc dealing 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 11:16:50 [INFO] Zombie attacked Chicken dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 4.0->0.0
+2020-11-17 11:17:38 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 20.0->15.0
+2020-11-17 11:17:39 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 15.0->10.0
+2020-11-17 11:17:40 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 10.0->5.0
+2020-11-17 11:17:41 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 5.0->0.0
+2020-11-17 11:18:31 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 11:18:34 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 11:18:43 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 11:18:44 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 11:19:01 [INFO] entity.WoodSpider.name attacked Chicken dealing 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 11:19:02 [INFO] entity.WoodSpider.name attacked Chicken dealing 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 11:19:04 [INFO] Chicken (id=253620) hit by poison taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 11:19:06 [INFO] entity.WoodSpider.name attacked Chicken dealing 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 11:20:37 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 11:20:40 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 11:20:48 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 11:20:49 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 11:22:44 [INFO] Skeleton attacked nancy with item.clubWood.name dealing 6.0 raw damage vs 0.0 protection, resulting in a loss of 6.0 health: 6.0->0.0
+2020-11-17 11:22:59 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 11:23:00 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 11:24:14 [INFO] Zombie attacked Sheep with Wooden Shovel dealing 6.0 raw damage vs 0.0 protection, resulting in a loss of 6.0 health: 8.0->2.0
+2020-11-17 11:24:15 [INFO] Zombie attacked Sheep with Wooden Shovel dealing 6.0 raw damage vs 0.0 protection, resulting in a loss of 6.0 health: 2.0->0.0
+2020-11-17 11:27:57 [INFO] Skeleton (id=22) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 11:27:58 [INFO] Skeleton (id=18) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 11:27:58 [INFO] Skeleton (id=22) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 11:27:58 [INFO] Skeleton (id=37) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 11:27:59 [INFO] Skeleton (id=19) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 11:27:59 [INFO] Skeleton (id=18) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 11:27:59 [INFO] Skeleton (id=22) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 11:27:59 [INFO] Skeleton (id=37) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 11:27:59 [INFO] Skeleton (id=19) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 11:28:00 [INFO] Skeleton (id=22) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 11:28:00 [INFO] Skeleton (id=18) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 11:28:00 [INFO] Skeleton (id=37) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 11:28:01 [INFO] Skeleton (id=18) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 11:28:01 [INFO] Skeleton (id=19) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 11:28:01 [INFO] Skeleton (id=22) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 11:28:01 [INFO] Skeleton (id=18) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 11:28:01 [INFO] Skeleton (id=22) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 11:28:01 [INFO] Skeleton (id=37) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 11:28:02 [INFO] Skeleton (id=37) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 11:28:02 [INFO] Skeleton (id=18) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 11:28:03 [INFO] Skeleton (id=19) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 11:28:03 [INFO] Skeleton (id=37) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 11:28:03 [INFO] Skeleton (id=19) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 11:28:05 [INFO] Skeleton (id=19) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 11:40:10 [INFO] Zombie attacked Cow with Wooden Shovel dealing 6.0 raw damage vs 0.0 protection, resulting in a loss of 6.0 health: 20.0->14.0
+2020-11-17 11:40:13 [INFO] Zombie attacked Cow with Wooden Shovel dealing 6.0 raw damage vs 0.0 protection, resulting in a loss of 6.0 health: 14.0->8.0
+2020-11-17 11:40:14 [INFO] Zombie attacked Cow with Wooden Shovel dealing 6.0 raw damage vs 0.0 protection, resulting in a loss of 6.0 health: 8.0->2.0
+2020-11-17 11:40:15 [INFO] Zombie attacked Cow with Wooden Shovel dealing 6.0 raw damage vs 0.0 protection, resulting in a loss of 6.0 health: 2.0->0.0
+2020-11-17 11:40:22 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 11:40:24 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 11:41:03 [INFO] Skeleton attacked nancy with item.clubWood.name dealing 6.0 raw damage vs 0.0 protection, resulting in a loss of 6.0 health: 6.0->0.0
+2020-11-17 11:42:27 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 11:42:28 [INFO] Spider attacked wensc dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 11:44:03 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 11:44:04 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 11:44:51 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 11:44:55 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 11:46:10 [INFO] Zombie attacked Cow with item.clubWood.name dealing 7.0 raw damage vs 0.0 protection, resulting in a loss of 7.0 health: 20.0->13.0
+2020-11-17 11:46:11 [INFO] Zombie attacked Cow with item.clubWood.name dealing 7.0 raw damage vs 0.0 protection, resulting in a loss of 7.0 health: 13.0->6.0
+2020-11-17 11:46:12 [INFO] entity.Jelly.name (id=7759) hit by fall taking 3.1 raw damage vs 0.0 protection, resulting in a loss of 3.1 health: 1.0->0.0
+2020-11-17 11:46:12 [INFO] Zombie attacked Cow with item.clubWood.name dealing 7.0 raw damage vs 0.0 protection, resulting in a loss of 7.0 health: 6.0->0.0
+2020-11-17 11:46:22 [INFO] Zombie attacked Cow with item.clubWood.name dealing 7.0 raw damage vs 0.0 protection, resulting in a loss of 7.0 health: 20.0->13.0
+2020-11-17 11:46:23 [INFO] Zombie attacked Cow with item.clubWood.name dealing 7.0 raw damage vs 0.0 protection, resulting in a loss of 7.0 health: 13.0->6.0
+2020-11-17 11:46:24 [INFO] Zombie attacked Sheep dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 8.0->3.0
+2020-11-17 11:46:25 [INFO] Zombie attacked Cow with item.clubWood.name dealing 7.0 raw damage vs 0.0 protection, resulting in a loss of 7.0 health: 6.0->0.0
+2020-11-17 11:46:25 [INFO] Zombie attacked Sheep dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 3.0->0.0
+2020-11-17 11:46:30 [INFO] Zombie attacked Chicken with item.clubWood.name dealing 7.0 raw damage vs 0.0 protection, resulting in a loss of 7.0 health: 4.0->0.0
+2020-11-17 11:46:39 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 11:46:40 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 11:46:57 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 11:47:00 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 11:47:11 [INFO] Skeleton (id=8396) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 11:47:11 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 11:47:11 [INFO] Skeleton (id=8396) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 11:47:12 [INFO] Skeleton (id=8396) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 11:47:12 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 11:47:13 [INFO] Skeleton (id=3129) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 11:47:13 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 11:47:13 [INFO] Skeleton (id=8396) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 11:47:13 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 11:47:14 [INFO] Skeleton (id=3129) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 11:47:14 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 11:47:14 [INFO] Skeleton (id=8396) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 11:47:14 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 11:47:15 [INFO] Skeleton (id=8396) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 11:47:15 [INFO] Skeleton (id=3129) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 11:47:15 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 11:47:15 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 11:47:16 [INFO] Skeleton (id=3129) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 11:47:16 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 11:47:17 [INFO] Skeleton (id=3129) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 11:47:17 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 11:47:17 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 11:47:18 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 11:47:18 [INFO] Skeleton (id=3129) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 11:47:18 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 11:47:19 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 11:47:19 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 11:47:20 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 11:47:21 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 11:47:21 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 11:47:22 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 11:47:22 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 11:47:22 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 11:47:23 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 11:47:23 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 11:47:24 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 11:47:25 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 11:47:25 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 11:47:26 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 11:47:27 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 11:47:27 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 11:47:28 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 11:47:28 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 11:47:29 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 11:47:29 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 11:47:30 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 11:47:30 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 11:47:31 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 11:47:32 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 11:47:32 [INFO] Zombie (id=6412) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 11:47:33 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 11:47:34 [INFO] Zombie (id=8520) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 11:47:47 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 11:47:48 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 11:47:49 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 11:47:50 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 11:47:51 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 11:47:52 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 11:47:53 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 11:47:54 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 11:47:55 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 11:47:56 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 11:47:57 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 11:47:58 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 11:47:59 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 11:48:00 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 11:48:01 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 11:48:02 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 11:48:03 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 11:48:04 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 11:48:05 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 11:48:06 [INFO] Zombie (id=6100) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 11:49:03 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 11:49:06 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 11:49:31 [INFO] Skeleton (id=7389) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 11:49:32 [INFO] Skeleton (id=7389) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 11:49:34 [INFO] Skeleton (id=7389) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 11:49:35 [INFO] Skeleton (id=7389) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 11:49:36 [INFO] Skeleton (id=7389) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 11:49:37 [INFO] Skeleton (id=7389) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 11:51:09 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 11:51:12 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 11:53:22 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 11:53:23 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 11:55:16 [INFO] Squid (id=43871) hit by reverse_drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 10.0->8.0
+2020-11-17 11:55:17 [INFO] Squid (id=43871) hit by reverse_drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 8.0->6.0
+2020-11-17 11:55:18 [INFO] Squid (id=43871) hit by reverse_drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 6.0->4.0
+2020-11-17 11:55:19 [INFO] Squid (id=43871) hit by reverse_drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 4.0->2.0
+2020-11-17 11:55:20 [INFO] Squid (id=43871) hit by reverse_drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 2.0->0.0
+2020-11-17 11:55:26 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 11:55:29 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 11:55:34 [INFO] Zombie attacked Chicken with item.hoeRustedIron.name dealing 8.0 raw damage vs 0.0 protection, resulting in a loss of 8.0 health: 4.0->0.0
+2020-11-17 11:57:32 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 11:57:35 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 11:58:23 [INFO] Chicken (id=43797) hit by drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 4.0->2.0
+2020-11-17 11:58:24 [INFO] Chicken (id=43797) hit by drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 2.0->0.0
+2020-11-17 11:59:38 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 11:59:42 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 11:59:45 [INFO] Spider (id=59604) hit by fall taking 6.1 raw damage vs 0.0 protection, resulting in a loss of 6.1 health: 12.0->5.9
+2020-11-17 12:00:44 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 12:00:45 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 12:01:13 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 20.0->15.0
+2020-11-17 13:20:51 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 13:20:54 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 13:20:54 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 20.0->15.0
+2020-11-17 13:20:56 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 15.0->10.0
+2020-11-17 13:20:59 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 17.0->12.0
+2020-11-17 13:21:00 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 12.0->7.0
+2020-11-17 13:21:01 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 7.0->2.0
+2020-11-17 13:21:02 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 2.0->0.0
+2020-11-17 13:21:18 [INFO] Zombie attacked Pig dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 10.0->5.0
+2020-11-17 13:21:30 [INFO] Zombie attacked Pig dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 5.0->0.0
+2020-11-17 13:21:53 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 12.0->7.0
+2020-11-17 13:21:54 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 13:21:55 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 13:22:02 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 7.0->2.0
+2020-11-17 13:22:04 [INFO] Zombie attacked Cow dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 2.0->0.0
+2020-11-17 13:22:57 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 13:23:00 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 13:23:58 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 13:23:59 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 13:24:58 [INFO] Wolf attacked Sheep dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 8.0->5.0
+2020-11-17 13:25:03 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 13:25:06 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 13:25:31 [INFO] Zombie attacked Wolf dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 8.0->5.0
+2020-11-17 13:25:31 [INFO] Wolf attacked Zombie dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 20.0->17.0
+2020-11-17 13:25:32 [INFO] Zombie attacked Wolf dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 5.0->2.0
+2020-11-17 13:25:33 [INFO] Wolf attacked Zombie dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 17.0->14.0
+2020-11-17 13:25:33 [INFO] Zombie attacked Wolf dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 2.0->0.0
+2020-11-17 13:26:02 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 13:26:03 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 13:26:21 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 13:26:22 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 13:26:23 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 13:26:24 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 13:26:25 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 13:26:26 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 13:26:27 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 13:26:28 [INFO] Zombie (id=62934) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 13:26:28 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 13:26:29 [INFO] Zombie (id=62934) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 13:26:29 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 13:26:30 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 13:26:30 [INFO] Zombie (id=62934) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 13:26:31 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 13:26:31 [INFO] Zombie (id=62934) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 13:26:32 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 13:26:32 [INFO] Zombie (id=62934) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 13:26:33 [INFO] Zombie (id=62934) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 13:26:33 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 13:26:34 [INFO] Zombie (id=62934) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 13:26:34 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 13:26:35 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 13:26:35 [INFO] Zombie (id=62934) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 13:26:36 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 13:26:36 [INFO] Zombie (id=62934) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 13:26:37 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 13:26:37 [INFO] Zombie (id=62934) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 13:26:38 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 13:26:38 [INFO] Zombie (id=62934) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 13:26:38 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 13:26:39 [INFO] Zombie (id=62934) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 13:26:39 [INFO] Zombie (id=63853) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 13:26:41 [INFO] Zombie (id=62934) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 13:26:42 [INFO] Zombie (id=62934) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 13:27:09 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 13:27:12 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 13:29:15 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 13:29:23 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 13:31:26 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 13:31:29 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 13:33:32 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 13:33:35 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 13:35:41 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 13:35:47 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 13:37:03 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 13:37:04 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 13:37:50 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 13:37:53 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 13:39:07 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 13:39:08 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 13:39:46 [INFO] Wolf attacked Sheep dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 8.0->5.0
+2020-11-17 13:39:59 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 13:40:02 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 13:41:11 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 13:41:12 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 13:42:05 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 13:42:08 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 13:43:16 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 13:43:17 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 13:43:26 [INFO] Spider (id=123304) hit by fall taking 1.8 raw damage vs 0.0 protection, resulting in a loss of 1.8 health: 12.0->10.2
+2020-11-17 13:44:20 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 13:44:23 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 13:45:11 [INFO] Spider (id=123304) hit by fall taking 1.8 raw damage vs 0.0 protection, resulting in a loss of 1.8 health: 12.0->10.2
+2020-11-17 13:45:21 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 13:45:22 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 13:46:34 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 13:47:25 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 13:47:25 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 13:47:26 [INFO] Bat (id=128323) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 3.0->0.0
+2020-11-17 13:49:28 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 13:49:29 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 13:49:33 [INFO] Zombie (id=137110) hit by fall taking 7.2 raw damage vs 0.0 protection, resulting in a loss of 7.2 health: 20.0->12.8
+2020-11-17 13:51:32 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 13:51:32 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 13:52:28 [INFO] entity.VampireBat.name (id=147944) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 3.0->0.0
+2020-11-17 13:53:35 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 13:53:36 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 13:53:44 [INFO] Skeleton (id=6643) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 13:53:45 [INFO] Skeleton (id=6643) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 13:53:46 [INFO] Skeleton (id=6643) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 13:53:47 [INFO] Skeleton (id=6643) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 13:53:48 [INFO] Skeleton (id=6643) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 13:53:49 [INFO] Skeleton (id=6643) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 13:55:47 [INFO] Bat (id=161268) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 3.0->0.0
+2020-11-17 13:56:29 [INFO] Bat (id=168291) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 3.0->0.0
+2020-11-17 13:56:36 [INFO] entity.Jelly.name (id=169332) hit by fall taking 8.2 raw damage vs 0.0 protection, resulting in a loss of 8.2 health: 1.0->0.0
+2020-11-17 13:57:00 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 13:57:01 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 13:58:30 [INFO] Spider (id=180113) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 12.0->8.0
+2020-11-17 13:59:04 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 13:59:05 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 14:01:08 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 14:01:09 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 14:01:32 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:01:35 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:03:11 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 14:03:12 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 14:03:39 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:03:42 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:05:16 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 14:05:17 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 14:05:48 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:05:51 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:06:20 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 14:06:21 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 14:06:22 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 14:06:23 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 14:06:24 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 14:06:25 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 14:06:25 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 14:06:26 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 14:06:26 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 14:06:27 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 14:06:27 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 14:06:28 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 14:06:28 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 14:06:29 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 14:06:29 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 14:06:30 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 14:06:30 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 14:06:31 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 14:06:31 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 14:06:32 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 14:06:33 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 14:06:33 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 14:06:34 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 14:06:34 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 14:06:35 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 14:06:35 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 14:06:36 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 14:06:36 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 14:06:37 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 14:06:37 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 14:06:38 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 14:06:38 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 14:06:39 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 14:06:40 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 14:06:40 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 14:06:40 [INFO] Zombie (id=191696) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 14:06:41 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 14:06:42 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 14:06:43 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 14:06:44 [INFO] Zombie (id=182701) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 14:07:27 [INFO] Spider (id=192248) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 12.0->8.0
+2020-11-17 14:07:27 [INFO] Spider (id=192248) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 8.0->4.0
+2020-11-17 14:07:28 [INFO] Spider (id=192248) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 4.0->0.0
+2020-11-17 14:07:54 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:07:57 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:10:00 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:10:03 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:12:06 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:12:09 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:14:12 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:14:15 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:14:17 [INFO] entity.Jelly.name (id=237267) hit by fall taking 19.0 raw damage vs 0.0 protection, resulting in a loss of 19.0 health: 1.0->0.0
+2020-11-17 14:16:18 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:16:21 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:18:15 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:18:15 [INFO] Zombie attacked nancy with item.daggerRustedIron.name dealing 9.0 raw damage vs 0.0 protection, resulting in a loss of 9.0 health: 1.0->0.0
+2020-11-17 14:18:24 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:18:27 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:20:18 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:20:20 [INFO] Zombie attacked nancy with item.daggerRustedIron.name dealing 9.0 raw damage vs 0.0 protection, resulting in a loss of 9.0 health: 1.0->0.0
+2020-11-17 14:20:30 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:20:33 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:20:37 [INFO] Zombie attacked Sheep dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 8.0->3.0
+2020-11-17 14:20:38 [INFO] Zombie attacked Sheep dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 3.0->0.0
+2020-11-17 14:22:29 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:22:31 [INFO] Zombie attacked nancy with item.daggerRustedIron.name dealing 9.0 raw damage vs 0.0 protection, resulting in a loss of 9.0 health: 1.0->0.0
+2020-11-17 14:22:32 [INFO] Skeleton attacked Zombie with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 20.0->15.0
+2020-11-17 14:22:38 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:22:39 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:24:34 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:24:37 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:24:42 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:24:45 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:24:49 [INFO] entity.Jelly.name (id=261769) hit by fall taking 4.7 raw damage vs 0.0 protection, resulting in a loss of 4.7 health: 1.0->0.0
+2020-11-17 14:26:21 [INFO] Skeleton (id=258818) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 14:26:22 [INFO] Skeleton (id=258818) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 14:26:23 [INFO] Skeleton (id=258818) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 14:26:23 [INFO] Zombie (id=258599) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 14:26:24 [INFO] Skeleton (id=258818) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 14:26:24 [INFO] Zombie (id=258599) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 14:26:25 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 14:26:25 [INFO] Skeleton (id=258818) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 14:26:25 [INFO] Zombie (id=258599) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 14:26:26 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 14:26:26 [INFO] Skeleton (id=258818) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 14:26:27 [INFO] Zombie (id=258599) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 14:26:27 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 14:26:27 [INFO] Zombie (id=258599) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 14:26:28 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 14:26:28 [INFO] Zombie (id=258599) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 14:26:29 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 14:26:29 [INFO] Zombie (id=258599) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 14:26:30 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 14:26:30 [INFO] Zombie (id=258599) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 14:26:31 [INFO] Zombie (id=258599) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 14:26:31 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 14:26:32 [INFO] Zombie (id=258599) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 14:26:32 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 14:26:33 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 14:26:33 [INFO] Zombie (id=258599) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 14:26:34 [INFO] Zombie (id=258599) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 14:26:34 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 14:26:35 [INFO] Zombie (id=258599) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 14:26:35 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 14:26:36 [INFO] Zombie (id=258599) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 14:26:37 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 14:26:37 [INFO] Zombie (id=258599) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 14:26:38 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 14:26:39 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 14:26:40 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 14:26:41 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 14:26:42 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 14:26:43 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 14:26:44 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 14:26:45 [INFO] Zombie (id=261659) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 14:26:48 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:26:51 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:28:52 [INFO] Skeleton (id=188854) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 14:28:53 [INFO] Skeleton (id=188854) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 14:28:54 [INFO] Skeleton (id=188854) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 14:28:55 [INFO] Skeleton (id=188854) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 14:28:56 [INFO] Skeleton (id=188854) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 14:28:56 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:28:57 [INFO] Skeleton (id=188854) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 14:28:58 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:31:00 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:31:04 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:33:19 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:33:28 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:33:34 [INFO] Spider (id=261533) hit by fall taking 2.5 raw damage vs 0.0 protection, resulting in a loss of 2.5 health: 12.0->9.5
+2020-11-17 14:35:35 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:35:38 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:37:56 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:37:57 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:38:01 [INFO] Zombie attacked Wolf dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 8.0->5.0
+2020-11-17 14:38:02 [INFO] Wolf attacked Zombie dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 20.0->17.0
+2020-11-17 14:38:02 [INFO] Zombie attacked Wolf dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 5.0->2.0
+2020-11-17 14:38:03 [INFO] Wolf attacked Zombie dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 17.0->14.0
+2020-11-17 14:38:04 [INFO] Zombie attacked Wolf dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 2.0->0.0
+2020-11-17 14:38:10 [INFO] Zombie attacked wensc dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:38:11 [INFO] Zombie attacked Pig with item.shovelRustedIron.name dealing 8.0 raw damage vs 0.0 protection, resulting in a loss of 8.0 health: 10.0->2.0
+2020-11-17 14:38:11 [INFO] Zombie attacked wensc dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:38:12 [INFO] Zombie attacked Pig with item.shovelRustedIron.name dealing 8.0 raw damage vs 0.0 protection, resulting in a loss of 8.0 health: 2.0->0.0
+2020-11-17 14:40:00 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:40:02 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:40:14 [INFO] Zombie attacked wensc dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:40:16 [INFO] Zombie attacked wensc dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:42:04 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:42:07 [INFO] Creeper attacked nancy dealing 0.8 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 14:42:07 [INFO] Creeper attacked Creeper dealing 2.4 raw damage vs 0.0 protection, resulting in a loss of 2.4 health: 20.0->17.6
+2020-11-17 14:42:21 [INFO] Zombie attacked wensc dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:42:22 [INFO] Zombie attacked wensc dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:44:09 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:44:12 [INFO] Creeper attacked nancy dealing 9.9 raw damage vs 0.0 protection, resulting in a loss of 9.9 health: 1.0->0.0
+2020-11-17 14:44:12 [INFO] Creeper attacked Zombie dealing 2.2 raw damage vs 0.0 protection, resulting in a loss of 2.2 health: 14.0->11.8
+2020-11-17 14:44:33 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:44:36 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:46:15 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:46:16 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 14:46:21 [INFO] Skeleton (id=334851) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 14:46:22 [INFO] Skeleton (id=337444) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 14:46:22 [INFO] Skeleton (id=334851) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 14:46:23 [INFO] Skeleton (id=337444) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 14:46:23 [INFO] Skeleton (id=334851) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 14:46:24 [INFO] Skeleton (id=336553) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 14:46:24 [INFO] Skeleton (id=337444) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 14:46:24 [INFO] Skeleton (id=334851) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 14:46:25 [INFO] Skeleton (id=336553) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 14:46:25 [INFO] Skeleton (id=337444) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 14:46:25 [INFO] Skeleton (id=334851) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 14:46:26 [INFO] Skeleton (id=336553) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 14:46:26 [INFO] Skeleton (id=337444) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 14:46:26 [INFO] Skeleton (id=334851) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 14:46:27 [INFO] Skeleton (id=336553) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 14:46:27 [INFO] Skeleton (id=337444) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 14:46:27 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 14:46:28 [INFO] Skeleton (id=336553) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 14:46:28 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 14:46:29 [INFO] Skeleton (id=336553) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 14:46:29 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 14:46:30 [INFO] Zombie (id=334021) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.8->10.8
+2020-11-17 14:46:30 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 14:46:31 [INFO] Zombie (id=334021) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.8->9.8
+2020-11-17 14:46:31 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 14:46:32 [INFO] Zombie (id=334021) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.8->8.8
+2020-11-17 14:46:32 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 14:46:33 [INFO] Zombie (id=334021) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.8->7.8
+2020-11-17 14:46:33 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 14:46:34 [INFO] Zombie (id=334021) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.8->6.8
+2020-11-17 14:46:34 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 14:46:35 [INFO] Zombie (id=334021) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.8->5.8
+2020-11-17 14:46:36 [INFO] Zombie (id=334021) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.8->4.8
+2020-11-17 14:46:37 [INFO] Zombie (id=334021) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.8->3.8
+2020-11-17 14:46:39 [INFO] Zombie (id=334021) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.8->2.8
+2020-11-17 14:46:39 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 14:46:39 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:46:39 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 14:46:40 [INFO] Zombie (id=334021) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.8->1.8
+2020-11-17 14:46:40 [INFO] Zombie (id=334021) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.8->0.8
+2020-11-17 14:46:41 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 14:46:41 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 14:46:41 [INFO] Zombie (id=334021) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 0.8->0.0
+2020-11-17 14:46:42 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 14:46:42 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 14:46:42 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:46:42 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 14:46:43 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 14:46:43 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 14:46:44 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 14:46:44 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 14:46:45 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 14:46:45 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 14:46:46 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 14:46:46 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 14:46:47 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 14:46:47 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 14:46:48 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 14:46:48 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 14:46:49 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 14:46:49 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 14:46:50 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 14:46:51 [INFO] Zombie (id=336333) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 14:46:51 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 14:46:52 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 14:46:53 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 14:46:54 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 14:46:55 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 14:46:56 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 14:46:57 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 14:46:59 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 14:47:00 [INFO] Zombie (id=334515) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 14:48:45 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:48:48 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:50:50 [INFO] Enderman (id=353374) hit by drown taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 40.0->39.0
+2020-11-17 14:50:54 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:51:24 [INFO] Zombie attacked Pig dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 10.0->5.0
+2020-11-17 14:51:25 [INFO] Zombie attacked Pig dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 5.0->0.0
+2020-11-17 14:51:44 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:53:47 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:53:50 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:54:08 [INFO] Bat (id=377427) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 3.0->0.0
+2020-11-17 14:55:53 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:55:56 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:57:56 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:57:57 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 14:57:59 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 14:58:02 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 15:00:00 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 15:00:01 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 15:00:05 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 15:00:08 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 15:02:04 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 15:02:05 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 2.0->0.0
+2020-11-17 15:02:11 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 15:02:17 [INFO] Spider (id=404718) hit by fall taking 1.2 raw damage vs 0.0 protection, resulting in a loss of 1.2 health: 12.0->10.8
+2020-11-17 15:02:22 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 15:04:08 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 15:04:09 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 15:04:25 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 15:04:28 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 15:06:11 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 15:06:11 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 15:06:13 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 1.0->0.0
+2020-11-17 15:06:22 [INFO] Skeleton (id=405534) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 15:06:23 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 15:06:24 [INFO] Skeleton (id=405534) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 15:06:24 [INFO] Skeleton (id=404493) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 15:06:24 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 15:06:25 [INFO] Skeleton (id=405534) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 15:06:25 [INFO] Skeleton (id=404493) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 15:06:25 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 15:06:26 [INFO] Skeleton (id=405534) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 15:06:26 [INFO] Skeleton (id=404493) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 15:06:26 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 15:06:27 [INFO] Skeleton (id=405534) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 15:06:27 [INFO] Skeleton (id=404493) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 15:06:27 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 15:06:27 [INFO] Skeleton (id=404493) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 15:06:27 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 15:06:28 [INFO] Skeleton (id=405534) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 15:06:28 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 15:06:28 [INFO] Skeleton (id=404493) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 15:06:28 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 15:06:29 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 15:06:29 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 15:06:30 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 15:06:30 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 15:06:31 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 15:06:31 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 15:06:31 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 15:06:32 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 15:06:32 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 15:06:32 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 15:06:33 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 15:06:33 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 15:06:33 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 15:06:34 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 15:06:34 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 15:06:34 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 15:06:35 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 15:06:35 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 15:06:35 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 15:06:36 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 15:06:36 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 15:06:36 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 15:06:37 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 15:06:38 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 15:06:38 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 15:06:38 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 15:06:39 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 15:06:39 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 15:06:39 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 15:06:39 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 15:06:40 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 15:06:40 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 15:06:40 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 15:06:40 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 15:06:41 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 15:06:41 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 15:06:42 [INFO] Zombie (id=405510) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 15:06:42 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 15:06:42 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 15:06:43 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 15:06:43 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 15:06:43 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 15:06:44 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 15:06:45 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 15:06:45 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 15:06:45 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 15:06:46 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 15:06:46 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 15:06:47 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 15:06:48 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 15:06:48 [INFO] Zombie (id=402007) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 15:06:48 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 15:06:49 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 15:06:50 [INFO] Zombie (id=402413) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 15:08:29 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 15:08:31 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 15:08:51 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 15:08:54 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 15:10:44 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 15:10:46 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 15:10:57 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 15:11:00 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 15:12:54 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 15:13:01 [INFO] Zombie attacked nancy dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 15:13:03 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 15:13:09 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 15:15:12 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 15:15:15 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 15:17:03 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 15:17:04 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 15:17:18 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 15:17:21 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 15:19:09 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 15:19:24 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 6.0->1.0
+2020-11-17 15:19:27 [INFO] Skeleton attacked wensc with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 15:19:30 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 2.0->0.0
+2020-11-17 15:21:33 [INFO] Spider attacked nancy dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 15:21:33 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 15:21:33 [INFO] Skeleton attacked Spider with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 12.0->7.0
+2020-11-17 15:21:36 [INFO] Skeleton attacked nancy with item.arrowRustedIron.name dealing 5.0 raw damage vs 0.0 protection, resulting in a loss of 5.0 health: 1.0->0.0
+2020-11-17 15:21:39 [INFO] Spider attacked Skeleton dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 6.0->2.0
+2020-11-17 15:21:40 [INFO] Spider attacked Skeleton dealing 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 2.0->0.0
+2020-11-17 16:33:33 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 16:33:33 [INFO] Skeleton (id=57) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 16:33:33 [INFO] Skeleton (id=60) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 16:33:34 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 16:33:34 [INFO] Skeleton (id=57) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 16:33:34 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 16:33:34 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 16:33:34 [INFO] Skeleton (id=60) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 16:33:35 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 16:33:35 [INFO] Skeleton (id=57) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 16:33:35 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 16:33:35 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 16:33:35 [INFO] Skeleton (id=60) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 16:33:36 [INFO] Skeleton (id=59) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 16:33:36 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 16:33:36 [INFO] Skeleton (id=60) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 16:33:36 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 16:33:36 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 16:33:37 [INFO] Skeleton (id=57) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 16:33:37 [INFO] Skeleton (id=59) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 16:33:37 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 16:33:37 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 20.0->19.0
+2020-11-17 16:33:37 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 16:33:37 [INFO] Skeleton (id=60) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 16:33:37 [INFO] Skeleton (id=59) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 16:33:38 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 16:33:38 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 16:33:38 [INFO] Skeleton (id=57) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 16:33:38 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 19.0->18.0
+2020-11-17 16:33:38 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 16:33:38 [INFO] Skeleton (id=60) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 16:33:38 [INFO] Skeleton (id=59) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 16:33:39 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 18.0->17.0
+2020-11-17 16:33:39 [INFO] Skeleton (id=57) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 16:33:39 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 16:33:39 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 16:33:39 [INFO] Skeleton (id=59) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 16:33:39 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 16:33:40 [INFO] Skeleton (id=59) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 16:33:40 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 16:33:40 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 17.0->16.0
+2020-11-17 16:33:40 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 16:33:40 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 16:33:40 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 16.0->15.0
+2020-11-17 16:33:41 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 16:33:41 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 16:33:41 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 15.0->14.0
+2020-11-17 16:33:41 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 16:33:42 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 16:33:42 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 14.0->13.0
+2020-11-17 16:33:42 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 16:33:42 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 16:33:43 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 16:33:43 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 13.0->12.0
+2020-11-17 16:33:44 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 16:33:44 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 16:33:44 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 12.0->11.0
+2020-11-17 16:33:44 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 16:33:45 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 16:33:45 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 16:33:45 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 16:33:45 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 11.0->10.0
+2020-11-17 16:33:46 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 16:33:46 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 16:33:46 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 16:33:46 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 10.0->9.0
+2020-11-17 16:33:46 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 16:33:47 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 16:33:47 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 9.0->8.0
+2020-11-17 16:33:47 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 16:33:47 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 16:33:48 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 16:33:49 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 8.0->7.0
+2020-11-17 16:33:49 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 16:33:49 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 16:33:49 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 16:33:49 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 16:33:50 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 7.0->6.0
+2020-11-17 16:33:50 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 16:33:50 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 16:33:50 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 16:33:50 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 16:33:51 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 16:33:51 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 16:33:51 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 16:33:51 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 16:33:52 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 16:33:52 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 16:33:52 [INFO] Zombie (id=63) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 16:33:52 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 16:33:53 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 16:33:53 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 16:33:53 [INFO] Zombie (id=66) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 16:33:54 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 16:33:55 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 16:33:55 [INFO] Zombie (id=51) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 16:33:55 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 16:33:56 [INFO] Zombie (id=65) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 16:47:24 [INFO] Skeleton (id=83) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-17 16:47:25 [INFO] Skeleton (id=83) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-17 16:47:26 [INFO] Skeleton (id=83) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-17 16:47:27 [INFO] Skeleton (id=83) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-17 16:47:28 [INFO] Skeleton (id=83) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 2.0->1.0
+2020-11-17 16:47:29 [INFO] Skeleton (id=83) hit by onFire taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 1.0->0.0
+2020-11-17 17:09:42 [INFO] Cow (id=203) hit by drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 20.0->18.0
+2020-11-17 17:10:10 [INFO] Cow (id=203) hit by drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 20.0->18.0
+2020-11-17 17:26:54 [INFO] Cow (id=203) hit by drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 20.0->18.0
+2020-11-17 17:26:55 [INFO] Cow (id=203) hit by drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 18.0->16.0
+2020-11-17 17:26:56 [INFO] Cow (id=203) hit by drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 16.0->14.0
+2020-11-17 17:26:57 [INFO] Cow (id=203) hit by drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 14.0->12.0
+2020-11-17 17:26:58 [INFO] Cow (id=203) hit by drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 12.0->10.0
+2020-11-17 17:26:59 [INFO] Cow (id=203) hit by drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 10.0->8.0
+2020-11-17 17:27:00 [INFO] Cow (id=203) hit by drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 8.0->6.0
+2020-11-17 17:27:01 [INFO] Cow (id=203) hit by drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 6.0->4.0
+2020-11-17 17:27:02 [INFO] Cow (id=203) hit by drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 4.0->2.0
+2020-11-17 17:27:03 [INFO] Cow (id=203) hit by drown taking 2.0 raw damage vs 0.0 protection, resulting in a loss of 2.0 health: 2.0->0.0

@@ -50,3 +50,1128 @@
 2020-11-16 17:29:53 [INFO] Saving players
 2020-11-16 17:29:53 [INFO] Saving worlds
 2020-11-16 17:29:53 [INFO] Closing listening thread
+2020-11-17 08:49:23 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 08:49:23 [INFO] Using 64-bit JVM
+2020-11-17 08:49:23 [INFO] Loading properties
+2020-11-17 08:49:23 [WARNING] server.properties does not exist
+2020-11-17 08:49:23 [INFO] Generating new properties file
+2020-11-17 08:49:23 [INFO] Default game type: SURVIVAL
+2020-11-17 08:49:23 [INFO] Generating keypair
+2020-11-17 08:49:23 [INFO] Starting Minecraft server on *:25565
+2020-11-17 08:49:23 [WARNING] Failed to load white-list: java.io.FileNotFoundException: .\white-list.txt (系统找不到指定的文件。)
+2020-11-17 08:49:23 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 08:49:23 [INFO] Preparing level "world"
+2020-11-17 08:49:23 [INFO] Preparing start region for level 0
+2020-11-17 08:49:24 [INFO] Preparing spawn area: 42%
+2020-11-17 08:49:24 [INFO] World seed is -3459048919746078631
+2020-11-17 08:49:24 [INFO] Done (1.766s)! For help, type "help" or "?"
+2020-11-17 08:49:24 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 08:49:32 [INFO] There are 0/20 players online:
+2020-11-17 08:49:32 [INFO] 
+2020-11-17 08:49:51 [INFO] There are 0/20 players online:
+2020-11-17 08:49:51 [INFO] 
+2020-11-17 08:50:13 [INFO] There are 0/20 players online:
+2020-11-17 08:50:13 [INFO] 
+2020-11-17 08:50:19 [INFO] There are 0/20 players online:
+2020-11-17 08:50:19 [INFO] 
+2020-11-17 08:52:32 [INFO] There are 0/20 players online:
+2020-11-17 08:52:32 [INFO] 
+2020-11-17 08:54:13 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 08:54:13 [INFO] Using 64-bit JVM
+2020-11-17 08:54:13 [INFO] Loading properties
+2020-11-17 08:54:13 [INFO] Default game type: SURVIVAL
+2020-11-17 08:54:13 [INFO] Generating keypair
+2020-11-17 08:54:13 [INFO] Starting Minecraft server on *:25565
+2020-11-17 08:54:13 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 08:54:13 [INFO] Preparing level "world"
+2020-11-17 08:54:14 [INFO] Preparing start region for level 0
+2020-11-17 08:54:15 [INFO] Preparing spawn area: 28%
+2020-11-17 08:54:15 [INFO] World seed is -3459048919746078631
+2020-11-17 08:54:15 [INFO] Done (1.932s)! For help, type "help" or "?"
+2020-11-17 08:54:15 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 08:54:16 [INFO] There are 0/20 players online:
+2020-11-17 08:54:16 [INFO] 
+2020-11-17 08:54:27 [INFO] There are 0/20 players online:
+2020-11-17 08:54:27 [INFO] 
+2020-11-17 08:54:46 [INFO] There are 0/20 players online:
+2020-11-17 08:54:46 [INFO] 
+2020-11-17 08:54:51 [INFO] There are 0/20 players online:
+2020-11-17 08:54:51 [INFO] 
+2020-11-17 08:54:55 [INFO] There are 0/20 players online:
+2020-11-17 08:54:55 [INFO] 
+2020-11-17 08:55:58 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 08:55:58 [INFO] Using 64-bit JVM
+2020-11-17 08:55:58 [INFO] Loading properties
+2020-11-17 08:55:58 [INFO] Default game type: SURVIVAL
+2020-11-17 08:55:58 [INFO] Generating keypair
+2020-11-17 08:55:58 [INFO] Starting Minecraft server on *:25565
+2020-11-17 08:55:58 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 08:55:58 [INFO] Preparing level "world"
+2020-11-17 08:55:59 [INFO] Preparing start region for level 0
+2020-11-17 08:56:00 [INFO] Preparing spawn area: 20%
+2020-11-17 08:56:00 [INFO] World seed is -3459048919746078631
+2020-11-17 08:56:00 [INFO] Done (2.235s)! For help, type "help" or "?"
+2020-11-17 08:56:00 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 08:56:01 [INFO] There are 0/20 players online:
+2020-11-17 08:56:01 [INFO] 
+2020-11-17 08:56:22 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 08:56:22 [INFO] Using 64-bit JVM
+2020-11-17 08:56:22 [INFO] Loading properties
+2020-11-17 08:56:22 [INFO] Default game type: SURVIVAL
+2020-11-17 08:56:22 [INFO] Generating keypair
+2020-11-17 08:56:22 [INFO] Starting Minecraft server on *:25565
+2020-11-17 08:56:22 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 08:56:22 [INFO] Preparing level "world"
+2020-11-17 08:56:22 [INFO] Preparing start region for level 0
+2020-11-17 08:56:23 [INFO] Preparing spawn area: 66%
+2020-11-17 08:56:24 [INFO] World seed is -3459048919746078631
+2020-11-17 08:56:24 [INFO] Done (1.559s)! For help, type "help" or "?"
+2020-11-17 08:56:24 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 08:56:24 [INFO] There are 0/20 players online:
+2020-11-17 08:56:24 [INFO] 
+2020-11-17 08:56:29 [INFO] There are 0/20 players online:
+2020-11-17 08:56:29 [INFO] 
+2020-11-17 08:56:38 [INFO] There are 0/20 players online:
+2020-11-17 08:56:38 [INFO] 
+2020-11-17 08:57:05 [INFO] There are 0/20 players online:
+2020-11-17 08:57:05 [INFO] 
+2020-11-17 08:57:14 [INFO] There are 0/20 players online:
+2020-11-17 08:57:14 [INFO] 
+2020-11-17 08:57:16 [INFO] There are 0/20 players online:
+2020-11-17 08:57:16 [INFO] 
+2020-11-17 08:57:32 [INFO] Unknown command. Try /help for a list of commands
+2020-11-17 09:02:04 [INFO] Stopping server
+2020-11-17 09:02:04 [INFO] Saving players
+2020-11-17 09:02:04 [INFO] Saving worlds
+2020-11-17 09:02:04 [INFO] Closing listening thread
+2020-11-17 09:03:32 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 09:03:32 [INFO] Using 64-bit JVM
+2020-11-17 09:03:32 [INFO] Loading properties
+2020-11-17 09:03:32 [INFO] Default game type: SURVIVAL
+2020-11-17 09:03:32 [INFO] Generating keypair
+2020-11-17 09:03:32 [INFO] Starting Minecraft server on *:25565
+2020-11-17 09:03:32 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 09:03:32 [INFO] Preparing level "world"
+2020-11-17 09:03:32 [INFO] Preparing start region for level 0
+2020-11-17 09:03:33 [INFO] Preparing spawn area: 58%
+2020-11-17 09:03:34 [INFO] World seed is -3459048919746078631
+2020-11-17 09:03:34 [INFO] Done (1.707s)! For help, type "help" or "?"
+2020-11-17 09:03:34 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 09:03:34 [INFO] There are 0/20 players online:
+2020-11-17 09:03:34 [INFO] 
+2020-11-17 09:04:01 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 09:04:01 [INFO] Using 64-bit JVM
+2020-11-17 09:04:01 [INFO] Loading properties
+2020-11-17 09:04:01 [INFO] Default game type: SURVIVAL
+2020-11-17 09:04:01 [INFO] Generating keypair
+2020-11-17 09:04:01 [INFO] Starting Minecraft server on *:25565
+2020-11-17 09:04:01 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 09:04:01 [INFO] Preparing level "world"
+2020-11-17 09:04:02 [INFO] Preparing start region for level 0
+2020-11-17 09:04:03 [INFO] Preparing spawn area: 53%
+2020-11-17 09:04:03 [INFO] World seed is -3459048919746078631
+2020-11-17 09:04:03 [INFO] Done (1.756s)! For help, type "help" or "?"
+2020-11-17 09:04:03 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 09:04:14 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 09:04:14 [INFO] Using 64-bit JVM
+2020-11-17 09:04:14 [INFO] Loading properties
+2020-11-17 09:04:14 [INFO] Default game type: SURVIVAL
+2020-11-17 09:04:14 [INFO] Generating keypair
+2020-11-17 09:04:14 [INFO] Starting Minecraft server on *:25565
+2020-11-17 09:04:14 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 09:04:14 [INFO] Preparing level "world"
+2020-11-17 09:04:15 [INFO] Preparing start region for level 0
+2020-11-17 09:04:16 [INFO] Preparing spawn area: 25%
+2020-11-17 09:04:16 [INFO] World seed is -3459048919746078631
+2020-11-17 09:04:16 [INFO] Done (1.942s)! For help, type "help" or "?"
+2020-11-17 09:04:16 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 09:04:17 [INFO] There are 0/20 players online:
+2020-11-17 09:04:17 [INFO] 
+2020-11-17 09:05:09 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 09:05:09 [INFO] Using 64-bit JVM
+2020-11-17 09:05:09 [INFO] Loading properties
+2020-11-17 09:05:09 [INFO] Default game type: SURVIVAL
+2020-11-17 09:05:09 [INFO] Generating keypair
+2020-11-17 09:05:09 [INFO] Starting Minecraft server on *:25565
+2020-11-17 09:05:09 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 09:05:09 [INFO] Preparing level "world"
+2020-11-17 09:05:09 [INFO] Preparing start region for level 0
+2020-11-17 09:05:10 [INFO] Preparing spawn area: 65%
+2020-11-17 09:05:11 [INFO] World seed is -3459048919746078631
+2020-11-17 09:05:11 [INFO] Done (1.552s)! For help, type "help" or "?"
+2020-11-17 09:05:11 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 09:05:11 [INFO] There are 0/20 players online:
+2020-11-17 09:05:11 [INFO] 
+2020-11-17 09:11:51 [INFO] There are 0/20 players online:
+2020-11-17 09:11:51 [INFO] 
+2020-11-17 09:12:16 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 09:12:16 [INFO] Using 64-bit JVM
+2020-11-17 09:12:16 [INFO] Loading properties
+2020-11-17 09:12:16 [INFO] Default game type: SURVIVAL
+2020-11-17 09:12:16 [INFO] Generating keypair
+2020-11-17 09:12:16 [INFO] Starting Minecraft server on *:25565
+2020-11-17 09:12:16 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 09:12:16 [INFO] Preparing level "world"
+2020-11-17 09:12:16 [INFO] Preparing start region for level 0
+2020-11-17 09:12:17 [INFO] Preparing spawn area: 24%
+2020-11-17 09:12:18 [INFO] World seed is -3459048919746078631
+2020-11-17 09:12:18 [INFO] Done (2.137s)! For help, type "help" or "?"
+2020-11-17 09:12:18 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 09:12:19 [INFO] There are 0/20 players online:
+2020-11-17 09:12:19 [INFO] 
+2020-11-17 09:12:21 [INFO] There are 0/20 players online:
+2020-11-17 09:12:21 [INFO] 
+2020-11-17 09:12:31 [INFO] There are 0/20 players online:
+2020-11-17 09:12:31 [INFO] 
+2020-11-17 09:12:36 [INFO] There are 0/20 players online:
+2020-11-17 09:12:36 [INFO] 
+2020-11-17 09:12:40 [INFO] There are 0/20 players online:
+2020-11-17 09:12:40 [INFO] 
+2020-11-17 09:17:58 [INFO] There are 0/20 players online:
+2020-11-17 09:17:58 [INFO] 
+2020-11-17 09:17:58 [INFO] There are 0/20 players online:
+2020-11-17 09:17:58 [INFO] 
+2020-11-17 09:18:03 [INFO] There are 0/20 players online:
+2020-11-17 09:18:03 [INFO] 
+2020-11-17 09:18:31 [INFO] There are 0/20 players online:
+2020-11-17 09:18:31 [INFO] 
+2020-11-17 09:18:31 [INFO] There are 0/20 players online:
+2020-11-17 09:18:31 [INFO] 
+2020-11-17 09:18:38 [INFO] There are 0/20 players online:
+2020-11-17 09:18:38 [INFO] 
+2020-11-17 09:18:52 [INFO] There are 0/20 players online:
+2020-11-17 09:18:52 [INFO] 
+2020-11-17 09:21:15 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 09:21:15 [INFO] Using 64-bit JVM
+2020-11-17 09:21:15 [INFO] Loading properties
+2020-11-17 09:21:15 [INFO] Default game type: SURVIVAL
+2020-11-17 09:21:15 [INFO] Generating keypair
+2020-11-17 09:21:15 [INFO] Starting Minecraft server on *:25565
+2020-11-17 09:21:15 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 09:21:15 [INFO] Preparing level "world"
+2020-11-17 09:21:15 [INFO] Preparing start region for level 0
+2020-11-17 09:21:16 [INFO] Preparing spawn area: 54%
+2020-11-17 09:21:17 [INFO] World seed is -3459048919746078631
+2020-11-17 09:21:17 [INFO] Done (1.788s)! For help, type "help" or "?"
+2020-11-17 09:21:17 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 09:21:17 [INFO] There are 0/20 players online:
+2020-11-17 09:21:17 [INFO] 
+2020-11-17 09:22:12 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 09:22:12 [INFO] Using 64-bit JVM
+2020-11-17 09:22:12 [INFO] Loading properties
+2020-11-17 09:22:12 [INFO] Default game type: SURVIVAL
+2020-11-17 09:22:12 [INFO] Generating keypair
+2020-11-17 09:22:13 [INFO] Starting Minecraft server on *:25565
+2020-11-17 09:22:13 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 09:22:13 [INFO] Preparing level "world"
+2020-11-17 09:22:13 [INFO] Preparing start region for level 0
+2020-11-17 09:22:14 [INFO] Preparing spawn area: 14%
+2020-11-17 09:22:15 [INFO] Preparing spawn area: 83%
+2020-11-17 09:22:15 [INFO] World seed is -3459048919746078631
+2020-11-17 09:22:15 [INFO] Done (2.474s)! For help, type "help" or "?"
+2020-11-17 09:22:15 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 09:22:15 [INFO] There are 0/20 players online:
+2020-11-17 09:22:15 [INFO] 
+2020-11-17 09:30:40 [INFO] There are 0/20 players online:
+2020-11-17 09:30:40 [INFO] 
+2020-11-17 09:30:46 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 09:30:46 [INFO] Using 64-bit JVM
+2020-11-17 09:30:46 [INFO] Loading properties
+2020-11-17 09:30:46 [INFO] Default game type: SURVIVAL
+2020-11-17 09:30:46 [INFO] Generating keypair
+2020-11-17 09:30:46 [INFO] Starting Minecraft server on *:25565
+2020-11-17 09:30:46 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 09:30:46 [INFO] Preparing level "world"
+2020-11-17 09:30:47 [INFO] Preparing start region for level 0
+2020-11-17 09:30:48 [INFO] Preparing spawn area: 28%
+2020-11-17 09:30:48 [INFO] World seed is -3459048919746078631
+2020-11-17 09:30:48 [INFO] Done (2.215s)! For help, type "help" or "?"
+2020-11-17 09:30:48 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 09:30:49 [INFO] There are 0/20 players online:
+2020-11-17 09:30:49 [INFO] 
+2020-11-17 09:30:51 [INFO] There are 0/20 players online:
+2020-11-17 09:30:51 [INFO] 
+2020-11-17 09:30:59 [INFO] There are 0/20 players online:
+2020-11-17 09:30:59 [INFO] 
+2020-11-17 09:31:05 [INFO] There are 0/20 players online:
+2020-11-17 09:31:05 [INFO] 
+2020-11-17 09:31:12 [INFO] There are 0/20 players online:
+2020-11-17 09:31:12 [INFO] 
+2020-11-17 09:31:18 [INFO] There are 0/20 players online:
+2020-11-17 09:31:18 [INFO] 
+2020-11-17 09:32:12 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 09:32:12 [INFO] Using 64-bit JVM
+2020-11-17 09:32:12 [INFO] Loading properties
+2020-11-17 09:32:12 [INFO] Default game type: SURVIVAL
+2020-11-17 09:32:12 [INFO] Generating keypair
+2020-11-17 09:32:12 [INFO] Starting Minecraft server on *:25565
+2020-11-17 09:32:12 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 09:32:12 [INFO] Preparing level "world"
+2020-11-17 09:32:12 [INFO] Preparing start region for level 0
+2020-11-17 09:32:13 [INFO] Preparing spawn area: 54%
+2020-11-17 09:32:14 [INFO] World seed is -3459048919746078631
+2020-11-17 09:32:14 [INFO] Done (1.787s)! For help, type "help" or "?"
+2020-11-17 09:32:14 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 09:32:15 [INFO] There are 0/20 players online:
+2020-11-17 09:32:15 [INFO] 
+2020-11-17 09:32:15 [INFO] There are 0/20 players online:
+2020-11-17 09:32:15 [INFO] 
+2020-11-17 09:32:24 [INFO] There are 0/20 players online:
+2020-11-17 09:32:24 [INFO] 
+2020-11-17 09:32:29 [INFO] There are 0/20 players online:
+2020-11-17 09:32:29 [INFO] 
+2020-11-17 09:32:37 [INFO] There are 0/20 players online:
+2020-11-17 09:32:37 [INFO] 
+2020-11-17 09:32:56 [INFO] There are 0/20 players online:
+2020-11-17 09:32:56 [INFO] 
+2020-11-17 09:35:30 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 09:35:30 [INFO] Using 64-bit JVM
+2020-11-17 09:35:30 [INFO] Loading properties
+2020-11-17 09:35:30 [INFO] Default game type: SURVIVAL
+2020-11-17 09:35:30 [INFO] Generating keypair
+2020-11-17 09:35:30 [INFO] Starting Minecraft server on *:25565
+2020-11-17 09:35:30 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 09:35:30 [INFO] Preparing level "world"
+2020-11-17 09:35:30 [INFO] Preparing start region for level 0
+2020-11-17 09:35:31 [INFO] Preparing spawn area: 60%
+2020-11-17 09:35:32 [INFO] World seed is -3459048919746078631
+2020-11-17 09:35:32 [INFO] Done (1.782s)! For help, type "help" or "?"
+2020-11-17 09:35:32 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 09:35:33 [INFO] There are 0/20 players online:
+2020-11-17 09:35:33 [INFO] 
+2020-11-17 09:35:37 [INFO] There are 0/20 players online:
+2020-11-17 09:35:37 [INFO] 
+2020-11-17 09:35:47 [INFO] There are 0/20 players online:
+2020-11-17 09:35:47 [INFO] 
+2020-11-17 09:36:34 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 09:36:34 [INFO] Using 64-bit JVM
+2020-11-17 09:36:34 [INFO] Loading properties
+2020-11-17 09:36:34 [INFO] Default game type: SURVIVAL
+2020-11-17 09:36:34 [INFO] Generating keypair
+2020-11-17 09:36:34 [INFO] Starting Minecraft server on *:25565
+2020-11-17 09:36:34 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 09:36:34 [INFO] Preparing level "world"
+2020-11-17 09:36:34 [INFO] Preparing start region for level 0
+2020-11-17 09:36:35 [INFO] Preparing spawn area: 56%
+2020-11-17 09:36:36 [INFO] World seed is -3459048919746078631
+2020-11-17 09:36:36 [INFO] Done (1.610s)! For help, type "help" or "?"
+2020-11-17 09:36:36 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 09:36:41 [INFO] There are 0/20 players online:
+2020-11-17 09:36:41 [INFO] 
+2020-11-17 09:38:06 [INFO] There are 0/20 players online:
+2020-11-17 09:38:06 [INFO] 
+2020-11-17 09:38:06 [INFO] There are 0/20 players online:
+2020-11-17 09:38:06 [INFO] 
+2020-11-17 09:38:23 [INFO] There are 0/20 players online:
+2020-11-17 09:38:23 [INFO] 
+2020-11-17 09:38:40 [INFO] There are 0/20 players online:
+2020-11-17 09:38:40 [INFO] 
+2020-11-17 09:40:17 [INFO] There are 0/20 players online:
+2020-11-17 09:40:17 [INFO] 
+2020-11-17 09:40:17 [INFO] There are 0/20 players online:
+2020-11-17 09:40:17 [INFO] 
+2020-11-17 09:41:26 [INFO] There are 0/20 players online:
+2020-11-17 09:41:26 [INFO] 
+2020-11-17 09:41:26 [INFO] There are 0/20 players online:
+2020-11-17 09:41:26 [INFO] 
+2020-11-17 09:41:34 [INFO] There are 0/20 players online:
+2020-11-17 09:41:34 [INFO] 
+2020-11-17 09:44:17 [INFO] There are 0/20 players online:
+2020-11-17 09:44:17 [INFO] 
+2020-11-17 09:44:17 [INFO] There are 0/20 players online:
+2020-11-17 09:44:17 [INFO] 
+2020-11-17 09:44:33 [INFO] There are 0/20 players online:
+2020-11-17 09:44:33 [INFO] 
+2020-11-17 09:44:33 [INFO] There are 0/20 players online:
+2020-11-17 09:44:33 [INFO] 
+2020-11-17 09:44:56 [INFO] There are 0/20 players online:
+2020-11-17 09:44:56 [INFO] 
+2020-11-17 09:46:22 [INFO] There are 0/20 players online:
+2020-11-17 09:46:22 [INFO] 
+2020-11-17 09:46:22 [INFO] There are 0/20 players online:
+2020-11-17 09:46:22 [INFO] 
+2020-11-17 09:47:04 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-17 09:47:04 [INFO] /127.0.0.1:60447 lost connection
+2020-11-17 09:47:27 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-17 09:47:27 [INFO] nancy [/127.0.0.1:60451] lost connection
+2020-11-17 09:47:29 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-17 09:47:31 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-17 09:47:31 [INFO] nancy [/127.0.0.1:60522] lost connection
+2020-11-17 09:47:32 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-17 09:47:34 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-17 09:47:34 [INFO] nancy [/127.0.0.1:60529] lost connection
+2020-11-17 09:47:35 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-17 09:47:59 [INFO] Stopping server
+2020-11-17 09:47:59 [INFO] Saving players
+2020-11-17 09:47:59 [INFO] Saving worlds
+2020-11-17 09:47:59 [INFO] Closing listening thread
+2020-11-17 09:48:27 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 09:48:27 [INFO] Using 64-bit JVM
+2020-11-17 09:48:27 [INFO] Loading properties
+2020-11-17 09:48:27 [INFO] Default game type: SURVIVAL
+2020-11-17 09:48:27 [INFO] Generating keypair
+2020-11-17 09:48:27 [INFO] Starting Minecraft server on *:25565
+2020-11-17 09:48:27 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-17 09:48:27 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-17 09:48:27 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-17 09:48:27 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-17 09:48:27 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 09:48:27 [INFO] Preparing level "world"
+2020-11-17 09:48:27 [INFO] Preparing start region for level 0
+2020-11-17 09:48:28 [INFO] Preparing spawn area: 26%
+2020-11-17 09:48:29 [INFO] World seed is -3459048919746078631
+2020-11-17 09:48:29 [INFO] Done (1.995s)! For help, type "help" or "?"
+2020-11-17 09:48:29 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 09:48:30 [INFO] There are 0/20 players online:
+2020-11-17 09:48:30 [INFO] 
+2020-11-17 09:48:33 [INFO] There are 0/20 players online:
+2020-11-17 09:48:33 [INFO] 
+2020-11-17 09:48:39 [INFO] nancy[/127.0.0.1:60702] logged in with entity id 64 at (-247.5, 78.0, 190.5)
+2020-11-17 09:48:39 [INFO] nancy joined the game
+2020-11-17 09:48:57 [INFO] There are 1/20 players online:
+2020-11-17 09:48:57 [INFO] nancy
+2020-11-17 09:49:17 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 09:50:13 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-17 09:50:13 [INFO] /127.0.0.1:60888 lost connection
+2020-11-17 09:50:15 [INFO] wensc[/127.0.0.1:60891] logged in with entity id 2534 at (-257.5, 79.0, 191.5)
+2020-11-17 09:50:15 [INFO] wensc joined the game
+2020-11-17 09:50:23 [INFO] There are 2/20 players online:
+2020-11-17 09:50:23 [INFO] nancy, wensc
+2020-11-17 09:51:01 [INFO] There are 2/20 players online:
+2020-11-17 09:51:01 [INFO] nancy, wensc
+2020-11-17 09:51:01 [INFO] There are 2/20 players online:
+2020-11-17 09:51:01 [INFO] nancy, wensc
+2020-11-17 09:51:10 [INFO] There are 2/20 players online:
+2020-11-17 09:51:10 [INFO] nancy, wensc
+2020-11-17 09:51:11 [INFO] There are 2/20 players online:
+2020-11-17 09:51:11 [INFO] nancy, wensc
+2020-11-17 09:56:04 [INFO] nancy was shot by Skeleton
+2020-11-17 09:56:06 [INFO] There are 2/20 players online:
+2020-11-17 09:56:06 [INFO] nancy, wensc
+2020-11-17 09:56:06 [INFO] There are 2/20 players online:
+2020-11-17 09:56:06 [INFO] nancy, wensc
+2020-11-17 09:56:18 [INFO] There are 2/20 players online:
+2020-11-17 09:56:18 [INFO] nancy, wensc
+2020-11-17 09:56:22 [INFO] There are 2/20 players online:
+2020-11-17 09:56:22 [INFO] nancy, wensc
+2020-11-17 09:56:43 [INFO] wensc was slain by Zombie
+2020-11-17 09:57:59 [INFO] There are 2/20 players online:
+2020-11-17 09:57:59 [INFO] nancy, wensc
+2020-11-17 09:57:59 [INFO] There are 2/20 players online:
+2020-11-17 09:57:59 [INFO] nancy, wensc
+2020-11-17 09:58:14 [INFO] nancy was slain by Zombie
+2020-11-17 09:58:47 [INFO] wensc was slain by Zombie
+2020-11-17 09:58:56 [INFO] nancy lost connection: disconnect.quitting
+2020-11-17 09:58:56 [INFO] nancy left the game
+2020-11-17 09:59:06 [INFO] There are 1/20 players online:
+2020-11-17 09:59:06 [INFO] wensc
+2020-11-17 10:00:50 [INFO] wensc was slain by Skeleton
+2020-11-17 10:00:59 [INFO] There are 1/20 players online:
+2020-11-17 10:00:59 [INFO] wensc
+2020-11-17 10:01:05 [INFO] There are 1/20 players online:
+2020-11-17 10:01:05 [INFO] wensc
+2020-11-17 10:01:10 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-17 10:01:12 [INFO] nancy[/127.0.0.1:62114] logged in with entity id 32992 at (-247.69999998807907, 77.0, 179.69999998807907)
+2020-11-17 10:01:12 [INFO] nancy joined the game
+2020-11-17 10:02:36 [INFO] nancy was slain by Spider
+2020-11-17 10:02:54 [INFO] wensc was slain by Skeleton
+2020-11-17 10:03:00 [INFO] There are 2/20 players online:
+2020-11-17 10:03:00 [INFO] nancy, wensc
+2020-11-17 10:03:06 [INFO] nancy lost connection: disconnect.quitting
+2020-11-17 10:03:06 [INFO] nancy left the game
+2020-11-17 10:03:14 [INFO] There are 1/20 players online:
+2020-11-17 10:03:14 [INFO] wensc
+2020-11-17 10:03:30 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-17 10:03:34 [INFO] nancy[/127.0.0.1:62474] logged in with entity id 33278 at (-267.6347205291435, 78.0, 201.71335145767273)
+2020-11-17 10:03:34 [INFO] nancy joined the game
+2020-11-17 10:03:38 [INFO] There are 2/20 players online:
+2020-11-17 10:03:38 [INFO] wensc, nancy
+2020-11-17 10:14:42 [INFO] wensc was slain by Spider
+2020-11-17 10:14:44 [INFO] nancy was slain by Spider
+2020-11-17 10:16:46 [INFO] wensc was slain by Spider
+2020-11-17 10:16:50 [INFO] nancy was slain by Spider
+2020-11-17 10:17:02 [INFO] There are 2/20 players online:
+2020-11-17 10:17:02 [INFO] wensc, nancy
+2020-11-17 10:17:16 [INFO] There are 2/20 players online:
+2020-11-17 10:17:16 [INFO] wensc, nancy
+2020-11-17 10:18:50 [INFO] wensc was slain by Spider
+2020-11-17 10:18:54 [INFO] nancy was slain by Spider
+2020-11-17 10:20:56 [INFO] wensc was slain by Spider
+2020-11-17 10:21:00 [INFO] nancy was slain by Spider
+2020-11-17 10:23:15 [INFO] nancy was slain by Spider
+2020-11-17 10:23:17 [INFO] wensc was slain by Spider
+2020-11-17 10:28:31 [INFO] There are 2/20 players online:
+2020-11-17 10:28:31 [INFO] nancy, wensc
+2020-11-17 10:35:16 [INFO] There are 2/20 players online:
+2020-11-17 10:35:16 [INFO] nancy, wensc
+2020-11-17 10:35:19 [INFO] wensc was slain by Spider
+2020-11-17 10:35:21 [INFO] nancy was slain by Spider
+2020-11-17 10:37:23 [INFO] wensc was slain by Spider
+2020-11-17 10:37:27 [INFO] nancy was slain by Spider
+2020-11-17 10:39:25 [INFO] There are 2/20 players online:
+2020-11-17 10:39:25 [INFO] nancy, wensc
+2020-11-17 10:39:30 [INFO] wensc was slain by Spider
+2020-11-17 10:39:34 [INFO] nancy was slain by Spider
+2020-11-17 10:40:30 [INFO] There are 2/20 players online:
+2020-11-17 10:40:30 [INFO] wensc, nancy
+2020-11-17 10:41:34 [INFO] wensc was slain by Spider
+2020-11-17 10:41:38 [INFO] nancy was slain by Spider
+2020-11-17 10:43:40 [INFO] wensc was slain by Spider
+2020-11-17 10:43:42 [INFO] nancy was slain by Spider
+2020-11-17 10:47:10 [INFO] There are 2/20 players online:
+2020-11-17 10:47:10 [INFO] wensc, nancy
+2020-11-17 10:47:26 [INFO] commands.generic.double.invalid
+2020-11-17 10:49:12 [INFO] There are 2/20 players online:
+2020-11-17 10:49:12 [INFO] wensc, nancy
+2020-11-17 10:49:17 [INFO] That player cannot be found
+2020-11-17 10:49:43 [INFO] There are 2/20 players online:
+2020-11-17 10:49:43 [INFO] wensc, nancy
+2020-11-17 10:49:44 [INFO] That player cannot be found
+2020-11-17 10:50:10 [INFO] There are 2/20 players online:
+2020-11-17 10:50:10 [INFO] wensc, nancy
+2020-11-17 10:50:11 [INFO] That player cannot be found
+2020-11-17 10:50:38 [INFO] There are 2/20 players online:
+2020-11-17 10:50:38 [INFO] wensc, nancy
+2020-11-17 10:50:39 [INFO] Spreading wensc players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-17 10:50:39 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-17 10:50:46 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 10:50:58 [INFO] Spreading wensc players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-17 10:51:00 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-17 10:51:05 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 10:51:33 [INFO] Spreading nancy players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-17 10:51:34 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-17 10:51:34 [INFO] Unknown command. Try /help for a list of commands
+2020-11-17 10:51:40 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 10:51:49 [INFO] Spreading nancy players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-17 10:51:50 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-17 10:51:50 [INFO] Unknown command. Try /help for a list of commands
+2020-11-17 10:51:55 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 10:52:36 [INFO] There are 2/20 players online:
+2020-11-17 10:52:36 [INFO] wensc, nancy
+2020-11-17 10:52:37 [INFO] Spreading nancy players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-17 10:52:37 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-17 10:52:37 [INFO] Unknown command. Try /help for a list of commands
+2020-11-17 10:52:42 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 10:53:43 [INFO] There are 2/20 players online:
+2020-11-17 10:53:43 [INFO] wensc, nancy
+2020-11-17 10:53:44 [INFO] Spreading wensc players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-17 10:53:46 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-17 10:53:49 [INFO] Spreading nancy players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-17 10:53:50 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-17 10:53:50 [INFO] Unknown command. Try /help for a list of commands
+2020-11-17 10:53:59 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 10:55:18 [INFO] There are 2/20 players online:
+2020-11-17 10:55:18 [INFO] wensc, nancy
+2020-11-17 10:55:20 [INFO] Spreading wensc players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-17 10:55:22 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-17 10:55:26 [INFO] Spreading nancy players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-17 10:55:26 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-17 10:55:26 [INFO] Unknown command. Try /help for a list of commands
+2020-11-17 10:55:34 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 10:56:17 [INFO] wensc was slain by Zombie
+2020-11-17 10:56:23 [INFO] nancy was slain by Zombie
+2020-11-17 10:57:13 [INFO] There are 2/20 players online:
+2020-11-17 10:57:13 [INFO] wensc, nancy
+2020-11-17 10:57:18 [INFO] That player cannot be found
+2020-11-17 10:57:18 [INFO] Unknown command. Try /help for a list of commands
+2020-11-17 10:57:38 [INFO] There are 2/20 players online:
+2020-11-17 10:57:38 [INFO] wensc, nancy
+2020-11-17 10:57:45 [INFO] Spreading nancy players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-17 10:57:45 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-17 10:57:45 [INFO] Unknown command. Try /help for a list of commands
+2020-11-17 10:57:49 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 10:58:51 [INFO] nancy was slain by Zombie
+2020-11-17 10:58:59 [INFO] wensc was slain by Zombie
+2020-11-17 10:59:49 [INFO] Spreading nancy players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-17 10:59:50 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-17 10:59:50 [INFO] Unknown command. Try /help for a list of commands
+2020-11-17 10:59:55 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 11:00:17 [INFO] Spreading wensc players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-17 11:00:18 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-17 11:00:21 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 11:00:35 [INFO] Spreading nancy players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-17 11:00:36 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-17 11:00:36 [INFO] Unknown command. Try /help for a list of commands
+2020-11-17 11:00:43 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 11:01:07 [INFO] nancy was slain by Zombie
+2020-11-17 11:01:15 [INFO] wensc was slain by Zombie
+2020-11-17 11:03:12 [INFO] nancy was slain by Zombie
+2020-11-17 11:03:20 [INFO] wensc was shot by Skeleton
+2020-11-17 11:04:00 [INFO] There are 2/20 players online:
+2020-11-17 11:04:00 [INFO] nancy, wensc
+2020-11-17 11:04:03 [INFO] Set wensc's spawn point to (-250, 79, 194)
+2020-11-17 11:04:03 [INFO] Unknown command. Try /help for a list of commands
+2020-11-17 11:04:07 [INFO] Set nancy's spawn point to (-263, 78, 174)
+2020-11-17 11:05:39 [INFO] There are 2/20 players online:
+2020-11-17 11:05:39 [INFO] nancy, wensc
+2020-11-17 11:05:42 [INFO] There are 2/20 players online:
+2020-11-17 11:05:42 [INFO] nancy, wensc
+2020-11-17 11:06:30 [INFO] There are 2/20 players online:
+2020-11-17 11:06:30 [INFO] nancy, wensc
+2020-11-17 11:06:49 [INFO] There are 2/20 players online:
+2020-11-17 11:06:49 [INFO] nancy, wensc
+2020-11-17 11:08:43 [INFO] There are 2/20 players online:
+2020-11-17 11:08:43 [INFO] nancy, wensc
+2020-11-17 11:08:50 [INFO] There are 2/20 players online:
+2020-11-17 11:08:50 [INFO] nancy, wensc
+2020-11-17 11:09:33 [INFO] There are 2/20 players online:
+2020-11-17 11:09:33 [INFO] nancy, wensc
+2020-11-17 11:10:07 [INFO] There are 2/20 players online:
+2020-11-17 11:10:07 [INFO] nancy, wensc
+2020-11-17 11:10:20 [INFO] There are 2/20 players online:
+2020-11-17 11:10:20 [INFO] nancy, wensc
+2020-11-17 11:10:25 [INFO] Spreading wensc players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-17 11:10:25 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-17 11:10:25 [INFO] Unknown command. Try /help for a list of commands
+2020-11-17 11:10:29 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 11:10:51 [INFO] Set wensc's spawn point to (-60677, 71, 6344)
+2020-11-17 11:10:51 [INFO] Unknown command. Try /help for a list of commands
+2020-11-17 11:11:36 [INFO] There are 2/20 players online:
+2020-11-17 11:11:36 [INFO] nancy, wensc
+2020-11-17 11:12:36 [INFO] There are 2/20 players online:
+2020-11-17 11:12:36 [INFO] nancy, wensc
+2020-11-17 11:13:03 [INFO] There are 2/20 players online:
+2020-11-17 11:13:03 [INFO] nancy, wensc
+2020-11-17 11:14:00 [INFO] There are 2/20 players online:
+2020-11-17 11:14:00 [INFO] nancy, wensc
+2020-11-17 11:14:08 [INFO] There are 2/20 players online:
+2020-11-17 11:14:08 [INFO] nancy, wensc
+2020-11-17 11:15:59 [INFO] There are 2/20 players online:
+2020-11-17 11:15:59 [INFO] nancy, wensc
+2020-11-17 11:16:28 [INFO] nancy was shot by Skeleton
+2020-11-17 11:16:32 [INFO] wensc was slain by entity.WoodSpider.name
+2020-11-17 11:16:54 [INFO] There are 2/20 players online:
+2020-11-17 11:16:54 [INFO] nancy, wensc
+2020-11-17 11:18:03 [INFO] There are 2/20 players online:
+2020-11-17 11:18:03 [INFO] nancy, wensc
+2020-11-17 11:18:34 [INFO] nancy was shot by Skeleton
+2020-11-17 11:18:44 [INFO] wensc was slain by Spider
+2020-11-17 11:19:17 [INFO] There are 2/20 players online:
+2020-11-17 11:19:17 [INFO] nancy, wensc
+2020-11-17 11:20:08 [INFO] There are 2/20 players online:
+2020-11-17 11:20:08 [INFO] nancy, wensc
+2020-11-17 11:20:23 [INFO] There are 2/20 players online:
+2020-11-17 11:20:23 [INFO] nancy, wensc
+2020-11-17 11:20:23 [INFO] There are 2/20 players online:
+2020-11-17 11:20:23 [INFO] nancy, wensc
+2020-11-17 11:20:23 [INFO] There are 2/20 players online:
+2020-11-17 11:20:23 [INFO] nancy, wensc
+2020-11-17 11:20:23 [INFO] There are 2/20 players online:
+2020-11-17 11:20:23 [INFO] nancy, wensc
+2020-11-17 11:20:23 [INFO] There are 2/20 players online:
+2020-11-17 11:20:23 [INFO] nancy, wensc
+2020-11-17 11:20:23 [INFO] There are 2/20 players online:
+2020-11-17 11:20:23 [INFO] nancy, wensc
+2020-11-17 11:20:23 [INFO] There are 2/20 players online:
+2020-11-17 11:20:23 [INFO] nancy, wensc
+2020-11-17 11:20:23 [INFO] There are 2/20 players online:
+2020-11-17 11:20:23 [INFO] nancy, wensc
+2020-11-17 11:20:23 [INFO] There are 2/20 players online:
+2020-11-17 11:20:23 [INFO] nancy, wensc
+2020-11-17 11:20:23 [INFO] There are 2/20 players online:
+2020-11-17 11:20:23 [INFO] nancy, wensc
+2020-11-17 11:20:23 [INFO] There are 2/20 players online:
+2020-11-17 11:20:23 [INFO] nancy, wensc
+2020-11-17 11:20:23 [INFO] There are 2/20 players online:
+2020-11-17 11:20:23 [INFO] nancy, wensc
+2020-11-17 11:20:24 [INFO] There are 2/20 players online:
+2020-11-17 11:20:24 [INFO] nancy, wensc
+2020-11-17 11:20:29 [INFO] There are 2/20 players online:
+2020-11-17 11:20:29 [INFO] nancy, wensc
+2020-11-17 11:20:40 [INFO] nancy was shot by Skeleton
+2020-11-17 11:20:40 [INFO] There are 2/20 players online:
+2020-11-17 11:20:40 [INFO] wensc, nancy
+2020-11-17 11:20:41 [INFO] There are 2/20 players online:
+2020-11-17 11:20:41 [INFO] wensc, nancy
+2020-11-17 11:20:49 [INFO] There are 2/20 players online:
+2020-11-17 11:20:49 [INFO] nancy, wensc
+2020-11-17 11:20:49 [INFO] wensc was slain by Spider
+2020-11-17 11:20:50 [INFO] There are 2/20 players online:
+2020-11-17 11:20:50 [INFO] nancy, wensc
+2020-11-17 11:20:57 [INFO] There are 2/20 players online:
+2020-11-17 11:20:57 [INFO] nancy, wensc
+2020-11-17 11:21:26 [INFO] There are 2/20 players online:
+2020-11-17 11:21:26 [INFO] nancy, wensc
+2020-11-17 11:21:26 [INFO] There are 2/20 players online:
+2020-11-17 11:21:26 [INFO] nancy, wensc
+2020-11-17 11:22:44 [INFO] nancy was slain by Skeleton
+2020-11-17 11:23:00 [INFO] wensc was slain by Spider
+2020-11-17 11:24:24 [INFO] There are 2/20 players online:
+2020-11-17 11:24:24 [INFO] nancy, wensc
+2020-11-17 11:24:33 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 11:24:33 [INFO] Using 64-bit JVM
+2020-11-17 11:24:33 [INFO] Loading properties
+2020-11-17 11:24:33 [INFO] Default game type: SURVIVAL
+2020-11-17 11:24:33 [INFO] Generating keypair
+2020-11-17 11:24:34 [INFO] Starting Minecraft server on *:25565
+2020-11-17 11:24:34 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-17 11:24:34 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-17 11:24:34 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-17 11:24:34 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-17 11:24:34 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 11:24:34 [INFO] Preparing level "world"
+2020-11-17 11:24:34 [INFO] Preparing start region for level 0
+2020-11-17 11:24:35 [INFO] Preparing spawn area: 35%
+2020-11-17 11:24:36 [INFO] World seed is -3459048919746078631
+2020-11-17 11:24:36 [INFO] Done (2.238s)! For help, type "help" or "?"
+2020-11-17 11:24:36 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 11:24:37 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-17 11:24:38 [INFO] There are 0/20 players online:
+2020-11-17 11:24:38 [INFO] 
+2020-11-17 11:24:38 [INFO] There are 0/20 players online:
+2020-11-17 11:24:38 [INFO] 
+2020-11-17 11:24:43 [INFO] There are 0/20 players online:
+2020-11-17 11:24:43 [INFO] 
+2020-11-17 11:27:54 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 11:27:54 [INFO] Using 64-bit JVM
+2020-11-17 11:27:54 [INFO] Loading properties
+2020-11-17 11:27:54 [INFO] Default game type: SURVIVAL
+2020-11-17 11:27:54 [INFO] Generating keypair
+2020-11-17 11:27:54 [INFO] Starting Minecraft server on *:25565
+2020-11-17 11:27:54 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-17 11:27:54 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-17 11:27:54 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-17 11:27:54 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-17 11:27:55 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 11:27:55 [INFO] Preparing level "world"
+2020-11-17 11:27:55 [INFO] Preparing start region for level 0
+2020-11-17 11:27:56 [INFO] Preparing spawn area: 43%
+2020-11-17 11:27:56 [INFO] World seed is -3459048919746078631
+2020-11-17 11:27:56 [INFO] Done (1.857s)! For help, type "help" or "?"
+2020-11-17 11:27:56 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 11:27:57 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-17 11:27:57 [INFO] There are 0/20 players online:
+2020-11-17 11:27:57 [INFO] 
+2020-11-17 11:27:57 [INFO] There are 0/20 players online:
+2020-11-17 11:27:57 [INFO] 
+2020-11-17 11:28:03 [INFO] There are 0/20 players online:
+2020-11-17 11:28:03 [INFO] 
+2020-11-17 11:28:06 [INFO] There are 0/20 players online:
+2020-11-17 11:28:06 [INFO] 
+2020-11-17 11:32:00 [INFO] There are 0/20 players online:
+2020-11-17 11:32:00 [INFO] 
+2020-11-17 11:32:05 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 11:32:05 [INFO] Using 64-bit JVM
+2020-11-17 11:32:05 [INFO] Loading properties
+2020-11-17 11:32:05 [INFO] Default game type: SURVIVAL
+2020-11-17 11:32:05 [INFO] Generating keypair
+2020-11-17 11:32:06 [INFO] Starting Minecraft server on *:25565
+2020-11-17 11:32:06 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-17 11:32:06 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-17 11:32:06 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-17 11:32:06 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-17 11:32:06 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 11:32:06 [INFO] Preparing level "world"
+2020-11-17 11:32:06 [INFO] Preparing start region for level 0
+2020-11-17 11:32:07 [INFO] Preparing spawn area: 4%
+2020-11-17 11:32:08 [INFO] Preparing spawn area: 88%
+2020-11-17 11:32:08 [INFO] World seed is -3459048919746078631
+2020-11-17 11:32:08 [INFO] Done (2.340s)! For help, type "help" or "?"
+2020-11-17 11:32:08 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 11:32:09 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-17 11:32:28 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 11:32:28 [INFO] Using 64-bit JVM
+2020-11-17 11:32:28 [INFO] Loading properties
+2020-11-17 11:32:28 [INFO] Default game type: SURVIVAL
+2020-11-17 11:32:28 [INFO] Generating keypair
+2020-11-17 11:32:28 [INFO] Starting Minecraft server on *:25565
+2020-11-17 11:32:28 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-17 11:32:28 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-17 11:32:28 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-17 11:32:28 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-17 11:32:28 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 11:32:28 [INFO] Preparing level "world"
+2020-11-17 11:32:28 [INFO] Preparing start region for level 0
+2020-11-17 11:32:29 [INFO] Preparing spawn area: 20%
+2020-11-17 11:32:30 [INFO] World seed is -3459048919746078631
+2020-11-17 11:32:30 [INFO] Done (1.992s)! For help, type "help" or "?"
+2020-11-17 11:32:30 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 11:32:30 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-17 11:32:40 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 11:32:40 [INFO] Using 64-bit JVM
+2020-11-17 11:32:40 [INFO] Loading properties
+2020-11-17 11:32:40 [INFO] Default game type: SURVIVAL
+2020-11-17 11:32:40 [INFO] Generating keypair
+2020-11-17 11:32:40 [INFO] Starting Minecraft server on *:25565
+2020-11-17 11:32:40 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-17 11:32:40 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-17 11:32:40 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-17 11:32:40 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-17 11:32:40 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 11:32:40 [INFO] Preparing level "world"
+2020-11-17 11:32:40 [INFO] Preparing start region for level 0
+2020-11-17 11:32:41 [INFO] Preparing spawn area: 35%
+2020-11-17 11:32:42 [INFO] World seed is -3459048919746078631
+2020-11-17 11:32:42 [INFO] Done (1.838s)! For help, type "help" or "?"
+2020-11-17 11:32:42 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 11:32:42 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-17 11:32:42 [INFO] There are 0/20 players online:
+2020-11-17 11:32:42 [INFO] 
+2020-11-17 11:32:48 [INFO] There are 0/20 players online:
+2020-11-17 11:32:48 [INFO] 
+2020-11-17 11:33:46 [INFO] There are 0/20 players online:
+2020-11-17 11:33:46 [INFO] 
+2020-11-17 11:33:47 [INFO] There are 0/20 players online:
+2020-11-17 11:33:47 [INFO] 
+2020-11-17 11:33:54 [INFO] There are 0/20 players online:
+2020-11-17 11:33:54 [INFO] 
+2020-11-17 11:33:54 [INFO] There are 0/20 players online:
+2020-11-17 11:33:54 [INFO] 
+2020-11-17 11:34:26 [INFO] There are 0/20 players online:
+2020-11-17 11:34:26 [INFO] 
+2020-11-17 11:34:26 [INFO] There are 0/20 players online:
+2020-11-17 11:34:26 [INFO] 
+2020-11-17 11:34:30 [INFO] There are 0/20 players online:
+2020-11-17 11:34:30 [INFO] 
+2020-11-17 11:34:30 [INFO] There are 0/20 players online:
+2020-11-17 11:34:30 [INFO] 
+2020-11-17 11:34:32 [INFO] There are 0/20 players online:
+2020-11-17 11:34:32 [INFO] 
+2020-11-17 11:34:32 [INFO] There are 0/20 players online:
+2020-11-17 11:34:32 [INFO] 
+2020-11-17 11:34:38 [INFO] There are 0/20 players online:
+2020-11-17 11:34:38 [INFO] 
+2020-11-17 11:34:38 [INFO] There are 0/20 players online:
+2020-11-17 11:34:38 [INFO] 
+2020-11-17 11:34:51 [INFO] There are 0/20 players online:
+2020-11-17 11:34:51 [INFO] 
+2020-11-17 11:34:51 [INFO] There are 0/20 players online:
+2020-11-17 11:34:51 [INFO] 
+2020-11-17 11:34:58 [INFO] There are 0/20 players online:
+2020-11-17 11:34:58 [INFO] 
+2020-11-17 11:35:26 [INFO] There are 0/20 players online:
+2020-11-17 11:35:26 [INFO] 
+2020-11-17 11:35:26 [INFO] There are 0/20 players online:
+2020-11-17 11:35:26 [INFO] 
+2020-11-17 11:35:27 [INFO] There are 0/20 players online:
+2020-11-17 11:35:27 [INFO] 
+2020-11-17 11:35:27 [INFO] There are 0/20 players online:
+2020-11-17 11:35:27 [INFO] 
+2020-11-17 11:35:32 [INFO] There are 0/20 players online:
+2020-11-17 11:35:32 [INFO] 
+2020-11-17 11:35:56 [INFO] There are 0/20 players online:
+2020-11-17 11:35:56 [INFO] 
+2020-11-17 11:36:06 [INFO] There are 0/20 players online:
+2020-11-17 11:36:06 [INFO] 
+2020-11-17 11:36:06 [INFO] There are 0/20 players online:
+2020-11-17 11:36:06 [INFO] 
+2020-11-17 11:36:20 [INFO] There are 0/20 players online:
+2020-11-17 11:36:20 [INFO] 
+2020-11-17 11:36:20 [INFO] There are 0/20 players online:
+2020-11-17 11:36:20 [INFO] 
+2020-11-17 11:37:03 [INFO] There are 0/20 players online:
+2020-11-17 11:37:03 [INFO] 
+2020-11-17 11:37:03 [INFO] There are 0/20 players online:
+2020-11-17 11:37:03 [INFO] 
+2020-11-17 11:37:15 [INFO] There are 0/20 players online:
+2020-11-17 11:37:15 [INFO] 
+2020-11-17 11:37:16 [INFO] There are 0/20 players online:
+2020-11-17 11:37:16 [INFO] 
+2020-11-17 11:38:07 [INFO] There are 0/20 players online:
+2020-11-17 11:38:07 [INFO] 
+2020-11-17 11:38:07 [INFO] There are 0/20 players online:
+2020-11-17 11:38:07 [INFO] 
+2020-11-17 11:38:15 [INFO] There are 0/20 players online:
+2020-11-17 11:38:15 [INFO] 
+2020-11-17 11:38:53 [INFO] There are 0/20 players online:
+2020-11-17 11:38:53 [INFO] 
+2020-11-17 11:39:06 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-17 11:39:08 [INFO] wensc[/127.0.0.1:57159] logged in with entity id 55 at (-60673.256034665756, 71.0, 6347.7797726889685)
+2020-11-17 11:39:08 [INFO] wensc joined the game
+2020-11-17 11:39:16 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-17 11:39:17 [INFO] nancy[/127.0.0.1:57175] logged in with entity id 121 at (-262.69999998807907, 77.0, 172.64152488677007)
+2020-11-17 11:39:17 [INFO] nancy joined the game
+2020-11-17 11:39:20 [INFO] There are 2/20 players online:
+2020-11-17 11:39:20 [INFO] wensc, nancy
+2020-11-17 11:40:24 [INFO] wensc was slain by Spider
+2020-11-17 11:40:44 [INFO] There are 2/20 players online:
+2020-11-17 11:40:44 [INFO] nancy, wensc
+2020-11-17 11:41:03 [INFO] nancy was slain by Skeleton
+2020-11-17 11:41:30 [INFO] There are 2/20 players online:
+2020-11-17 11:41:30 [INFO] nancy, wensc
+2020-11-17 11:41:31 [INFO] There are 2/20 players online:
+2020-11-17 11:41:31 [INFO] nancy, wensc
+2020-11-17 11:42:04 [INFO] There are 2/20 players online:
+2020-11-17 11:42:04 [INFO] nancy, wensc
+2020-11-17 11:42:05 [INFO] There are 2/20 players online:
+2020-11-17 11:42:05 [INFO] nancy, wensc
+2020-11-17 11:42:09 [INFO] Usage: /spreadplayers <x> <z> <spreadDistance> <maxRange> <respectTeams true|false> <player ...>
+2020-11-17 11:42:28 [INFO] wensc was slain by Spider
+2020-11-17 11:42:29 [INFO] There are 2/20 players online:
+2020-11-17 11:42:29 [INFO] nancy, wensc
+2020-11-17 11:42:30 [INFO] Spreading nancy players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-17 11:42:30 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-17 11:42:35 [INFO] Spreading wensc players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-17 11:42:36 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-17 11:42:41 [INFO] Set nancy's spawn point to (-21885, 68, 37594)
+2020-11-17 11:42:42 [INFO] Set wensc's spawn point to (-82089, 70, -68309)
+2020-11-17 11:42:43 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 11:44:04 [INFO] nancy was slain by Zombie
+2020-11-17 11:44:55 [INFO] wensc was shot by Skeleton
+2020-11-17 11:45:23 [INFO] There are 2/20 players online:
+2020-11-17 11:45:23 [INFO] nancy, wensc
+2020-11-17 11:45:30 [INFO] There are 2/20 players online:
+2020-11-17 11:45:30 [INFO] nancy, wensc
+2020-11-17 11:46:40 [INFO] nancy was slain by Spider
+2020-11-17 11:47:00 [INFO] wensc was shot by Skeleton
+2020-11-17 11:49:06 [INFO] wensc was shot by Skeleton
+2020-11-17 11:51:12 [INFO] wensc was shot by Skeleton
+2020-11-17 11:53:14 [INFO] Spreading nancy players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-17 11:53:14 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-17 11:53:22 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 11:53:23 [INFO] wensc was shot by Skeleton
+2020-11-17 11:55:29 [INFO] wensc was shot by Skeleton
+2020-11-17 11:57:35 [INFO] wensc was shot by Skeleton
+2020-11-17 11:59:42 [INFO] wensc was shot by Skeleton
+2020-11-17 12:00:45 [INFO] nancy was slain by Zombie
+2020-11-17 13:20:30 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 13:20:54 [INFO] wensc was shot by Skeleton
+2020-11-17 13:21:55 [INFO] nancy was slain by Spider
+2020-11-17 13:23:00 [INFO] wensc was shot by Skeleton
+2020-11-17 13:23:59 [INFO] nancy was slain by Spider
+2020-11-17 13:25:06 [INFO] wensc was shot by Skeleton
+2020-11-17 13:26:03 [INFO] nancy was slain by Spider
+2020-11-17 13:27:12 [INFO] wensc was shot by Skeleton
+2020-11-17 13:29:23 [INFO] wensc was shot by Skeleton
+2020-11-17 13:31:29 [INFO] wensc was shot by Skeleton
+2020-11-17 13:33:35 [INFO] wensc was shot by Skeleton
+2020-11-17 13:35:47 [INFO] wensc was shot by Skeleton
+2020-11-17 13:37:04 [INFO] nancy was slain by Spider
+2020-11-17 13:37:53 [INFO] wensc was shot by Skeleton
+2020-11-17 13:39:08 [INFO] nancy was slain by Spider
+2020-11-17 13:40:02 [INFO] wensc was shot by Skeleton
+2020-11-17 13:41:12 [INFO] nancy was slain by Spider
+2020-11-17 13:42:08 [INFO] wensc was shot by Skeleton
+2020-11-17 13:43:17 [INFO] nancy was slain by Spider
+2020-11-17 13:44:23 [INFO] wensc was shot by Skeleton
+2020-11-17 13:45:22 [INFO] nancy was slain by Spider
+2020-11-17 13:47:25 [INFO] nancy was slain by Spider
+2020-11-17 13:49:29 [INFO] nancy was slain by Spider
+2020-11-17 13:51:32 [INFO] nancy was slain by Spider
+2020-11-17 13:53:36 [INFO] nancy was slain by Spider
+2020-11-17 13:57:01 [INFO] nancy was slain by Spider
+2020-11-17 13:59:05 [INFO] nancy was slain by Spider
+2020-11-17 14:01:09 [INFO] nancy was slain by Spider
+2020-11-17 14:01:35 [INFO] wensc was shot by Skeleton
+2020-11-17 14:03:12 [INFO] nancy was slain by Spider
+2020-11-17 14:03:42 [INFO] wensc was shot by Skeleton
+2020-11-17 14:05:17 [INFO] nancy was slain by Spider
+2020-11-17 14:05:51 [INFO] wensc was shot by Skeleton
+2020-11-17 14:07:57 [INFO] wensc was shot by Skeleton
+2020-11-17 14:10:03 [INFO] wensc was shot by Skeleton
+2020-11-17 14:12:09 [INFO] wensc was shot by Skeleton
+2020-11-17 14:14:15 [INFO] wensc was shot by Skeleton
+2020-11-17 14:16:21 [INFO] wensc was shot by Skeleton
+2020-11-17 14:18:15 [INFO] nancy was slain by Zombie
+2020-11-17 14:18:27 [INFO] wensc was shot by Skeleton
+2020-11-17 14:20:20 [INFO] nancy was slain by Zombie
+2020-11-17 14:20:33 [INFO] wensc was shot by Skeleton
+2020-11-17 14:22:31 [INFO] nancy was slain by Zombie
+2020-11-17 14:22:39 [INFO] wensc was shot by Skeleton
+2020-11-17 14:24:37 [INFO] nancy was shot by Skeleton
+2020-11-17 14:24:45 [INFO] wensc was shot by Skeleton
+2020-11-17 14:26:51 [INFO] wensc was shot by Skeleton
+2020-11-17 14:28:58 [INFO] wensc was shot by Skeleton
+2020-11-17 14:31:04 [INFO] wensc was shot by Skeleton
+2020-11-17 14:33:28 [INFO] wensc was shot by Skeleton
+2020-11-17 14:35:38 [INFO] wensc was shot by Skeleton
+2020-11-17 14:37:57 [INFO] nancy was slain by Zombie
+2020-11-17 14:38:11 [INFO] wensc was slain by Zombie
+2020-11-17 14:40:02 [INFO] nancy was slain by Zombie
+2020-11-17 14:40:16 [INFO] wensc was slain by Zombie
+2020-11-17 14:42:07 [INFO] nancy was blown up by Creeper
+2020-11-17 14:42:22 [INFO] wensc was slain by Zombie
+2020-11-17 14:44:12 [INFO] nancy was blown up by Creeper
+2020-11-17 14:44:36 [INFO] wensc was shot by Skeleton
+2020-11-17 14:46:16 [INFO] nancy was slain by Spider
+2020-11-17 14:46:42 [INFO] wensc was shot by Skeleton
+2020-11-17 14:48:48 [INFO] wensc was shot by Skeleton
+2020-11-17 14:51:44 [INFO] wensc was shot by Skeleton
+2020-11-17 14:53:50 [INFO] wensc was shot by Skeleton
+2020-11-17 14:55:56 [INFO] wensc was shot by Skeleton
+2020-11-17 14:57:57 [INFO] nancy was slain by Zombie
+2020-11-17 14:58:02 [INFO] wensc was shot by Skeleton
+2020-11-17 15:00:01 [INFO] nancy was slain by Spider
+2020-11-17 15:00:08 [INFO] wensc was shot by Skeleton
+2020-11-17 15:02:05 [INFO] nancy was slain by Zombie
+2020-11-17 15:02:22 [INFO] wensc was shot by Skeleton
+2020-11-17 15:04:09 [INFO] nancy was slain by Spider
+2020-11-17 15:04:28 [INFO] wensc was shot by Skeleton
+2020-11-17 15:06:13 [INFO] nancy was slain by Spider
+2020-11-17 15:06:48 [INFO] wensc was shot by Skeleton
+2020-11-17 15:08:31 [INFO] nancy was slain by Zombie
+2020-11-17 15:08:54 [INFO] wensc was shot by Skeleton
+2020-11-17 15:10:46 [INFO] nancy was slain by Zombie
+2020-11-17 15:11:00 [INFO] wensc was shot by Skeleton
+2020-11-17 15:13:01 [INFO] nancy was slain by Zombie
+2020-11-17 15:13:09 [INFO] wensc was shot by Skeleton
+2020-11-17 15:15:15 [INFO] wensc was shot by Skeleton
+2020-11-17 15:17:04 [INFO] nancy was slain by Spider
+2020-11-17 15:17:21 [INFO] wensc was shot by Skeleton
+2020-11-17 15:19:27 [INFO] wensc was shot by Skeleton
+2020-11-17 15:19:30 [INFO] nancy was shot by Skeleton
+2020-11-17 15:20:05 [INFO] There are 2/20 players online:
+2020-11-17 15:20:05 [INFO] nancy, wensc
+2020-11-17 15:20:50 [INFO] There are 2/20 players online:
+2020-11-17 15:20:50 [INFO] nancy, wensc
+2020-11-17 15:21:36 [INFO] nancy was shot by Skeleton
+2020-11-17 15:21:46 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 15:21:46 [INFO] Using 64-bit JVM
+2020-11-17 15:21:46 [INFO] Loading properties
+2020-11-17 15:21:46 [INFO] Default game type: SURVIVAL
+2020-11-17 15:21:46 [INFO] Generating keypair
+2020-11-17 15:21:46 [INFO] Starting Minecraft server on *:25565
+2020-11-17 15:21:46 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-17 15:21:46 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-17 15:21:46 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-17 15:21:46 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-17 15:21:46 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 15:21:46 [INFO] Preparing level "world"
+2020-11-17 15:21:46 [INFO] Preparing start region for level 0
+2020-11-17 15:21:47 [INFO] Preparing spawn area: 17%
+2020-11-17 15:21:48 [INFO] Preparing spawn area: 99%
+2020-11-17 15:21:48 [INFO] World seed is -3459048919746078631
+2020-11-17 15:21:48 [INFO] Done (2.225s)! For help, type "help" or "?"
+2020-11-17 15:21:48 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 15:21:50 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-17 15:21:51 [INFO] There are 0/20 players online:
+2020-11-17 15:21:51 [INFO] 
+2020-11-17 15:21:51 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 15:22:14 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-17 15:22:14 [INFO] Using 64-bit JVM
+2020-11-17 15:22:14 [INFO] Loading properties
+2020-11-17 15:22:14 [INFO] Default game type: SURVIVAL
+2020-11-17 15:22:14 [INFO] Generating keypair
+2020-11-17 15:22:14 [INFO] Starting Minecraft server on *:25565
+2020-11-17 15:22:14 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-17 15:22:14 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-17 15:22:14 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-17 15:22:14 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-17 15:22:14 [INFO] White-list is ALL-INCLUSIVE
+2020-11-17 15:22:14 [INFO] Preparing level "world"
+2020-11-17 15:22:14 [INFO] Preparing start region for level 0
+2020-11-17 15:22:15 [INFO] Preparing spawn area: 44%
+2020-11-17 15:22:16 [INFO] World seed is -3459048919746078631
+2020-11-17 15:22:16 [INFO] Done (1.775s)! For help, type "help" or "?"
+2020-11-17 15:22:16 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-17 15:22:16 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-17 15:26:12 [INFO] There are 0/20 players online:
+2020-11-17 15:26:12 [INFO] 
+2020-11-17 15:29:51 [INFO] There are 0/20 players online:
+2020-11-17 15:29:51 [INFO] 
+2020-11-17 15:29:51 [INFO] There are 0/20 players online:
+2020-11-17 15:29:51 [INFO] 
+2020-11-17 15:33:20 [INFO] There are 0/20 players online:
+2020-11-17 15:33:20 [INFO] 
+2020-11-17 15:33:22 [INFO] There are 0/20 players online:
+2020-11-17 15:33:22 [INFO] 
+2020-11-17 15:36:11 [INFO] There are 0/20 players online:
+2020-11-17 15:36:11 [INFO] 
+2020-11-17 15:36:12 [INFO] There are 0/20 players online:
+2020-11-17 15:36:12 [INFO] 
+2020-11-17 15:36:25 [INFO] There are 0/20 players online:
+2020-11-17 15:36:25 [INFO] 
+2020-11-17 15:36:25 [INFO] There are 0/20 players online:
+2020-11-17 15:36:25 [INFO] 
+2020-11-17 15:39:18 [INFO] There are 0/20 players online:
+2020-11-17 15:39:18 [INFO] 
+2020-11-17 15:39:21 [INFO] There are 0/20 players online:
+2020-11-17 15:39:21 [INFO] 
+2020-11-17 15:41:18 [INFO] There are 0/20 players online:
+2020-11-17 15:41:18 [INFO] 
+2020-11-17 15:41:20 [INFO] There are 0/20 players online:
+2020-11-17 15:41:20 [INFO] 
+2020-11-17 15:41:54 [INFO] There are 0/20 players online:
+2020-11-17 15:41:54 [INFO] 
+2020-11-17 15:42:10 [INFO] There are 0/20 players online:
+2020-11-17 15:42:10 [INFO] 
+2020-11-17 15:42:11 [INFO] There are 0/20 players online:
+2020-11-17 15:42:11 [INFO] 
+2020-11-17 15:56:35 [INFO] There are 0/20 players online:
+2020-11-17 15:56:35 [INFO] 
+2020-11-17 15:56:58 [INFO] There are 0/20 players online:
+2020-11-17 15:56:58 [INFO] 
+2020-11-17 16:01:39 [INFO] There are 0/20 players online:
+2020-11-17 16:01:39 [INFO] 
+2020-11-17 16:01:41 [INFO] There are 0/20 players online:
+2020-11-17 16:01:41 [INFO] 
+2020-11-17 16:01:47 [INFO] There are 0/20 players online:
+2020-11-17 16:01:47 [INFO] 
+2020-11-17 16:04:38 [INFO] There are 0/20 players online:
+2020-11-17 16:04:38 [INFO] 
+2020-11-17 16:04:41 [INFO] There are 0/20 players online:
+2020-11-17 16:04:41 [INFO] 
+2020-11-17 16:04:51 [INFO] There are 0/20 players online:
+2020-11-17 16:04:51 [INFO] 
+2020-11-17 16:09:59 [INFO] There are 0/20 players online:
+2020-11-17 16:09:59 [INFO] 
+2020-11-17 16:10:00 [INFO] There are 0/20 players online:
+2020-11-17 16:10:00 [INFO] 
+2020-11-17 16:10:04 [INFO] There are 0/20 players online:
+2020-11-17 16:10:04 [INFO] 
+2020-11-17 16:10:07 [INFO] There are 0/20 players online:
+2020-11-17 16:10:07 [INFO] 
+2020-11-17 16:11:03 [INFO] There are 0/20 players online:
+2020-11-17 16:11:03 [INFO] 
+2020-11-17 16:15:36 [INFO] There are 0/20 players online:
+2020-11-17 16:15:36 [INFO] 
+2020-11-17 16:19:57 [INFO] There are 0/20 players online:
+2020-11-17 16:19:57 [INFO] 
+2020-11-17 16:22:54 [INFO] There are 0/20 players online:
+2020-11-17 16:22:54 [INFO] 
+2020-11-17 16:25:52 [INFO] There are 0/20 players online:
+2020-11-17 16:25:52 [INFO] 
+2020-11-17 16:28:07 [INFO] There are 0/20 players online:
+2020-11-17 16:28:07 [INFO] 
+2020-11-17 16:30:19 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-17 16:30:24 [INFO] nancy[/127.0.0.1:52311] logged in with entity id 36 at (-21883.37487792447, 67.0, 37596.69999998808)
+2020-11-17 16:30:24 [INFO] nancy joined the game
+2020-11-17 16:30:29 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 16:30:29 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-17 16:30:30 [INFO] wensc[/127.0.0.1:52327] logged in with entity id 82 at (-82086.18524146196, 70.0, -68311.70811850575)
+2020-11-17 16:30:30 [INFO] wensc joined the game
+2020-11-17 16:30:39 [INFO] There are 2/20 players online:
+2020-11-17 16:30:39 [INFO] nancy, wensc
+2020-11-17 16:44:00 [INFO] There are 2/20 players online:
+2020-11-17 16:44:00 [INFO] nancy, wensc
+2020-11-17 16:56:26 [INFO] Set nancy's spawn point to (-21884, 67, 37596)
+2020-11-17 16:56:57 [INFO] Set nancy's spawn point to (-21884, 67, 37596)
+2020-11-17 16:56:59 [INFO] Spreading wensc players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-17 16:57:00 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-17 16:57:08 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-17 17:08:03 [INFO] There are 2/20 players online:
+2020-11-17 17:08:03 [INFO] nancy, wensc
+2020-11-17 17:23:20 [INFO] There are 2/20 players online:
+2020-11-17 17:23:20 [INFO] nancy, wensc
+2020-11-17 17:23:20 [INFO] There are 2/20 players online:
+2020-11-17 17:23:20 [INFO] nancy, wensc
+2020-11-17 17:23:30 [INFO] There are 2/20 players online:
+2020-11-17 17:23:30 [INFO] nancy, wensc
+2020-11-17 17:24:30 [INFO] There are 2/20 players online:
+2020-11-17 17:24:30 [INFO] nancy, wensc
+2020-11-17 17:24:33 [INFO] There are 2/20 players online:
+2020-11-17 17:24:33 [INFO] nancy, wensc
+2020-11-17 17:24:37 [INFO] There are 2/20 players online:
+2020-11-17 17:24:37 [INFO] nancy, wensc
+2020-11-17 17:25:22 [INFO] There are 2/20 players online:
+2020-11-17 17:25:22 [INFO] nancy, wensc
+2020-11-17 17:25:24 [INFO] There are 2/20 players online:
+2020-11-17 17:25:24 [INFO] nancy, wensc
+2020-11-17 17:27:35 [INFO] Set wensc's spawn point to (-30486, 85, 22638)
+2020-11-17 17:35:51 [INFO] There are 2/20 players online:
+2020-11-17 17:35:51 [INFO] nancy, wensc
+2020-11-17 17:35:51 [INFO] There are 2/20 players online:
+2020-11-17 17:35:51 [INFO] nancy, wensc
+2020-11-17 17:36:30 [INFO] There are 2/20 players online:
+2020-11-17 17:36:30 [INFO] nancy, wensc
+2020-11-17 17:36:30 [INFO] There are 2/20 players online:
+2020-11-17 17:36:30 [INFO] nancy, wensc
+2020-11-17 17:36:46 [INFO] There are 2/20 players online:
+2020-11-17 17:36:46 [INFO] nancy, wensc
+2020-11-17 17:36:46 [INFO] There are 2/20 players online:
+2020-11-17 17:36:46 [INFO] nancy, wensc
+2020-11-17 17:37:12 [INFO] Stopping server
+2020-11-17 17:37:12 [INFO] Saving players
+2020-11-17 17:37:12 [INFO] Closing listening thread
+2020-11-17 17:37:12 [INFO] nancy left the game
+2020-11-17 17:37:13 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1

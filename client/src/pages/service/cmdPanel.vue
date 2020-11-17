@@ -19,7 +19,8 @@ export default {
             cmd: '',
             msgContainer: [],
             id: '',
-            isAskedPlayer: false
+            isAskedPlayer: false,
+            players: []
         }
     },
     mounted () {
@@ -32,9 +33,10 @@ export default {
         connect: function () {
             // 接收服务端发来的推送
             this.id = this.$socket.id
+            console.log('标识' + this.id)
         },
         // 方法名与服务端的保持一致
-        res: function (res) {
+        wensc: function (res) {
         // 以下对接收来的数据进行操作
             this.resultFilter(res)
             this.msgContainer.push(res)
@@ -48,16 +50,29 @@ export default {
         resultFilter(res) {
             if (/There are \d+\/\d+ players online/.test(res)) {
                 this.isAskedPlayer = true
+                return
             }
             if (this.isAskedPlayer) {
-                console.log('player:' + res)
+                let players = res.split('[INFO]')[1].replace(/[\s\n]/g, '').split(',')
+                this.$store.commit('SETPLAYERS', players)
                 this.isAskedPlayer = false
             }
-            console.log(res)
+            if (/Set \S+ spawn point to/.test(res)) {
+                let position = res.substr(res.indexOf('(') + 1, res.indexOf(')') - 1).replace(/[\n\r\s]/g, '').split(',')
+                console.log(position)
+            }
         },
         listPlayers() {
             this.$socket.emit('thread', '/list')
+        },
+        recordPlayer() {
+            this.$socket.emit('thread', '/spawnpoint wensc')
         }
+    },
+    created() {
+        this.$bus.$on('record', (val) => {
+            console.log(val)
+        })
     }
 }
 </script>
