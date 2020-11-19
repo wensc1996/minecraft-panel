@@ -1,3 +1,4 @@
 World Achievements
 ------------------
+Taking Inventory taken by nancy on Day 50
 achievement.explorer taken by nancy on Day 7

@@ -47,19 +47,23 @@ export default {
             console.log(this.cmd)
             this.$socket.emit('thread', this.cmd)
         },
+        trimBlank(str) {
+            return str.replace(/[\n\r\s]/g, '')
+        },
         resultFilter(res) {
             if (/There are \d+\/\d+ players online/.test(res)) {
                 this.isAskedPlayer = true
                 return
             }
             if (this.isAskedPlayer) {
-                let players = res.split('[INFO]')[1].replace(/[\s\n]/g, '').split(',')
+                let players = this.trimBlank(res.split('[INFO]')[1]).split(',')
                 this.$store.commit('SETPLAYERS', players)
                 this.isAskedPlayer = false
             }
             if (/Set \S+ spawn point to/.test(res)) {
-                let position = res.substr(res.indexOf('(') + 1, res.indexOf(')') - 1).replace(/[\n\r\s]/g, '').split(',')
-                console.log(position)
+                let playerId = res.match(/Set (\S+)'s spawn point to/)[1]
+                let coordinate = this.trimBlank(res.match(/(-?\d+, -?\d+, -?\d+)/)[1])
+                this.$store.commit('SETCURRENTPOSITION', {playerId, coordinate})
             }
         },
         listPlayers() {
@@ -71,7 +75,7 @@ export default {
     },
     created() {
         this.$bus.$on('record', (val) => {
-            console.log(val)
+            this.recordPlayer()
         })
     }
 }

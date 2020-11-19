@@ -21,6 +21,15 @@ class LocationService extends Service {
             return new Response({code: -1, msg: '新增坐标失败'})
         }
     }
+    async deleteLocation(options){
+        let mysql = new Mysql()
+        let res = await mysql.action('delete from location where location_id = ?', [options.locationId])
+        if(res){
+            return new Response({code: 1, msg: '删除坐标成功', data : ''})
+        }else{
+            return new Response({code: -1, msg: '删除坐标失败'})
+        }
+    }
 }
   
 module.exports = LocationService;

@@ -1175,3 +1175,1617 @@
 2020-11-17 17:37:12 [INFO] Closing listening thread
 2020-11-17 17:37:12 [INFO] nancy left the game
 2020-11-17 17:37:13 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-18 08:46:25 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-18 08:46:25 [INFO] Using 64-bit JVM
+2020-11-18 08:46:25 [INFO] Loading properties
+2020-11-18 08:46:25 [INFO] Default game type: SURVIVAL
+2020-11-18 08:46:25 [INFO] Generating keypair
+2020-11-18 08:46:25 [INFO] Starting Minecraft server on *:25565
+2020-11-18 08:46:25 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-18 08:46:25 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-18 08:46:25 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-18 08:46:25 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-18 08:46:25 [INFO] White-list is ALL-INCLUSIVE
+2020-11-18 08:46:25 [INFO] Preparing level "world"
+2020-11-18 08:46:25 [INFO] Preparing start region for level 0
+2020-11-18 08:46:26 [INFO] Preparing spawn area: 22%
+2020-11-18 08:46:27 [INFO] World seed is -3459048919746078631
+2020-11-18 08:46:27 [INFO] Done (1.884s)! For help, type "help" or "?"
+2020-11-18 08:46:27 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-18 08:46:29 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-18 08:46:49 [INFO] There are 0/20 players online:
+2020-11-18 08:46:49 [INFO] 
+2020-11-18 08:50:43 [INFO] There are 0/20 players online:
+2020-11-18 08:50:43 [INFO] 
+2020-11-18 08:51:30 [INFO] There are 0/20 players online:
+2020-11-18 08:51:30 [INFO] 
+2020-11-18 08:55:03 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-18 08:55:06 [INFO] wensc[/127.0.0.1:65107] logged in with entity id 36 at (-30485.5, 85.0, 22638.5)
+2020-11-18 08:55:06 [INFO] wensc joined the game
+2020-11-18 08:55:43 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-18 08:55:44 [INFO] nancy[/127.0.0.1:65197] logged in with entity id 2043 at (-21883.37487792447, 67.0, 37596.69999998808)
+2020-11-18 08:55:44 [INFO] nancy joined the game
+2020-11-18 08:56:02 [INFO] Set nancy's spawn point to (-21884, 66, 37595)
+2020-11-18 08:56:21 [INFO] nancy was slain by Spider
+2020-11-18 08:56:30 [INFO] wensc was shot by Skeleton
+2020-11-18 08:58:26 [INFO] nancy was slain by Spider
+2020-11-18 08:58:33 [INFO] wensc was shot by Skeleton
+2020-11-18 09:00:38 [INFO] Set wensc's spawn point to (-30486, 85, 22638)
+2020-11-18 09:00:38 [INFO] There are 2/20 players online:
+2020-11-18 09:00:38 [INFO] nancy, wensc
+2020-11-18 09:00:39 [INFO] wensc was shot by Skeleton
+2020-11-18 09:08:38 [INFO] nancy was shot by Skeleton
+2020-11-18 09:09:28 [INFO] wensc was slain by Zombie
+2020-11-18 09:10:43 [INFO] nancy was slain by Spider
+2020-11-18 09:11:12 [INFO] There are 2/20 players online:
+2020-11-18 09:11:12 [INFO] wensc, nancy
+2020-11-18 09:12:17 [INFO] There are 2/20 players online:
+2020-11-18 09:12:17 [INFO] nancy, wensc
+2020-11-18 09:12:46 [INFO] nancy was slain by Spider
+2020-11-18 09:13:05 [INFO] There are 2/20 players online:
+2020-11-18 09:13:05 [INFO] wensc, nancy
+2020-11-18 09:13:44 [INFO] wensc was slain by Zombie
+2020-11-18 09:14:19 [INFO] Set wensc's spawn point to (-30489, 84, 22638)
+2020-11-18 09:14:19 [INFO] There are 2/20 players online:
+2020-11-18 09:14:19 [INFO] wensc, nancy
+2020-11-18 09:14:50 [INFO] nancy was slain by Skeleton
+2020-11-18 09:16:22 [INFO] wensc was slain by Zombie
+2020-11-18 09:16:52 [INFO] nancy was slain by Skeleton
+2020-11-18 09:20:56 [INFO] Set wensc's spawn point to (-30489, 84, 22638)
+2020-11-18 09:20:56 [INFO] There are 2/20 players online:
+2020-11-18 09:20:56 [INFO] wensc, nancy
+2020-11-18 09:21:18 [INFO] Set nancy's spawn point to (-247, 78, 197)
+2020-11-18 09:21:27 [INFO] Spreading nancy players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-18 09:21:27 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-18 09:21:33 [INFO] Set nancy's spawn point to (39953, 107, -84847)
+2020-11-18 09:21:34 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-18 09:21:43 [INFO] Set nancy's spawn point to (39953, 107, -84847)
+2020-11-18 09:22:24 [INFO] Set nancy's spawn point to (39953, 107, -84847)
+2020-11-18 09:22:42 [INFO] There are 2/20 players online:
+2020-11-18 09:22:42 [INFO] wensc, nancy
+2020-11-18 09:22:45 [INFO] Set nancy's spawn point to (39953, 107, -84847)
+2020-11-18 09:23:03 [INFO] Set nancy's spawn point to (39953, 107, -84847)
+2020-11-18 09:23:28 [INFO] There are 2/20 players online:
+2020-11-18 09:23:28 [INFO] wensc, nancy
+2020-11-18 09:23:30 [INFO] Set nancy's spawn point to (39953, 107, -84847)
+2020-11-18 09:23:36 [INFO] There are 2/20 players online:
+2020-11-18 09:23:36 [INFO] wensc, nancy
+2020-11-18 09:23:58 [INFO] There are 2/20 players online:
+2020-11-18 09:23:58 [INFO] wensc, nancy
+2020-11-18 09:24:03 [INFO] Set nancy's spawn point to (39953, 107, -84847)
+2020-11-18 09:24:12 [INFO] There are 2/20 players online:
+2020-11-18 09:24:12 [INFO] wensc, nancy
+2020-11-18 09:24:14 [INFO] Set nancy's spawn point to (39953, 107, -84847)
+2020-11-18 09:29:18 [INFO] wensc was shot by Skeleton
+2020-11-18 09:30:37 [INFO] nancy was shot by Skeleton
+2020-11-18 09:34:53 [INFO] wensc was slain by Zombie
+2020-11-18 09:36:57 [INFO] wensc was slain by Spider
+2020-11-18 09:48:27 [INFO] nancy starved to death
+2020-11-18 09:49:12 [INFO] wensc was shot by Skeleton
+2020-11-18 09:52:29 [INFO] wensc was shot by Skeleton
+2020-11-18 09:54:11 [INFO] nancy was doomed to fall by entity.WoodSpider.name
+2020-11-18 09:56:35 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 09:59:04 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 10:02:51 [INFO] death.attack.poison
+2020-11-18 10:04:59 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 10:08:45 [INFO] wensc was blown up by Creeper
+2020-11-18 10:11:00 [INFO] nancy was slain by Spider
+2020-11-18 10:11:33 [INFO] wensc was slain by Zombie
+2020-11-18 10:13:08 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 10:13:42 [INFO] wensc was slain by Zombie
+2020-11-18 10:15:17 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 10:15:48 [INFO] wensc was slain by Spider
+2020-11-18 10:17:23 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 10:18:50 [INFO] wensc was slain by Spider
+2020-11-18 10:19:32 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 10:20:54 [INFO] wensc was slain by Spider
+2020-11-18 10:22:58 [INFO] wensc was slain by Spider
+2020-11-18 10:25:23 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 10:27:59 [INFO] wensc was slain by Spider
+2020-11-18 10:28:40 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 10:30:04 [INFO] wensc was slain by Spider
+2020-11-18 10:30:48 [INFO] nancy was doomed to fall by entity.WoodSpider.name
+2020-11-18 10:32:08 [INFO] wensc was slain by Spider
+2020-11-18 10:33:01 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 10:34:12 [INFO] wensc was slain by Spider
+2020-11-18 10:36:16 [INFO] wensc was slain by Spider
+2020-11-18 10:50:01 [INFO] wensc was slain by Zombie
+2020-11-18 10:50:14 [INFO] nancy was slain by Spider
+2020-11-18 10:52:07 [INFO] wensc was slain by Spider
+2020-11-18 10:52:23 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 10:54:30 [INFO] nancy was doomed to fall by entity.WoodSpider.name
+2020-11-18 10:55:39 [INFO] wensc was slain by Zombie
+2020-11-18 10:56:42 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 10:58:50 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 11:01:01 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 11:03:10 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 11:13:29 [INFO] wensc starved to death
+2020-11-18 11:16:04 [INFO] wensc was slain by Zombie
+2020-11-18 11:16:30 [INFO] nancy was shot by Skeleton
+2020-11-18 11:18:38 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 11:21:10 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 11:23:18 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 11:25:28 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 11:27:47 [INFO] death.attack.poison
+2020-11-18 11:28:54 [INFO] Set wensc's spawn point to (-30489, 84, 22638)
+2020-11-18 11:28:54 [INFO] There are 2/20 players online:
+2020-11-18 11:28:54 [INFO] wensc, nancy
+2020-11-18 11:29:02 [INFO] That player cannot be found
+2020-11-18 11:29:26 [INFO] There are 2/20 players online:
+2020-11-18 11:29:26 [INFO] wensc, nancy
+2020-11-18 11:29:36 [INFO] Set nancy's spawn point to (39955, 96, -84853)
+2020-11-18 11:29:57 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 11:30:26 [INFO] There are 2/20 players online:
+2020-11-18 11:30:26 [INFO] wensc, nancy
+2020-11-18 11:30:29 [INFO] Set nancy's spawn point to (39954, 92, -84853)
+2020-11-18 11:30:42 [INFO] There are 2/20 players online:
+2020-11-18 11:30:42 [INFO] wensc, nancy
+2020-11-18 11:30:44 [INFO] Set nancy's spawn point to (39954, 92, -84853)
+2020-11-18 11:31:06 [INFO] wensc was shot by Skeleton
+2020-11-18 11:31:40 [INFO] There are 2/20 players online:
+2020-11-18 11:31:40 [INFO] wensc, nancy
+2020-11-18 11:31:42 [INFO] Set nancy's spawn point to (39954, 92, -84853)
+2020-11-18 11:32:05 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 11:33:29 [INFO] There are 2/20 players online:
+2020-11-18 11:33:29 [INFO] nancy, wensc
+2020-11-18 11:33:34 [INFO] Set wensc's spawn point to (-30489, 84, 22638)
+2020-11-18 11:33:48 [INFO] Spreading wensc players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-18 11:33:48 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-18 11:33:53 [INFO] Set wensc's spawn point to (-85909, 74, 53639)
+2020-11-18 11:33:53 [INFO] Set wensc's spawn point to (-85909, 74, 53639)
+2020-11-18 11:33:54 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-18 11:34:18 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 11:36:26 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 11:36:26 [INFO] wensc was blown up by Creeper
+2020-11-18 11:38:29 [INFO] wensc was slain by Spider
+2020-11-18 11:38:34 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 11:40:33 [INFO] wensc was slain by Spider
+2020-11-18 11:40:41 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 11:42:37 [INFO] wensc was slain by Spider
+2020-11-18 11:42:51 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 11:45:00 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 11:47:08 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 11:47:15 [INFO] There are 2/20 players online:
+2020-11-18 11:47:15 [INFO] wensc, nancy
+2020-11-18 11:47:25 [INFO] There are 2/20 players online:
+2020-11-18 11:47:25 [INFO] wensc, nancy
+2020-11-18 11:47:57 [INFO] There are 2/20 players online:
+2020-11-18 11:47:57 [INFO] wensc, nancy
+2020-11-18 11:48:02 [INFO] wensc was blown up by Creeper
+2020-11-18 11:48:02 [INFO] There are 2/20 players online:
+2020-11-18 11:48:02 [INFO] wensc, nancy
+2020-11-18 11:49:16 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 11:50:05 [INFO] wensc was slain by Spider
+2020-11-18 11:50:14 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-18 11:50:14 [INFO] Using 64-bit JVM
+2020-11-18 11:50:14 [INFO] Loading properties
+2020-11-18 11:50:14 [INFO] Default game type: SURVIVAL
+2020-11-18 11:50:14 [INFO] Generating keypair
+2020-11-18 11:50:14 [INFO] Starting Minecraft server on *:25565
+2020-11-18 11:50:14 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-18 11:50:14 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-18 11:50:14 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-18 11:50:14 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-18 11:50:14 [INFO] White-list is ALL-INCLUSIVE
+2020-11-18 11:50:14 [INFO] Preparing level "world"
+2020-11-18 11:50:14 [INFO] Preparing start region for level 0
+2020-11-18 11:50:15 [INFO] Preparing spawn area: 33%
+2020-11-18 11:50:16 [INFO] World seed is -3459048919746078631
+2020-11-18 11:50:16 [INFO] Done (1.981s)! For help, type "help" or "?"
+2020-11-18 11:50:16 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-18 11:50:16 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-18 11:58:40 [INFO] There are 0/20 players online:
+2020-11-18 11:58:40 [INFO] 
+2020-11-18 11:58:46 [INFO] There are 0/20 players online:
+2020-11-18 11:58:46 [INFO] 
+2020-11-18 11:58:52 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-18 11:58:53 [INFO] nancy[/127.0.0.1:57585] logged in with entity id 36 at (39954.69999998808, 92.0, -84852.30000001192)
+2020-11-18 11:58:53 [INFO] nancy joined the game
+2020-11-18 11:59:03 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-18 11:59:05 [INFO] wensc[/127.0.0.1:57612] logged in with entity id 77 at (-85908.30000001192, 73.0, 53639.69999998808)
+2020-11-18 11:59:05 [INFO] wensc joined the game
+2020-11-18 11:59:14 [INFO] There are 2/20 players online:
+2020-11-18 11:59:14 [INFO] nancy, wensc
+2020-11-18 11:59:19 [INFO] There are 2/20 players online:
+2020-11-18 11:59:19 [INFO] nancy, wensc
+2020-11-18 11:59:29 [INFO] Set wensc's spawn point to (-85909, 73, 53639)
+2020-11-18 11:59:37 [INFO] Set wensc's spawn point to (-85909, 73, 53639)
+2020-11-18 11:59:44 [INFO] Set wensc's spawn point to (-85909, 73, 53639)
+2020-11-18 12:00:40 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 13:38:58 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-18 13:39:30 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-18 13:40:28 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 13:41:37 [INFO] Set wensc's spawn point to (-85909, 73, 53639)
+2020-11-18 13:41:50 [INFO] Set wensc's spawn point to (-85909, 73, 53639)
+2020-11-18 13:42:37 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 13:43:09 [INFO] There are 2/20 players online:
+2020-11-18 13:43:09 [INFO] wensc, nancy
+2020-11-18 13:43:15 [INFO] Set wensc's spawn point to (-85909, 73, 53639)
+2020-11-18 13:44:45 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 13:46:13 [INFO] There are 2/20 players online:
+2020-11-18 13:46:13 [INFO] wensc, nancy
+2020-11-18 13:46:21 [INFO] Set wensc's spawn point to (-85909, 73, 53639)
+2020-11-18 13:46:30 [INFO] Spreading wensc players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-18 13:46:30 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-18 13:46:38 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-18 13:46:42 [INFO] Set wensc's spawn point to (-85004, 82, -9287)
+2020-11-18 13:47:00 [INFO] nancy was doomed to fall by entity.WoodSpider.name
+2020-11-18 13:49:08 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 13:49:49 [INFO] wensc was shot by Skeleton
+2020-11-18 13:51:19 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 13:53:27 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 13:54:05 [INFO] wensc was slain by Spider
+2020-11-18 13:55:36 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 13:56:17 [INFO] There are 2/20 players online:
+2020-11-18 13:56:17 [INFO] nancy, wensc
+2020-11-18 13:57:44 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 13:59:54 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 14:02:02 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 14:02:10 [INFO] The number you have entered (0.0) is too small, it must be at least 21.0
+2020-11-18 14:02:52 [INFO] The number you have entered (0.0) is too small, it must be at least 21.0
+2020-11-18 14:03:19 [INFO] The number you have entered (1.0) is too small, it must be at least 11.0
+2020-11-18 14:04:10 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 14:05:54 [INFO] Usage: /spreadplayers <x> <z> <spreadDistance> <maxRange> <respectTeams true|false> <player ...>
+2020-11-18 14:06:17 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 14:07:08 [INFO] Usage: /spreadplayers <x> <z> <spreadDistance> <maxRange> <respectTeams true|false> <player ...>
+2020-11-18 14:07:26 [INFO] Spreading wensc players 30.5 blocks around 30.5,0.0 (min 1.0 blocks apart)
+2020-11-18 14:07:26 [INFO] Successfully spread 1 players around 30.5,30.5
+2020-11-18 14:07:29 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-18 14:08:02 [INFO] wensc was shot by Skeleton
+2020-11-18 14:08:05 [INFO] Spreading wensc players -85908.5 blocks around 53639.5,0.0 (min 1.0 blocks apart)
+2020-11-18 14:08:05 [INFO] Successfully spread 1 players around -85908.5,53639.5
+2020-11-18 14:08:27 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 14:10:31 [INFO] wensc was slain by Zombie
+2020-11-18 14:10:35 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 14:12:36 [INFO] wensc was slain by Zombie
+2020-11-18 14:12:43 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 14:14:52 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 14:15:10 [INFO] wensc was slain by Zombie
+2020-11-18 14:17:01 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 14:19:11 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 14:21:20 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 14:23:29 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 14:25:37 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-18 14:27:38 [INFO] wensc was shot by Skeleton
+2020-11-18 17:12:30 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-18 17:12:30 [INFO] Using 64-bit JVM
+2020-11-18 17:12:30 [INFO] Loading properties
+2020-11-18 17:12:30 [INFO] Default game type: SURVIVAL
+2020-11-18 17:12:30 [INFO] Generating keypair
+2020-11-18 17:12:31 [INFO] Starting Minecraft server on *:25565
+2020-11-18 17:12:31 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-18 17:12:31 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-18 17:12:31 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-18 17:12:31 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-18 17:12:31 [INFO] White-list is ALL-INCLUSIVE
+2020-11-18 17:12:31 [INFO] Preparing level "world"
+2020-11-18 17:12:31 [INFO] Preparing start region for level 0
+2020-11-18 17:12:32 [INFO] Preparing spawn area: 32%
+2020-11-18 17:12:33 [INFO] World seed is -3459048919746078631
+2020-11-18 17:12:33 [INFO] Done (2.164s)! For help, type "help" or "?"
+2020-11-18 17:12:33 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-18 17:12:33 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-18 17:12:33 [INFO] There are 0/20 players online:
+2020-11-18 17:12:33 [INFO] 
+2020-11-18 17:14:03 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-18 17:14:03 [INFO] Using 64-bit JVM
+2020-11-18 17:14:03 [INFO] Loading properties
+2020-11-18 17:14:03 [INFO] Default game type: SURVIVAL
+2020-11-18 17:14:03 [INFO] Generating keypair
+2020-11-18 17:14:03 [INFO] Starting Minecraft server on *:25565
+2020-11-18 17:14:03 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-18 17:14:03 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-18 17:14:03 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-18 17:14:03 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-18 17:14:03 [INFO] White-list is ALL-INCLUSIVE
+2020-11-18 17:14:03 [INFO] Preparing level "world"
+2020-11-18 17:14:03 [INFO] Preparing start region for level 0
+2020-11-18 17:14:04 [INFO] Preparing spawn area: 36%
+2020-11-18 17:14:05 [INFO] World seed is -3459048919746078631
+2020-11-18 17:14:05 [INFO] Done (1.781s)! For help, type "help" or "?"
+2020-11-18 17:14:05 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-18 17:14:05 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-18 17:14:25 [INFO] There are 0/20 players online:
+2020-11-18 17:14:25 [INFO] 
+2020-11-18 17:14:54 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-18 17:14:54 [INFO] Using 64-bit JVM
+2020-11-18 17:14:54 [INFO] Loading properties
+2020-11-18 17:14:54 [INFO] Default game type: SURVIVAL
+2020-11-18 17:14:54 [INFO] Generating keypair
+2020-11-18 17:14:54 [INFO] Starting Minecraft server on *:25565
+2020-11-18 17:14:54 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-18 17:14:54 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-18 17:14:54 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-18 17:14:54 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-18 17:14:54 [INFO] White-list is ALL-INCLUSIVE
+2020-11-18 17:14:54 [INFO] Preparing level "world"
+2020-11-18 17:14:54 [INFO] Preparing start region for level 0
+2020-11-18 17:14:55 [INFO] Preparing spawn area: 44%
+2020-11-18 17:14:56 [INFO] World seed is -3459048919746078631
+2020-11-18 17:14:56 [INFO] Done (1.740s)! For help, type "help" or "?"
+2020-11-18 17:14:56 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-18 17:14:56 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-18 17:15:10 [INFO] Stopping server
+2020-11-18 17:15:10 [INFO] Saving players
+2020-11-18 17:15:10 [INFO] Saving worlds
+2020-11-18 17:15:10 [INFO] Closing listening thread
+2020-11-18 17:15:28 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-18 17:15:28 [INFO] Using 64-bit JVM
+2020-11-18 17:15:28 [INFO] Loading properties
+2020-11-18 17:15:28 [INFO] Default game type: SURVIVAL
+2020-11-18 17:15:28 [INFO] Generating keypair
+2020-11-18 17:15:28 [INFO] Starting Minecraft server on *:25565
+2020-11-18 17:15:28 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-18 17:15:28 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-18 17:15:28 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-18 17:15:28 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-18 17:15:28 [INFO] White-list is ALL-INCLUSIVE
+2020-11-18 17:15:28 [INFO] Preparing level "world"
+2020-11-18 17:15:29 [INFO] Preparing start region for level 0
+2020-11-18 17:15:30 [INFO] Preparing spawn area: 57%
+2020-11-18 17:15:30 [INFO] World seed is -3459048919746078631
+2020-11-18 17:15:30 [INFO] Done (1.606s)! For help, type "help" or "?"
+2020-11-18 17:15:30 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-18 17:15:30 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-18 17:15:33 [INFO] There are 0/20 players online:
+2020-11-18 17:15:33 [INFO] 
+2020-11-18 17:15:43 [INFO] There are 0/20 players online:
+2020-11-18 17:15:43 [INFO] 
+2020-11-18 17:18:33 [INFO] Stopping server
+2020-11-18 17:18:33 [INFO] Saving players
+2020-11-18 17:18:33 [INFO] Closing listening thread
+2020-11-18 17:18:33 [INFO] Saving worlds
+2020-11-18 17:18:49 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-18 17:18:49 [INFO] Using 64-bit JVM
+2020-11-18 17:18:49 [INFO] Loading properties
+2020-11-18 17:18:49 [INFO] Default game type: SURVIVAL
+2020-11-18 17:18:49 [INFO] Generating keypair
+2020-11-18 17:18:49 [INFO] Starting Minecraft server on *:25565
+2020-11-18 17:18:49 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-18 17:18:49 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-18 17:18:49 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-18 17:18:49 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-18 17:18:49 [INFO] White-list is ALL-INCLUSIVE
+2020-11-18 17:18:49 [INFO] Preparing level "world"
+2020-11-18 17:18:49 [INFO] Preparing start region for level 0
+2020-11-18 17:18:50 [INFO] Preparing spawn area: 32%
+2020-11-18 17:18:51 [INFO] World seed is -3459048919746078631
+2020-11-18 17:18:51 [INFO] Done (1.921s)! For help, type "help" or "?"
+2020-11-18 17:18:51 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-18 17:18:51 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-18 17:18:52 [INFO] There are 0/20 players online:
+2020-11-18 17:18:52 [INFO] 
+2020-11-18 17:19:10 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-18 17:19:10 [INFO] Using 64-bit JVM
+2020-11-18 17:19:10 [INFO] Loading properties
+2020-11-18 17:19:10 [INFO] Default game type: SURVIVAL
+2020-11-18 17:19:10 [INFO] Generating keypair
+2020-11-18 17:19:10 [INFO] Starting Minecraft server on *:25565
+2020-11-18 17:19:10 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-18 17:19:10 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-18 17:19:10 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-18 17:19:10 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-18 17:19:11 [INFO] White-list is ALL-INCLUSIVE
+2020-11-18 17:19:11 [INFO] Preparing level "world"
+2020-11-18 17:19:11 [INFO] Preparing start region for level 0
+2020-11-18 17:19:12 [INFO] Preparing spawn area: 50%
+2020-11-18 17:19:12 [INFO] World seed is -3459048919746078631
+2020-11-18 17:19:12 [INFO] Done (1.702s)! For help, type "help" or "?"
+2020-11-18 17:19:12 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-18 17:19:12 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-18 17:19:13 [INFO] There are 0/20 players online:
+2020-11-18 17:19:13 [INFO] 
+2020-11-18 17:19:44 [INFO] There are 0/20 players online:
+2020-11-18 17:19:44 [INFO] 
+2020-11-18 17:20:14 [INFO] There are 0/20 players online:
+2020-11-18 17:20:14 [INFO] 
+2020-11-18 17:21:48 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-18 17:21:48 [INFO] Using 64-bit JVM
+2020-11-18 17:21:48 [INFO] Loading properties
+2020-11-18 17:21:48 [INFO] Default game type: SURVIVAL
+2020-11-18 17:21:48 [INFO] Generating keypair
+2020-11-18 17:21:49 [INFO] Starting Minecraft server on *:25565
+2020-11-18 17:21:49 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-18 17:21:49 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-18 17:21:49 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-18 17:21:49 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-18 17:21:49 [INFO] White-list is ALL-INCLUSIVE
+2020-11-18 17:21:49 [INFO] Preparing level "world"
+2020-11-18 17:21:49 [INFO] Preparing start region for level 0
+2020-11-18 17:21:50 [INFO] Preparing spawn area: 23%
+2020-11-18 17:21:51 [INFO] World seed is -3459048919746078631
+2020-11-18 17:21:51 [INFO] Done (2.313s)! For help, type "help" or "?"
+2020-11-18 17:21:51 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-18 17:21:51 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-18 17:21:51 [INFO] There are 0/20 players online:
+2020-11-18 17:21:51 [INFO] 
+2020-11-18 17:22:10 [INFO] There are 0/20 players online:
+2020-11-18 17:22:10 [INFO] 
+2020-11-18 17:22:18 [INFO] There are 0/20 players online:
+2020-11-18 17:22:18 [INFO] 
+2020-11-18 17:22:49 [INFO] There are 0/20 players online:
+2020-11-18 17:22:49 [INFO] 
+2020-11-18 17:26:12 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-18 17:26:22 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-18 17:26:22 [INFO] Using 64-bit JVM
+2020-11-18 17:26:22 [INFO] Loading properties
+2020-11-18 17:26:22 [INFO] Default game type: SURVIVAL
+2020-11-18 17:26:22 [INFO] Generating keypair
+2020-11-18 17:26:23 [INFO] Starting Minecraft server on *:25565
+2020-11-18 17:26:23 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-18 17:26:23 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-18 17:26:23 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-18 17:26:23 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-18 17:26:23 [INFO] White-list is ALL-INCLUSIVE
+2020-11-18 17:26:23 [INFO] Preparing level "world"
+2020-11-18 17:26:23 [INFO] Preparing start region for level 0
+2020-11-18 17:26:24 [INFO] Preparing spawn area: 50%
+2020-11-18 17:26:24 [INFO] World seed is -3459048919746078631
+2020-11-18 17:26:24 [INFO] Done (1.719s)! For help, type "help" or "?"
+2020-11-18 17:26:24 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-18 17:26:25 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 08:54:12 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 08:54:12 [INFO] Using 64-bit JVM
+2020-11-19 08:54:12 [INFO] Loading properties
+2020-11-19 08:54:12 [INFO] Default game type: SURVIVAL
+2020-11-19 08:54:12 [INFO] Generating keypair
+2020-11-19 08:54:13 [INFO] Starting Minecraft server on *:25565
+2020-11-19 08:54:13 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 08:54:13 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 08:54:13 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 08:54:13 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 08:54:13 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 08:54:13 [INFO] Preparing level "world"
+2020-11-19 08:54:13 [INFO] Preparing start region for level 0
+2020-11-19 08:54:14 [INFO] Preparing spawn area: 19%
+2020-11-19 08:54:15 [INFO] Preparing spawn area: 92%
+2020-11-19 08:54:15 [INFO] World seed is -3459048919746078631
+2020-11-19 08:54:15 [INFO] Done (2.406s)! For help, type "help" or "?"
+2020-11-19 08:54:15 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 08:54:15 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 08:55:53 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 08:55:53 [INFO] Using 64-bit JVM
+2020-11-19 08:55:53 [INFO] Loading properties
+2020-11-19 08:55:53 [INFO] Default game type: SURVIVAL
+2020-11-19 08:55:53 [INFO] Generating keypair
+2020-11-19 08:55:53 [INFO] Starting Minecraft server on *:25565
+2020-11-19 08:55:53 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 08:55:53 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 08:55:53 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 08:55:53 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 08:55:53 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 08:55:53 [INFO] Preparing level "world"
+2020-11-19 08:55:53 [INFO] Preparing start region for level 0
+2020-11-19 08:55:54 [INFO] Preparing spawn area: 39%
+2020-11-19 08:55:55 [INFO] World seed is -3459048919746078631
+2020-11-19 08:55:55 [INFO] Done (1.838s)! For help, type "help" or "?"
+2020-11-19 08:55:55 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 08:55:55 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 08:56:39 [INFO] There are 0/20 players online:
+2020-11-19 08:56:39 [INFO] 
+2020-11-19 08:56:48 [INFO] There are 0/20 players online:
+2020-11-19 08:56:48 [INFO] 
+2020-11-19 08:58:28 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 08:58:28 [INFO] Using 64-bit JVM
+2020-11-19 08:58:28 [INFO] Loading properties
+2020-11-19 08:58:28 [INFO] Default game type: SURVIVAL
+2020-11-19 08:58:28 [INFO] Generating keypair
+2020-11-19 08:58:28 [INFO] Starting Minecraft server on *:25565
+2020-11-19 08:58:28 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 08:58:28 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 08:58:28 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 08:58:28 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 08:58:28 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 08:58:28 [INFO] Preparing level "world"
+2020-11-19 08:58:29 [INFO] Preparing start region for level 0
+2020-11-19 08:58:30 [INFO] Preparing spawn area: 26%
+2020-11-19 08:58:30 [INFO] World seed is -3459048919746078631
+2020-11-19 08:58:30 [INFO] Done (2.001s)! For help, type "help" or "?"
+2020-11-19 08:58:30 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 08:58:31 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 08:58:31 [INFO] There are 0/20 players online:
+2020-11-19 08:58:31 [INFO] 
+2020-11-19 08:58:36 [INFO] There are 0/20 players online:
+2020-11-19 08:58:36 [INFO] 
+2020-11-19 08:58:53 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 08:58:53 [INFO] Using 64-bit JVM
+2020-11-19 08:58:53 [INFO] Loading properties
+2020-11-19 08:58:53 [INFO] Default game type: SURVIVAL
+2020-11-19 08:58:53 [INFO] Generating keypair
+2020-11-19 08:58:54 [INFO] Starting Minecraft server on *:25565
+2020-11-19 08:58:54 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 08:58:54 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 08:58:54 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 08:58:54 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 08:58:54 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 08:58:54 [INFO] Preparing level "world"
+2020-11-19 08:58:54 [INFO] Preparing start region for level 0
+2020-11-19 08:58:55 [INFO] Preparing spawn area: 50%
+2020-11-19 08:58:55 [INFO] World seed is -3459048919746078631
+2020-11-19 08:58:55 [INFO] Done (1.636s)! For help, type "help" or "?"
+2020-11-19 08:58:55 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 08:58:55 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 08:59:30 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 08:59:30 [INFO] Using 64-bit JVM
+2020-11-19 08:59:30 [INFO] Loading properties
+2020-11-19 08:59:30 [INFO] Default game type: SURVIVAL
+2020-11-19 08:59:30 [INFO] Generating keypair
+2020-11-19 08:59:30 [INFO] Starting Minecraft server on *:25565
+2020-11-19 08:59:30 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 08:59:30 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 08:59:30 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 08:59:30 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 08:59:30 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 08:59:30 [INFO] Preparing level "world"
+2020-11-19 08:59:31 [INFO] Preparing start region for level 0
+2020-11-19 08:59:32 [INFO] Preparing spawn area: 52%
+2020-11-19 08:59:32 [INFO] World seed is -3459048919746078631
+2020-11-19 08:59:32 [INFO] Done (1.568s)! For help, type "help" or "?"
+2020-11-19 08:59:32 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 08:59:32 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 08:59:32 [INFO] There are 0/20 players online:
+2020-11-19 08:59:32 [INFO] 
+2020-11-19 08:59:59 [INFO] There are 0/20 players online:
+2020-11-19 08:59:59 [INFO] 
+2020-11-19 09:00:17 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 09:00:17 [INFO] Using 64-bit JVM
+2020-11-19 09:00:17 [INFO] Loading properties
+2020-11-19 09:00:17 [INFO] Default game type: SURVIVAL
+2020-11-19 09:00:17 [INFO] Generating keypair
+2020-11-19 09:00:17 [INFO] Starting Minecraft server on *:25565
+2020-11-19 09:00:17 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 09:00:17 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 09:00:17 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 09:00:17 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 09:00:17 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 09:00:17 [INFO] Preparing level "world"
+2020-11-19 09:00:17 [INFO] Preparing start region for level 0
+2020-11-19 09:00:18 [INFO] Preparing spawn area: 52%
+2020-11-19 09:00:19 [INFO] World seed is -3459048919746078631
+2020-11-19 09:00:19 [INFO] Done (1.606s)! For help, type "help" or "?"
+2020-11-19 09:00:19 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 09:00:19 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 09:00:39 [INFO] There are 0/20 players online:
+2020-11-19 09:00:39 [INFO] 
+2020-11-19 09:00:41 [INFO] There are 0/20 players online:
+2020-11-19 09:00:41 [INFO] 
+2020-11-19 09:01:51 [INFO] Stopping server
+2020-11-19 09:01:51 [INFO] Saving players
+2020-11-19 09:01:51 [INFO] Saving worlds
+2020-11-19 09:01:51 [INFO] Closing listening thread
+2020-11-19 09:02:05 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 09:02:05 [INFO] Using 64-bit JVM
+2020-11-19 09:02:05 [INFO] Loading properties
+2020-11-19 09:02:05 [INFO] Default game type: SURVIVAL
+2020-11-19 09:02:05 [INFO] Generating keypair
+2020-11-19 09:02:06 [INFO] Starting Minecraft server on *:25565
+2020-11-19 09:02:06 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 09:02:06 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 09:02:06 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 09:02:06 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 09:02:06 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 09:02:06 [INFO] Preparing level "world"
+2020-11-19 09:02:06 [INFO] Preparing start region for level 0
+2020-11-19 09:02:07 [INFO] Preparing spawn area: 33%
+2020-11-19 09:02:08 [INFO] World seed is -3459048919746078631
+2020-11-19 09:02:08 [INFO] Done (2.053s)! For help, type "help" or "?"
+2020-11-19 09:02:08 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 09:02:08 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 09:02:08 [INFO] There are 0/20 players online:
+2020-11-19 09:02:08 [INFO] 
+2020-11-19 09:02:08 [INFO] There are 0/20 players online:
+2020-11-19 09:02:08 [INFO] 
+2020-11-19 09:02:08 [INFO] There are 0/20 players online:
+2020-11-19 09:02:08 [INFO] 
+2020-11-19 09:02:15 [INFO] There are 0/20 players online:
+2020-11-19 09:02:15 [INFO] 
+2020-11-19 09:02:17 [INFO] There are 0/20 players online:
+2020-11-19 09:02:17 [INFO] 
+2020-11-19 09:02:49 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 09:02:49 [INFO] Using 64-bit JVM
+2020-11-19 09:02:49 [INFO] Loading properties
+2020-11-19 09:02:49 [INFO] Default game type: SURVIVAL
+2020-11-19 09:02:49 [INFO] Generating keypair
+2020-11-19 09:02:49 [INFO] Starting Minecraft server on *:25565
+2020-11-19 09:02:49 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 09:02:49 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 09:02:49 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 09:02:49 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 09:02:49 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 09:02:49 [INFO] Preparing level "world"
+2020-11-19 09:02:49 [INFO] Preparing start region for level 0
+2020-11-19 09:02:50 [INFO] Preparing spawn area: 51%
+2020-11-19 09:02:51 [INFO] World seed is -3459048919746078631
+2020-11-19 09:02:51 [INFO] Done (1.621s)! For help, type "help" or "?"
+2020-11-19 09:02:51 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 09:02:51 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 09:03:59 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 09:03:59 [INFO] Using 64-bit JVM
+2020-11-19 09:03:59 [INFO] Loading properties
+2020-11-19 09:03:59 [INFO] Default game type: SURVIVAL
+2020-11-19 09:03:59 [INFO] Generating keypair
+2020-11-19 09:03:59 [INFO] Starting Minecraft server on *:25565
+2020-11-19 09:03:59 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 09:03:59 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 09:03:59 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 09:03:59 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 09:03:59 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 09:03:59 [INFO] Preparing level "world"
+2020-11-19 09:03:59 [INFO] Preparing start region for level 0
+2020-11-19 09:04:00 [INFO] Preparing spawn area: 51%
+2020-11-19 09:04:01 [INFO] World seed is -3459048919746078631
+2020-11-19 09:04:01 [INFO] Done (1.650s)! For help, type "help" or "?"
+2020-11-19 09:04:01 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 09:04:01 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 09:05:51 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 09:05:51 [INFO] Using 64-bit JVM
+2020-11-19 09:05:51 [INFO] Loading properties
+2020-11-19 09:05:51 [INFO] Default game type: SURVIVAL
+2020-11-19 09:05:51 [INFO] Generating keypair
+2020-11-19 09:05:51 [INFO] Starting Minecraft server on *:25565
+2020-11-19 09:05:51 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 09:05:51 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 09:05:51 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 09:05:51 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 09:05:51 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 09:05:51 [INFO] Preparing level "world"
+2020-11-19 09:05:51 [INFO] Preparing start region for level 0
+2020-11-19 09:05:52 [INFO] Preparing spawn area: 46%
+2020-11-19 09:05:53 [INFO] World seed is -3459048919746078631
+2020-11-19 09:05:53 [INFO] Done (1.781s)! For help, type "help" or "?"
+2020-11-19 09:05:53 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 09:05:53 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 09:06:28 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 09:06:28 [INFO] Using 64-bit JVM
+2020-11-19 09:06:28 [INFO] Loading properties
+2020-11-19 09:06:28 [INFO] Default game type: SURVIVAL
+2020-11-19 09:06:28 [INFO] Generating keypair
+2020-11-19 09:06:28 [INFO] Starting Minecraft server on *:25565
+2020-11-19 09:06:28 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 09:06:28 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 09:06:28 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 09:06:28 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 09:06:28 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 09:06:28 [INFO] Preparing level "world"
+2020-11-19 09:06:28 [INFO] Preparing start region for level 0
+2020-11-19 09:06:29 [INFO] Preparing spawn area: 54%
+2020-11-19 09:06:29 [INFO] World seed is -3459048919746078631
+2020-11-19 09:06:29 [INFO] Done (1.617s)! For help, type "help" or "?"
+2020-11-19 09:06:29 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 09:06:30 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 09:07:08 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 09:07:08 [INFO] Using 64-bit JVM
+2020-11-19 09:07:08 [INFO] Loading properties
+2020-11-19 09:07:08 [INFO] Default game type: SURVIVAL
+2020-11-19 09:07:08 [INFO] Generating keypair
+2020-11-19 09:07:08 [INFO] Starting Minecraft server on *:25565
+2020-11-19 09:07:08 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 09:07:08 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 09:07:08 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 09:07:08 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 09:07:08 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 09:07:08 [INFO] Preparing level "world"
+2020-11-19 09:07:08 [INFO] Preparing start region for level 0
+2020-11-19 09:07:09 [INFO] Preparing spawn area: 42%
+2020-11-19 09:07:10 [INFO] World seed is -3459048919746078631
+2020-11-19 09:07:10 [INFO] Done (1.818s)! For help, type "help" or "?"
+2020-11-19 09:07:10 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 09:07:10 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 09:07:11 [INFO] There are 0/20 players online:
+2020-11-19 09:07:11 [INFO] 
+2020-11-19 09:07:16 [INFO] There are 0/20 players online:
+2020-11-19 09:07:16 [INFO] 
+2020-11-19 09:07:49 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 09:07:49 [INFO] Using 64-bit JVM
+2020-11-19 09:07:49 [INFO] Loading properties
+2020-11-19 09:07:49 [INFO] Default game type: SURVIVAL
+2020-11-19 09:07:49 [INFO] Generating keypair
+2020-11-19 09:07:50 [INFO] Starting Minecraft server on *:25565
+2020-11-19 09:07:50 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 09:07:50 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 09:07:50 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 09:07:50 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 09:07:50 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 09:07:50 [INFO] Preparing level "world"
+2020-11-19 09:07:50 [INFO] Preparing start region for level 0
+2020-11-19 09:07:51 [INFO] Preparing spawn area: 28%
+2020-11-19 09:07:51 [INFO] World seed is -3459048919746078631
+2020-11-19 09:07:51 [INFO] Done (1.907s)! For help, type "help" or "?"
+2020-11-19 09:07:51 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 09:07:52 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 09:08:21 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 09:08:21 [INFO] Using 64-bit JVM
+2020-11-19 09:08:21 [INFO] Loading properties
+2020-11-19 09:08:21 [INFO] Default game type: SURVIVAL
+2020-11-19 09:08:21 [INFO] Generating keypair
+2020-11-19 09:08:21 [INFO] Starting Minecraft server on *:25565
+2020-11-19 09:08:21 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 09:08:21 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 09:08:21 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 09:08:21 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 09:08:21 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 09:08:21 [INFO] Preparing level "world"
+2020-11-19 09:08:21 [INFO] Preparing start region for level 0
+2020-11-19 09:08:22 [INFO] Preparing spawn area: 54%
+2020-11-19 09:08:23 [INFO] World seed is -3459048919746078631
+2020-11-19 09:08:23 [INFO] Done (1.605s)! For help, type "help" or "?"
+2020-11-19 09:08:23 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 09:08:23 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 09:08:23 [INFO] There are 0/20 players online:
+2020-11-19 09:08:23 [INFO] 
+2020-11-19 09:08:25 [INFO] There are 0/20 players online:
+2020-11-19 09:08:25 [INFO] 
+2020-11-19 09:08:42 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 09:08:42 [INFO] Using 64-bit JVM
+2020-11-19 09:08:42 [INFO] Loading properties
+2020-11-19 09:08:42 [INFO] Default game type: SURVIVAL
+2020-11-19 09:08:42 [INFO] Generating keypair
+2020-11-19 09:08:43 [INFO] Starting Minecraft server on *:25565
+2020-11-19 09:08:43 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 09:08:43 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 09:08:43 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 09:08:43 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 09:08:43 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 09:08:43 [INFO] Preparing level "world"
+2020-11-19 09:08:43 [INFO] Preparing start region for level 0
+2020-11-19 09:08:44 [INFO] Preparing spawn area: 55%
+2020-11-19 09:08:44 [INFO] World seed is -3459048919746078631
+2020-11-19 09:08:44 [INFO] Done (1.561s)! For help, type "help" or "?"
+2020-11-19 09:08:44 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 09:08:44 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 09:08:44 [INFO] There are 0/20 players online:
+2020-11-19 09:08:44 [INFO] 
+2020-11-19 09:13:04 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 09:13:04 [INFO] Using 64-bit JVM
+2020-11-19 09:13:04 [INFO] Loading properties
+2020-11-19 09:13:04 [INFO] Default game type: SURVIVAL
+2020-11-19 09:13:04 [INFO] Generating keypair
+2020-11-19 09:13:04 [INFO] Starting Minecraft server on *:25565
+2020-11-19 09:13:04 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 09:13:04 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 09:13:04 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 09:13:04 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 09:13:04 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 09:13:04 [INFO] Preparing level "world"
+2020-11-19 09:13:04 [INFO] Preparing start region for level 0
+2020-11-19 09:13:05 [INFO] Preparing spawn area: 56%
+2020-11-19 09:13:06 [INFO] World seed is -3459048919746078631
+2020-11-19 09:13:06 [INFO] Done (1.654s)! For help, type "help" or "?"
+2020-11-19 09:13:06 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 09:13:06 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 09:13:06 [INFO] There are 0/20 players online:
+2020-11-19 09:13:06 [INFO] 
+2020-11-19 09:13:57 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 09:13:57 [INFO] Using 64-bit JVM
+2020-11-19 09:13:57 [INFO] Loading properties
+2020-11-19 09:13:57 [INFO] Default game type: SURVIVAL
+2020-11-19 09:13:57 [INFO] Generating keypair
+2020-11-19 09:13:58 [INFO] Starting Minecraft server on *:25565
+2020-11-19 09:13:58 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 09:13:58 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 09:13:58 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 09:13:58 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 09:13:58 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 09:13:58 [INFO] Preparing level "world"
+2020-11-19 09:13:58 [INFO] Preparing start region for level 0
+2020-11-19 09:13:59 [INFO] Preparing spawn area: 52%
+2020-11-19 09:13:59 [INFO] World seed is -3459048919746078631
+2020-11-19 09:13:59 [INFO] Done (1.783s)! For help, type "help" or "?"
+2020-11-19 09:13:59 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 09:14:00 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 09:14:00 [INFO] There are 0/20 players online:
+2020-11-19 09:14:00 [INFO] 
+2020-11-19 09:23:29 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 09:23:29 [INFO] Using 64-bit JVM
+2020-11-19 09:23:29 [INFO] Loading properties
+2020-11-19 09:23:29 [INFO] Default game type: SURVIVAL
+2020-11-19 09:23:29 [INFO] Generating keypair
+2020-11-19 09:23:29 [INFO] Starting Minecraft server on *:25565
+2020-11-19 09:23:29 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 09:23:29 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 09:23:29 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 09:23:29 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 09:23:30 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 09:23:30 [INFO] Preparing level "world"
+2020-11-19 09:23:30 [INFO] Preparing start region for level 0
+2020-11-19 09:23:31 [INFO] Preparing spawn area: 52%
+2020-11-19 09:23:31 [INFO] World seed is -3459048919746078631
+2020-11-19 09:23:31 [INFO] Done (1.714s)! For help, type "help" or "?"
+2020-11-19 09:23:31 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 09:23:31 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 09:23:32 [INFO] There are 0/20 players online:
+2020-11-19 09:23:32 [INFO] 
+2020-11-19 09:23:33 [INFO] There are 0/20 players online:
+2020-11-19 09:23:33 [INFO] 
+2020-11-19 09:27:30 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 09:27:30 [INFO] Using 64-bit JVM
+2020-11-19 09:27:30 [INFO] Loading properties
+2020-11-19 09:27:30 [INFO] Default game type: SURVIVAL
+2020-11-19 09:27:30 [INFO] Generating keypair
+2020-11-19 09:27:30 [INFO] Starting Minecraft server on *:25565
+2020-11-19 09:27:30 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 09:27:30 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 09:27:30 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 09:27:30 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 09:27:30 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 09:27:30 [INFO] Preparing level "world"
+2020-11-19 09:27:30 [INFO] Preparing start region for level 0
+2020-11-19 09:27:31 [INFO] Preparing spawn area: 49%
+2020-11-19 09:27:32 [INFO] World seed is -3459048919746078631
+2020-11-19 09:27:32 [INFO] Done (1.821s)! For help, type "help" or "?"
+2020-11-19 09:27:32 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 09:27:32 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 09:27:32 [INFO] There are 0/20 players online:
+2020-11-19 09:27:32 [INFO] 
+2020-11-19 09:31:36 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 09:31:36 [INFO] Using 64-bit JVM
+2020-11-19 09:31:36 [INFO] Loading properties
+2020-11-19 09:31:36 [INFO] Default game type: SURVIVAL
+2020-11-19 09:31:36 [INFO] Generating keypair
+2020-11-19 09:31:37 [INFO] Starting Minecraft server on *:25565
+2020-11-19 09:31:37 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 09:31:37 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 09:31:37 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 09:31:37 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 09:31:37 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 09:31:37 [INFO] Preparing level "world"
+2020-11-19 09:31:37 [INFO] Preparing start region for level 0
+2020-11-19 09:31:38 [INFO] Preparing spawn area: 36%
+2020-11-19 09:31:39 [INFO] World seed is -3459048919746078631
+2020-11-19 09:31:39 [INFO] Done (1.928s)! For help, type "help" or "?"
+2020-11-19 09:31:39 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 09:31:39 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 09:31:39 [INFO] There are 0/20 players online:
+2020-11-19 09:31:39 [INFO] 
+2020-11-19 09:31:54 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 09:31:54 [INFO] Using 64-bit JVM
+2020-11-19 09:31:54 [INFO] Loading properties
+2020-11-19 09:31:54 [INFO] Default game type: SURVIVAL
+2020-11-19 09:31:54 [INFO] Generating keypair
+2020-11-19 09:31:54 [INFO] Starting Minecraft server on *:25565
+2020-11-19 09:31:55 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 09:31:55 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 09:31:55 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 09:31:55 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 09:31:55 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 09:31:55 [INFO] Preparing level "world"
+2020-11-19 09:31:55 [INFO] Preparing start region for level 0
+2020-11-19 09:31:56 [INFO] Preparing spawn area: 30%
+2020-11-19 09:31:56 [INFO] World seed is -3459048919746078631
+2020-11-19 09:31:56 [INFO] Done (1.954s)! For help, type "help" or "?"
+2020-11-19 09:31:56 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 09:31:57 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 09:32:04 [INFO] There are 0/20 players online:
+2020-11-19 09:32:04 [INFO] 
+2020-11-19 13:34:09 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-19 13:37:23 [INFO] There are 0/20 players online:
+2020-11-19 13:37:23 [INFO] 
+2020-11-19 13:39:56 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 13:39:56 [INFO] Using 64-bit JVM
+2020-11-19 13:39:56 [INFO] Loading properties
+2020-11-19 13:39:56 [INFO] Default game type: SURVIVAL
+2020-11-19 13:39:56 [INFO] Generating keypair
+2020-11-19 13:39:56 [INFO] Starting Minecraft server on *:25565
+2020-11-19 13:39:56 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 13:39:56 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 13:39:56 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 13:39:56 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 13:39:56 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 13:39:56 [INFO] Preparing level "world"
+2020-11-19 13:39:56 [INFO] Preparing start region for level 0
+2020-11-19 13:39:57 [INFO] Preparing spawn area: 41%
+2020-11-19 13:39:58 [INFO] World seed is -3459048919746078631
+2020-11-19 13:39:58 [INFO] Done (2.168s)! For help, type "help" or "?"
+2020-11-19 13:39:58 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 13:39:58 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 13:39:58 [INFO] There are 0/20 players online:
+2020-11-19 13:39:58 [INFO] 
+2020-11-19 13:40:03 [INFO] There are 0/20 players online:
+2020-11-19 13:40:03 [INFO] 
+2020-11-19 13:42:12 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 13:42:12 [INFO] Using 64-bit JVM
+2020-11-19 13:42:12 [INFO] Loading properties
+2020-11-19 13:42:12 [INFO] Default game type: SURVIVAL
+2020-11-19 13:42:12 [INFO] Generating keypair
+2020-11-19 13:42:12 [INFO] Starting Minecraft server on *:25565
+2020-11-19 13:42:12 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 13:42:12 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 13:42:12 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 13:42:12 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 13:42:12 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 13:42:12 [INFO] Preparing level "world"
+2020-11-19 13:42:12 [INFO] Preparing start region for level 0
+2020-11-19 13:42:13 [INFO] Preparing spawn area: 45%
+2020-11-19 13:42:14 [INFO] World seed is -3459048919746078631
+2020-11-19 13:42:14 [INFO] Done (1.796s)! For help, type "help" or "?"
+2020-11-19 13:42:14 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 13:42:14 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 13:42:29 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 13:42:29 [INFO] Using 64-bit JVM
+2020-11-19 13:42:29 [INFO] Loading properties
+2020-11-19 13:42:29 [INFO] Default game type: SURVIVAL
+2020-11-19 13:42:29 [INFO] Generating keypair
+2020-11-19 13:42:29 [INFO] Starting Minecraft server on *:25565
+2020-11-19 13:42:29 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 13:42:29 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 13:42:29 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 13:42:29 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 13:42:29 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 13:42:29 [INFO] Preparing level "world"
+2020-11-19 13:42:29 [INFO] Preparing start region for level 0
+2020-11-19 13:42:30 [INFO] Preparing spawn area: 21%
+2020-11-19 13:42:31 [INFO] World seed is -3459048919746078631
+2020-11-19 13:42:31 [INFO] Done (2.144s)! For help, type "help" or "?"
+2020-11-19 13:42:31 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 13:42:31 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 13:42:31 [INFO] There are 0/20 players online:
+2020-11-19 13:42:31 [INFO] 
+2020-11-19 13:43:17 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 13:43:17 [INFO] Using 64-bit JVM
+2020-11-19 13:43:17 [INFO] Loading properties
+2020-11-19 13:43:17 [INFO] Default game type: SURVIVAL
+2020-11-19 13:43:17 [INFO] Generating keypair
+2020-11-19 13:43:17 [INFO] Starting Minecraft server on *:25565
+2020-11-19 13:43:17 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 13:43:17 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 13:43:17 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 13:43:17 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 13:43:17 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 13:43:17 [INFO] Preparing level "world"
+2020-11-19 13:43:17 [INFO] Preparing start region for level 0
+2020-11-19 13:43:18 [INFO] Preparing spawn area: 9%
+2020-11-19 13:43:19 [INFO] Preparing spawn area: 85%
+2020-11-19 13:43:20 [INFO] World seed is -3459048919746078631
+2020-11-19 13:43:20 [INFO] Done (2.624s)! For help, type "help" or "?"
+2020-11-19 13:43:20 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 13:43:20 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 13:43:20 [INFO] There are 0/20 players online:
+2020-11-19 13:43:20 [INFO] 
+2020-11-19 13:46:02 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 13:46:02 [INFO] Using 64-bit JVM
+2020-11-19 13:46:02 [INFO] Loading properties
+2020-11-19 13:46:02 [INFO] Default game type: SURVIVAL
+2020-11-19 13:46:02 [INFO] Generating keypair
+2020-11-19 13:46:02 [INFO] Starting Minecraft server on *:25565
+2020-11-19 13:46:02 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 13:46:02 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 13:46:02 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 13:46:02 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 13:46:02 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 13:46:02 [INFO] Preparing level "world"
+2020-11-19 13:46:02 [INFO] Preparing start region for level 0
+2020-11-19 13:46:03 [INFO] Preparing spawn area: 34%
+2020-11-19 13:46:04 [INFO] World seed is -3459048919746078631
+2020-11-19 13:46:04 [INFO] Done (2.218s)! For help, type "help" or "?"
+2020-11-19 13:46:04 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 13:46:04 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 13:46:05 [INFO] There are 0/20 players online:
+2020-11-19 13:46:05 [INFO] 
+2020-11-19 13:47:15 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 13:47:15 [INFO] Using 64-bit JVM
+2020-11-19 13:47:15 [INFO] Loading properties
+2020-11-19 13:47:15 [INFO] Default game type: SURVIVAL
+2020-11-19 13:47:15 [INFO] Generating keypair
+2020-11-19 13:47:15 [INFO] Starting Minecraft server on *:25565
+2020-11-19 13:47:15 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 13:47:15 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 13:47:15 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 13:47:15 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 13:47:15 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 13:47:15 [INFO] Preparing level "world"
+2020-11-19 13:47:15 [INFO] Preparing start region for level 0
+2020-11-19 13:47:16 [INFO] Preparing spawn area: 51%
+2020-11-19 13:47:17 [INFO] World seed is -3459048919746078631
+2020-11-19 13:47:17 [INFO] Done (1.684s)! For help, type "help" or "?"
+2020-11-19 13:47:17 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 13:47:17 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 13:49:08 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 13:49:08 [INFO] Using 64-bit JVM
+2020-11-19 13:49:08 [INFO] Loading properties
+2020-11-19 13:49:09 [INFO] Default game type: SURVIVAL
+2020-11-19 13:49:09 [INFO] Generating keypair
+2020-11-19 13:49:09 [INFO] Starting Minecraft server on *:25565
+2020-11-19 13:49:09 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 13:49:09 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 13:49:09 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 13:49:09 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 13:49:09 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 13:49:09 [INFO] Preparing level "world"
+2020-11-19 13:49:09 [INFO] Preparing start region for level 0
+2020-11-19 13:49:10 [INFO] Preparing spawn area: 41%
+2020-11-19 13:49:11 [INFO] World seed is -3459048919746078631
+2020-11-19 13:49:11 [INFO] Done (1.816s)! For help, type "help" or "?"
+2020-11-19 13:49:11 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 13:49:11 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 13:49:11 [INFO] There are 0/20 players online:
+2020-11-19 13:49:11 [INFO] 
+2020-11-19 13:52:27 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 13:52:27 [INFO] Using 64-bit JVM
+2020-11-19 13:52:27 [INFO] Loading properties
+2020-11-19 13:52:27 [INFO] Default game type: SURVIVAL
+2020-11-19 13:52:27 [INFO] Generating keypair
+2020-11-19 13:52:27 [INFO] Starting Minecraft server on *:25565
+2020-11-19 13:52:27 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 13:52:27 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 13:52:27 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 13:52:27 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 13:52:27 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 13:52:27 [INFO] Preparing level "world"
+2020-11-19 13:52:27 [INFO] Preparing start region for level 0
+2020-11-19 13:52:28 [INFO] Preparing spawn area: 16%
+2020-11-19 13:52:29 [INFO] World seed is -3459048919746078631
+2020-11-19 13:52:29 [INFO] Done (2.177s)! For help, type "help" or "?"
+2020-11-19 13:52:29 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 13:52:29 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 13:52:30 [INFO] There are 0/20 players online:
+2020-11-19 13:52:30 [INFO] 
+2020-11-19 13:54:18 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 13:54:18 [INFO] Using 64-bit JVM
+2020-11-19 13:54:18 [INFO] Loading properties
+2020-11-19 13:54:18 [INFO] Default game type: SURVIVAL
+2020-11-19 13:54:18 [INFO] Generating keypair
+2020-11-19 13:54:18 [INFO] Starting Minecraft server on *:25565
+2020-11-19 13:54:18 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 13:54:18 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 13:54:18 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 13:54:18 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 13:54:18 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 13:54:18 [INFO] Preparing level "world"
+2020-11-19 13:54:18 [INFO] Preparing start region for level 0
+2020-11-19 13:54:19 [INFO] Preparing spawn area: 11%
+2020-11-19 13:54:20 [INFO] World seed is -3459048919746078631
+2020-11-19 13:54:20 [INFO] Done (2.197s)! For help, type "help" or "?"
+2020-11-19 13:54:20 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 13:54:20 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 13:54:20 [INFO] There are 0/20 players online:
+2020-11-19 13:54:20 [INFO] 
+2020-11-19 13:54:26 [INFO] There are 0/20 players online:
+2020-11-19 13:54:26 [INFO] 
+2020-11-19 13:54:32 [INFO] There are 0/20 players online:
+2020-11-19 13:54:32 [INFO] 
+2020-11-19 14:01:41 [INFO] There are 0/20 players online:
+2020-11-19 14:01:41 [INFO] 
+2020-11-19 14:01:47 [INFO] There are 0/20 players online:
+2020-11-19 14:01:47 [INFO] 
+2020-11-19 14:03:13 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:03:13 [INFO] Using 64-bit JVM
+2020-11-19 14:03:13 [INFO] Loading properties
+2020-11-19 14:03:13 [INFO] Default game type: SURVIVAL
+2020-11-19 14:03:13 [INFO] Generating keypair
+2020-11-19 14:03:13 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:03:13 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:03:13 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:03:13 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:03:13 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:03:13 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:03:13 [INFO] Preparing level "world"
+2020-11-19 14:03:13 [INFO] Preparing start region for level 0
+2020-11-19 14:03:14 [INFO] Preparing spawn area: 58%
+2020-11-19 14:03:14 [INFO] World seed is -3459048919746078631
+2020-11-19 14:03:14 [INFO] Done (1.617s)! For help, type "help" or "?"
+2020-11-19 14:03:14 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:03:14 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:03:15 [INFO] There are 0/20 players online:
+2020-11-19 14:03:15 [INFO] 
+2020-11-19 14:17:29 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:17:29 [INFO] Using 64-bit JVM
+2020-11-19 14:17:29 [INFO] Loading properties
+2020-11-19 14:17:29 [INFO] Default game type: SURVIVAL
+2020-11-19 14:17:29 [INFO] Generating keypair
+2020-11-19 14:17:29 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:17:29 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:17:29 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:17:29 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:17:29 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:17:29 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:17:29 [INFO] Preparing level "world"
+2020-11-19 14:17:29 [INFO] Preparing start region for level 0
+2020-11-19 14:17:30 [INFO] Preparing spawn area: 8%
+2020-11-19 14:17:31 [INFO] Preparing spawn area: 81%
+2020-11-19 14:17:32 [INFO] World seed is -3459048919746078631
+2020-11-19 14:17:32 [INFO] Done (2.702s)! For help, type "help" or "?"
+2020-11-19 14:17:32 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:17:32 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:17:32 [INFO] There are 0/20 players online:
+2020-11-19 14:17:32 [INFO] 
+2020-11-19 14:17:35 [INFO] That player cannot be found
+2020-11-19 14:20:26 [INFO] Stopping server
+2020-11-19 14:20:26 [INFO] Saving players
+2020-11-19 14:20:26 [INFO] Saving worlds
+2020-11-19 14:20:26 [INFO] Closing listening thread
+2020-11-19 14:24:55 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:24:55 [INFO] Using 64-bit JVM
+2020-11-19 14:24:55 [INFO] Loading properties
+2020-11-19 14:24:55 [INFO] Default game type: SURVIVAL
+2020-11-19 14:24:55 [INFO] Generating keypair
+2020-11-19 14:24:56 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:24:56 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:24:56 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:24:56 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:24:56 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:24:56 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:24:56 [INFO] Preparing level "world"
+2020-11-19 14:24:56 [INFO] Preparing start region for level 0
+2020-11-19 14:24:57 [INFO] Preparing spawn area: 0%
+2020-11-19 14:24:58 [INFO] Preparing spawn area: 85%
+2020-11-19 14:24:59 [INFO] World seed is -3459048919746078631
+2020-11-19 14:24:59 [INFO] Done (2.919s)! For help, type "help" or "?"
+2020-11-19 14:24:59 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:24:59 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:29:14 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:29:14 [INFO] Using 64-bit JVM
+2020-11-19 14:29:14 [INFO] Loading properties
+2020-11-19 14:29:14 [INFO] Default game type: SURVIVAL
+2020-11-19 14:29:14 [INFO] Generating keypair
+2020-11-19 14:29:15 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:29:15 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:29:15 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:29:15 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:29:15 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:29:15 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:29:15 [INFO] Preparing level "world"
+2020-11-19 14:29:15 [INFO] Preparing start region for level 0
+2020-11-19 14:29:16 [INFO] Preparing spawn area: 19%
+2020-11-19 14:29:17 [INFO] Preparing spawn area: 94%
+2020-11-19 14:29:17 [INFO] World seed is -3459048919746078631
+2020-11-19 14:29:17 [INFO] Done (2.362s)! For help, type "help" or "?"
+2020-11-19 14:29:17 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:29:17 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:30:04 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:30:04 [INFO] Using 64-bit JVM
+2020-11-19 14:30:04 [INFO] Loading properties
+2020-11-19 14:30:04 [INFO] Default game type: SURVIVAL
+2020-11-19 14:30:04 [INFO] Generating keypair
+2020-11-19 14:30:05 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:30:05 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:30:05 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:30:05 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:30:05 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:30:05 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:30:05 [INFO] Preparing level "world"
+2020-11-19 14:30:05 [INFO] Preparing start region for level 0
+2020-11-19 14:30:06 [INFO] Preparing spawn area: 24%
+2020-11-19 14:30:07 [INFO] World seed is -3459048919746078631
+2020-11-19 14:30:07 [INFO] Done (2.133s)! For help, type "help" or "?"
+2020-11-19 14:30:07 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:30:07 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:30:39 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:30:39 [INFO] Using 64-bit JVM
+2020-11-19 14:30:39 [INFO] Loading properties
+2020-11-19 14:30:39 [INFO] Default game type: SURVIVAL
+2020-11-19 14:30:39 [INFO] Generating keypair
+2020-11-19 14:30:40 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:30:40 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:30:40 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:30:40 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:30:40 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:30:40 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:30:40 [INFO] Preparing level "world"
+2020-11-19 14:30:41 [INFO] Preparing start region for level 0
+2020-11-19 14:30:42 [INFO] Preparing spawn area: 0%
+2020-11-19 14:30:43 [INFO] Preparing spawn area: 34%
+2020-11-19 14:30:44 [INFO] Preparing spawn area: 84%
+2020-11-19 14:30:44 [INFO] World seed is -3459048919746078631
+2020-11-19 14:30:44 [INFO] Done (3.966s)! For help, type "help" or "?"
+2020-11-19 14:30:44 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:30:44 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:30:50 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:30:50 [INFO] Using 64-bit JVM
+2020-11-19 14:30:50 [INFO] Loading properties
+2020-11-19 14:30:50 [INFO] Default game type: SURVIVAL
+2020-11-19 14:30:50 [INFO] Generating keypair
+2020-11-19 14:30:50 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:30:50 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:30:50 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:30:50 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:30:50 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:30:50 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:30:50 [INFO] Preparing level "world"
+2020-11-19 14:30:51 [INFO] Preparing start region for level 0
+2020-11-19 14:30:52 [INFO] Preparing spawn area: 52%
+2020-11-19 14:30:52 [INFO] World seed is -3459048919746078631
+2020-11-19 14:30:52 [INFO] Done (1.693s)! For help, type "help" or "?"
+2020-11-19 14:30:52 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:30:52 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:37:30 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-19 14:37:37 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:37:37 [INFO] Using 64-bit JVM
+2020-11-19 14:37:37 [INFO] Loading properties
+2020-11-19 14:37:37 [INFO] Default game type: SURVIVAL
+2020-11-19 14:37:37 [INFO] Generating keypair
+2020-11-19 14:37:37 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:37:37 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:37:37 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:37:37 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:37:37 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:37:37 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:37:37 [INFO] Preparing level "world"
+2020-11-19 14:37:38 [INFO] Preparing start region for level 0
+2020-11-19 14:37:39 [INFO] Preparing spawn area: 42%
+2020-11-19 14:37:39 [INFO] World seed is -3459048919746078631
+2020-11-19 14:37:39 [INFO] Done (1.724s)! For help, type "help" or "?"
+2020-11-19 14:37:39 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:37:39 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:39:41 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:39:41 [INFO] Using 64-bit JVM
+2020-11-19 14:39:41 [INFO] Loading properties
+2020-11-19 14:39:41 [INFO] Default game type: SURVIVAL
+2020-11-19 14:39:41 [INFO] Generating keypair
+2020-11-19 14:39:41 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:39:41 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:39:41 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:39:41 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:39:41 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:39:41 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:39:41 [INFO] Preparing level "world"
+2020-11-19 14:39:41 [INFO] Preparing start region for level 0
+2020-11-19 14:39:42 [INFO] Preparing spawn area: 20%
+2020-11-19 14:39:43 [INFO] World seed is -3459048919746078631
+2020-11-19 14:39:43 [INFO] Done (1.939s)! For help, type "help" or "?"
+2020-11-19 14:39:43 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:39:43 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:41:42 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:41:42 [INFO] Using 64-bit JVM
+2020-11-19 14:41:42 [INFO] Loading properties
+2020-11-19 14:41:42 [INFO] Default game type: SURVIVAL
+2020-11-19 14:41:42 [INFO] Generating keypair
+2020-11-19 14:41:42 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:41:42 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:41:42 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:41:42 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:41:42 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:41:42 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:41:42 [INFO] Preparing level "world"
+2020-11-19 14:41:43 [INFO] Preparing start region for level 0
+2020-11-19 14:41:44 [INFO] Preparing spawn area: 31%
+2020-11-19 14:41:45 [INFO] World seed is -3459048919746078631
+2020-11-19 14:41:45 [INFO] Done (2.215s)! For help, type "help" or "?"
+2020-11-19 14:41:45 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:41:45 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:41:51 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:41:51 [INFO] Using 64-bit JVM
+2020-11-19 14:41:51 [INFO] Loading properties
+2020-11-19 14:41:51 [INFO] Default game type: SURVIVAL
+2020-11-19 14:41:51 [INFO] Generating keypair
+2020-11-19 14:41:51 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:41:51 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:41:51 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:41:51 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:41:51 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:41:51 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:41:51 [INFO] Preparing level "world"
+2020-11-19 14:41:51 [INFO] Preparing start region for level 0
+2020-11-19 14:41:52 [INFO] Preparing spawn area: 56%
+2020-11-19 14:41:53 [INFO] World seed is -3459048919746078631
+2020-11-19 14:41:53 [INFO] Done (1.618s)! For help, type "help" or "?"
+2020-11-19 14:41:53 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:41:53 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:44:37 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:44:37 [INFO] Using 64-bit JVM
+2020-11-19 14:44:37 [INFO] Loading properties
+2020-11-19 14:44:37 [INFO] Default game type: SURVIVAL
+2020-11-19 14:44:37 [INFO] Generating keypair
+2020-11-19 14:44:37 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:44:37 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:44:37 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:44:37 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:44:37 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:44:37 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:44:37 [INFO] Preparing level "world"
+2020-11-19 14:44:38 [INFO] Preparing start region for level 0
+2020-11-19 14:44:39 [INFO] Preparing spawn area: 26%
+2020-11-19 14:44:39 [INFO] World seed is -3459048919746078631
+2020-11-19 14:44:39 [INFO] Done (2.064s)! For help, type "help" or "?"
+2020-11-19 14:44:39 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:44:39 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:44:57 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:44:57 [INFO] Using 64-bit JVM
+2020-11-19 14:44:57 [INFO] Loading properties
+2020-11-19 14:44:57 [INFO] Default game type: SURVIVAL
+2020-11-19 14:44:57 [INFO] Generating keypair
+2020-11-19 14:44:57 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:44:57 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:44:57 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:44:57 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:44:57 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:44:57 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:44:57 [INFO] Preparing level "world"
+2020-11-19 14:44:57 [INFO] Preparing start region for level 0
+2020-11-19 14:44:58 [INFO] Preparing spawn area: 20%
+2020-11-19 14:44:59 [INFO] Preparing spawn area: 84%
+2020-11-19 14:45:00 [INFO] World seed is -3459048919746078631
+2020-11-19 14:45:00 [INFO] Done (2.489s)! For help, type "help" or "?"
+2020-11-19 14:45:00 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:45:00 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:45:38 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:45:38 [INFO] Using 64-bit JVM
+2020-11-19 14:45:38 [INFO] Loading properties
+2020-11-19 14:45:38 [INFO] Default game type: SURVIVAL
+2020-11-19 14:45:38 [INFO] Generating keypair
+2020-11-19 14:45:38 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:45:38 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:45:38 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:45:38 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:45:38 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:45:38 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:45:38 [INFO] Preparing level "world"
+2020-11-19 14:45:38 [INFO] Preparing start region for level 0
+2020-11-19 14:45:39 [INFO] Preparing spawn area: 33%
+2020-11-19 14:45:40 [INFO] World seed is -3459048919746078631
+2020-11-19 14:45:40 [INFO] Done (1.872s)! For help, type "help" or "?"
+2020-11-19 14:45:40 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:45:40 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:46:01 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:46:01 [INFO] Using 64-bit JVM
+2020-11-19 14:46:01 [INFO] Loading properties
+2020-11-19 14:46:01 [INFO] Default game type: SURVIVAL
+2020-11-19 14:46:01 [INFO] Generating keypair
+2020-11-19 14:46:01 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:46:01 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:46:01 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:46:01 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:46:01 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:46:01 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:46:01 [INFO] Preparing level "world"
+2020-11-19 14:46:02 [INFO] Preparing start region for level 0
+2020-11-19 14:46:03 [INFO] Preparing spawn area: 48%
+2020-11-19 14:46:03 [INFO] World seed is -3459048919746078631
+2020-11-19 14:46:03 [INFO] Done (1.674s)! For help, type "help" or "?"
+2020-11-19 14:46:03 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:46:03 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:46:38 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:46:38 [INFO] Using 64-bit JVM
+2020-11-19 14:46:38 [INFO] Loading properties
+2020-11-19 14:46:38 [INFO] Default game type: SURVIVAL
+2020-11-19 14:46:38 [INFO] Generating keypair
+2020-11-19 14:46:38 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:46:38 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:46:38 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:46:38 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:46:38 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:46:38 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:46:38 [INFO] Preparing level "world"
+2020-11-19 14:46:38 [INFO] Preparing start region for level 0
+2020-11-19 14:46:39 [INFO] Preparing spawn area: 34%
+2020-11-19 14:46:40 [INFO] World seed is -3459048919746078631
+2020-11-19 14:46:40 [INFO] Done (1.911s)! For help, type "help" or "?"
+2020-11-19 14:46:40 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:46:40 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:46:58 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:46:58 [INFO] Using 64-bit JVM
+2020-11-19 14:46:58 [INFO] Loading properties
+2020-11-19 14:46:58 [INFO] Default game type: SURVIVAL
+2020-11-19 14:46:58 [INFO] Generating keypair
+2020-11-19 14:46:58 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:46:58 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:46:58 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:46:58 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:46:58 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:46:58 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:46:58 [INFO] Preparing level "world"
+2020-11-19 14:46:59 [INFO] Preparing start region for level 0
+2020-11-19 14:47:00 [INFO] Preparing spawn area: 42%
+2020-11-19 14:47:00 [INFO] World seed is -3459048919746078631
+2020-11-19 14:47:00 [INFO] Done (1.731s)! For help, type "help" or "?"
+2020-11-19 14:47:00 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:47:00 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:51:01 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:51:01 [INFO] Using 64-bit JVM
+2020-11-19 14:51:01 [INFO] Loading properties
+2020-11-19 14:51:01 [INFO] Default game type: SURVIVAL
+2020-11-19 14:51:01 [INFO] Generating keypair
+2020-11-19 14:51:01 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:51:01 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:51:01 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:51:01 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:51:01 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:51:01 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:51:01 [INFO] Preparing level "world"
+2020-11-19 14:51:01 [INFO] Preparing start region for level 0
+2020-11-19 14:51:02 [INFO] Preparing spawn area: 19%
+2020-11-19 14:51:03 [INFO] Preparing spawn area: 92%
+2020-11-19 14:51:03 [INFO] World seed is -3459048919746078631
+2020-11-19 14:51:03 [INFO] Done (2.333s)! For help, type "help" or "?"
+2020-11-19 14:51:03 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:51:04 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:54:30 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:54:30 [INFO] Using 64-bit JVM
+2020-11-19 14:54:30 [INFO] Loading properties
+2020-11-19 14:54:30 [INFO] Default game type: SURVIVAL
+2020-11-19 14:54:30 [INFO] Generating keypair
+2020-11-19 14:54:30 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:54:30 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:54:30 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:54:30 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:54:30 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:54:30 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:54:30 [INFO] Preparing level "world"
+2020-11-19 14:54:31 [INFO] Preparing start region for level 0
+2020-11-19 14:54:32 [INFO] Preparing spawn area: 6%
+2020-11-19 14:54:33 [INFO] Preparing spawn area: 78%
+2020-11-19 14:54:33 [INFO] World seed is -3459048919746078631
+2020-11-19 14:54:33 [INFO] Done (2.559s)! For help, type "help" or "?"
+2020-11-19 14:54:33 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:54:33 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:55:25 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:55:25 [INFO] Using 64-bit JVM
+2020-11-19 14:55:25 [INFO] Loading properties
+2020-11-19 14:55:25 [INFO] Default game type: SURVIVAL
+2020-11-19 14:55:25 [INFO] Generating keypair
+2020-11-19 14:55:25 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:55:25 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:55:25 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:55:25 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:55:25 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:55:25 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:55:25 [INFO] Preparing level "world"
+2020-11-19 14:55:25 [INFO] Preparing start region for level 0
+2020-11-19 14:55:27 [INFO] Preparing spawn area: 12%
+2020-11-19 14:55:28 [INFO] Preparing spawn area: 92%
+2020-11-19 14:55:28 [INFO] World seed is -3459048919746078631
+2020-11-19 14:55:28 [INFO] Done (2.476s)! For help, type "help" or "?"
+2020-11-19 14:55:28 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:55:28 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 14:58:30 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 14:58:30 [INFO] Using 64-bit JVM
+2020-11-19 14:58:30 [INFO] Loading properties
+2020-11-19 14:58:30 [INFO] Default game type: SURVIVAL
+2020-11-19 14:58:30 [INFO] Generating keypair
+2020-11-19 14:58:31 [INFO] Starting Minecraft server on *:25565
+2020-11-19 14:58:31 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 14:58:31 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 14:58:31 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 14:58:31 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 14:58:31 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 14:58:31 [INFO] Preparing level "world"
+2020-11-19 14:58:31 [INFO] Preparing start region for level 0
+2020-11-19 14:58:32 [INFO] Preparing spawn area: 2%
+2020-11-19 14:58:33 [INFO] Preparing spawn area: 66%
+2020-11-19 14:58:33 [INFO] World seed is -3459048919746078631
+2020-11-19 14:58:33 [INFO] Done (2.824s)! For help, type "help" or "?"
+2020-11-19 14:58:33 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 14:58:34 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 15:00:05 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 15:00:05 [INFO] Using 64-bit JVM
+2020-11-19 15:00:05 [INFO] Loading properties
+2020-11-19 15:00:05 [INFO] Default game type: SURVIVAL
+2020-11-19 15:00:05 [INFO] Generating keypair
+2020-11-19 15:00:05 [INFO] Starting Minecraft server on *:25565
+2020-11-19 15:00:05 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 15:00:05 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 15:00:05 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 15:00:05 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 15:00:05 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 15:00:05 [INFO] Preparing level "world"
+2020-11-19 15:00:06 [INFO] Preparing start region for level 0
+2020-11-19 15:00:07 [INFO] Preparing spawn area: 2%
+2020-11-19 15:00:08 [INFO] Preparing spawn area: 84%
+2020-11-19 15:00:08 [INFO] World seed is -3459048919746078631
+2020-11-19 15:00:08 [INFO] Done (2.591s)! For help, type "help" or "?"
+2020-11-19 15:00:08 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 15:00:08 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 15:56:33 [INFO] There are 0/20 players online:
+2020-11-19 15:56:33 [INFO] 
+2020-11-19 16:01:31 [INFO] There are 0/20 players online:
+2020-11-19 16:01:31 [INFO] 
+2020-11-19 16:02:10 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-19 16:02:11 [INFO] nancy[/127.0.0.1:63159] logged in with entity id 41 at (39954.4875, 92.0, -84852.30000001192)
+2020-11-19 16:02:11 [INFO] nancy joined the game
+2020-11-19 16:02:14 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-19 16:02:29 [INFO] nancy was slain by entity.WoodSpider.name
+2020-11-19 16:02:29 [INFO] There are 1/20 players online:
+2020-11-19 16:02:29 [INFO] nancy
+2020-11-19 16:03:25 [INFO] There are 1/20 players online:
+2020-11-19 16:03:25 [INFO] nancy
+2020-11-19 16:03:47 [INFO] Spreading nancy players 0.5 blocks around 0.5,0.0 (min 100000.0 blocks apart)
+2020-11-19 16:03:49 [INFO] Successfully spread 1 players around 0.5,0.5
+2020-11-19 16:03:52 [INFO] Set nancy's spawn point to (-99992, 66, 35830)
+2020-11-19 16:03:57 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-19 16:04:50 [INFO] There are 1/20 players online:
+2020-11-19 16:04:50 [INFO] nancy
+2020-11-19 16:07:41 [INFO] There are 1/20 players online:
+2020-11-19 16:07:41 [INFO] nancy
+2020-11-19 16:07:44 [INFO] There are 1/20 players online:
+2020-11-19 16:07:44 [INFO] nancy
+2020-11-19 16:07:46 [INFO] There are 1/20 players online:
+2020-11-19 16:07:46 [INFO] nancy
+2020-11-19 16:07:50 [INFO] There are 1/20 players online:
+2020-11-19 16:07:50 [INFO] nancy
+2020-11-19 16:10:59 [INFO] nancy was slain by Spider
+2020-11-19 16:13:03 [INFO] nancy was slain by Spider
+2020-11-19 16:13:22 [INFO] There are 1/20 players online:
+2020-11-19 16:13:22 [INFO] nancy
+2020-11-19 16:14:00 [INFO] There are 1/20 players online:
+2020-11-19 16:14:00 [INFO] nancy
+2020-11-19 16:14:49 [INFO] There are 1/20 players online:
+2020-11-19 16:14:49 [INFO] nancy
+2020-11-19 16:15:02 [INFO] There are 1/20 players online:
+2020-11-19 16:15:02 [INFO] nancy
+2020-11-19 16:15:07 [INFO] nancy was slain by Spider
+2020-11-19 16:17:11 [INFO] nancy was slain by Spider
+2020-11-19 16:17:38 [INFO] There are 1/20 players online:
+2020-11-19 16:17:38 [INFO] nancy
+2020-11-19 16:17:47 [INFO] Set nancy's spawn point to (-99997, 65, 35831)
+2020-11-19 16:18:36 [INFO] There are 1/20 players online:
+2020-11-19 16:18:36 [INFO] nancy
+2020-11-19 16:27:57 [INFO] Set nancy's spawn point to (-99997, 64, 35831)
+2020-11-19 16:29:47 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2020-11-19 16:29:57 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 16:29:57 [INFO] Using 64-bit JVM
+2020-11-19 16:29:57 [INFO] Loading properties
+2020-11-19 16:29:57 [INFO] Default game type: SURVIVAL
+2020-11-19 16:29:57 [INFO] Generating keypair
+2020-11-19 16:29:57 [INFO] Starting Minecraft server on *:25565
+2020-11-19 16:29:57 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 16:29:57 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 16:29:57 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 16:29:57 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 16:29:57 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 16:29:57 [INFO] Preparing level "world"
+2020-11-19 16:29:58 [INFO] Preparing start region for level 0
+2020-11-19 16:29:59 [INFO] Preparing spawn area: 36%
+2020-11-19 16:29:59 [INFO] World seed is -3459048919746078631
+2020-11-19 16:29:59 [INFO] Done (1.967s)! For help, type "help" or "?"
+2020-11-19 16:29:59 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 16:29:59 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 16:31:19 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 16:31:19 [INFO] Using 64-bit JVM
+2020-11-19 16:31:19 [INFO] Loading properties
+2020-11-19 16:31:19 [INFO] Default game type: SURVIVAL
+2020-11-19 16:31:19 [INFO] Generating keypair
+2020-11-19 16:31:19 [INFO] Starting Minecraft server on *:25565
+2020-11-19 16:31:19 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 16:31:19 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 16:31:19 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 16:31:19 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 16:31:19 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 16:31:19 [INFO] Preparing level "world"
+2020-11-19 16:31:19 [INFO] Preparing start region for level 0
+2020-11-19 16:31:20 [INFO] Preparing spawn area: 31%
+2020-11-19 16:31:21 [INFO] World seed is -3459048919746078631
+2020-11-19 16:31:21 [INFO] Done (2.102s)! For help, type "help" or "?"
+2020-11-19 16:31:21 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 16:31:21 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 16:31:45 [INFO] Starting minecraft server version 1.6.4-MITE-HDS (R196)
+2020-11-19 16:31:45 [INFO] Using 64-bit JVM
+2020-11-19 16:31:45 [INFO] Loading properties
+2020-11-19 16:31:45 [INFO] Default game type: SURVIVAL
+2020-11-19 16:31:45 [INFO] Generating keypair
+2020-11-19 16:31:45 [INFO] Starting Minecraft server on *:25565
+2020-11-19 16:31:45 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2020-11-19 16:31:45 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2020-11-19 16:31:45 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2020-11-19 16:31:45 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2020-11-19 16:31:45 [INFO] White-list is ALL-INCLUSIVE
+2020-11-19 16:31:45 [INFO] Preparing level "world"
+2020-11-19 16:31:46 [INFO] Preparing start region for level 0
+2020-11-19 16:31:47 [INFO] Preparing spawn area: 17%
+2020-11-19 16:31:48 [INFO] Preparing spawn area: 98%
+2020-11-19 16:31:48 [INFO] World seed is -3459048919746078631
+2020-11-19 16:31:48 [INFO] Done (2.357s)! For help, type "help" or "?"
+2020-11-19 16:31:48 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2020-11-19 16:31:48 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2020-11-19 16:34:00 [INFO] There are 0/20 players online:
+2020-11-19 16:34:00 [INFO] 
+2020-11-19 16:34:38 [INFO] There are 0/20 players online:
+2020-11-19 16:34:38 [INFO] 
+2020-11-19 16:34:45 [INFO] There are 0/20 players online:
+2020-11-19 16:34:45 [INFO] 
+2020-11-19 16:35:00 [INFO] You must specify which player you wish to perform this action on.
+2020-11-19 16:35:06 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-19 16:35:08 [INFO] nancy[/127.0.0.1:50374] logged in with entity id 38 at (-99996.5, 64.0, 35831.5)
+2020-11-19 16:35:08 [INFO] nancy joined the game
+2020-11-19 16:35:14 [INFO] There are 1/20 players online:
+2020-11-19 16:35:14 [INFO] nancy
+2020-11-19 16:35:22 [INFO] Set nancy's spawn point to (-99997, 64, 35831)
+2020-11-19 16:37:15 [INFO] There are 1/20 players online:
+2020-11-19 16:37:15 [INFO] nancy
+2020-11-19 16:37:29 [INFO] That player cannot be found
+2020-11-19 16:40:38 [INFO] nancy starved to death
+2020-11-19 16:49:13 [INFO] Stopping server
+2020-11-19 16:49:13 [INFO] Saving players
+2020-11-19 16:49:13 [INFO] Closing listening thread
+2020-11-19 16:49:14 [INFO] nancy left the game
+2020-11-19 16:49:14 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2020-11-19 16:49:14 [INFO] nancy lost connection: disconnect.endOfStream
+2020-11-19 16:49:14 [INFO] nancy left the game
