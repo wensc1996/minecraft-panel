@@ -8,17 +8,19 @@
                     <router-view></router-view>
                 </el-main>
             </el-container>
-            <el-footer>3</el-footer>
+            <el-footer><Footer></Footer></el-footer>
         </el-container>
     </div>
 </template>
 <script>
 import Header from '@/layout/head'
 import SideMenu from '@/layout/side'
+import Footer from '@/layout/foot'
 export default {
     components: {
         Header,
-        SideMenu
+        SideMenu,
+        Footer
     },
     computed: {
         getRouteName () {

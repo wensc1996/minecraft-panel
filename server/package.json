@@ -19,13 +19,13 @@
     "egg-ci": "^1.11.0",
     "egg-mock": "^3.21.0",
     "eslint": "^5.13.0",
-    "eslint-config-egg": "^7.1.0"
+    "eslint-config-egg": "^7.1.0",
+    "fs-extra": "^9.0.1"
   },
   "engines": {
     "node": ">=10.0.0"
   },
   "scripts": {
-    
     "stop": "egg-scripts stop --title=egg-server-init",
     "dev": "egg-bin dev --sticky",
     "start": "egg-scripts start --sticky",

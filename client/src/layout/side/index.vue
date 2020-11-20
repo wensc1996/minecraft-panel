@@ -55,7 +55,7 @@ export default {
 </script>
 <style lang="scss">
 div[side-bar]{
-    height: 100vh;
+    height: 100%;
     background: gainsboro;
 }
 </style>

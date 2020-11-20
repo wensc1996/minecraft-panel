@@ -3,10 +3,14 @@
 const Controller = require('egg').Controller;
 
 class mcBridgeController extends Controller {
-    async getBridgeMessage() {
+    async killProcess() {
         const { ctx } = this;
-        ctx.body = await this.ctx.service.mcbridge.get(ctx.request.body);
+        console.log(ctx)
+        ctx.body = ctx.io.controller.mcbridge.killProcess(ctx.request.body);
+    }
+    async beginProcess() {
+        const { ctx } = this;
+        ctx.body = ctx.io.controller.mcbridge.beginProcess(ctx.request.body);
     }
 }
-
 module.exports = mcBridgeController;
