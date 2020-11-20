@@ -8,6 +8,7 @@ const Response = require('../../../src/response')
 const path = require("path")
 let java = spawn('java', ['-Xmx1024M', '-Xms1024M', '-jar', path.join(__dirname,'../../../../mc')+'\\server.jar', 'nogui'], {cwd: path.join(__dirname,'../../../../mc')});
 let flag = false
+let serverStatus = true
 class minecraft {
     start(){
         return new Promise((resolve, rejects)=>{
@@ -59,10 +60,22 @@ class DefaultController extends Controller {
                 // ctx.socket.emit('wensc', iconv.decode(Buffer.from(data, 'binary'), 'cp936'));
                 ctx.app.io.of('/').to(room).emit('wensc', iconv.decode(Buffer.from(data, 'binary'), 'cp936'));
             });
+            serverStatus = true
             java.on('close', (code) => {
-                console.log({code: -1, msg: '子进程退出，退出码'})
+                serverStatus = false
+                console.log({code: -1, msg: '子进程退出，退出码' + code})
             });
             flag = true
+        }
+    }
+    serverStatus(e){
+        const { ctx, app } = this;
+        if(serverStatus){
+            let res = new Response({code: 1, msg: '子进程在执行', data : ''})
+            ctx.body = res
+        }else{
+            let res = new Response({code: -1, msg: '子进程已关闭', data : ''})
+            ctx.body = res
         }
     }
     killProcess(e) {

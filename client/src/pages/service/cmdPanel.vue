@@ -57,13 +57,17 @@ export default {
             }
             if (this.isAskedPlayer) {
                 let players = this.trimBlank(res.split('[INFO]')[1]).split(',')
+                if (players[0] == '') players = []
+                // this.$store.commit('SETREBORNTYPE', '')
                 this.$store.commit('SETPLAYERS', players)
                 this.isAskedPlayer = false
             }
             if (/Set \S+ spawn point to/.test(res)) {
-                let playerId = res.match(/Set (\S+)'s spawn point to/)[1]
-                let coordinate = this.trimBlank(res.match(/(-?\d+, -?\d+, -?\d+)/)[1])
-                this.$store.commit('SETCURRENTPOSITION', {playerId, coordinate})
+                if (this.$store.getters.GETREBORNTYPE == 'record') {
+                    let playerId = res.match(/Set (\S+)'s spawn point to/)[1]
+                    let coordinate = this.trimBlank(res.match(/(-?\d+, -?\d+, -?\d+)/)[1])
+                    this.$store.commit('SETCURRENTPOSITION', {playerId, coordinate})
+                }
             }
         },
         listPlayers() {

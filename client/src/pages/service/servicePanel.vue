@@ -4,9 +4,9 @@
             <div class="service-control">
                 <span class="title">服务器状态控制</span>
                 <div class="btn-group">
-                    <el-button @click="startProcess">启动</el-button>
+                    <el-button @click="startProcess" :disabled="serverStatus">启动</el-button>
                     <el-button>重启</el-button>
-                    <el-button @click="closeProcess">关闭</el-button>
+                    <el-button @click="closeProcess" :disabled="!serverStatus">关闭</el-button>
                 </div>
             </div>
 
@@ -15,8 +15,8 @@
                     <el-tab-pane label="状态管理">
                         <div>
                             <el-button>设立家的坐标点</el-button>
-                            <el-button>关闭队友伤害</el-button>
-                            <el-button>开启队友伤害</el-button>
+                            <el-button @click="closeTeamsFile">关闭队友伤害</el-button>
+                            <el-button @click="openTeamsFile">开启队友伤害</el-button>
                             <el-button @click="backupPlayers">存档</el-button>
                         </div>
                     </el-tab-pane>
@@ -108,7 +108,8 @@ export default {
                 name: '',
                 region: '',
                 type: ''
-            }
+            },
+            serverStatus: true
         }
     },
     methods: {
@@ -118,11 +119,24 @@ export default {
         onSubmit () {
             console.log('submit!')
         },
+        closeTeamsFile() {
+            // TODO
+            this.$socket.emit('thread', '')
+        },
         async getLocation() {
             let res = await this.post('wensc/getLocationList', {userId: 1001})
             this.coordinateTable = res.data.data
         },
-        recordCoordinate() {
+        async getServerStatus() {
+            let res = await this.get('wensc/serverStatus', {})
+            if (res.data.code == 1) {
+                this.serverStatus = true
+            } else {
+                this.serverStatus = false
+            }
+        },
+        recordCoordinate() { // 纪录当前坐标点
+            this.$store.commit('SETREBORNTYPE', 'record')
             this.$bus.$emit('record', '')
         },
         teleport(index, row) {
@@ -171,6 +185,7 @@ export default {
     },
     mounted() {
         this.getLocation()
+        this.getServerStatus()
     },
     watch: {
         '$store.state.currentPosition'(val) {
@@ -178,7 +193,6 @@ export default {
             val.name = this.formInline.remark
             this.post('wensc/addLocation', val).then((res) => {
                 if (res.status == 200 && res.data.code == 1) {
-                    console.log(res.data.msg)
                     this.getLocation()
                 }
             })

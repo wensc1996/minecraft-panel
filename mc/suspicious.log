@@ -2611,3 +2611,11 @@
 2020-11-19 16:47:21 [INFO] entity.VampireBat.name (id=10658) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 3.0->0.0
 2020-11-19 16:47:22 [INFO] Bat (id=10608) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 3.0->0.0
 2020-11-19 16:48:41 [INFO] Bat (id=11853) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 3.0->0.0
+2020-11-20 08:54:27 [INFO] Bat (id=11750) hit by lava taking 4.0 raw damage vs 0.0 protection, resulting in a loss of 4.0 health: 3.0->0.0
+2020-11-20 08:54:42 [INFO] Enderman (id=12763) hit by drown taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 40.0->39.0
+2020-11-20 08:57:38 [INFO] nancy (id=38) hit by starve taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 6.0->5.0
+2020-11-20 08:58:03 [INFO] nancy (id=38) hit by starve taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 5.0->4.0
+2020-11-20 08:58:28 [INFO] nancy (id=38) hit by starve taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 4.0->3.0
+2020-11-20 08:58:53 [INFO] nancy (id=38) hit by starve taking 1.0 raw damage vs 0.0 protection, resulting in a loss of 1.0 health: 3.0->2.0
+2020-11-20 08:59:03 [INFO] Wolf attacked Chicken dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 4.0->1.0
+2020-11-20 08:59:05 [INFO] Wolf attacked Chicken dealing 3.0 raw damage vs 0.0 protection, resulting in a loss of 3.0 health: 1.0->0.0

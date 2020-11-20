@@ -13,9 +13,10 @@ module.exports = app => {
     router.post('/deleteLocation', controller.location.deleteLocation);
 
     io.of('/').route('thread', io.controller.mcbridge.thread)
-
+    
     router.post('/killProcess', io.controller.mcbridge.killProcess);
     router.post('/beginProcess', io.controller.mcbridge.beginProcess);
+    router.get('/serverStatus', io.controller.mcbridge.serverStatus);
 
     router.post('/backupPlayer', controller.playerFiles.backupPlayer);
     router.post('/restorePlayer', controller.playerFiles.restorePlayer);

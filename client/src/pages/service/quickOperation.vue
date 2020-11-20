@@ -60,6 +60,7 @@ export default {
             this.$socket.emit('thread', `/spreadplayers 0 0 0 100000 false ${row.name}`)
         },
         reborn(index, row) {
+            this.$store.commit('SETREBORNTYPE', 'reborn') // 其中定位含有两个功能，这里用vuex来管理当前是定位还是纪录位置
             this.$socket.emit('thread', `/spawnpoint ${row.name}`)
         },
         async restorePLayer(index, row) {
