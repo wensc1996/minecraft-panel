@@ -20,7 +20,8 @@ export default {
             msgContainer: [],
             id: '',
             isAskedPlayer: false,
-            players: []
+            players: [],
+            timer: null
         }
     },
     mounted () {

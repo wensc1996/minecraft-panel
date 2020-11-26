@@ -15,16 +15,19 @@
                     <el-tab-pane label="状态管理">
                         <div>
                             <el-button>设立家的坐标点</el-button>
-                            <el-button @click="closeTeamsFile">关闭队友伤害</el-button>
-                            <el-button @click="openTeamsFile">开启队友伤害</el-button>
+                            <el-button @click="closeTeamsFire">关闭队友伤害</el-button>
+                            <el-button @click="openTeamsFire">开启队友伤害</el-button>
                             <el-button @click="backupPlayers">存档</el-button>
                         </div>
                     </el-tab-pane>
                     <el-tab-pane label="队伍管理">队伍管理</el-tab-pane>
                     <el-tab-pane label="坐标管理">
-                        <el-form :inline="true" :model="formInline" class="demo-form-inline">
+                        <el-form :inline="true" :model="recordInfo" class="demo-form-inline">
+                            <el-form-item label="你的游戏ID">
+                                <el-input v-model="recordInfo.user" placeholder="请输入你的游戏ID"></el-input>
+                            </el-form-item>
                             <el-form-item label="纪录当前坐标点：">
-                                <el-input v-model="formInline.remark" placeholder="请输入地点备注名称"></el-input>
+                                <el-input v-model="recordInfo.remark" placeholder="请输入地点备注名称"></el-input>
                             </el-form-item>
                             <el-form-item>
                                 <el-button type="primary" @click="recordCoordinate">纪录</el-button>
@@ -70,18 +73,21 @@
                         </el-table>
                     </el-tab-pane>
                     <el-tab-pane label="配置管理">
-                        <el-form :label-position="labelPosition" label-width="120px" :model="formLabelAlign">
+                        <el-form :label-position="labelPosition" label-width="120px" :model="gameSetting">
                             <el-form-item label="游戏端口">
-                                <el-input v-model="formLabelAlign.name"></el-input>
+                                <el-input v-model="gameSetting.gamePort"></el-input>
                             </el-form-item>
                             <el-form-item label="控制面板端口">
-                                <el-input v-model="formLabelAlign.name"></el-input>
+                                <el-input v-model="gameSetting.panelPort"></el-input>
                             </el-form-item>
                             <el-form-item label="玩家人数">
-                                <el-input v-model="formLabelAlign.region"></el-input>
+                                <el-input v-model="gameSetting.playerNum"></el-input>
                             </el-form-item>
-                            <el-form-item label="内存大小">
-                                <el-input v-model="formLabelAlign.type"></el-input>
+                            <el-form-item label="最小内存">
+                                <el-input v-model="gameSetting.minMemory"></el-input>
+                            </el-form-item>
+                            <el-form-item label="最大内存">
+                                <el-input v-model="gameSetting.maxMemory"></el-input>
                             </el-form-item>
                             <el-form-item>
                                 <el-button>保存</el-button>
@@ -98,30 +104,47 @@ export default {
     data () {
         return {
             activeNames: ['1'],
-            formInline: {
+            recordInfo: {
                 user: '',
                 remark: ''
             },
             coordinateTable: [],
             labelPosition: 'right',
-            formLabelAlign: {
-                name: '',
-                region: '',
-                type: ''
+            gameSetting: {
+                gamePort: 25565,
+                panelPort: 8080,
+                playerNum: 20,
+                minMemory: 1000,
+                maxMemory: 4000
             },
             serverStatus: true
         }
     },
     methods: {
+        openTeamsFire() {
+            this.$socket.emit('thread', '/scoreboard teams option team friendlyFire true')
+            this.$notify({
+                title: '成功',
+                message: '开启队伤成功',
+                type: 'success'
+            })
+        },
         handleChange (val) {
             console.log(val)
         },
         onSubmit () {
             console.log('submit!')
         },
-        closeTeamsFile() {
-            // TODO
-            this.$socket.emit('thread', '')
+        closeTeamsFire() {
+            this.$socket.emit('thread', '/scoreboard teams add team')
+            this.$socket.emit('thread', '/scoreboard teams join team @a')
+            this.$socket.emit('thread', '/scoreboard teams option team color blue')
+            this.$socket.emit('thread', '/scoreboard teams option team friendlyFire false')
+            this.$notify({
+                title: '成功',
+                message: '关闭队伤成功',
+                type: 'success'
+            })
         },
         async getLocation() {
             let res = await this.post('wensc/getLocationList', {userId: 1001})
@@ -144,7 +167,6 @@ export default {
             row.coordinate.split(',').forEach((item, index) => {
                 if (index != 1) position += item + ' '
             })
-            console.log('/spreadplayers ' + position + '0 1 false wensc')
             this.$socket.emit('thread', '/spreadplayers ' + position + '0 1 false wensc')
         },
         async startProcess() {

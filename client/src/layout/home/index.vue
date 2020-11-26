@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div controlPanel>
         <el-container>
             <el-header><Header></Header></el-header>
             <el-container>
@@ -30,4 +30,9 @@ export default {
 }
 </script>
 <style lang="scss">
+    div[controlPanel]{
+        .el-container{
+            height: 90.2vh;
+        }
+    }
 </style>
