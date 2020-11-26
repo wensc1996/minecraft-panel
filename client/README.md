@@ -8,7 +8,7 @@
 # 安装相关依赖
 npm install
 
-# 客户端启动链接 localhost:7001
+# 客户端启动链接 localhost:8080
 npm run dev
 
 # build for production with minification
