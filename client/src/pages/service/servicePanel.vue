@@ -15,8 +15,13 @@
                     <el-tab-pane label="状态管理">
                         <div>
                             <el-button>设立家的坐标点</el-button>
+<<<<<<< HEAD
                             <el-button @click="closeTeamsFire">关闭队友伤害</el-button>
                             <el-button @click="openTeamsFire">开启队友伤害</el-button>
+=======
+                            <el-button @click="closeTeamsFile">关闭队友伤害</el-button>
+                            <el-button @click="openTeamsFile">开启队友伤害</el-button>
+>>>>>>> 6bbabaffd572b3ab9a82c26389c7bcac4634d427
                             <el-button @click="backupPlayers">存档</el-button>
                         </div>
                     </el-tab-pane>
@@ -27,7 +32,11 @@
                                 <el-input v-model="recordInfo.user" placeholder="请输入你的游戏ID"></el-input>
                             </el-form-item>
                             <el-form-item label="纪录当前坐标点：">
+<<<<<<< HEAD
                                 <el-input v-model="recordInfo.remark" placeholder="请输入地点备注名称"></el-input>
+=======
+                                <el-input v-model="formInline.remark" placeholder="请输入地点备注名称"></el-input>
+>>>>>>> 6bbabaffd572b3ab9a82c26389c7bcac4634d427
                             </el-form-item>
                             <el-form-item>
                                 <el-button type="primary" @click="recordCoordinate">纪录</el-button>
@@ -110,12 +119,19 @@ export default {
             },
             coordinateTable: [],
             labelPosition: 'right',
+<<<<<<< HEAD
             gameSetting: {
                 gamePort: 25565,
                 panelPort: 8080,
                 playerNum: 20,
                 minMemory: 1000,
                 maxMemory: 4000
+=======
+            formLabelAlign: {
+                name: '',
+                region: '',
+                type: ''
+>>>>>>> 6bbabaffd572b3ab9a82c26389c7bcac4634d427
             },
             serverStatus: true
         }
@@ -135,6 +151,7 @@ export default {
         onSubmit () {
             console.log('submit!')
         },
+<<<<<<< HEAD
         closeTeamsFire() {
             this.$socket.emit('thread', '/scoreboard teams add team')
             this.$socket.emit('thread', '/scoreboard teams join team @a')
@@ -145,6 +162,11 @@ export default {
                 message: '关闭队伤成功',
                 type: 'success'
             })
+=======
+        closeTeamsFile() {
+            // TODO
+            this.$socket.emit('thread', '')
+>>>>>>> 6bbabaffd572b3ab9a82c26389c7bcac4634d427
         },
         async getLocation() {
             let res = await this.post('wensc/getLocationList', {userId: 1001})
@@ -167,6 +189,10 @@ export default {
             row.coordinate.split(',').forEach((item, index) => {
                 if (index != 1) position += item + ' '
             })
+<<<<<<< HEAD
+=======
+            console.log('/spreadplayers ' + position + '0 1 false wensc')
+>>>>>>> 6bbabaffd572b3ab9a82c26389c7bcac4634d427
             this.$socket.emit('thread', '/spreadplayers ' + position + '0 1 false wensc')
         },
         async startProcess() {

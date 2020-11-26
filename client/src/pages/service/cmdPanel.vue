@@ -20,8 +20,12 @@ export default {
             msgContainer: [],
             id: '',
             isAskedPlayer: false,
+<<<<<<< HEAD
             players: [],
             timer: null
+=======
+            players: []
+>>>>>>> 6bbabaffd572b3ab9a82c26389c7bcac4634d427
         }
     },
     mounted () {
