@@ -30,9 +30,4 @@ export default {
 }
 </script>
 <style lang="scss">
-    div[controlPanel]{
-        .el-container{
-            height: 90.2vh;
-        }
-    }
 </style>

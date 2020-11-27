@@ -20,12 +20,8 @@ export default {
             msgContainer: [],
             id: '',
             isAskedPlayer: false,
-<<<<<<< HEAD
             players: [],
             timer: null
-=======
-            players: []
->>>>>>> 6bbabaffd572b3ab9a82c26389c7bcac4634d427
         }
     },
     mounted () {
@@ -78,13 +74,13 @@ export default {
         listPlayers() {
             this.$socket.emit('thread', '/list')
         },
-        recordPlayer() {
-            this.$socket.emit('thread', '/spawnpoint wensc')
+        recordPlayer(val) {
+            this.$socket.emit('thread', '/spawnpoint ' + val)
         }
     },
     created() {
         this.$bus.$on('record', (val) => {
-            this.recordPlayer()
+            this.recordPlayer(val)
         })
     }
 }

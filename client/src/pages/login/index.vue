@@ -8,7 +8,7 @@
                 <el-input v-model="accountInfo.userId"></el-input>
             </el-form-item>
             <el-form-item label="密码">
-                <el-input v-model="accountInfo.password"></el-input>
+                <el-input v-model="accountInfo.password" type="password"></el-input>
             </el-form-item>
              <el-form-item>
                 <el-button type="primary" @click="submitLogin">立即登录</el-button>
@@ -30,6 +30,7 @@ export default {
         async submitLogin() {
             let res = await this.post('wensc/login', this.accountInfo)
             if (res.data.code == 1) {
+                this.$store.commit('SETUSERINFO', res.data.data)
                 this.$router.push('/home/service')
             } else {
                 this.$notify({
@@ -44,7 +45,7 @@ export default {
 </script>
 <style lang = "sass">
     div[login]{
-        background-color: rgb(131,175,155);
+        background: url('../../images/login-bg.jpg');
         height: 100vh;
         display: flex;
         align-items: center;
@@ -52,7 +53,7 @@ export default {
         .accountForm{
             border-radius: 10px;
             padding: 20px;
-            background-color: rgba(252,157,154,0.5);
+            background-color: rgb(124,203,79);
             width: 30%;
             .el-form-item__label{
                 color: white

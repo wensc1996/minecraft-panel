@@ -20,4 +20,9 @@ module.exports = app => {
 
     router.post('/backupPlayer', controller.playerFiles.backupPlayer);
     router.post('/restorePlayer', controller.playerFiles.restorePlayer);
+
+    router.get('/getUserList', controller.user.getUserList);
+    router.post('/updatePassword', controller.user.updatePassword);
+    router.delete('/deleteUser', controller.user.deleteUser);
+    router.post('/addNewUser', controller.user.addNewUser);
 };

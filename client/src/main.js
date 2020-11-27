@@ -20,16 +20,16 @@ Vue.use(new VueSocketIO({
     debug: true,
     // 服务器端地址
     connection: 'http://127.0.0.1:7001/',
-    vuex: {
-    }
+    vuex: {}
 }))
 const store = new Vuex.Store({
-    state: {
+    state: sessionStorage.getItem('state') ? JSON.parse(sessionStorage.getItem('state')) : {
         // 大家可以把 state 想象成 组件中的 data ,专门用来存储数据的
         // 如果在 组件中，想要访问，store 中的数据，只能通过 this.$store.state.*** 来访问
         players: [],
         currentPosition: {},
-        rebornType: ''
+        rebornType: '',
+        userInfo: {}
     },
     mutations: {
         // 注意： 如果要操作 store 中的 state 值，只能通过 调用 mutations 提供的方法，才能操作对应的数据，不推荐直接操作 state 中的数据，因为 万一导致了数据的紊乱，不能快速定位到错误的原因，因为，每个组件都可能有操作数据的方法；
@@ -44,6 +44,9 @@ const store = new Vuex.Store({
         },
         SETREBORNTYPE(state, val) {
             state.rebornType = val
+        },
+        SETUSERINFO(state, val) {
+            state.userInfo = val
         }
     },
     getters: {
@@ -56,6 +59,9 @@ const store = new Vuex.Store({
         },
         GETREBORNTYPE(state) {
             return state.rebornType
+        },
+        GETUSERINFO(state) {
+            return state.userInfo
         }
         // 经过咱们回顾对比，发现 getters 中的方法， 和组件中的过滤器比较类似，因为 过滤器和 getters 都没有修改原数据， 都是把原数据做了一层包装，提供给了 调用者；
         // 其次， getters 也和 computed 比较像， 只要 state 中的数据发生变化了，那么，如果 getters 正好也引用了这个数据，那么 就会立即触发 getters 的重新求值；
