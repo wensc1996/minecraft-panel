@@ -23,6 +23,6 @@ module.exports = app => {
 
     router.get('/getUserList', controller.user.getUserList);
     router.post('/updatePassword', controller.user.updatePassword);
-    router.delete('/deleteUser', controller.user.deleteUser);
+    router.post('/deleteUser', controller.user.deleteUser);
     router.post('/addNewUser', controller.user.addNewUser);
 };

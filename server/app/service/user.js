@@ -34,7 +34,7 @@ class UserService extends Service {
     }
     async deleteUser(options) {
         let mysql = new Mysql()
-        let res = await mysql.action('delete from user where userId = ?', options.userId)
+        let res = await mysql.action('delete from user where user_id = ?', options.userId)
         if(res){
             return new Response({code: 1, msg: '删除用户成功', data : res})
         }else{
