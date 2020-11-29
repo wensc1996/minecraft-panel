@@ -19,7 +19,7 @@ Vue.use(ElementUI)
 Vue.use(new VueSocketIO({
     debug: true,
     // 服务器端地址
-    connection: 'http://127.0.0.1:7001/',
+    connection: '/',
     vuex: {}
 }))
 const store = new Vuex.Store({

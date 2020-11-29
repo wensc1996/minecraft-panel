@@ -14,7 +14,7 @@ module.exports = {
     proxyTable: {
       '/wensc': {
           // 此处的写法，目的是为了 将 /api 替换成 https://www.baidu.com/
-          target: 'http://127.0.0.1:7001',
+          target: 'http://127.0.0.1:7002',
           // 允许跨域
           changeOrigin: true,
           // ws: true,
@@ -22,11 +22,19 @@ module.exports = {
           pathRewrite: {
               '^/wensc': '/'
           }
+      },
+      '/socket.io':{
+          // 此处的写法，目的是为了 将 /api 替换成 https://www.baidu.com/
+          target: 'http://127.0.0.1:7002',
+          // 允许跨域
+          changeOrigin: true,
+          // ws: true,
+          secure: false
       }
     },
     // Various Dev Server settings
-    host: 'localhost', // can be overwritten by process.env.HOST
-    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    host: '0.0.0.0', // can be overwritten by process.env.HOST
+    port: 36104, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,

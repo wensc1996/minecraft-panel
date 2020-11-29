@@ -20,7 +20,8 @@ class PlayerFilesService extends Service {
         }
     }
     async restorePlayer(options){
-        let res = await this.copyFile('../mc/world/backup/wensc.dat', '../mc/world/players/wensc.dat')
+        console.log(options)
+        let res = await this.copyFile(`../mc/world/backup/${options.playerId}.dat`, `../mc/world/players/${options.playerId}.dat`)
         if(res){
             return new Response({code: 1, msg: '恢复玩家存档成功', data : ''})
         }else{

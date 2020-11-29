@@ -80,6 +80,8 @@ export default {
                         name: item
                     }
                 })
+            } else {
+                this.players = []
             }
         }
     },

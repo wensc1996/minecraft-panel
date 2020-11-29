@@ -70,6 +70,9 @@ export default {
                     this.$store.commit('SETCURRENTPOSITION', {playerId, coordinate})
                 }
             }
+            if (/(\S+ joined the game)/.test(res)) { // |(\S+ left the game)
+                this.listPlayers()
+            }
         },
         listPlayers() {
             this.$socket.emit('thread', '/list')

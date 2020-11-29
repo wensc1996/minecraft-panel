@@ -23,10 +23,10 @@
                     <el-tab-pane label="队伍管理">队伍管理</el-tab-pane>
                     <el-tab-pane label="坐标管理">
                         <el-form :inline="true" :model="recordInfo" class="demo-form-inline">
-                            <el-form-item label="你的游戏ID">
-                                <el-input v-model="recordInfo.playerId" placeholder="请输入你的游戏ID"></el-input>
+                            <el-form-item label="游戏ID">
+                                <el-input v-model="recordInfo.playerId" placeholder="请输入需要传送的玩家游戏ID"></el-input>
                             </el-form-item>
-                            <el-form-item label="纪录当前坐标点：">
+                            <el-form-item label="坐标点名称：">
                                 <el-input v-model="recordInfo.remark" placeholder="请输入地点备注名称"></el-input>
                             </el-form-item>
                             <el-form-item>
@@ -147,7 +147,7 @@ export default {
             })
         },
         async getLocation() {
-            let res = await this.post('wensc/getLocationList', {userId: 1001})
+            let res = await this.post('wensc/getLocationList', {userId: this.$store.getters.GETUSERINFO.user_id})
             this.coordinateTable = res.data.data
         },
         async getServerStatus() {
@@ -219,7 +219,8 @@ export default {
         },
         '$store.state.currentPosition'(val) {
             val.remarks = 2
-            val.name = this.formInline.remark
+            val.name = this.recordInfo.remark
+            val.userId = this.$store.getters.GETUSERINFO.user_id
             this.post('wensc/addLocation', val).then((res) => {
                 if (res.status == 200 && res.data.code == 1) {
                     this.getLocation()

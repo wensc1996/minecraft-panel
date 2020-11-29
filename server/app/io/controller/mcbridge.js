@@ -4,9 +4,10 @@
 const Controller = require('egg').Controller;
 const { exec, spawn } = require('child_process');
 const Response = require('../../../src/response')
+const iconv = require('iconv-lite');
 // const java = spawn('cd', ["server/src/bridge/mine"]);
 const path = require("path")
-let java = spawn('java', ['-Xmx1024M', '-Xms1024M', '-jar', path.join(__dirname,'../../../../mc')+'\\server.jar', 'nogui'], {cwd: path.join(__dirname,'../../../../mc')});
+let java = spawn('java', ['-Xmx16000M', '-Xms1024M', '-jar', path.join(__dirname,'../../../../mc')+'\\server.jar', 'nogui'], {cwd: path.join(__dirname,'../../../../mc')});
 let flag = false
 let serverStatus = true
 class DefaultController extends Controller {
@@ -28,14 +29,14 @@ class DefaultController extends Controller {
             java.stdout.on('data', (data) => {
                 // console.log(data)
                 // console.log();
-                ctx.app.io.of('/').to(room).emit('wensc', Buffer.from(data, 'binary').toString('utf-8'));
-               
+                // ctx.app.io.of('/').to(room).emit('wensc', Buffer.from(data, 'binary').toString('utf-8'));
+                ctx.app.io.of('/').to(room).emit('wensc', iconv.decode(Buffer.from(data, 'binary'), 'cp936'));
             });
             java.stderr.on('data', (data) => {
                 
                 // console.log(iconv.decode(Buffer.from(data, 'binary'), 'cp936'))3
                 // console.log(Buffer.from(data, 'binary').toString('utf-8'))
-                ctx.app.io.of('/').to(room).emit('wensc', Buffer.from(data, 'binary').toString('utf-8'));
+                ctx.app.io.of('/').to(room).emit('wensc', iconv.decode(Buffer.from(data, 'binary'), 'cp936'));
             });
             serverStatus = true
             java.on('close', (code) => {
@@ -63,7 +64,7 @@ class DefaultController extends Controller {
     }
     beginProcess(e){
         const { ctx, app } = this;
-        java = spawn('java', ['-Xmx1024M', '-Xms1024M', '-jar', path.join(__dirname,'../../../../mc')+'\\server.jar', 'nogui'], {cwd: path.join(__dirname,'../../../../mc')});
+        java = spawn('java', ['-Xmx16000M', '-Xms1024M', '-jar', path.join(__dirname,'../../../../mc')+'\\server.jar', 'nogui'], {cwd: path.join(__dirname,'../../../../mc')});
         flag = false
         let res = new Response({code: 1, msg: '进程开启成功', data : ''})
         ctx.body = res
