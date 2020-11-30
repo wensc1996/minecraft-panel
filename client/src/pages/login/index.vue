@@ -1,6 +1,6 @@
 <template>
     <div login>
-        <el-form label-position="left" label-width="80px" :model="accountInfo" class="accountForm">
+        <el-form label-position="left" label-width="80px" :model="accountInfo" class="accountForm" @keyup.enter.native="submitLogin">
             <el-form-item>
                 <h3>我的世界服务器面板</h3>
             </el-form-item>
@@ -8,7 +8,7 @@
                 <el-input v-model="accountInfo.userId"></el-input>
             </el-form-item>
             <el-form-item label="密码">
-                <el-input v-model="accountInfo.password" type="password"></el-input>
+                <el-input v-model="accountInfo.password" type="password" ></el-input>
             </el-form-item>
              <el-form-item>
                 <el-button type="primary" @click="submitLogin">立即登录</el-button>

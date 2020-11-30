@@ -2,7 +2,7 @@
     <div cmd-panel>
         <div class="cmd">
             <div style="margin-top: 15px;">
-                <el-input placeholder="请输入指令" v-model="cmd">
+                <el-input placeholder="请输入指令" v-model="cmd" @keyup.enter.native="actCMD">
                     <template slot="append"><el-button @click="actCMD">执行</el-button></template>
                 </el-input>
             </div>
@@ -40,7 +40,8 @@ export default {
         wensc: function (res) {
         // 以下对接收来的数据进行操作
             this.resultFilter(res)
-            this.msgContainer.push(res)
+            if (this.msgContainer.length > 20) this.msgContainer.pop()
+            this.msgContainer.unshift(res)
         }
     },
     methods: {
@@ -57,11 +58,11 @@ export default {
                 return
             }
             if (this.isAskedPlayer) {
-                let players = this.trimBlank(res.split('[INFO]')[1]).split(',')
-                if (players[0] == '') players = []
-                // this.$store.commit('SETREBORNTYPE', '')
-                this.$store.commit('SETPLAYERS', players)
-                this.isAskedPlayer = false
+                // let players = this.trimBlank(res.split('[INFO]')[1]).split(',')
+                // if (players[0] == '') players = []
+                // // this.$store.commit('SETREBORNTYPE', '')
+                // this.$store.commit('SETPLAYERS', players)
+                // this.isAskedPlayer = false
             }
             if (/Set \S+ spawn point to/.test(res)) {
                 if (this.$store.getters.GETREBORNTYPE == 'record') {
@@ -72,6 +73,12 @@ export default {
             }
             if (/(\S+ joined the game)/.test(res)) { // |(\S+ left the game)
                 this.listPlayers()
+            }
+            if (/That player cannot be found/.test(res)) { // |(\S+ left the game)
+                this.$notify.error({
+                    title: '错误',
+                    message: '当前用户不在线或不存在'
+                })
             }
         },
         listPlayers() {

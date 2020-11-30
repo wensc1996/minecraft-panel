@@ -168,6 +168,7 @@ export default {
                 if (index != 1) position += item + ' '
             })
             this.$socket.emit('thread', '/spreadplayers ' + position + '0 1 false ' + this.recordInfo.playerId)
+            this.recordInfo.playerId = this.$store.getters.GETUSERINFO.player_id
         },
         async startProcess() {
             let res = await this.post('wensc/beginProcess', {})
@@ -220,12 +221,20 @@ export default {
         '$store.state.currentPosition'(val) {
             val.remarks = 2
             val.name = this.recordInfo.remark
-            val.userId = this.$store.getters.GETUSERINFO.user_id
-            this.post('wensc/addLocation', val).then((res) => {
-                if (res.status == 200 && res.data.code == 1) {
-                    this.getLocation()
-                }
-            })
+            if (val.name == '') {
+                this.$notify.error({
+                    title: '错误',
+                    message: '请输入坐标点名称'
+                })
+            } else {
+                val.userId = this.$store.getters.GETUSERINFO.user_id
+                this.post('wensc/addLocation', val).then((res) => {
+                    if (res.status == 200 && res.data.code == 1) {
+                        this.recordInfo.playerId = this.$store.getters.GETUSERINFO.player_id
+                        this.getLocation()
+                    }
+                })
+            }
         }
     }
 }
