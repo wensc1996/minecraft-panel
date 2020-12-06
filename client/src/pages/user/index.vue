@@ -85,12 +85,10 @@ export default {
         handleClick(row) {
             this.repasswordUserId = row.user_id
             this.dialogVisible = !this.dialogVisible
-            console.log(row)
         },
         async getUserList() {
             let res = await this.get('wensc/getUserList', {})
             if (res.data.code == 1) {
-                console.log(res.data.data)
                 this.userList = res.data.data
             }
         }

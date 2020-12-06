@@ -28,14 +28,18 @@ export default {
     },
     methods: {
         async submitLogin() {
-            let res = await this.post('wensc/login', this.accountInfo)
-            if (res.data.code == 1) {
-                this.$store.commit('SETUSERINFO', res.data.data)
+            let personInfo = await this.post('wensc/login', this.accountInfo)
+            if (personInfo.data.code == 1) {
+                this.$store.commit('SETUSERINFO', personInfo.data.data)
+                let privileges = await this.post('wensc/getRolePrivilege', {
+                    roleId: personInfo.data.data.role_id
+                })
+                this.$store.commit('SETPRIVILEGES', privileges.data.data)
                 this.$router.push('/home/service')
             } else {
                 this.$notify({
                     title: '失败',
-                    message: res.data.msg,
+                    message: personInfo.data.msg,
                     type: 'error'
                 })
             }

@@ -25,5 +25,21 @@ class Mysql {
             })
         })
     }
+    async batchAction(sql, sqlParams) {
+        return new Promise((resolve, reject) => {
+            if(!this.mysqlConn) {
+                this.mysqlConn = mysqlModual.createConnection(this.baseInfo)
+                this.mysqlConn.connect()
+            }
+            // 使用箭头函数解决this丢失问题，或者采用self = this也可以
+            this.mysqlConn.query(sql, sqlParams, (error, results, fields) => {
+                if (error) reject(error)
+                else resolve(results)
+            })
+        })
+    }
+    closeMysql(){
+        this.mysqlConn.end()
+    }
 }
 module.exports = Mysql

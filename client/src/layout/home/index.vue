@@ -26,6 +26,11 @@ export default {
         getRouteName () {
             return this.$route.name
         }
+    },
+    mounted() {
+        if (Object.keys(this.$store.getters.GETUSERINFO).length == 0) {
+            this.$router.push('/login')
+        }
     }
 }
 </script>

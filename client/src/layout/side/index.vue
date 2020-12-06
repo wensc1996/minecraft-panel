@@ -17,13 +17,17 @@
                 <i class="el-icon-document"></i>
                 <span slot="title">控制面板</span>
             </el-menu-item>
+            <el-menu-item index="/home/user">
+                <i class="el-icon-setting"></i>
+                <span slot="title">用户管理</span>
+            </el-menu-item>
+            <el-menu-item index="/home/roleManage" v-if="checkAdmin()">
+                <i class="el-icon-setting"></i>
+                <span slot="title">角色管理</span>
+            </el-menu-item>
             <el-menu-item index="/home/file">
                 <i class="el-icon-document"></i>
                 <span slot="title">文件管理</span>
-            </el-menu-item>
-            <el-menu-item index="/home/user">
-                <i class="el-icon-setting"></i>
-                <span slot="title">用户</span>
             </el-menu-item>
             <el-menu-item index="/home/nat-ddns">
                 <i class="el-icon-setting"></i>
@@ -42,14 +46,21 @@
 <script>
 export default {
     methods: {
+        checkAdmin() {
+            if (this.$store.getters.GETUSERINFO.role_id == 1) {
+                return true
+            } else {
+                return false
+            }
+        },
         handleOpen (key, keyPath) {
-            console.log(key, keyPath)
         },
         handleClose (key, keyPath) {
-            console.log(key, keyPath)
         },
         handleSelect (key, keyPath) {
         }
+    },
+    mounted() {
     }
 }
 </script>

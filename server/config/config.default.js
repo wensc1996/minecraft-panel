@@ -29,6 +29,10 @@ module.exports = appInfo => {
             enable: false
         }
     }
+    config.multipart = {
+        mode: 'file',
+        fileExtensions: ['dat'],
+    }
 
     config.io = {
         init: { }, // passed to engine.io

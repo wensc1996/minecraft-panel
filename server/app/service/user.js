@@ -9,7 +9,7 @@ class UserService extends Service {
     }
     async getUserList() {
         let mysql = new Mysql()
-        let res = await mysql.action('select user_id,player_id,login_ip,role from user')
+        let res = await mysql.action('select user_id,player_id,login_ip,role_name as role from user,role where user.role_id = role.role_id')
         return new Response({code: 1, msg: '查询成功', data : res})
     }
     async updatePassword(options) {
@@ -26,7 +26,7 @@ class UserService extends Service {
     }
     async addNewUser(options) {
         let mysql = new Mysql()
-        let res = await mysql.action('insert into user(player_id, login_ip, role, password) values (?, ?, ?, ?)', [options.playerId, options.loginIp, options.role, this.md5(options.password)])
+        let res = await mysql.action('insert into user(player_id, login_ip, role_id, password) values (?, ?, ?, ?)', [options.playerId, options.loginIp, options.roleId, this.md5(options.password)])
         if(res){
             return new Response({code: 1, msg: '新增用户成功', data : res})
         }else{

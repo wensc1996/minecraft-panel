@@ -11,5 +11,9 @@ class PlayerFiles extends Controller {
         const { ctx } = this;
         ctx.body = await this.ctx.service.playerFiles.restorePlayer(ctx.request.body);
     }
+    async uploadFile() {
+        const { ctx } = this;
+        ctx.body = await this.ctx.service.playerFiles.uploadFile(ctx.request)
+    }
 }
 module.exports = PlayerFiles;

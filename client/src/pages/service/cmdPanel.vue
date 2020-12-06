@@ -65,6 +65,11 @@ export default {
                 // this.isAskedPlayer = false
             }
             if (/Set \S+ spawn point to/.test(res)) {
+                this.$notify({
+                    title: '成功',
+                    message: '重生/定位成功',
+                    type: 'success'
+                })
                 if (this.$store.getters.GETREBORNTYPE == 'record') {
                     let playerId = res.match(/Set (\S+)'s spawn point to/)[1]
                     let coordinate = this.trimBlank(res.match(/(-?\d+, -?\d+, -?\d+)/)[1])

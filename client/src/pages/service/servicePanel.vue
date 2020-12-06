@@ -17,7 +17,6 @@
                             <el-button>设立家的坐标点</el-button>
                             <el-button @click="closeTeamsFire">关闭队友伤害</el-button>
                             <el-button @click="openTeamsFire">开启队友伤害</el-button>
-                            <el-button @click="backupPlayers">存档</el-button>
                         </div>
                     </el-tab-pane>
                     <el-tab-pane label="队伍管理">队伍管理</el-tab-pane>
@@ -94,6 +93,17 @@
                             </el-form-item>
                         </el-form>
                     </el-tab-pane>
+                    <el-tab-pane label="玩家存档上传" v-if="checkEnabled('uploadFile')">
+                        <el-upload
+                        :http-request="uploadFile"
+                        class="upload-demo"
+                        action="wensc/uploadFile"
+                        :limit="1"
+                        :file-list="fileList">
+                        <el-button size="small" type="primary">点击上传</el-button>
+                        <div slot="tip" class="el-upload__tip">只能上传.dat文件</div>
+                        </el-upload>
+                    </el-tab-pane>
                 </el-tabs>
             </el-collapse-item>
         </el-collapse>
@@ -117,10 +127,50 @@ export default {
                 minMemory: 1000,
                 maxMemory: 4000
             },
-            serverStatus: true
+            serverStatus: true,
+            fileList: [],
+            uploadForm: new FormData()
         }
     },
     methods: {
+        checkEnabled(name) {
+            if (this.$store.getters.GETPRIVILEGES.find(item => {
+                if (item.menu_func_name == name) {
+                    return true
+                } else {
+                    return false
+                }
+            })) {
+                return true
+            } else {
+                return false
+            }
+        },
+        async uploadFile(file) {
+            let name = file.file.name
+            if (name.substr(name.lastIndexOf('.') + 1) != 'dat') {
+                this.$notify.error({
+                    title: '错误',
+                    message: '请上传.dat文件'
+                })
+                this.fileList = []
+                return
+            }
+            this.uploadForm.append('files', file.file) // 上传的文件放在files里面了
+            let res = await this.$axios({
+                method: 'post',
+                url: 'wensc/uploadFile',
+                data: this.uploadForm
+            })
+            if (res.data.code == 1) {
+                this.$notify({
+                    title: '成功',
+                    message: '上传玩家存档成功',
+                    type: 'success'
+                })
+            }
+            this.fileList = []
+        },
         openTeamsFire() {
             this.$socket.emit('thread', '/scoreboard teams option team friendlyFire true')
             this.$notify({
@@ -180,14 +230,6 @@ export default {
         },
         async closeProcess() {
             let res = await this.post('wensc/killProcess', {})
-            this.$notify({
-                title: '成功',
-                message: res.data.msg,
-                type: 'success'
-            })
-        },
-        async backupPlayers() {
-            let res = await this.post('wensc/backupPlayer', {})
             this.$notify({
                 title: '成功',
                 message: res.data.msg,
