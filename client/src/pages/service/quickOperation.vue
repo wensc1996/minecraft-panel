@@ -58,6 +58,7 @@
     </div>
 </template>
 <script>
+import { Console } from 'console'
 export default {
     data() {
         return {
@@ -65,19 +66,6 @@ export default {
         }
     },
     methods: {
-        checkEnabled(name) {
-            if (this.$store.getters.GETPRIVILEGES.find(item => {
-                if (item.menu_func_name == name) {
-                    return true
-                } else {
-                    return false
-                }
-            })) {
-                return true
-            } else {
-                return false
-            }
-        },
         tableRowClassName({row, rowIndex}) {
             if (rowIndex % 2 == 0) {
                 return 'warning-row'
@@ -107,12 +95,13 @@ export default {
                 type: 'success'
             })
         },
-        async getPlayerList() {
-            let res = await this.get('wensc/getPlayerList', {})
-            if (res.data.code == 1) {
-                this.players = res.data.data
-                this.$store.commit('SETPLAYERS', res.data.data)
-            }
+        getPlayerList() {
+            this.players = this.$store.getters.GETPLAYERS
+            // let res = await this.get('wensc/getPlayerList', {})
+            // if (res.data.code == 1) {
+            //     this.players = res.data.data
+            //     this.$store.commit('SETPLAYERS', res.data.data)
+            // }
         },
         async backupPlayer(index, row) {
             let res = await this.post('wensc/backupPlayer', {playerId: row.name})
@@ -123,10 +112,9 @@ export default {
                     type: 'success'
                 })
             } else {
-                this.$notify({
-                    title: '失败',
-                    message: res.data.msg,
-                    type: 'error'
+                this.$notify.error({
+                    title: '错误',
+                    message: res.data.msg
                 })
             }
         },

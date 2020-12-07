@@ -53,16 +53,12 @@ export default {
             return str.replace(/[\n\r\s]/g, '')
         },
         resultFilter(res) {
-            if (/There are \d+\/\d+ players online/.test(res)) {
-                this.isAskedPlayer = true
-                return
-            }
-            if (this.isAskedPlayer) {
-                // let players = this.trimBlank(res.split('[INFO]')[1]).split(',')
-                // if (players[0] == '') players = []
-                // // this.$store.commit('SETREBORNTYPE', '')
-                // this.$store.commit('SETPLAYERS', players)
-                // this.isAskedPlayer = false
+            if (res.indexOf('[INFO]') != -1) {
+                let info = res.split('[INFO] ')[1]
+                if (info && !/ /.test(info)) {
+                    let players = info.split(',')
+                    this.$store.commit('SETPLAYERS', players)
+                }
             }
             if (/Set \S+ spawn point to/.test(res)) {
                 this.$notify({

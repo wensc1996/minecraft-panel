@@ -98,6 +98,43 @@ Vue.mixin({
                     resolve(res)
                 })
             })
+        },
+        tip(type, msg) {
+            switch (type) {
+            case -1:
+                this.$notify.error({
+                    title: '错误',
+                    message: msg
+                })
+                break
+            case 0:
+                this.$notify({
+                    title: '警告',
+                    message: msg,
+                    type: 'warning'
+                })
+                break
+            case 1:
+                this.$notify({
+                    title: '成功',
+                    message: msg,
+                    type: 'success'
+                })
+                break
+            }
+        },
+        checkEnabled(name) {
+            if (this.$store.getters.GETPRIVILEGES.find(item => {
+                if (item.menu_func_name == name) {
+                    return true
+                } else {
+                    return false
+                }
+            })) {
+                return true
+            } else {
+                return false
+            }
         }
     }
 })
