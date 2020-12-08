@@ -83,13 +83,18 @@
                                 <el-input v-model="gameSetting.playerNum"></el-input>
                             </el-form-item>
                             <el-form-item label="最小内存">
-                                <el-input v-model="gameSetting.minMemory"></el-input>
+                                <el-input v-model="gameSetting.minMemorySize"></el-input>
                             </el-form-item>
                             <el-form-item label="最大内存">
-                                <el-input v-model="gameSetting.maxMemory"></el-input>
+                                <el-input v-model="gameSetting.maxMemorySize"></el-input>
+                            </el-form-item>
+                            <el-form-item label="服务端文件名">
+                                <el-input v-model="gameSetting.jarName"></el-input>
                             </el-form-item>
                             <el-form-item>
-                                <el-button>保存</el-button>
+                                <template slot-scope="scope">
+                                    <el-button @click="updateSetting(scope.$index, scope.row)">保存</el-button>
+                                </template>
                             </el-form-item>
                         </el-form>
                     </el-tab-pane>
@@ -121,11 +126,6 @@ export default {
             coordinateTable: [],
             labelPosition: 'right',
             gameSetting: {
-                gamePort: 25565,
-                panelPort: 8080,
-                playerNum: 20,
-                minMemory: 1000,
-                maxMemory: 4000
             },
             serverStatus: true,
             fileList: [],
@@ -133,17 +133,22 @@ export default {
         }
     },
     methods: {
-        checkEnabled(name) {
-            if (this.$store.getters.GETPRIVILEGES.find(item => {
-                if (item.menu_func_name == name) {
-                    return true
-                } else {
-                    return false
+        async updateSetting() {
+            let res = await this.post('wensc/updateGameDispose', this.gameSetting)
+            this.tip(res.data.code, res.data.msg)
+        },
+        async getGameDispose(index, item) {
+            let res = await this.get('wensc/getGameDispose')
+            if (res.data.code == 1) {
+                this.gameSetting = {
+                    gamePort: res.data.data.game_port,
+                    panelPort: res.data.data.panel_port,
+                    playerNum: res.data.data.max_players,
+                    gamplayerNumePort: res.data.data.game_port,
+                    minMemorySize: res.data.data.min_memory_size,
+                    maxMemorySize: res.data.data.max_memory_size,
+                    jarName: res.data.data.jar_name
                 }
-            })) {
-                return true
-            } else {
-                return false
             }
         },
         async uploadFile(file) {
@@ -252,6 +257,7 @@ export default {
         this.getLocation()
         this.getServerStatus()
         this.recordInfo.playerId = this.$store.getters.GETUSERINFO.player_id
+        this.getGameDispose()
     },
     watch: {
         'this.recordInfo.userId'(val) {

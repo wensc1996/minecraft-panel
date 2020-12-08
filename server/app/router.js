@@ -34,4 +34,7 @@ module.exports = app => {
     router.get('/getRoleList', controller.privilege.getRoleList);
     router.get('/getPrivilegeList', controller.privilege.getPrivilegeList);
     router.post('/updatePrivilege', controller.privilege.updatePrivilege);
+
+    router.get('/getGameDispose', controller.dispose.getGameDispose);
+    router.post('/updateGameDispose', controller.dispose.updateGameDispose);
 };

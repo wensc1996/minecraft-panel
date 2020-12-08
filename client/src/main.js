@@ -17,7 +17,7 @@ Vue.config.productionTip = false
 Vue.use(Vuex)
 Vue.use(ElementUI)
 Vue.use(new VueSocketIO({
-    debug: true,
+    debug: false,
     // 服务器端地址
     connection: '/',
     vuex: {}

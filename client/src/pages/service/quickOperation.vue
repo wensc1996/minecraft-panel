@@ -58,7 +58,6 @@
     </div>
 </template>
 <script>
-import { Console } from 'console'
 export default {
     data() {
         return {

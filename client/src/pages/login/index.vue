@@ -26,6 +26,8 @@ export default {
             }
         }
     },
+    mounted() {
+    },
     methods: {
         async submitLogin() {
             let personInfo = await this.post('wensc/login', this.accountInfo)
