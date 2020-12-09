@@ -37,7 +37,7 @@ export default {
                     roleId: personInfo.data.data.role_id
                 })
                 this.$store.commit('SETPRIVILEGES', privileges.data.data)
-                this.$router.push('/home/service')
+                this.$router.push('/home/introduction')
             } else {
                 this.$notify({
                     title: '失败',

@@ -29,6 +29,7 @@ module.exports = app => {
 
     router.get('/getPlayerList', controller.user.getPlayerList);
     router.post('/deletePlayer', controller.user.deletePlayer);
+    router.post('/updatePlayerId', controller.user.updatePlayerId);
 
     router.post('/getRolePrivilege', controller.privilege.getRolePrivilege);
     router.get('/getRoleList', controller.privilege.getRoleList);

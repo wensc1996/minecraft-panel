@@ -33,6 +33,15 @@ class UserService extends Service {
             return new Response({code: -1, msg: '新增用户失败', data: ''})
         }
     }
+    async updatePlayerId(options) {
+        let mysql = new Mysql()
+        let res = await mysql.action('update user set player_id = ? where user_id = ?', [options.playerId, options.userId])
+        if(res){
+            return new Response({code: 1, msg: '修改游戏ID成功', data : res})
+        }else{
+            return new Response({code: -1, msg: '修改游戏ID失败', data: ''})
+        }
+    }
     async deleteUser(options) {
         let mysql = new Mysql()
         let res = await mysql.action('delete from user where user_id = ?', options.userId)

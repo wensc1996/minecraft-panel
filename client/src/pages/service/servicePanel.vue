@@ -41,10 +41,20 @@
                             label="坐标名称"
                             width="200">
                             </el-table-column>
-                            <el-table-column
+                            <!-- <el-table-column
                             prop="coordinate"
                             label="坐标点"
                             width="180">
+                            </el-table-column> -->
+                            <el-table-column
+                                prop="coordinate"
+                                label="坐标点">
+                                <template slot-scope="scope">
+                                    <el-tooltip placement="top">
+                                        <div slot="content">点击复制</div>
+                                        <span class="tag-read" :data-clipboard-text="copyText" @click="copy(coordinateTable[scope.$index].coordinate, coordinateTable[scope.$index].name)">{{coordinateTable[scope.$index].coordinate}}</span>
+                                    </el-tooltip>
+                                </template>
                             </el-table-column>
                             <el-table-column
                             prop="name"
@@ -129,10 +139,26 @@ export default {
             },
             serverStatus: true,
             fileList: [],
-            uploadForm: new FormData()
+            uploadForm: new FormData(),
+            copyText: ''
         }
     },
     methods: {
+        copy(coor, name) {
+            var clipboard = new this.Clipboard('.tag-read')
+            this.copyText = `/teleport ${coor.split(',').join(' ')} ${name}`
+            clipboard.on('success', e => {
+                this.tip(1, '复制成功') // 这里你如果引入了elementui的提示就可以用，没有就注释即可
+                // 释放内存
+                clipboard.destroy()
+            })
+            clipboard.on('error', e => {
+                // 不支持复制
+                console.log('该浏览器不支持自动复制')
+                // 释放内存
+                clipboard.destroy()
+            })
+        },
         async updateSetting() {
             let res = await this.post('wensc/updateGameDispose', this.gameSetting)
             this.tip(res.data.code, res.data.msg)
@@ -226,20 +252,36 @@ export default {
             this.recordInfo.playerId = this.$store.getters.GETUSERINFO.player_id
         },
         async startProcess() {
+            let _this = this
             let res = await this.post('wensc/beginProcess', {})
-            this.$notify({
-                title: '成功',
-                message: res.data.msg,
-                type: 'success'
-            })
+            let timer = setInterval(() => {
+                this.getServerStatus()
+                if (_this.serverStatus) {
+                    clearInterval(timer)
+                    _this.serverStatus = 1
+                    this.$notify({
+                        title: '成功',
+                        message: res.data.msg,
+                        type: 'success'
+                    })
+                }
+            }, 1000)
         },
         async closeProcess() {
+            let _this = this
             let res = await this.post('wensc/killProcess', {})
-            this.$notify({
-                title: '成功',
-                message: res.data.msg,
-                type: 'success'
-            })
+            let timer = setInterval(() => {
+                _this.getServerStatus()
+                if (!_this.serverStatus) {
+                    clearInterval(timer)
+                    _this.serverStatus = -1
+                    this.$notify({
+                        title: '成功',
+                        message: res.data.msg,
+                        type: 'success'
+                    })
+                }
+            }, 1000)
         },
         async deleteLocation(index, row) {
             let res = await this.post('wensc/deleteLocation', {locationId: row.location_id})
@@ -289,6 +331,9 @@ export default {
 </script>
 <style lang="scss">
     div[servicePanel]{
+        .tag-read{
+            cursor:pointer;
+        }
         .service-control{
             padding: 5px;
             .title{

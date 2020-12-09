@@ -26,7 +26,8 @@ class DefaultController extends Controller {
         }
         const room = 'wensc'
         const { ctx, app } = this;
-        ctx.socket.join(room);
+        if( ctx.socket) ctx.socket.join(room);
+        
         const message = ctx.args[0];
         if(message && serverStatus){
             java.stdin.setEncoding('utf8');
@@ -84,12 +85,13 @@ class DefaultController extends Controller {
     }
     beginProcess(e){
         const { ctx, app } = this;
+        flag = false
+            serverStatus = true
+        let res = new Response({code: 1, msg: '进程开启成功', data : ''})
+        ctx.body = res
         if(!java){
             this.initialJava()
         }
-        flag = false
-        let res = new Response({code: 1, msg: '进程开启成功', data : ''})
-        ctx.body = res
     }
 }
 module.exports = DefaultController;

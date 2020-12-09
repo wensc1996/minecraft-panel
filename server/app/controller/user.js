@@ -28,6 +28,10 @@ class UserController extends Controller {
         const { ctx } = this;
         ctx.body = await this.ctx.service.user.deletePlayer(ctx.request.body);
     }
+    async updatePlayerId(){
+        const { ctx } = this;
+        ctx.body = await this.ctx.service.user.updatePlayerId(ctx.request.body);
+    }
 }
 
 module.exports = UserController;
