@@ -47,12 +47,17 @@ class DefaultController extends Controller {
             });
             java.stderr.on('data', (data) => {
                 let res = iconv.decode(Buffer.from(data, 'binary'), 'cp936')
-                if(listFlag){
-                    res = res.replace(/INFO/, 'LIST')
-                    listFlag = false
-                }
-                if(/There are \d+\/\d+ players online/.test(res)){
-                    listFlag = true
+                if(res.match(/\[INFO\]/g) && res.match(/\[INFO\]/g).length == 2){
+                    res = res.replace(/INFO/,"CATACH")
+                    res = res.replace(/INFO/,"LIST")
+                }else{
+                    if(listFlag){
+                        res = res.replace(/INFO/, 'LIST')
+                        listFlag = false
+                    }
+                    if(/There are \d+\/\d+ players online/.test(res)){
+                        listFlag = true
+                    }
                 }
                 // console.log(iconv.decode(Buffer.from(data, 'binary'), 'cp936'))3
                 // console.log(Buffer.from(data, 'binary').toString('utf-8'))
