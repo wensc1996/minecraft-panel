@@ -1,6 +1,7 @@
 # minecraft-panel
 我的世界控制面板
 
++ mcpanel.sql或者合作交流请加QQ1123907917
 + 前端采用vue+element开发
 + 后端采用node环境搭配egg
 + 数据库使用mysql
