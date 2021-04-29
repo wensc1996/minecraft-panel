@@ -1,3 +1,11 @@
+<!--
+ * @Description: 登录页
+ * @Version: 1.0
+ * @Autor: niesc_SMEICS
+ * @Date: 2020-12-15 14:56:50
+ * @LastEditors: niesc_SMEICS
+ * @LastEditTime: 2021-04-29 15:37:37
+-->
 <template>
     <div login>
         <el-form label-position="left" label-width="80px" :model="accountInfo" class="accountForm" @keyup.enter.native="submitLogin">
@@ -52,6 +60,8 @@ export default {
 <style lang = "sass">
     div[login]{
         background: url('../../images/login-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 100vh;
         display: flex;
         align-items: center;

@@ -1,3 +1,11 @@
+<!--
+ * @Description: 侧边栏
+ * @Version: 1.0
+ * @Autor: niesc_SMEICS
+ * @Date: 2020-12-07 13:48:37
+ * @LastEditors: niesc_SMEICS
+ * @LastEditTime: 2021-04-29 15:32:43
+-->
 <template>
     <div side-bar>
         <el-menu
@@ -13,27 +21,27 @@
                 <i class="el-icon-menu"></i>
                 <span slot="title">介绍</span>
             </el-menu-item>
-            <el-menu-item index="/home/service">
+            <el-menu-item index="/home/service" v-if="checkEnabled('cmd')">
                 <i class="el-icon-document"></i>
                 <span slot="title">控制面板</span>
             </el-menu-item>
-            <el-menu-item index="/home/user">
-                <i class="el-icon-setting"></i>
+            <el-menu-item index="/home/user" v-if="checkEnabled('userManage')">
+                <i class="el-icon-setting" ></i>
                 <span slot="title">用户管理</span>
             </el-menu-item>
-            <el-menu-item index="/home/roleManage" v-if="checkAdmin()">
+            <el-menu-item index="/home/roleManage" v-if="checkEnabled('roleManage')">
                 <i class="el-icon-setting"></i>
                 <span slot="title">角色管理</span>
             </el-menu-item>
-            <el-menu-item index="/home/file">
+            <el-menu-item index="/home/file" v-if="false">
                 <i class="el-icon-document"></i>
                 <span slot="title">文件管理</span>
             </el-menu-item>
-            <el-menu-item index="/home/nat-ddns">
+            <el-menu-item index="/home/nat-ddns" v-if="false">
                 <i class="el-icon-setting"></i>
                 <span slot="title">内网穿透</span>
             </el-menu-item>
-            <el-submenu index="4">
+            <el-submenu index="4" v-if="false">
                 <template slot="title">配置文件</template>
                 <el-menu-item index="properties">server.properties</el-menu-item>
                 <el-menu-item index="whitelist">whitelist.txt</el-menu-item>
@@ -47,6 +55,7 @@
 export default {
     methods: {
         checkAdmin() {
+            console.log(this.$store.getters.GETUSERINFO)
             if (this.$store.getters.GETUSERINFO.role_id == 1) {
                 return true
             } else {
@@ -66,7 +75,8 @@ export default {
 </script>
 <style lang="scss">
 div[side-bar]{
-    height: 90vh;
+    min-height: 100vh;
+    height: 100%;
     background: gainsboro;
 }
 </style>

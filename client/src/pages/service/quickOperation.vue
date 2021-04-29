@@ -96,11 +96,6 @@ export default {
         },
         getPlayerList() {
             this.players = this.$store.getters.GETPLAYERS
-            // let res = await this.get('wensc/getPlayerList', {})
-            // if (res.data.code == 1) {
-            //     this.players = res.data.data
-            //     this.$store.commit('SETPLAYERS', res.data.data)
-            // }
         },
         async backupPlayer(index, row) {
             let res = await this.post('wensc/backupPlayer', {playerId: row.name})
