@@ -94,9 +94,17 @@ export default {
                 type: 'success'
             })
         },
-        getPlayerList() {
-            this.players = this.$store.getters.GETPLAYERS
+        async getPlayerList() {
+            let res = await this.get('wensc/getOnlinePlayerList', {})
+            this.$store.state.players = res.data.data.map(item => {
+                return {
+                    name: item
+                }
+            })
         },
+        // getPlayerList() {
+        //     this.players = this.$store.getters.GETPLAYERS
+        // },
         async backupPlayer(index, row) {
             let res = await this.post('wensc/backupPlayer', {playerId: row.name})
             if (res.data.code == 1) {

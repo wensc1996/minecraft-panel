@@ -258,7 +258,7 @@ export default {
                 this.getServerStatus()
                 if (_this.serverStatus) {
                     clearInterval(timer)
-                    _this.serverStatus = 1
+                    _this.serverStatus = true
                     this.$notify({
                         title: '成功',
                         message: res.data.msg,
@@ -274,7 +274,7 @@ export default {
                 _this.getServerStatus()
                 if (!_this.serverStatus) {
                     clearInterval(timer)
-                    _this.serverStatus = -1
+                    _this.serverStatus = false
                     this.$notify({
                         title: '成功',
                         message: res.data.msg,

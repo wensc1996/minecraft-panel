@@ -27,7 +27,7 @@ export default {
             return this.$route.name
         }
     },
-    mounted() {
+    beforeCreate() {
         if (Object.keys(this.$store.getters.GETUSERINFO).length == 0) {
             this.$router.push('/login')
         }

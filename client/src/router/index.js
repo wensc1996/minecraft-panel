@@ -25,7 +25,7 @@ export default new Router({
         }, {
             path: 'service',
             name: 'Service',
-            component: () => import(/* webpackChunkName: "introduction", webpackPrefetch: true */ '@/pages/Service')
+            component: () => import(/* webpackChunkName: "introduction", webpackPrefetch: true */ '@/pages/service')
         }, {
             path: 'roleManage',
             name: 'RoleManage',

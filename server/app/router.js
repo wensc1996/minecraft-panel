@@ -17,6 +17,7 @@ module.exports = app => {
     router.post('/killProcess', io.controller.mcbridge.killProcess);
     router.post('/beginProcess', io.controller.mcbridge.beginProcess);
     router.get('/serverStatus', io.controller.mcbridge.serverStatus);
+    router.get('/getOnlinePlayerList', io.controller.mcbridge.getOnlinePlayerList);
 
     router.post('/backupPlayer', controller.playerFiles.backupPlayer);
     router.post('/restorePlayer', controller.playerFiles.restorePlayer);

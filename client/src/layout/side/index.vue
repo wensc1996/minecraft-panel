@@ -55,7 +55,6 @@
 export default {
     methods: {
         checkAdmin() {
-            console.log(this.$store.getters.GETUSERINFO)
             if (this.$store.getters.GETUSERINFO.role_id == 1) {
                 return true
             } else {

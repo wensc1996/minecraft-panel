@@ -59,7 +59,7 @@ export default {
 </script>
 <style lang = "sass">
     div[login]{
-        background: url('../../images/login-bg.jpg');
+        /* background: url('../../images/login-bg.jpg'); */
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
