@@ -39,4 +39,7 @@ module.exports = app => {
 
     router.get('/getGameDispose', controller.dispose.getGameDispose);
     router.post('/updateGameDispose', controller.dispose.updateGameDispose);
+
+    router.post('/getDirectoryOrFile', controller.directoryTree.getDirectoryOrFile)
+    router.get('/download', controller.directoryTree.download)
 };

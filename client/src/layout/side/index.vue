@@ -33,7 +33,7 @@
                 <i class="el-icon-setting"></i>
                 <span slot="title">角色管理</span>
             </el-menu-item>
-            <el-menu-item index="/home/file" v-if="false">
+            <el-menu-item index="/home/file">
                 <i class="el-icon-document"></i>
                 <span slot="title">文件管理</span>
             </el-menu-item>

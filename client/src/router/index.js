@@ -25,15 +25,19 @@ export default new Router({
         }, {
             path: 'service',
             name: 'Service',
-            component: () => import(/* webpackChunkName: "introduction", webpackPrefetch: true */ '@/pages/service')
+            component: () => import(/* webpackChunkName: "service", webpackPrefetch: true */ '@/pages/service')
         }, {
             path: 'roleManage',
             name: 'RoleManage',
-            component: () => import(/* webpackChunkName: "introduction", webpackPrefetch: true */ '@/pages/roleManage')
+            component: () => import(/* webpackChunkName: "roleManage", webpackPrefetch: true */ '@/pages/roleManage')
         }, {
             path: 'user',
             name: 'User',
-            component: () => import(/* webpackChunkName: "introduction", webpackPrefetch: true */ '@/pages/user')
+            component: () => import(/* webpackChunkName: "user", webpackPrefetch: true */ '@/pages/user')
+        }, {
+            path: 'file',
+            name: 'File',
+            component: () => import(/* webpackChunkName: "file", webpackPrefetch: true */ '@/pages/file')
         }]
     }]
 })
