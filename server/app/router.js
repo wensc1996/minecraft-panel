@@ -42,4 +42,5 @@ module.exports = app => {
 
     router.post('/getDirectoryOrFile', controller.directoryTree.getDirectoryOrFile)
     router.get('/download', controller.directoryTree.download)
+    router.post('/uploadFileToTargetDirec',controller.directoryTree.uploadFileToTargetDirec)
 };

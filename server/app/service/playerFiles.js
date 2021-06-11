@@ -54,7 +54,7 @@ class PlayerFilesService extends Service {
             fs.writeFileSync(`../mc/world/players/${file.filename}`, wfile)
             return new Response({code: 1, msg: '上传成功', data : ''})
         } catch (err) {
-            return new Response({code: 1, msg: '上传失败' + err, data : ''})
+            return new Response({code: -1, msg: '上传失败' + err, data : ''})
         }
     }
 }
