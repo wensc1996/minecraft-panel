@@ -21,6 +21,18 @@ class DirectoryTree extends Controller {
         const { ctx } = this;
         ctx.body = await this.ctx.service.directoryTree.uploadFileToTargetDirec(ctx.request)
     }
+    async deleteFileOrDirectory() {
+        const { ctx } = this;
+        ctx.body = await this.ctx.service.directoryTree.deleteFileOrDirectory(ctx.request.body)
+    }
+    async createNewDirectory() {
+        const { ctx } = this;
+        ctx.body = await this.ctx.service.directoryTree.createNewDirectory(ctx.request.body)
+    }
+    async renameDirectoryOrFile() {
+        const { ctx } = this;
+        ctx.body = await this.ctx.service.directoryTree.renameDirectoryOrFile(ctx.request.body)
+    }
 }
 
 module.exports = DirectoryTree;

@@ -3,8 +3,8 @@
  * @Version: 1.0
  * @Autor: niesc_SMEICS
  * @Date: 2020-12-07 13:48:37
- * @LastEditors: niesc_SMEICS
- * @LastEditTime: 2021-04-29 15:32:43
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-03-15 11:20:04
 -->
 <template>
     <div side-bar>
@@ -25,6 +25,10 @@
                 <i class="el-icon-document"></i>
                 <span slot="title">控制面板</span>
             </el-menu-item>
+            <el-menu-item index="/home/playerFiles" v-if="checkEnabled('playerFiles')">
+                <i class="el-icon-document"></i>
+                <span slot="title">玩家存档</span>
+            </el-menu-item>
             <el-menu-item index="/home/user" v-if="checkEnabled('userManage')">
                 <i class="el-icon-setting" ></i>
                 <span slot="title">用户管理</span>
@@ -33,7 +37,7 @@
                 <i class="el-icon-setting"></i>
                 <span slot="title">角色管理</span>
             </el-menu-item>
-            <el-menu-item index="/home/file">
+            <el-menu-item index="/home/file" v-if="checkEnabled('uploadFile')">
                 <i class="el-icon-document"></i>
                 <span slot="title">文件管理</span>
             </el-menu-item>
@@ -72,7 +76,7 @@ export default {
     }
 }
 </script>
-<style lang="scss">
+<style lang="less">
 div[side-bar]{
     min-height: 100vh;
     height: 100%;

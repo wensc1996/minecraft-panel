@@ -72,6 +72,11 @@ class DefaultController extends Controller {
         });
         serverStatus = true
         java.on('close', (code) => {
+            playerList = []
+            ctx.app.io.of('/').to(room).emit('wensc', {
+                type: 'playerList',
+                data: playerList
+            });
             serverStatus = false
             java = null
         });
@@ -104,6 +109,11 @@ class DefaultController extends Controller {
     killProcess() {
         const { ctx, app } = this;
         java.kill('SIGTERM')
+        playerList = []
+        ctx.app.io.of('/').to(room).emit('wensc', {
+            type: 'playerList',
+            data: playerList
+        });
         let res = new Response({code: 1, msg: '进程关闭成功', data : ''})
         ctx.body = res
     }

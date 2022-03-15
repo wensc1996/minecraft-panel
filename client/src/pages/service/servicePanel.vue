@@ -108,17 +108,6 @@
                             </el-form-item>
                         </el-form>
                     </el-tab-pane>
-                    <el-tab-pane label="玩家存档上传" v-if="checkEnabled('uploadFile')">
-                        <el-upload
-                        :http-request="uploadFile"
-                        class="upload-demo"
-                        action="wensc/uploadFile"
-                        :limit="1"
-                        :file-list="fileList">
-                        <el-button size="small" type="primary">点击上传</el-button>
-                        <div slot="tip" class="el-upload__tip">只能上传.dat文件</div>
-                        </el-upload>
-                    </el-tab-pane>
                 </el-tabs>
             </el-collapse-item>
         </el-collapse>
@@ -135,11 +124,8 @@ export default {
             },
             coordinateTable: [],
             labelPosition: 'right',
-            gameSetting: {
-            },
+            gameSetting: {},
             serverStatus: true,
-            fileList: [],
-            uploadForm: new FormData(),
             copyText: ''
         }
     },
@@ -176,31 +162,6 @@ export default {
                     jarName: res.data.data.jar_name
                 }
             }
-        },
-        async uploadFile(file) {
-            let name = file.file.name
-            if (name.substr(name.lastIndexOf('.') + 1) != 'dat') {
-                this.$notify.error({
-                    title: '错误',
-                    message: '请上传.dat文件'
-                })
-                this.fileList = []
-                return
-            }
-            this.uploadForm.append('files', file.file) // 上传的文件放在files里面了
-            let res = await this.$axios({
-                method: 'post',
-                url: 'wensc/uploadFile',
-                data: this.uploadForm
-            })
-            if (res.data.code == 1) {
-                this.$notify({
-                    title: '成功',
-                    message: '上传玩家存档成功',
-                    type: 'success'
-                })
-            }
-            this.fileList = []
         },
         openTeamsFire() {
             this.$socket.emit('thread', '/scoreboard teams option team friendlyFire true')
@@ -329,7 +290,7 @@ export default {
     }
 }
 </script>
-<style lang="scss">
+<style lang="less">
     div[servicePanel]{
         .tag-read{
             cursor:pointer;

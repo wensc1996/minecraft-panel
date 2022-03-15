@@ -38,6 +38,10 @@ export default new Router({
             path: 'file',
             name: 'File',
             component: () => import(/* webpackChunkName: "file", webpackPrefetch: true */ '@/pages/file')
+        }, {
+            path: 'playerFiles',
+            name: 'PlayerFiles',
+            component: () => import(/* webpackChunkName: "file", webpackPrefetch: true */ '@/pages/playerFiles')
         }]
     }]
 })

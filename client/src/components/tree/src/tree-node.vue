@@ -279,7 +279,7 @@
     }
   };
 </script>
-<style lang="sass">
+<style lang="less">
   .tree-label{
     padding-left: 5px;
   }

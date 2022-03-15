@@ -20,14 +20,6 @@ class UserController extends Controller {
         const { ctx } = this;
         ctx.body = await this.ctx.service.user.addNewUser(ctx.request.body);
     }
-    async getPlayerList(){
-        const { ctx } = this;
-        ctx.body = await this.ctx.service.user.getPlayerList(ctx.request.body);
-    }
-    async deletePlayer(){
-        const { ctx } = this;
-        ctx.body = await this.ctx.service.user.deletePlayer(ctx.request.body);
-    }
     async updatePlayerId(){
         const { ctx } = this;
         ctx.body = await this.ctx.service.user.updatePlayerId(ctx.request.body);

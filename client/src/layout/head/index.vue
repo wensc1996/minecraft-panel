@@ -51,7 +51,7 @@ export default {
     }
 }
 </script>
-<style lang="scss">
+<style lang="less">
 div[header]{
     background-color: rgb(84, 92, 100);
     ul{

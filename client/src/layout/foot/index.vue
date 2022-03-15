@@ -7,7 +7,7 @@
 export default {
 }
 </script>
-<style lang="scss">
+<style lang="less">
     div[footer]{
         height: 70px;
         background: rgb(84,92,100);

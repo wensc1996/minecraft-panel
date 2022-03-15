@@ -115,7 +115,7 @@ export default {
     }
 }
 </script>
-<style lang="scss">
+<style lang="less">
     div[cmd-panel]{
         .panel{
             height: 600px;

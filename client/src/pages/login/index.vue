@@ -3,8 +3,8 @@
  * @Version: 1.0
  * @Autor: niesc_SMEICS
  * @Date: 2020-12-15 14:56:50
- * @LastEditors: niesc_SMEICS
- * @LastEditTime: 2021-04-29 15:37:37
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-01-25 09:20:45
 -->
 <template>
     <div login>
@@ -57,7 +57,7 @@ export default {
     }
 }
 </script>
-<style lang = "sass">
+<style lang = "less">
     div[login]{
         /* background: url('../../images/login-bg.jpg'); */
         background-repeat: no-repeat;

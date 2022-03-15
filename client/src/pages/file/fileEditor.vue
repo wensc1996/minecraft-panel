@@ -37,5 +37,5 @@ console.log(name)`,
     }
 }
 </script>
-<style lang="sass">
+<style lang="less">
 </style>

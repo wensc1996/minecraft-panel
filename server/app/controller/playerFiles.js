@@ -15,5 +15,13 @@ class PlayerFiles extends Controller {
         const { ctx } = this;
         ctx.body = await this.ctx.service.playerFiles.uploadFile(ctx.request)
     }
+    async getPlayerFileList() {
+        const { ctx } = this
+        ctx.body = await this.ctx.service.playerFiles.getPlayerFileList(ctx.request.body)
+    }
+    async deletePlayer(){
+        const { ctx } = this;
+        ctx.body = await this.ctx.service.playerFiles.deletePlayer(ctx.request.body);
+    }
 }
 module.exports = PlayerFiles;

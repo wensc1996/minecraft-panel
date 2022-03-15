@@ -3,6 +3,99 @@ const Response = require('../../src/response')
 const path = require('path');
 const fs = require('fs');
 class DirectoryTree extends Service {
+    renameDirectoryOrFile(options) {
+        return new Promise((reslove, reject) => {
+            try{
+                fs.renameSync(`..${options.oldPath}`, `..${options.newPath}`)
+                reslove(new Response({code: 1, msg: '重命名成功', data : ''}))
+            }catch(e) {
+                reslove(new Response({code: -1, msg: '重命名失败', data : ''}))
+            }
+        })
+    }
+    createNewDirectory(options) {
+        return new Promise((reslove, reject) => {
+            try{
+                fs.mkdirSync(`..${options.fullPath}`)
+                reslove(new Response({code: 1, msg: '创建目录成功', data : ''}))
+            }catch(e) {
+                reslove(new Response({code: -1, msg: '创建目录失败', data : ''}))
+            }
+        })
+    }
+    checkFileOrDirectory(fullPath) {
+        return new Promise((reslove, reject) => {
+            fs.stat(fullPath, (err, stats) => {
+                if(err) {
+                    throw new Error('读取文件失败')
+                }
+                if (stats.isDirectory()) {
+                    reslove(1)
+                } else {
+                    reslove(0)
+                }
+            })
+        })
+    }
+    /**
+     * 删除文件夹下所有问价及将文件夹下所有文件清空
+     * @param {*} path 
+     */
+    emptyDir(path) {
+        const files = fs.readdirSync(path);
+        files.forEach(file => {
+            const filePath = `${path}/${file}`;
+            const stats = fs.statSync(filePath);
+            if (stats.isDirectory()) {
+                this.emptyDir(filePath);
+            } else {
+                fs.unlinkSync(filePath);
+            }
+        });
+    }
+    /**
+     * 删除指定路径下的所有空文件夹
+     * @param {*} path 
+     */
+    rmEmptyDir(path, level=0) {
+        const files = fs.readdirSync(path);
+        if (files.length > 0) {
+            let tempFile = 0;
+            files.forEach(file => {
+                tempFile++;
+                this.rmEmptyDir(`${path}/${file}`, 1);
+            });
+            if (tempFile === files.length && level !== 0) {
+                fs.rmdirSync(path);
+            }
+        }
+        else {
+            level !==0 && fs.rmdirSync(path);
+        }
+    }
+    /**
+     * 清空指定路径下的所有文件及文件夹
+     * @param {*} path 
+     */
+    clearDir(path) {
+        this.emptyDir(path);
+        this.rmEmptyDir(path, 1);
+    }
+    deleteFileOrDirectory(deleteList) {
+        return new Promise((reslove, reject) => {
+            deleteList.forEach((options) => {
+                if(options.type === 0) {
+                    fs.unlinkSync(`..${options.fullPath}`);
+                }
+            })
+            deleteList.forEach((options) => {
+                if(options.type === 1) {
+                    this.clearDir(`..${options.fullPath}`)
+                }
+            })
+            reslove(new Response({code: 1, msg: '删除成功', data : ''}))
+        })
+    }
     uploadFileToTargetDirec(options) {
         return new Promise((reslove, reject) => {
             try {
@@ -22,7 +115,7 @@ class DirectoryTree extends Service {
                 ++count == files.length && callback()
             }
             files.forEach((name) => {
-                var fullPath = folder + '\\' + name;
+                var fullPath = folder + '/' + name;
                 fs.stat(fullPath, (err, stats) => {
                     if(err) {
                         throw new Error('读取文件失败')
@@ -78,6 +171,7 @@ class DirectoryTree extends Service {
         this.transferList = [{
             name: 'mc',
             fullPath: '/mc',
+            id: '/mc',
             type: 1,
             children: []
         }]
