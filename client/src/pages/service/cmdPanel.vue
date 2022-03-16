@@ -52,20 +52,6 @@ export default {
             return str.replace(/[\n\r\s]/g, '')
         },
         resultFilter(res) {
-            // if (res.indexOf('[LIST]') != -1) {
-            //     let info = res.split('[LIST]')[1]
-            //     let players = this.trimBlank(info).split(',')
-            //     if (players.length == 1 && players[0] == '') {
-            //         players = []
-            //     } else {
-            //         players = players.map((item) => {
-            //             return {
-            //                 name: item
-            //             }
-            //         })
-            //     }
-            //     this.$store.commit('SETPLAYERS', players)
-            // }
             if (res.type == 'playerList') {
                 this.$store.commit('SETPLAYERS', res.data.map(item => {
                     return {
@@ -74,15 +60,23 @@ export default {
                 }))
             } else {
                 res = res.data
-                if (/Set \S+ spawn point to/.test(res)) {
+                if (/Set \S+ spawn point to|将(\S+)的出生点设置到/.test(res)) {
                     this.$notify({
                         title: '成功',
                         message: '重生/定位成功',
                         type: 'success'
                     })
-                    if (this.$store.getters.GETREBORNTYPE == 'record') {
-                        let playerId = res.match(/Set (\S+)'s spawn point to/)[1]
-                        let coordinate = this.trimBlank(res.match(/(-?\d+, -?\d+, -?\d+)/)[1])
+                    if (this.$store.state.rebornType == 'record') {
+                        let playerIdArr = res.match(/Set (\S+)'s spawn point to|将(\S+)的出生点设置到/)
+                        let playerId = ''
+                        let coordinate = ''
+                        if(playerIdArr[1]) {
+                            playerId = playerIdArr[1]
+                            coordinate = this.trimBlank(res.match(/(-?\d+, -?\d+, -?\d+)/)[1])
+                        } else {
+                            playerId = playerIdArr[2]
+                            coordinate = this.trimBlank(res.match(/(-?\d+，-?\d+，-?\d+)/)[1]).replace(/，/g, ',')
+                        }
                         this.$store.commit('SETCURRENTPOSITION', {playerId, coordinate})
                     }
                 }
@@ -112,7 +106,13 @@ export default {
         this.$bus.$on('record', (val) => {
             this.recordPlayer(val)
         })
-    }
+    },
+    beforeRouteLeave (to, from, next) {
+        this.$bus.$off('record')
+    },
+    beforeDestroy() {
+        this.$bus.$off('record')
+    },
 }
 </script>
 <style lang="less">

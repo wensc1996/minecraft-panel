@@ -21,11 +21,6 @@
                 </template>
             </el-table-column>
             <el-table-column
-            prop="home"
-            label="回家">
-                <el-button>回家</el-button>
-            </el-table-column>
-            <el-table-column
             prop="reborn"
             label="重生">
                 <template slot-scope="scope">

@@ -4,8 +4,7 @@ import Home from '@/layout/home'
 import Login from '@/pages/login'
 
 Vue.use(Router)
-
-export default new Router({
+const router = new Router({
     routes: [{
         path: '',
         name: '',
@@ -41,7 +40,9 @@ export default new Router({
         }, {
             path: 'playerFiles',
             name: 'PlayerFiles',
-            component: () => import(/* webpackChunkName: "file", webpackPrefetch: true */ '@/pages/playerFiles')
+            component: () => import(/* webpackChunkName: "playerFiles", webpackPrefetch: true */ '@/pages/playerFiles')
         }]
     }]
 })
+export default router
+

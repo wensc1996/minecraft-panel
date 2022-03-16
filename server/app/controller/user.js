@@ -5,7 +5,6 @@ const Controller = require('egg').Controller;
 class UserController extends Controller {
     async getUserList() {
         const { ctx } = this;
-        console.log(ctx.request.ip)
         ctx.body = await this.ctx.service.user.getUserList(ctx.request.body);
     }
     async updatePassword() {

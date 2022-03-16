@@ -27,7 +27,7 @@ class DefaultController extends Controller {
         let room = 'wensc'
         let mysql = new Mysql()
         let res = await mysql.action('select * from dispose')
-        java = spawn('java', [`-Xmx${res[0].max_memory_size}M`, `-Xms${res[0].min_memory_size}M`, '-jar', path.join(__dirname,`../../../../mc/${res[0].jar_name}`), 'nogui'], {cwd: path.join(__dirname,'../../../../mc')});
+        java = spawn(res[0].java_path ? res[0].java_path : 'java', [`-Xmx${res[0].max_memory_size}M`, `-Xms${res[0].min_memory_size}M`, '-jar', path.join(__dirname,`../../../../mc/${res[0].jar_name}`), 'nogui'], {cwd: path.join(__dirname,'../../../../mc')});
         java.stdout.on('data', (data) => {
             let res = ''
             if(platform == 0) {
@@ -108,20 +108,26 @@ class DefaultController extends Controller {
     }
     killProcess() {
         const { ctx, app } = this;
-        java.kill('SIGTERM')
-        playerList = []
-        ctx.app.io.of('/').to(room).emit('wensc', {
-            type: 'playerList',
-            data: playerList
-        });
-        let res = new Response({code: 1, msg: '进程关闭成功', data : ''})
-        ctx.body = res
+        if(serverStatus) {
+            const room = 'wensc'
+            java.kill('SIGTERM')
+            playerList = []
+            ctx.app.io.of('/').to(room).emit('wensc', {
+                type: 'playerList',
+                data: playerList
+            });
+            let res = new Response({code: 1, msg: '进程关闭成功', data : ''})
+            ctx.body = res
+        } else {
+            let res = new Response({code: 0, msg: '进程已结束', data : ''})
+            ctx.body = res
+        }
     }
     beginProcess(){
         const { ctx, app } = this;
-        if(!java){
+        if(!serverStatus){
             this.initialJava(ctx)
-            let res = new Response({code: 1, msg: '进程开启成功', data : ''})
+            let res = new Response({code: 1, msg: '游戏正在启动，请耐心等待', data : ''})
             ctx.body = res
         }
     }
