@@ -7,17 +7,20 @@ import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import VueSocketIO from 'vue-socket.io'
-
+import Clipboard from 'clipboard'
 import axios from 'axios'
+
 Vue.prototype.$axios = axios
 // axios.defaults.baseURL = '/api'
 
 Vue.config.productionTip = false
 
+Vue.prototype.Clipboard = Clipboard
+
 Vue.use(Vuex)
 Vue.use(ElementUI)
 Vue.use(new VueSocketIO({
-    debug: true,
+    debug: false,
     // 服务器端地址
     connection: '/',
     vuex: {}

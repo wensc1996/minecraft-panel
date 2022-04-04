@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div newUser>
+       <div class="table-bar"><el-button type="primary" round @click="handleNewUser" v-if="checkEnabled('addNewUser')">新增用户</el-button></div>
       <el-table
         :data="userList"
         border
@@ -23,9 +24,10 @@
         <el-table-column
         fixed="right"
         label="操作"
-        width="180">
+        width="250">
         <template slot-scope="scope">
             <el-button @click="handleClick(scope.row)" type="text" size="small">修改密码</el-button>
+            <el-button @click="updatePlayerId(scope.row)" type="text" size="small">修改游戏ID</el-button>
             <el-button type="text" size="small" @click="handleDelete(scope.row)">删除</el-button>
         </template>
         </el-table-column>
@@ -41,38 +43,73 @@
         <el-button type="primary" @click="submitRepassword">确 定</el-button>
     </span>
     </el-dialog>
+
+    <el-dialog
+    title="新增用户"
+    :visible.sync="isShowNewUser"
+    width="50%"
+    :close-on-click-modal="false">
+    <AddNewUser ref="addNewUser"></AddNewUser>
+    <span slot="footer" class="dialog-footer">
+        <el-button @click="isShowNewUser = false">取 消</el-button>
+        <el-button type="primary" @click="submitAddNewUser">确 定</el-button>
+    </span>
+    </el-dialog>
   </div>
 </template>
 
 <script>
 import Repassword from './repassword'
+import AddNewUser from './addNewUser'
 export default {
     data() {
         return {
             userList: [],
             dialogVisible: false,
-            repasswordUserId: ''
+            repasswordUserId: '',
+            isShowNewUser: false
         }
     },
     components: {
-        Repassword
+        Repassword,
+        AddNewUser
     },
     mounted() {
         this.getUserList()
     },
     methods: {
+        updatePlayerId(item) {
+            this.$prompt('请输入游戏ID', '提示', {
+                confirmButtonText: '确定',
+                cancelButtonText: '取消',
+                inputPattern: /\S/,
+                inputErrorMessage: '游戏ID不能为空'
+            }).then(async ({ value }) => {
+                let res = await this.post('wensc/updatePlayerId', {
+                    userId: item.user_id,
+                    playerId: value
+                })
+                this.tip(res.data.code, res.data.msg)
+                this.getUserList()
+            }).catch(() => {
+            })
+        },
+        submitAddNewUser() {
+            this.$refs.addNewUser.submitNewUser()
+            this.isShowNewUser = false
+            this.getUserList()
+        },
+        handleNewUser() {
+            this.isShowNewUser = true
+        },
         async handleDelete(item) {
+            let _this = this
             this.$confirm('确认删除？', '提示').then((res) => {
                 this.post('wensc/deleteUser', {
                     userId: item.user_id
                 }).then(ress => {
-                    if (res.data.code == 1) {
-                        this.$notify({
-                            title: '成功',
-                            message: ress.data.msg,
-                            type: 'success'
-                        })
-                    }
+                    _this.tip(ress.data.code, ress.data.msg)
+                    _this.getUserList()
                 })
             })
         },
@@ -96,4 +133,11 @@ export default {
 }
 </script>
 <style lang="sass">
+    div[newUser]{
+        .table-bar{
+            display: flex;
+            float: right;
+            margin-bottom: 10px;
+        }
+    }
 </style>

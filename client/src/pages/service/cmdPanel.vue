@@ -53,12 +53,19 @@ export default {
             return str.replace(/[\n\r\s]/g, '')
         },
         resultFilter(res) {
-            if (res.indexOf('[INFO]') != -1) {
-                let info = res.split('[INFO] ')[1]
-                if (info && !/ /.test(info)) {
-                    let players = info.split(',')
-                    this.$store.commit('SETPLAYERS', players)
+            if (res.indexOf('[LIST]') != -1) {
+                let info = res.split('[LIST]')[1]
+                let players = this.trimBlank(info).split(',')
+                if (players.length == 1 && players[0] == '') {
+                    players = []
+                } else {
+                    players = players.map((item) => {
+                        return {
+                            name: item
+                        }
+                    })
                 }
+                this.$store.commit('SETPLAYERS', players)
             }
             if (/Set \S+ spawn point to/.test(res)) {
                 this.$notify({

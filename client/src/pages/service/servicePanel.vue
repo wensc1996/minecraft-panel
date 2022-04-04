@@ -41,10 +41,20 @@
                             label="坐标名称"
                             width="200">
                             </el-table-column>
-                            <el-table-column
+                            <!-- <el-table-column
                             prop="coordinate"
                             label="坐标点"
                             width="180">
+                            </el-table-column> -->
+                            <el-table-column
+                                prop="coordinate"
+                                label="坐标点">
+                                <template slot-scope="scope">
+                                    <el-tooltip placement="top">
+                                        <div slot="content">点击复制</div>
+                                        <span class="tag-read" :data-clipboard-text="copyText" @click="copy(coordinateTable[scope.$index].coordinate, coordinateTable[scope.$index].name)">{{coordinateTable[scope.$index].coordinate}}</span>
+                                    </el-tooltip>
+                                </template>
                             </el-table-column>
                             <el-table-column
                             prop="name"
@@ -83,13 +93,18 @@
                                 <el-input v-model="gameSetting.playerNum"></el-input>
                             </el-form-item>
                             <el-form-item label="最小内存">
-                                <el-input v-model="gameSetting.minMemory"></el-input>
+                                <el-input v-model="gameSetting.minMemorySize"></el-input>
                             </el-form-item>
                             <el-form-item label="最大内存">
-                                <el-input v-model="gameSetting.maxMemory"></el-input>
+                                <el-input v-model="gameSetting.maxMemorySize"></el-input>
+                            </el-form-item>
+                            <el-form-item label="服务端文件名">
+                                <el-input v-model="gameSetting.jarName"></el-input>
                             </el-form-item>
                             <el-form-item>
-                                <el-button>保存</el-button>
+                                <template slot-scope="scope">
+                                    <el-button @click="updateSetting(scope.$index, scope.row)">保存</el-button>
+                                </template>
                             </el-form-item>
                         </el-form>
                     </el-tab-pane>
@@ -121,29 +136,45 @@ export default {
             coordinateTable: [],
             labelPosition: 'right',
             gameSetting: {
-                gamePort: 25565,
-                panelPort: 8080,
-                playerNum: 20,
-                minMemory: 1000,
-                maxMemory: 4000
             },
             serverStatus: true,
             fileList: [],
-            uploadForm: new FormData()
+            uploadForm: new FormData(),
+            copyText: ''
         }
     },
     methods: {
-        checkEnabled(name) {
-            if (this.$store.getters.GETPRIVILEGES.find(item => {
-                if (item.menu_func_name == name) {
-                    return true
-                } else {
-                    return false
+        copy(coor, name) {
+            var clipboard = new this.Clipboard('.tag-read')
+            this.copyText = `/teleport ${coor.split(',').join(' ')} ${name}`
+            clipboard.on('success', e => {
+                this.tip(1, '复制成功') // 这里你如果引入了elementui的提示就可以用，没有就注释即可
+                // 释放内存
+                clipboard.destroy()
+            })
+            clipboard.on('error', e => {
+                // 不支持复制
+                console.log('该浏览器不支持自动复制')
+                // 释放内存
+                clipboard.destroy()
+            })
+        },
+        async updateSetting() {
+            let res = await this.post('wensc/updateGameDispose', this.gameSetting)
+            this.tip(res.data.code, res.data.msg)
+        },
+        async getGameDispose(index, item) {
+            let res = await this.get('wensc/getGameDispose')
+            if (res.data.code == 1) {
+                this.gameSetting = {
+                    gamePort: res.data.data.game_port,
+                    panelPort: res.data.data.panel_port,
+                    playerNum: res.data.data.max_players,
+                    gamplayerNumePort: res.data.data.game_port,
+                    minMemorySize: res.data.data.min_memory_size,
+                    maxMemorySize: res.data.data.max_memory_size,
+                    jarName: res.data.data.jar_name
                 }
-            })) {
-                return true
-            } else {
-                return false
             }
         },
         async uploadFile(file) {
@@ -221,20 +252,36 @@ export default {
             this.recordInfo.playerId = this.$store.getters.GETUSERINFO.player_id
         },
         async startProcess() {
+            let _this = this
             let res = await this.post('wensc/beginProcess', {})
-            this.$notify({
-                title: '成功',
-                message: res.data.msg,
-                type: 'success'
-            })
+            let timer = setInterval(() => {
+                this.getServerStatus()
+                if (_this.serverStatus) {
+                    clearInterval(timer)
+                    _this.serverStatus = 1
+                    this.$notify({
+                        title: '成功',
+                        message: res.data.msg,
+                        type: 'success'
+                    })
+                }
+            }, 1000)
         },
         async closeProcess() {
+            let _this = this
             let res = await this.post('wensc/killProcess', {})
-            this.$notify({
-                title: '成功',
-                message: res.data.msg,
-                type: 'success'
-            })
+            let timer = setInterval(() => {
+                _this.getServerStatus()
+                if (!_this.serverStatus) {
+                    clearInterval(timer)
+                    _this.serverStatus = -1
+                    this.$notify({
+                        title: '成功',
+                        message: res.data.msg,
+                        type: 'success'
+                    })
+                }
+            }, 1000)
         },
         async deleteLocation(index, row) {
             let res = await this.post('wensc/deleteLocation', {locationId: row.location_id})
@@ -252,6 +299,7 @@ export default {
         this.getLocation()
         this.getServerStatus()
         this.recordInfo.playerId = this.$store.getters.GETUSERINFO.player_id
+        this.getGameDispose()
     },
     watch: {
         'this.recordInfo.userId'(val) {
@@ -283,6 +331,9 @@ export default {
 </script>
 <style lang="scss">
     div[servicePanel]{
+        .tag-read{
+            cursor:pointer;
+        }
         .service-control{
             padding: 5px;
             .title{
