@@ -1,3 +1,11 @@
+<!--
+ * @Description: 登录页
+ * @Version: 1.0
+ * @Autor: niesc_SMEICS
+ * @Date: 2020-12-15 14:56:50
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-01-25 09:20:45
+-->
 <template>
     <div login>
         <el-form label-position="left" label-width="80px" :model="accountInfo" class="accountForm" @keyup.enter.native="submitLogin">
@@ -49,9 +57,11 @@ export default {
     }
 }
 </script>
-<style lang = "sass">
+<style lang = "less">
     div[login]{
-        background: url('../../images/login-bg.jpg');
+        /* background: url('../../images/login-bg.jpg'); */
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 100vh;
         display: flex;
         align-items: center;

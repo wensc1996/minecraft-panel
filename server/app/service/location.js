@@ -9,7 +9,7 @@ class LocationService extends Service {
         if(res){
             return new Response({code: 1, msg: '获取坐标列表成功', data : res})
         }else{
-            return new Response({code: -1, msg: '获取坐标列表成功'})
+            return new Response({code: -1, msg: '获取坐标列表失败'})
         }
     }
     async addLocation(options){

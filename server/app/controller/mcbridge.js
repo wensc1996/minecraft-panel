@@ -5,7 +5,6 @@ const Controller = require('egg').Controller;
 class mcBridgeController extends Controller {
     async killProcess() {
         const { ctx } = this;
-        console.log(ctx)
         ctx.body = ctx.io.controller.mcbridge.killProcess(ctx.request.body);
     }
     async beginProcess() {

@@ -51,38 +51,6 @@ class UserService extends Service {
             return new Response({code: -1, msg: '删除用户失败', data: ''})
         }
     }
-    readFile(){
-        return new Promise((resolve, reject) => {
-            fs.readdir('../mc/world/players', 'utf-8', function(err, data){
-                resolve(data)
-            })
-        })
-    }
-    async getPlayerList() {
-        let res = await this.readFile()
-        res = JSON.parse(JSON.stringify(res).replace(/.dat/g, ''))
-        if(res){
-            return new Response({code: 1, msg: '获取玩家列表成功', data : res.map((item) => {
-                return {
-                    name: item
-                }
-            })})
-        }else{
-            return new Response({code: -1, msg: '获取玩家列表失败', data: ''})
-        }
-    }
-    deleteFile(options) {
-        return new Promise((resolve, reject) => {
-            fs.unlink(`../mc/world/players/${options.playerId}.dat`, function(err, data){
-                if(err) resolve('删除失败')
-                else resolve('删除成功')
-            })
-        })
-    }
-    async deletePlayer(options) {
-        let res = await this.deleteFile(options)
-        return new Response({code: 1, msg: res, data: res})
-    }
 }
   
 module.exports = UserService;

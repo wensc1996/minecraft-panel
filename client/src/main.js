@@ -143,10 +143,18 @@ Vue.mixin({
 })
 Vue.prototype.$bus = new Vue()
 /* eslint-disable no-new */
-new Vue({
+const app = new Vue({
     el: '#app',
     router,
     store,
     components: { App },
     template: '<App/>'
+})
+app._router.beforeEach((to, from, next) => {
+    if (to.name === 'User' && !app.checkEnabled('userManage')) next(false)
+    else if(to.name === 'PlayerFiles' && !app.checkEnabled('playerFiles')) next(false)
+    else if(to.name === 'File' && !app.checkEnabled('uploadFile')) next(false)
+    else if(to.name === 'RoleManage' && !app.checkEnabled('roleManage')) next(false)
+    else if(to.name === 'Service' && !app.checkEnabled('cmd')) next(false)
+    else next()
 })

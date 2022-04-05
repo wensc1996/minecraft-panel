@@ -31,7 +31,7 @@ module.exports = appInfo => {
     }
     config.multipart = {
         mode: 'file',
-        fileExtensions: ['dat'],
+        fileExtensions: ['.dat', '.jar', '.txt', '.cfg', '.json', '.jar', '.rar', '.properties', '.exe'],
     }
     // 注意，开启此模式后，应用就默认自己处于反向代理之后，
     // 会支持通过解析约定的请求头来获取用户真实的 IP，协议和域名。

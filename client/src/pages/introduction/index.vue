@@ -35,7 +35,7 @@ export default {
     }
 }
 </script>
-<style lang="scss">
+<style lang="less">
     div[introduction]{
         .container-box{
             margin: 10px 0;

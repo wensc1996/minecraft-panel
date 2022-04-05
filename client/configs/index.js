@@ -1,3 +1,11 @@
+/*
+ * @Description: 前端配置文件
+ * @Version: 1.0
+ * @Autor: niesc_SMEICS
+ * @Date: 2020-12-07 13:48:37
+ * @LastEditors: niesc_SMEICS
+ * @LastEditTime: 2021-04-29 15:39:44
+ */
 'use strict'
 // Template version: 1.3.1
 // see http://vuejs-templates.github.io/webpack for documentation.
@@ -33,8 +41,8 @@ module.exports = {
       }
     },
     // Various Dev Server settings
-    host: '0.0.0.0', // can be overwritten by process.env.HOST
-    port: 36104, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    host: '127.0.0.1', // can be overwritten by process.env.HOST
+    port: 21091, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
@@ -70,7 +78,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: './',
 
     /**
      * Source Maps
