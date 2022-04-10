@@ -35,6 +35,28 @@ class DefaultController extends Controller {
             } else {
                 res = data.toString('utf8')
             }
+            let loginPlayer = res.match(/\: (\S+)\[\/\S+\] logged in with entity/)
+			console.log(loginPlayer)
+			
+            if(loginPlayer) {
+                let onePlayer = loginPlayer[1]
+                playerList.push(onePlayer)
+                ctx.app.io.of('/').to(room).emit('wensc', {
+                    type: 'playerList',
+                    data: playerList
+                });
+            }
+            
+            let logoutPlayer = res.match(/\: (\S+) lost connection/)
+            if(logoutPlayer) {
+                let onePlayer = logoutPlayer[1]
+                playerList = playerList.filter(item => item!=onePlayer)
+                ctx.app.io.of('/').to(room).emit('wensc', {
+                    type: 'playerList',
+                    data: playerList
+                });
+            }
+
             ctx.app.io.of('/').to(room).emit('wensc', {
                 type: 'console',
                 data: res
