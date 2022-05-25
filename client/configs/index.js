@@ -3,8 +3,8 @@
  * @Version: 1.0
  * @Autor: niesc_SMEICS
  * @Date: 2020-12-07 13:48:37
- * @LastEditors: niesc_SMEICS
- * @LastEditTime: 2021-04-29 15:39:44
+ * @LastEditors: niesc_SMEICS niesc_SMEICS@si-tech.com.cn
+ * @LastEditTime: 2022-05-25 14:16:30
  */
 'use strict'
 // Template version: 1.3.1
@@ -14,7 +14,6 @@ const path = require('path')
 
 module.exports = {
   dev: {
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
@@ -51,7 +50,7 @@ module.exports = {
     // Use Eslint Loader?
     // If true, your code will be linted during bundling and
     // linting errors and warnings will be shown in the console.
-    useEslint: true,
+    useEslint: false,
     // If true, eslint errors and warnings will also be shown in the error overlay
     // in the browser.
     showEslintErrorsInOverlay: false,

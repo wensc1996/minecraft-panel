@@ -2,7 +2,7 @@
     <div controlPanel>
         <el-container>
             <el-header><Header></Header></el-header>
-            <el-container>
+            <el-container >
                 <el-aside><SideMenu></SideMenu></el-aside>
                 <el-main>
                     <router-view></router-view>
@@ -35,4 +35,6 @@ export default {
 }
 </script>
 <style lang="less">
+div[controlPanel]{
+}
 </style>
