@@ -114,7 +114,7 @@ export default {
     },
     beforeDestroy() {
         this.$bus.$off('record')
-    },
+    }
 }
 </script>
 <style lang="less">
