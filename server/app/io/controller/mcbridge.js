@@ -36,8 +36,6 @@ class DefaultController extends Controller {
                 res = data.toString('utf8')
             }
             let loginPlayer = res.match(/\: (\S+)\[\/\S+\] logged in with entity/)
-			console.log(loginPlayer)
-			
             if(loginPlayer) {
                 let onePlayer = loginPlayer[1]
                 playerList.push(onePlayer)
