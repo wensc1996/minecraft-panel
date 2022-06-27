@@ -104,26 +104,26 @@ Vue.mixin({
         },
         tip(type, msg) {
             switch (type) {
-            case -1:
-                this.$notify.error({
-                    title: '错误',
-                    message: msg
-                })
-                break
-            case 0:
-                this.$notify({
-                    title: '警告',
-                    message: msg,
-                    type: 'warning'
-                })
-                break
-            case 1:
-                this.$notify({
-                    title: '成功',
-                    message: msg,
-                    type: 'success'
-                })
-                break
+                case -1:
+                    this.$notify.error({
+                        title: '错误',
+                        message: msg
+                    })
+                    break
+                case 0:
+                    this.$notify({
+                        title: '警告',
+                        message: msg,
+                        type: 'warning'
+                    })
+                    break
+                case 1:
+                    this.$notify({
+                        title: '成功',
+                        message: msg,
+                        type: 'success'
+                    })
+                    break
             }
         },
         checkEnabled(name) {
@@ -152,9 +152,9 @@ const app = new Vue({
 })
 app._router.beforeEach((to, from, next) => {
     if (to.name === 'User' && !app.checkEnabled('userManage')) next(false)
-    else if(to.name === 'PlayerFiles' && !app.checkEnabled('playerFiles')) next(false)
-    else if(to.name === 'File' && !app.checkEnabled('uploadFile')) next(false)
-    else if(to.name === 'RoleManage' && !app.checkEnabled('roleManage')) next(false)
-    else if(to.name === 'Service' && !app.checkEnabled('cmd')) next(false)
+    else if (to.name === 'PlayerFiles' && !app.checkEnabled('playerFiles')) next(false)
+    else if (to.name === 'File' && !app.checkEnabled('uploadFile')) next(false)
+    else if (to.name === 'RoleManage' && !app.checkEnabled('roleManage')) next(false)
+    else if (to.name === 'Service' && !app.checkEnabled('cmd')) next(false)
     else next()
 })

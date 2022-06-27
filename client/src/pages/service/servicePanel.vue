@@ -5,8 +5,8 @@
                 <span class="title">服务器状态控制</span>
                 <div class="btn-group">
                     <el-button @click="startProcess" :disabled="serverStatus">启动</el-button>
-                    <el-button>重启</el-button>
-                    <el-button @click="closeProcess" :disabled="!serverStatus">关闭</el-button>
+                    <el-button @click="stopProcess" :disabled="!serverStatus">关闭</el-button>
+                    <el-button @click="killProcess" :disabled="!serverStatus">强制关闭</el-button>
                 </div>
             </div>
 
@@ -19,7 +19,7 @@
                             <el-button @click="openTeamsFire">开启队友伤害</el-button>
                         </div>
                     </el-tab-pane>
-                    <el-tab-pane label="队伍管理">队伍管理</el-tab-pane>
+                    <!-- <el-tab-pane label="队伍管理">队伍管理</el-tab-pane> -->
                     <el-tab-pane label="坐标管理">
                         <el-form :inline="true" :model="recordInfo" class="demo-form-inline">
                             <el-form-item label="游戏ID">
@@ -32,58 +32,44 @@
                                 <el-button type="primary" @click="recordCoordinate">纪录</el-button>
                             </el-form-item>
                         </el-form>
-                        <el-table
-                            :data="coordinateTable"
-                            stripe
-                            style="width: 100%" height="300">
-                            <el-table-column
-                            prop="create_time"
-                            label="坐标名称"
-                            width="200">
+                        <el-table :data="coordinateTable" stripe style="width: 100%" height="300">
+                            <el-table-column prop="create_time" label="坐标名称" width="200">
                             </el-table-column>
                             <!-- <el-table-column
                             prop="coordinate"
                             label="坐标点"
                             width="180">
                             </el-table-column> -->
-                            <el-table-column
-                                prop="coordinate"
-                                label="坐标点">
+                            <el-table-column prop="coordinate" label="坐标点">
                                 <template slot-scope="scope">
                                     <el-tooltip placement="top">
                                         <div slot="content">点击复制</div>
-                                        <span class="tag-read" :data-clipboard-text="copyText" @click="copy(coordinateTable[scope.$index].coordinate, coordinateTable[scope.$index].name)">{{coordinateTable[scope.$index].coordinate}}</span>
+                                        <span class="tag-read" :data-clipboard-text="copyText"
+                                            @click="copy(coordinateTable[scope.$index].coordinate, coordinateTable[scope.$index].name)">{{ coordinateTable[scope.$index].coordinate }}</span>
                                     </el-tooltip>
                                 </template>
                             </el-table-column>
-                            <el-table-column
-                            prop="name"
-                            label="坐标名称"
-                            width="180">
+                            <el-table-column prop="name" label="坐标名称" width="180">
                             </el-table-column>
                             <!-- <el-table-column
                             prop="address"
                             label="选择玩家">
                             </el-table-column> -->
-                            <el-table-column
-                            prop="address"
-                            label="传送">
-                            <template slot-scope="scope">
-                                <el-button @click="teleport(scope.$index, scope.row)">传送</el-button>
-                            </template>
+                            <el-table-column prop="address" label="传送">
+                                <template slot-scope="scope">
+                                    <el-button @click="teleport(scope.$index, scope.row)">传送</el-button>
+                                </template>
                             </el-table-column>
-                            <el-table-column
-                            prop="delete"
-                            label="删除">
-                            <template slot-scope="scope">
-                                <el-button @click="deleteLocation(scope.$index, scope.row)">删除</el-button>
-                            </template>
+                            <el-table-column prop="delete" label="删除">
+                                <template slot-scope="scope">
+                                    <el-button @click="deleteLocation(scope.$index, scope.row)">删除</el-button>
+                                </template>
                             </el-table-column>
                         </el-table>
                     </el-tab-pane>
                     <el-tab-pane label="配置管理" v-if="checkEnabled('programManage')">
                         <el-form :label-position="labelPosition" label-width="120px" :model="gameSetting">
-                            <el-form-item label="游戏端口">
+                            <!-- <el-form-item label="游戏端口">
                                 <el-input v-model="gameSetting.gamePort"></el-input>
                             </el-form-item>
                             <el-form-item label="控制面板端口">
@@ -91,7 +77,7 @@
                             </el-form-item>
                             <el-form-item label="玩家人数">
                                 <el-input v-model="gameSetting.playerNum"></el-input>
-                            </el-form-item>
+                            </el-form-item> -->
                             <el-form-item label="最小内存（m）">
                                 <el-input v-model="gameSetting.minMemorySize"></el-input>
                             </el-form-item>
@@ -118,7 +104,7 @@
 </template>
 <script>
 export default {
-    data () {
+    data() {
         return {
             activeNames: ['1'],
             recordInfo: {
@@ -175,10 +161,10 @@ export default {
                 type: 'success'
             })
         },
-        handleChange (val) {
+        handleChange(val) {
             console.log(val)
         },
-        onSubmit () {
+        onSubmit() {
             console.log('submit!')
         },
         closeTeamsFire() {
@@ -193,7 +179,7 @@ export default {
             })
         },
         async getLocation() {
-            let res = await this.post('wensc/getLocationList', {userId: this.$store.getters.GETUSERINFO.user_id})
+            let res = await this.post('wensc/getLocationList', { userId: this.$store.getters.GETUSERINFO.user_id })
             this.coordinateTable = res.data.data
         },
         async getServerStatus() {
@@ -239,7 +225,23 @@ export default {
                 }
             }, 1000)
         },
-        async closeProcess() {
+        async stopProcess() {
+            let _this = this
+            this.$socket.emit('thread', '/stop')
+            let timer = setInterval(() => {
+                _this.getServerStatus()
+                if (!_this.serverStatus) {
+                    clearInterval(timer)
+                    _this.serverStatus = false
+                    this.$notify({
+                        title: '成功',
+                        message: '成功关闭服务器',
+                        type: 'success'
+                    })
+                }
+            }, 1000)
+        },
+        async killProcess() {
             let _this = this
             let res = await this.post('wensc/killProcess', {})
             let timer = setInterval(() => {
@@ -256,7 +258,7 @@ export default {
             }, 1000)
         },
         async deleteLocation(index, row) {
-            let res = await this.post('wensc/deleteLocation', {locationId: row.location_id})
+            let res = await this.post('wensc/deleteLocation', { locationId: row.location_id })
             if (res.data.code == 1) {
                 this.$notify({
                     title: '成功',
@@ -295,27 +297,32 @@ export default {
 }
 </script>
 <style lang="less">
-    div[servicePanel]{
-        .tag-read{
-            cursor:pointer;
+div[servicePanel] {
+    .tag-read {
+        cursor: pointer;
+    }
+
+    .service-control {
+        padding: 5px;
+
+        .title {
+            padding: 10px 20px;
+            display: inline-block;
         }
-        .service-control{
-            padding: 5px;
-            .title{
-                padding: 10px 20px;
-                display: inline-block;
-            }
-            .btn-group{
-                float: right;
-            }
-            &::after{
-                content: "";
-                display: block;
-                clear: both;
-            }
+
+        .btn-group {
+            float: right;
         }
-        .el-collapse-item__content{
-            padding-bottom: 0;
+
+        &::after {
+            content: "";
+            display: block;
+            clear: both;
         }
     }
+
+    .el-collapse-item__content {
+        padding-bottom: 0;
+    }
+}
 </style>

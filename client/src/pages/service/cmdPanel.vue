@@ -3,18 +3,20 @@
         <div class="cmd">
             <div style="margin-top: 15px;">
                 <el-input placeholder="请输入指令" v-model="cmd" @keyup.enter.native="actCMD">
-                    <template slot="append"><el-button @click="actCMD">执行</el-button></template>
+                    <template slot="append">
+                        <el-button @click="actCMD">执行</el-button>
+                    </template>
                 </el-input>
             </div>
         </div>
         <div class="panel">
-            <div v-for="(item, index) in msgContainer" :key="index" class="line">{{item}}</div>
+            <div v-for="(item, index) in msgContainer" :key="index" class="line">{{ item }}</div>
         </div>
     </div>
 </template>
 <script>
 export default {
-    data () {
+    data() {
         return {
             cmd: '',
             msgContainer: [],
@@ -24,7 +26,7 @@ export default {
             timer: null
         }
     },
-    mounted () {
+    mounted() {
         // this.$store.commit('increment')
         // console.log(this.$store.getters.optCount)
         // this.listPlayers()
@@ -37,15 +39,15 @@ export default {
         },
         // 方法名与服务端的保持一致
         wensc: function (res) {
-        // 以下对接收来的数据进行操作
+            // 以下对接收来的数据进行操作
             this.resultFilter(res)
         }
     },
     methods: {
-        joinRoom () {
+        joinRoom() {
             this.$socket.emit('thread', '')
         },
-        actCMD () {
+        actCMD() {
             this.$socket.emit('thread', this.cmd)
         },
         trimBlank(str) {
@@ -77,7 +79,7 @@ export default {
                             playerId = playerIdArr[2]
                             coordinate = this.trimBlank(res.match(/(-?\d+，-?\d+，-?\d+)/)[1]).replace(/，/g, ',')
                         }
-                        this.$store.commit('SETCURRENTPOSITION', {playerId, coordinate})
+                        this.$store.commit('SETCURRENTPOSITION', { playerId, coordinate })
                     }
                 }
                 // if (/(\S+ joined the game)/.test(res)) { // |(\S+ left the game)
@@ -107,7 +109,7 @@ export default {
             this.recordPlayer(val)
         })
     },
-    beforeRouteLeave (to, from, next) {
+    beforeRouteLeave(to, from, next) {
         this.$bus.$off('record')
     },
     beforeDestroy() {
@@ -116,14 +118,15 @@ export default {
 }
 </script>
 <style lang="less">
-    div[cmd-panel]{
-        .panel{
-            height: 600px;
-            overflow-y: scroll;
-            padding: 1em;
-            .line{
-                padding: 5px 0;
-            }
+div[cmd-panel] {
+    .panel {
+        height: 600px;
+        overflow-y: scroll;
+        padding: 1em;
+
+        .line {
+            padding: 5px 0;
         }
     }
+}
 </style>
