@@ -6,7 +6,16 @@
                 <div class="btn-group">
                     <el-button @click="startProcess" :disabled="serverStatus">启动</el-button>
                     <el-button @click="stopProcess" :disabled="!serverStatus">关闭</el-button>
-                    <el-button @click="killProcess" :disabled="!serverStatus">强制关闭</el-button>
+                    <el-popconfirm
+                        confirm-button-text='确定'
+                        cancel-button-text='取消'
+                        icon="el-icon-info"
+                        icon-color="red"
+                        @confirm="killProcess"
+                        title="可能会造成游戏存档损坏，确定要强制关闭吗"
+                    >
+                        <el-button slot="reference" :disabled="!serverStatus">强制关闭</el-button>
+                    </el-popconfirm>
                 </div>
             </div>
 

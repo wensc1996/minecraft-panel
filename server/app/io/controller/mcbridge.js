@@ -35,7 +35,7 @@ class DefaultController extends Controller {
             } else {
                 res = data.toString('utf8')
             }
-            let loginPlayer = res.match(/\: (\S+)\[\/\S+\] logged in with entity/)
+            let loginPlayer = res.match(/(\S+)\[\/\S+\] logged in with entity/)
             if(loginPlayer) {
                 let onePlayer = loginPlayer[1]
                 playerList.push(onePlayer)
@@ -45,7 +45,7 @@ class DefaultController extends Controller {
                 });
             }
             
-            let logoutPlayer = res.match(/\: (\S+) lost connection/)
+            let logoutPlayer = res.match(/(\S+) lost connection/)
             if(logoutPlayer) {
                 let onePlayer = logoutPlayer[1]
                 playerList = playerList.filter(item => item!=onePlayer)
@@ -67,7 +67,7 @@ class DefaultController extends Controller {
             } else {
                 res = data.toString('utf8')
             }
-            let loginPlayer = res.match(/\: (\S+)\[\/\S+\] logged in with entity/)
+            let loginPlayer = res.match(/(\S+)\[\/\S+\] logged in with entity/)
             if(loginPlayer) {
                 let onePlayer = loginPlayer[1]
                 playerList.push(onePlayer)
@@ -76,7 +76,7 @@ class DefaultController extends Controller {
                     data: playerList
                 });
             }
-            let logoutPlayer = res.match(/\: (\S+) lost connection/)
+            let logoutPlayer = res.match(/(\S+) lost connection/)
             if(logoutPlayer) {
                 let onePlayer = logoutPlayer[1]
                 playerList = playerList.filter(item => item!=onePlayer)

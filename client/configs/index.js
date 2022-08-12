@@ -4,7 +4,7 @@
  * @Autor: niesc_SMEICS
  * @Date: 2020-12-07 13:48:37
  * @LastEditors: niesc_SMEICS niesc_SMEICS@si-tech.com.cn
- * @LastEditTime: 2022-05-25 14:16:30
+ * @LastEditTime: 2022-08-12 16:19:30
  */
 'use strict'
 // Template version: 1.3.1
@@ -40,7 +40,7 @@ module.exports = {
       }
     },
     // Various Dev Server settings
-    host: '127.0.0.1', // can be overwritten by process.env.HOST
+    host: '0.0.0.0', // can be overwritten by process.env.HOST
     port: 21091, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
