@@ -46,4 +46,7 @@ module.exports = app => {
     router.post('/deleteFileOrDirectory', controller.directoryTree.deleteFileOrDirectory)
     router.post('/createNewDirectory', controller.directoryTree.createNewDirectory)
     router.post('/renameDirectoryOrFile', controller.directoryTree.renameDirectoryOrFile)
+
+    router.post('/getLogList', controller.logs.getLogList);
+    router.post('/deleteLog', controller.logs.deleteLog);
 };

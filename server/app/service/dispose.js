@@ -1,6 +1,8 @@
 const Service = require('egg').Service;
 const Mysql = require('../../src/mysql/connection')
 const Response = require('../../src/response')
+const Logs = require('../../src/logs')
+const Logger = new Logs()
 class DisposeService extends Service {
     async getGameDispose() {
         let mysql = new Mysql()
@@ -15,6 +17,7 @@ class DisposeService extends Service {
         let mysql = new Mysql()
         let res = await mysql.action('update dispose set game_port = ?, panel_port = ?, max_players = ?, max_memory_size = ?, min_memory_size = ?, jar_name = ?, java_path = ?', [options.gamePort, options.panelPort, options.playerNum, options.maxMemorySize, options.minMemorySize, options.jarName, options.javaPath])
         if(res){
+            Logger.log(this.ctx, `更新游戏配置:${[options.gamePort, options.panelPort, options.playerNum, options.maxMemorySize, options.minMemorySize, options.jarName, options.javaPath].join(',')}`)
             return new Response({code: 1, msg: '更新游戏配置成功', data: ''})
         }else{
             return new Response({code: -1, msg: '更新游戏配置失败'})

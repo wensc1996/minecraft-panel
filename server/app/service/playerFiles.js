@@ -1,7 +1,8 @@
 const Service = require('egg').Service;
 const Response = require('../../src/response')
 const fs = require('fs')
-
+const Logs = require('../../src/logs')
+const Logger = new Logs()
 class PlayerFilesService extends Service {
     copyFile(source, target){
         return new Promise((resolve, reject) => {
@@ -45,6 +46,7 @@ class PlayerFilesService extends Service {
         let res = ''
         if(dirExits) res = await this.copyFile(`../mc/world/players/${options.playerId}`, `../mc/world/backup/${options.playerId}`)
         if(res){
+            Logger.log(this.ctx, `备份玩家存档：../mc/world/backup/${options.playerId}`)
             return new Response({code: 1, msg: '备份玩家成功', data : res})
         }else{
             return new Response({code: -1, msg: '恢复玩家存档失败'})
@@ -53,6 +55,7 @@ class PlayerFilesService extends Service {
     async restorePlayer(options){
         let res = await this.copyFile(`../mc/world/backup/${options.playerId}`, `../mc/world/players/${options.playerId}`)
         if(res){
+            Logger.log(this.ctx, `恢复玩家存档：../mc/world/players/${options.playerId}`)
             return new Response({code: 1, msg: '恢复玩家存档成功', data : ''})
         }else{
             return new Response({code: -1, msg: '恢复玩家存档失败'})
@@ -61,6 +64,7 @@ class PlayerFilesService extends Service {
     async uploadFile(options){
         try {
             let file = options.files[0]
+            Logger.log(this.ctx, `上传玩家存档：../mc/world/players/${file.filename}`)
             let wfile = fs.readFileSync(file.filepath)
             fs.writeFileSync(`../mc/world/players/${file.filename}`, wfile)
             return new Response({code: 1, msg: '上传成功', data : ''})
@@ -79,6 +83,7 @@ class PlayerFilesService extends Service {
     async deletePlayer(options) {
         let res = await this.deleteFile(options)
         if(res) {
+            Logger.log(this.ctx, `删除玩家存档：../mc/world/players/${options.playerId}`)
             return new Response({code: 1, msg: '删除成功', data : ''})
         } else {
             return new Response({code: -1, msg: '删除失败', data : ''})

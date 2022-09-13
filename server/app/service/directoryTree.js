@@ -2,11 +2,14 @@ const Service = require('egg').Service;
 const Response = require('../../src/response')
 const path = require('path');
 const fs = require('fs');
+const Logs = require('../../src/logs')
+const Logger = new Logs()
 class DirectoryTree extends Service {
     renameDirectoryOrFile(options) {
         return new Promise((reslove, reject) => {
             try{
                 fs.renameSync(`..${options.oldPath}`, `..${options.newPath}`)
+                Logger.log(this.ctx, `重命名：..${options.oldPath} 改为：..${options.newPath}`)
                 reslove(new Response({code: 1, msg: '重命名成功', data : ''}))
             }catch(e) {
                 reslove(new Response({code: -1, msg: '重命名失败', data : ''}))
@@ -17,6 +20,7 @@ class DirectoryTree extends Service {
         return new Promise((reslove, reject) => {
             try{
                 fs.mkdirSync(`..${options.fullPath}`)
+                Logger.log(this.ctx, `创建文件：..${options.fullPath}`)
                 reslove(new Response({code: 1, msg: '创建目录成功', data : ''}))
             }catch(e) {
                 reslove(new Response({code: -1, msg: '创建目录失败', data : ''}))
@@ -85,11 +89,13 @@ class DirectoryTree extends Service {
         return new Promise((reslove, reject) => {
             deleteList.forEach((options) => {
                 if(options.type === 0) {
+                    Logger.log(this.ctx, `删除文件：..${options.fullPath}`)
                     fs.unlinkSync(`..${options.fullPath}`);
                 }
             })
             deleteList.forEach((options) => {
                 if(options.type === 1) {
+                    Logger.log(this.ctx, `删除文件：..${options.fullPath}`)
                     this.clearDir(`..${options.fullPath}`)
                 }
             })
@@ -100,6 +106,7 @@ class DirectoryTree extends Service {
         return new Promise((reslove, reject) => {
             try {
                 let file = options.files[0]
+                Logger.log(this.ctx, `上传文件：..${options.body.target}/${file.filename}`)
                 let wfile = fs.readFileSync(file.filepath)
                 fs.writeFileSync(`..${options.body.target}/${file.filename}`, wfile)
                 reslove(new Response({code: 1, msg: '上传成功', data : ''}))

@@ -2,6 +2,8 @@ const Service = require('egg').Service;
 const { promises } = require('fs-extra');
 const Mysql = require('../../src/mysql/connection')
 const Response = require('../../src/response')
+const Logs = require('../../src/logs')
+const Logger = new Logs()
 class PrivilegeService extends Service {
     async getRolePrivilege(options) {
         let mysql = new Mysql()
@@ -39,6 +41,7 @@ class PrivilegeService extends Service {
                 return mysql.batchAction('insert into privilege(role_id, menu_id) values (?, ?)', [options.roleId, item])
             }))
             await all
+            Logger.log(this.ctx, `分配权限菜单`)
             return new Response({code: 1, msg: '分配权限菜单成功', data: ''})
         } catch (err){
             return new Response({code: -1, msg: '分配权限菜单失败'})
