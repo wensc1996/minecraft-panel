@@ -41,6 +41,10 @@
                 <i class="el-icon-document"></i>
                 <span slot="title">文件管理</span>
             </el-menu-item>
+            <el-menu-item index="/home/logs" v-if="checkEnabled('logManage')">
+                <i class="el-icon-document"></i>
+                <span slot="title">日志管理</span>
+            </el-menu-item>
             <el-menu-item index="/home/nat-ddns" v-if="false">
                 <i class="el-icon-setting"></i>
                 <span slot="title">内网穿透</span>

@@ -41,6 +41,10 @@ const router = new Router({
             path: 'playerFiles',
             name: 'PlayerFiles',
             component: () => import(/* webpackChunkName: "playerFiles", webpackPrefetch: true */ '@/pages/playerFiles')
+        }, {
+            path: 'logs',
+            name: 'Logs',
+            component: () => import(/* webpackChunkName: "logs", webpackPrefetch: true */ '@/pages/logs')
         }]
     }]
 })

@@ -80,6 +80,7 @@ export default {
                             coordinate = this.trimBlank(res.match(/(-?\d+，-?\d+，-?\d+)/)[1]).replace(/，/g, ',')
                         }
                         this.$store.commit('SETCURRENTPOSITION', { playerId, coordinate })
+                        this.$store.state.rebornType = ''
                     }
                 }
                 // if (/(\S+ joined the game)/.test(res)) { // |(\S+ left the game)
