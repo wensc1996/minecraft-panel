@@ -3,7 +3,7 @@ const Mysql = require('../../src/mysql/connection')
 const Response = require('../../src/response')
 const fs = require('fs')
 const crypto = require('crypto')
-const Logs = require('../../src/logs')
+const Logs = require('../../src/logger')
 const Logger = new Logs()
 class UserService extends Service {
     md5(val) {

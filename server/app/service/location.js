@@ -1,7 +1,7 @@
 const Service = require('egg').Service;
 const Mysql = require('../../src/mysql/connection')
 const Response = require('../../src/response')
-const Logs = require('../../src/logs')
+const Logs = require('../../src/logger')
 const Logger = new Logs()
 class LocationService extends Service {
     async getLocationList(options) {

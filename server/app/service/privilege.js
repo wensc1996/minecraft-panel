@@ -2,7 +2,7 @@ const Service = require('egg').Service;
 const { promises } = require('fs-extra');
 const Mysql = require('../../src/mysql/connection')
 const Response = require('../../src/response')
-const Logs = require('../../src/logs')
+const Logs = require('../../src/logger')
 const Logger = new Logs()
 class PrivilegeService extends Service {
     async getRolePrivilege(options) {

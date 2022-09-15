@@ -2,7 +2,7 @@ const Service = require('egg').Service;
 const Response = require('../../src/response')
 const path = require('path');
 const fs = require('fs');
-const Logs = require('../../src/logs')
+const Logs = require('../../src/logger')
 const Logger = new Logs()
 class DirectoryTree extends Service {
     renameDirectoryOrFile(options) {
