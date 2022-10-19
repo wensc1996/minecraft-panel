@@ -9,7 +9,6 @@ class LogsController extends Controller {
     }
     async deleteLog(){
         const { ctx } = this;
-        ctx.request.body.createTime = this.now()
         ctx.body = await this.ctx.service.logs.deleteLog(ctx.request.body);
     }
 }

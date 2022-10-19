@@ -179,7 +179,7 @@ export default {
         closeTeamsFire() {
             this.$socket.emit('thread', '/scoreboard teams add team')
             this.$socket.emit('thread', '/scoreboard teams join team @a')
-            this.$socket.emit('thread', '/scoreboard teams option team color red')
+            this.$socket.emit('thread', '/scoreboard teams option team color aqua')
             this.$socket.emit('thread', '/scoreboard teams option team friendlyFire false')
             this.$notify({
                 title: '成功',
