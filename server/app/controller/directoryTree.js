@@ -10,7 +10,7 @@ class DirectoryTree extends Controller {
     }
     async download() {
         const { ctx } = this
-        const filePath = `..${ctx.request.query.target}`
+        const filePath = ctx.request.query.target
         let fileSize = (await promisify(fs.stat)(filePath)).size.toString();
         ctx.attachment(filePath)
         ctx.set('Content-Length', fileSize)

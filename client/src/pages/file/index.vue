@@ -3,15 +3,15 @@
         <el-button type="primary" @click="dialogTableVisible=!dialogTableVisible" dialogTableVisible="dialogTableVisible">创建目录/上传</el-button>
         <el-button type="primary" @click="deleteFileOrDirectory">删除</el-button>
         <tree
-        :data="fileTree"
-        :show-checkbox="true"
-        :props="defaultProps"
-        @node-click="handleNodeClick"
-        node-key="id"
-        ref="tree"
-        @node-contextmenu="rename"
-        :check-strictly="true"
-        :default-expanded-keys="['/mc']"
+            :data="fileTree"
+            :show-checkbox="true"
+            :props="defaultProps"
+            @node-click="handleNodeClick"
+            node-key="id"
+            ref="tree"
+            @node-contextmenu="rename"
+            :check-strictly="true"
+            :default-expanded-keys="[fileTree[0].id]"
         ></tree>
         <el-dialog title="文件上传" :visible.sync="dialogTableVisible">
             <fileUpload :fileTree="fileTree" @getFileTree="getFileTree"/>
@@ -94,7 +94,7 @@ export default {
                 if (res.data.code == 1) {
                     this.$notify({
                         title: '成功',
-                        message: '删除',
+                        message: '删除成功',
                         type: 'success'
                     })
                 } else {
@@ -133,8 +133,16 @@ export default {
             }
         },
         async getFileTree() {
-            let fileTree = await this.post('wensc/getDirectoryOrFile', { filed: 1 })
-            this.fileTree = fileTree.data
+            let res = await this.post('wensc/getDirectoryOrFile', { filed: 1 })
+            if(res.data.code == 1) {
+                this.fileTree = res.data.data
+            } else {
+                this.$notify({
+                    title: '失败',
+                    message: res.data.msg,
+                    type: 'error'
+                })
+            }
         }
     },
     mounted() {

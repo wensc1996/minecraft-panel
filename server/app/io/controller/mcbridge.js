@@ -9,6 +9,7 @@ const Mysql = require('../../../src/mysql/connection')
 // const java = spawn('cd', ["server/src/bridge/mine"]);
 const path = require("path");
 const os = require('os');
+const GameConfig = require('../../../src/gameConfig');
 
 let java = null
 let serverStatus = false
@@ -23,83 +24,90 @@ const map = {
 }
 const platform = map[type]
 class DefaultController extends Controller {
+    
     async initialJava(ctx) {
         let room = 'wensc'
-        let mysql = new Mysql()
-        let res = await mysql.action('select * from dispose')
-        java = spawn(res[0].java_path ? res[0].java_path : 'java', [`-Xmx${res[0].max_memory_size}M`, `-Xms${res[0].min_memory_size}M`, '-jar', path.join(__dirname,`../../../../mc/${res[0].jar_name}`), 'nogui'], {cwd: path.join(__dirname,'../../../../mc')});
-        java.stdout.on('data', (data) => {
-            let res = ''
-            if(platform == 0) {
-                res = iconv.decode(Buffer.from(data, 'binary'), 'GBK')
-            } else {
-                res = data.toString('utf8')
-            }
-            let loginPlayer = res.match(/(\S+)\[\/\S+\] logged in with entity/)
-            if(loginPlayer) {
-                let onePlayer = loginPlayer[1]
-                playerList.push(onePlayer)
+        let checkConfig = new GameConfig()
+        await checkConfig.getGameConfig()
+        let checkResult = await checkConfig.checkRunConfig()
+        if(checkResult.code != 1) {
+            return new Response({code: checkResult.code, msg: checkResult.msg, data : ''})
+        } else {
+            let config = checkConfig.config
+            java = spawn(config.java_path, [`-Xmx${config.max_memory_size}M`, `-Xms${config.min_memory_size}M`, '-jar', path.join(config.work_path, config.jar_name), 'nogui'], {cwd: config.work_path});
+            java.stdout.on('data', (data) => {
+                let res = ''
+                if(platform == 0) {
+                    res = iconv.decode(Buffer.from(data, 'binary'), 'GBK')
+                } else {
+                    res = data.toString('utf8')
+                }
+                let loginPlayer = res.match(/(\S+)\[\/\S+\] logged in with entity/)
+                if(loginPlayer) {
+                    let onePlayer = loginPlayer[1]
+                    playerList.push(onePlayer)
+                    ctx.app.io.of('/').to(room).emit('wensc', {
+                        type: 'playerList',
+                        data: playerList
+                    });
+                }
+                
+                let logoutPlayer = res.match(/(\S+) lost connection/)
+                if(logoutPlayer) {
+                    let onePlayer = logoutPlayer[1]
+                    playerList = playerList.filter(item => item!=onePlayer)
+                    ctx.app.io.of('/').to(room).emit('wensc', {
+                        type: 'playerList',
+                        data: playerList
+                    });
+                }
                 ctx.app.io.of('/').to(room).emit('wensc', {
-                    type: 'playerList',
-                    data: playerList
+                    type: 'console',
+                    data: res
                 });
-            }
-            
-            let logoutPlayer = res.match(/(\S+) lost connection/)
-            if(logoutPlayer) {
-                let onePlayer = logoutPlayer[1]
-                playerList = playerList.filter(item => item!=onePlayer)
-                ctx.app.io.of('/').to(room).emit('wensc', {
-                    type: 'playerList',
-                    data: playerList
-                });
-            }
-
-            ctx.app.io.of('/').to(room).emit('wensc', {
-                type: 'console',
-                data: res
             });
-        });
-        java.stderr.on('data', (data) => {
-            let res = ''
-            if(platform == 0) {
-                res = iconv.decode(Buffer.from(data, 'binary'), 'GBK')
-            } else {
-                res = data.toString('utf8')
-            }
-            let loginPlayer = res.match(/(\S+)\[\/\S+\] logged in with entity/)
-            if(loginPlayer) {
-                let onePlayer = loginPlayer[1]
-                playerList.push(onePlayer)
+            java.stderr.on('data', (data) => {
+                let res = ''
+                if(platform == 0) {
+                    res = iconv.decode(Buffer.from(data, 'binary'), 'GBK')
+                } else {
+                    res = data.toString('utf8')
+                }
+                let loginPlayer = res.match(/(\S+)\[\/\S+\] logged in with entity/)
+                if(loginPlayer) {
+                    let onePlayer = loginPlayer[1]
+                    playerList.push(onePlayer)
+                    ctx.app.io.of('/').to(room).emit('wensc', {
+                        type: 'playerList',
+                        data: playerList
+                    });
+                }
+                let logoutPlayer = res.match(/(\S+) lost connection/)
+                if(logoutPlayer) {
+                    let onePlayer = logoutPlayer[1]
+                    playerList = playerList.filter(item => item!=onePlayer)
+                    ctx.app.io.of('/').to(room).emit('wensc', {
+                        type: 'playerList',
+                        data: playerList
+                    });
+                }
+                ctx.app.io.of('/').to(room).emit('wensc', {
+                    type: 'console',
+                    data: res
+                });
+            });
+            serverStatus = true
+            java.on('close', (code) => {
+                playerList = []
                 ctx.app.io.of('/').to(room).emit('wensc', {
                     type: 'playerList',
                     data: playerList
                 });
-            }
-            let logoutPlayer = res.match(/(\S+) lost connection/)
-            if(logoutPlayer) {
-                let onePlayer = logoutPlayer[1]
-                playerList = playerList.filter(item => item!=onePlayer)
-                ctx.app.io.of('/').to(room).emit('wensc', {
-                    type: 'playerList',
-                    data: playerList
-                });
-            }
-            ctx.app.io.of('/').to(room).emit('wensc', {
-                type: 'console',
-                data: res
+                serverStatus = false
+                java = null
             });
-        });
-        serverStatus = true
-        java.on('close', (code) => {
-            playerList = []
-            ctx.app.io.of('/').to(room).emit('wensc', {
-                type: 'playerList',
-                data: playerList
-            });
-            serverStatus = false
-            java = null
-        });
+            return new Response({code: 1, msg: '游戏正在启动，请耐心等待', data : ''})
+        }
     }
     getOnlinePlayerList() {
         const { ctx, app } = this;
@@ -130,7 +138,7 @@ class DefaultController extends Controller {
         const { ctx, app } = this;
         if(serverStatus) {
             const room = 'wensc'
-            java.kill('SIGTERM')
+            java.kill('SIGINT')
             playerList = []
             ctx.app.io.of('/').to(room).emit('wensc', {
                 type: 'playerList',
@@ -143,11 +151,10 @@ class DefaultController extends Controller {
             ctx.body = res
         }
     }
-    beginProcess(){
+    async beginProcess(){
         const { ctx, app } = this;
         if(!serverStatus){
-            this.initialJava(ctx)
-            let res = new Response({code: 1, msg: '游戏正在启动，请耐心等待', data : ''})
+            let res = await this.initialJava(ctx);
             ctx.body = res
         }
     }

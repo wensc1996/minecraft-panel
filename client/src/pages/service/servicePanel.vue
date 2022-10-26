@@ -87,17 +87,20 @@
                             <el-form-item label="玩家人数">
                                 <el-input v-model="gameSetting.playerNum"></el-input>
                             </el-form-item> -->
+                            <el-form-item label="JAVA路径">
+                                <el-input v-model="gameSetting.javaPath"></el-input>
+                            </el-form-item>
+                            <el-form-item label="游戏目录">
+                                <el-input v-model="gameSetting.workPath"></el-input>
+                            </el-form-item>
+                            <el-form-item label="服务端文件名">
+                                <el-input v-model="gameSetting.jarName"></el-input>
+                            </el-form-item>
                             <el-form-item label="最小内存（m）">
                                 <el-input v-model="gameSetting.minMemorySize"></el-input>
                             </el-form-item>
                             <el-form-item label="最大内存（m）">
                                 <el-input v-model="gameSetting.maxMemorySize"></el-input>
-                            </el-form-item>
-                            <el-form-item label="服务端文件名">
-                                <el-input v-model="gameSetting.jarName"></el-input>
-                            </el-form-item>
-                            <el-form-item label="JAVA路径">
-                                <el-input v-model="gameSetting.javaPath"></el-input>
                             </el-form-item>
                             <el-form-item>
                                 <template slot-scope="scope">
@@ -151,6 +154,7 @@ export default {
             let res = await this.get('wensc/getGameDispose')
             if (res.data.code == 1) {
                 this.gameSetting = {
+                    workPath: res.data.data.work_path,
                     gamePort: res.data.data.game_port,
                     panelPort: res.data.data.panel_port,
                     playerNum: res.data.data.max_players,
