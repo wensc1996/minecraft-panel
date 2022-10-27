@@ -23,6 +23,32 @@ class checkGameConfig {
             });
         })
     }
+    async checkGamePathConfig() {
+        if(!this.config) {
+            return {
+                code: -1,
+                msg: '尚未配置游戏启动参数'
+            }
+        }
+        if(!this.config.work_path) {
+            return {
+                code: -1,
+                msg: '尚未设置游戏目录'
+            }
+        } else {
+            let isExist = await this.checkFileExist(this.config.work_path)
+            if(!isExist) {
+                return {
+                    code: -1,
+                    msg: '游戏目录不存在'
+                }
+            }
+        }
+        return {
+            code: 1,
+            msg: '运行时配置完成'
+        }
+    }
     async checkRunConfig() {
         if(!this.config) {
             return {

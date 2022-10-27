@@ -99,8 +99,16 @@ export default {
             this.target = node.fullPath
         },
         async getDirectory() {
-            let directory = await this.post('wensc/getDirectoryOrFile', { filed: 0 })
-            this.directory = directory.data
+            let res = await this.post('wensc/getDirectoryOrFile', { filed: 0 })
+            if(res.data.code == 1) {
+                this.directory = res.data.data
+            } else {
+                this.$notify({
+                    title: '失败',
+                    message: res.data.msg,
+                    type: 'error'
+                })
+            }
         },
         async uploadFile(file) {
             if (!this.target) {

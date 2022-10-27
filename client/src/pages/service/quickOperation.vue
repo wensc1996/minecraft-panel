@@ -10,21 +10,21 @@
             prop="kick"
             label="踢出服务器">
                 <template slot-scope="scope">
-                    <el-button @click="kickPlayer(scope.$index, scope.row)">踢出</el-button>
+                    <el-button @click="kickPlayer(scope.$index, scope.row)" size="small">踢出</el-button>
                 </template>
             </el-table-column>
             <el-table-column
             prop="random"
             label="随机传送">
                 <template slot-scope="scope">
-                    <el-button @click="randomTeleport(scope.$index, scope.row)">随机传送</el-button>
+                    <el-button @click="randomTeleport(scope.$index, scope.row)" size="small">随机传送</el-button>
                 </template>
             </el-table-column>
             <el-table-column
             prop="reborn"
             label="重生">
                 <template slot-scope="scope">
-                    <el-button @click="reborn(scope.$index, scope.row)" type="primary">重生</el-button>
+                    <el-button @click="reborn(scope.$index, scope.row)" type="primary" size="small">重生</el-button>
                 </template>
             </el-table-column>
         </el-table>

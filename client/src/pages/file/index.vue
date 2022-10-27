@@ -1,7 +1,7 @@
 <template>
     <div>
-        <el-button type="primary" @click="dialogTableVisible=!dialogTableVisible" dialogTableVisible="dialogTableVisible">创建目录/上传</el-button>
-        <el-button type="primary" @click="deleteFileOrDirectory">删除</el-button>
+        <el-button type="primary" @click="dialogTableVisible=!dialogTableVisible" dialogTableVisible="dialogTableVisible" size="small">创建目录/上传</el-button>
+        <el-button type="danger" @click="deleteFileOrDirectory" size="small" >删除</el-button>
         <tree
             :data="fileTree"
             :show-checkbox="true"
@@ -11,7 +11,7 @@
             ref="tree"
             @node-contextmenu="rename"
             :check-strictly="true"
-            :default-expanded-keys="[fileTree[0].id]"
+            :default-expanded-keys="expandKeys"
         ></tree>
         <el-dialog title="文件上传" :visible.sync="dialogTableVisible">
             <fileUpload :fileTree="fileTree" @getFileTree="getFileTree"/>
@@ -34,15 +34,17 @@ export default {
                 children: 'children',
                 label: 'name',
                 type: 'type'
-            }
+            },
+            expandKeys: []
         }
     },
     methods: {
         rename(event, oldNode, node, currentNode) {
-            if (oldNode.name == 'mc') {
-                this.$message({
-                    type: 'error',
-                    message: '禁止重命名根目录'
+            if(oldNode.disabled){
+                this.$notify({
+                    title: '警告',
+                    message: '禁止重命名根目录',
+                    type: 'warning'
                 })
                 return
             }
@@ -78,10 +80,11 @@ export default {
         },
         deleteFileOrDirectory() {
             let treeNodes = this.$refs.tree.getCheckedNodes()
-            if (treeNodes.find(item => item.name == 'mc')) {
-                this.$message({
-                    type: 'error',
-                    message: '禁止删除根目录'
+            if(treeNodes.length == 0) {
+                this.$notify({
+                    title: '失败',
+                    message: '请先选择文件或者文件夹',
+                    type: 'error'
                 })
                 return
             }
@@ -136,6 +139,10 @@ export default {
             let res = await this.post('wensc/getDirectoryOrFile', { filed: 1 })
             if(res.data.code == 1) {
                 this.fileTree = res.data.data
+                if(this.fileTree.length > 0) {
+                    this.fileTree[0].disabled = true
+                    this.expandKeys = [this.fileTree[0].id]
+                }
             } else {
                 this.$notify({
                     title: '失败',

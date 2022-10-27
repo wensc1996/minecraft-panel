@@ -177,7 +177,7 @@ class DirectoryTree extends Service {
     async getDirectoryOrFile(options) {
         let checkConfig = new GameConfig()
         await checkConfig.getGameConfig()
-        let checkResult = await checkConfig.checkRunConfig()
+        let checkResult = await checkConfig.checkGamePathConfig()
         if(checkResult.code != 1) {
             return new Response({code: checkResult.code, msg: checkResult.msg, data : ''})
         } else {

@@ -1,14 +1,20 @@
 <template>
     <div controlPanel>
-        <el-container>
-            <el-header><Header></Header></el-header>
-            <el-container >
-                <el-aside><SideMenu></SideMenu></el-aside>
-                <el-main>
+        <el-container class="view col overflow-y-h">
+            <el-header>
+                <Header></Header>
+            </el-header>
+            <el-container class="flex row overflow-y-h">
+                <el-aside style="height: 100%;">
+                    <SideMenu></SideMenu>
+                </el-aside>
+                <el-main class="overflow-y">
                     <router-view></router-view>
                 </el-main>
             </el-container>
-            <el-footer><Footer></Footer></el-footer>
+            <el-footer style="height: initial;">
+                <Footer></Footer>
+            </el-footer>
         </el-container>
     </div>
 </template>
@@ -36,5 +42,14 @@ export default {
 </script>
 <style lang="less">
 div[controlPanel]{
+    .el-header{
+        box-shadow: -8px 2px 6px 3px #cbcbcb;
+    }
+    .el-aside{
+        background-image: linear-gradient(to top, #10a8b3, #1E73A3);
+    }
+    .el-main{
+        padding: 10px;
+    }
 }
 </style>

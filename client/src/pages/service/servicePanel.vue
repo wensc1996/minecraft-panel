@@ -4,8 +4,8 @@
             <div class="service-control">
                 <span class="title">服务器状态控制</span>
                 <div class="btn-group">
-                    <el-button @click="startProcess" :disabled="serverStatus">启动</el-button>
-                    <el-button @click="stopProcess" :disabled="!serverStatus">关闭</el-button>
+                    <el-button @click="startProcess" :disabled="serverStatus" type="primary" size="small">启动</el-button>
+                    <el-button @click="stopProcess" :disabled="!serverStatus" type="danger" size="small">关闭</el-button>
                     <el-popconfirm
                         confirm-button-text='确定'
                         cancel-button-text='取消'
@@ -14,7 +14,7 @@
                         @confirm="killProcess"
                         title="可能会造成游戏存档损坏，确定要强制关闭吗"
                     >
-                        <el-button slot="reference" :disabled="!serverStatus">强制关闭</el-button>
+                        <el-button slot="reference" :disabled="!serverStatus" size="small">强制关闭</el-button>
                     </el-popconfirm>
                 </div>
             </div>
@@ -24,21 +24,21 @@
                     <el-tab-pane label="状态管理">
                         <div>
                             <!-- <el-button>设立家的坐标点</el-button> -->
-                            <el-button @click="closeTeamsFire">关闭队友伤害</el-button>
-                            <el-button @click="openTeamsFire">开启队友伤害</el-button>
+                            <el-button @click="closeTeamsFire" size="small">关闭队友伤害</el-button>
+                            <el-button @click="openTeamsFire" size="small">开启队友伤害</el-button>
                         </div>
                     </el-tab-pane>
                     <!-- <el-tab-pane label="队伍管理">队伍管理</el-tab-pane> -->
                     <el-tab-pane label="坐标管理">
                         <el-form :inline="true" :model="recordInfo" class="demo-form-inline">
                             <el-form-item label="游戏ID">
-                                <el-input v-model="recordInfo.playerId" placeholder="请输入需要传送的玩家游戏ID"></el-input>
+                                <el-input v-model="recordInfo.playerId" placeholder="请输入需要传送的玩家游戏ID" size="small"></el-input>
                             </el-form-item>
                             <el-form-item label="坐标点名称：">
-                                <el-input v-model="recordInfo.remark" placeholder="请输入地点备注名称"></el-input>
+                                <el-input v-model="recordInfo.remark" placeholder="请输入地点备注名称" size="small"></el-input>
                             </el-form-item>
                             <el-form-item>
-                                <el-button type="primary" @click="recordCoordinate">纪录</el-button>
+                                <el-button type="primary" @click="recordCoordinate" size="small">纪录</el-button>
                             </el-form-item>
                         </el-form>
                         <el-table :data="coordinateTable" stripe style="width: 100%" height="300">
@@ -66,12 +66,12 @@
                             </el-table-column> -->
                             <el-table-column prop="address" label="传送">
                                 <template slot-scope="scope">
-                                    <el-button @click="teleport(scope.$index, scope.row)">传送</el-button>
+                                    <el-button @click="teleport(scope.$index, scope.row)" size="small" type="success">传送</el-button>
                                 </template>
                             </el-table-column>
                             <el-table-column prop="delete" label="删除">
                                 <template slot-scope="scope">
-                                    <el-button @click="deleteLocation(scope.$index, scope.row)">删除</el-button>
+                                    <el-button @click="deleteLocation(scope.$index, scope.row)" size="small" type="danger">删除</el-button>
                                 </template>
                             </el-table-column>
                         </el-table>
@@ -88,23 +88,23 @@
                                 <el-input v-model="gameSetting.playerNum"></el-input>
                             </el-form-item> -->
                             <el-form-item label="JAVA路径">
-                                <el-input v-model="gameSetting.javaPath"></el-input>
+                                <el-input v-model="gameSetting.javaPath" size="small"></el-input>
                             </el-form-item>
                             <el-form-item label="游戏目录">
-                                <el-input v-model="gameSetting.workPath"></el-input>
+                                <el-input v-model="gameSetting.workPath" size="small"></el-input>
                             </el-form-item>
                             <el-form-item label="服务端文件名">
-                                <el-input v-model="gameSetting.jarName"></el-input>
+                                <el-input v-model="gameSetting.jarName" size="small"></el-input>
                             </el-form-item>
                             <el-form-item label="最小内存（m）">
-                                <el-input v-model="gameSetting.minMemorySize"></el-input>
+                                <el-input v-model="gameSetting.minMemorySize" size="small"></el-input>
                             </el-form-item>
                             <el-form-item label="最大内存（m）">
-                                <el-input v-model="gameSetting.maxMemorySize"></el-input>
+                                <el-input v-model="gameSetting.maxMemorySize" size="small"></el-input>
                             </el-form-item>
                             <el-form-item>
                                 <template slot-scope="scope">
-                                    <el-button @click="updateSetting(scope.$index, scope.row)">保存</el-button>
+                                    <el-button @click="updateSetting(scope.$index, scope.row)" type="primary">保存</el-button>
                                 </template>
                             </el-form-item>
                         </el-form>
@@ -192,7 +192,7 @@ export default {
             })
         },
         async getLocation() {
-            let res = await this.post('wensc/getLocationList', { userId: this.$store.getters.GETUSERINFO.user_id })
+            let res = await this.post('wensc/getLocationList', {})
             this.coordinateTable = res.data.data
         },
         async getServerStatus() {
@@ -289,16 +289,12 @@ export default {
         this.getGameDispose()
     },
     watch: {
-        'this.recordInfo.userId'(val) {
-            console.log(val)
-        },
         '$store.state.userInfo'(val) {
             this.recordInfo.playerId = val.player_id
         },
         '$store.state.currentPosition'(val) {
             val.remarks = 2
             val.name = this.recordInfo.remark
-            val.userId = this.$store.getters.GETUSERINFO.user_id
             this.post('wensc/addLocation', val).then((res) => {
                 if (res.status == 200 && res.data.code == 1) {
                     this.recordInfo.playerId = this.$store.getters.GETUSERINFO.player_id
@@ -316,10 +312,39 @@ div[servicePanel] {
     }
 
     .service-control {
-        padding: 5px;
-
+        padding: 5px 10px;
+        position: relative;
+        &::after{
+            position: absolute;
+            display: block;
+            bottom: 0;
+            left: 0;
+            height: 5px;
+            width: 100%;
+            animation:changeColor 5s infinite linear alternate;
+            content: "";
+        }
+        @keyframes changeColor
+        {
+            20% { 
+                background-color: red;
+            }
+            40% {
+                background-color: green;
+            }
+            60% {
+                background-color: pink;
+            }
+            80% {
+                background-color: darkblue;
+            }
+            100% {
+                background-color: orange;
+            }
+        }
         .title {
-            padding: 10px 20px;
+            font-weight: bold;
+            padding: 10px;
             display: inline-block;
         }
 
@@ -334,6 +359,9 @@ div[servicePanel] {
         }
     }
 
+    .el-collapse-item__header{
+        padding: 0 20px;
+    }
     .el-collapse-item__content {
         padding-bottom: 0;
     }

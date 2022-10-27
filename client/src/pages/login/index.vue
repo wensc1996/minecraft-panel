@@ -1,9 +1,7 @@
 <template>
     <div login>
-        <el-form label-position="left" label-width="80px" :model="accountInfo" class="accountForm" @keyup.enter.native="submitLogin">
-            <el-form-item>
-                <h3>我的世界服务器面板</h3>
-            </el-form-item>
+        <el-form label-position="left" label-width="80px" :model="accountInfo" class="account-form" @keyup.enter.native="submitLogin">
+            <h3 class="login-title">我的世界服务器面板</h3>
             <el-form-item label="账号">
                 <el-input v-model="accountInfo.userId"></el-input>
             </el-form-item>
@@ -57,14 +55,24 @@ export default {
         height: 100vh;
         display: flex;
         align-items: center;
-        justify-content: center;
-        .accountForm{
+        justify-content: flex-end;
+        padding: 0 10%;
+        .login-title{
+            text-align: center;
+            padding: 20px 0;
+            color: #fff;
+        }
+        .account-form{
             border-radius: 10px;
             padding: 20px;
-            background-color: rgb(124,203,79);
-            width: 30%;
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 400px;
             .el-form-item__label{
                 color: white
+            }
+            .el-input__inner{
+                background-color: transparent;
+                color: #fff;
             }
         }
     }

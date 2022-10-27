@@ -19,13 +19,11 @@ class LocationController extends Controller {
     }
     async addLocation(){
         const { ctx } = this;
-        // ctx.request.body.userId = '1001' // 调取session
         ctx.request.body.createTime = this.now()
         ctx.body = await this.ctx.service.location.addLocation(ctx.request.body);
     }
     async deleteLocation(){
         const { ctx } = this;
-        // ctx.request.body.userId = '1001' // 调取session
         ctx.request.body.createTime = this.now()
         ctx.body = await this.ctx.service.location.deleteLocation(ctx.request.body);
     }

@@ -66,6 +66,12 @@ export default {
                     message: '上传玩家存档成功',
                     type: 'success'
                 })
+                this.getPlayerFileList()
+            } else {
+                this.$notify.error({
+                    title: '错误',
+                    message: res.data.msg
+                })
             }
             this.fileList = []
         },
@@ -132,6 +138,12 @@ export default {
             if (res.data.code == 1) {
                 this.tableData = res.data.data.map(item => {
                     return { name: item }
+                })
+            } else {
+                this.$notify({
+                    title: '失败',
+                    message: res.data.msg,
+                    type: 'error'
                 })
             }
         }

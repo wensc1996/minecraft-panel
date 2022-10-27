@@ -87,7 +87,11 @@ Vue.mixin({
                     method: 'get',
                     data: data
                 }).then((res) => {
-                    resolve(res)
+                    if(res.data.code == -999) {
+                        this.$router.push('/login')
+                    } else {
+                        resolve(res)
+                    }
                 })
             })
         },
@@ -98,7 +102,11 @@ Vue.mixin({
                     method: 'post',
                     data: data
                 }).then((res) => {
-                    resolve(res)
+                    if(res.data.code == -999) {
+                        this.$router.push('/login')
+                    } else {
+                        resolve(res)
+                    }
                 })
             })
         },
@@ -156,5 +164,6 @@ app._router.beforeEach((to, from, next) => {
     else if (to.name === 'File' && !app.checkEnabled('uploadFile')) next(false)
     else if (to.name === 'RoleManage' && !app.checkEnabled('roleManage')) next(false)
     else if (to.name === 'Service' && !app.checkEnabled('cmd')) next(false)
+    else if (to.name === 'Logs' && !app.checkEnabled('logManage')) next(false)
     else next()
 })

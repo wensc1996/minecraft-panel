@@ -6,7 +6,7 @@
                 <h4>框架</h4>
                 <p>web前端采用vue+webpack+element+scss+node平台搭建前端工程</p>
                 <p>web后端采用egg+webpack+node平台搭建后端工程</p>
-                <p>数据库使用mysql 8.0</p>
+                <p>数据库使用mysql</p>
                 <el-divider></el-divider>
                 <h4>java进程与Node进程通信</h4>
                 <p>在利用node启动java进程中，使用了spawn来创建子进程，spawn特点在于大数据量，且在解析数据编码的过程中，能正确转化，exec转化出现乱码问题</p>
@@ -39,7 +39,6 @@ export default {
     div[introduction]{
         .container-box{
             margin: 10px 0;
-            background-color:#f1f1f1;
             .title{
                 border-left: 3px solid #1fb199;
                 padding:5px 0;

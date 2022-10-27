@@ -20,6 +20,7 @@ export default {
 
 <style lang="less">
 @import url('./assets/global.less');
+@import url('./assets/common.less');
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

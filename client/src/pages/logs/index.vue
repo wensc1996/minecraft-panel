@@ -5,32 +5,36 @@
         border
         style="width: 100%">
             <el-table-column
-            prop="log_id"
-            label="日志ID"
+                prop="log_id"
+                label="日志ID"
+                width="100"
             >
             </el-table-column>
             <el-table-column
-            prop="user_id"
-            label="用户ID"
-            >
-            </el-table-column>
-            <el-table-column
-            prop="operation"
-            label="操作"
-            >
-            </el-table-column>
-            <el-table-column
-            prop="op_time"
-            label="操作时间"
+                prop="user_id"
+                label="用户ID"
+                width="100"
             >
             </el-table-column>
             <el-table-column
                 prop="operation"
                 label="操作"
             >
-                    <template slot-scope="scope">
-                        <el-button @click="deleteLog(scope.row)" size="small">删除</el-button>
-                    </template>
+            </el-table-column>
+            <el-table-column
+                prop="op_time"
+                label="操作时间"
+                width="180"
+            >
+            </el-table-column>
+            <el-table-column
+                prop="operation"
+                label="操作"
+                width="100"
+            >
+                <template slot-scope="scope">
+                    <el-button @click="deleteLog(scope.row)" size="small" type="danger">删除</el-button>
+                </template>
             </el-table-column>
         </el-table>
         <div class="page-nation">
