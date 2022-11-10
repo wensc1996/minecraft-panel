@@ -43,13 +43,13 @@ class DirectoryTree extends Service {
         })
     }
     /**
-     * 删除文件夹下所有问价及将文件夹下所有文件清空
-     * @param {*} path 
+     * 将文件夹下所有文件清空
+     * @param {*} originPath 
      */
-    emptyDir(path) {
-        const files = fs.readdirSync(path);
+    emptyDir(originPath) {
+        const files = fs.readdirSync(originPath);
         files.forEach(file => {
-            const filePath = path.join(path, file);
+            const filePath = path.join(originPath, file);
             const stats = fs.statSync(filePath);
             if (stats.isDirectory()) {
                 this.emptyDir(filePath);
@@ -60,31 +60,31 @@ class DirectoryTree extends Service {
     }
     /**
      * 删除指定路径下的所有空文件夹
-     * @param {*} path 
+     * @param {*} originPath 
      */
-    rmEmptyDir(path, level=0) {
-        const files = fs.readdirSync(path);
+    rmEmptyDir(originPath, level=0) {
+        const files = fs.readdirSync(originPath);
         if (files.length > 0) {
             let tempFile = 0;
             files.forEach(file => {
                 tempFile++;
-                this.rmEmptyDir(path.join(path, file), 1);
+                this.rmEmptyDir(path.join(originPath, file), 1);
             });
             if (tempFile === files.length && level !== 0) {
-                fs.rmdirSync(path);
+                fs.rmdirSync(originPath);
             }
         }
         else {
-            level !==0 && fs.rmdirSync(path);
+            level !==0 && fs.rmdirSync(originPath);
         }
     }
     /**
      * 清空指定路径下的所有文件及文件夹
-     * @param {*} path 
+     * @param {*} originPath 
      */
-    clearDir(path) {
-        this.emptyDir(path);
-        this.rmEmptyDir(path, 1);
+    clearDir(originPath) {
+        this.emptyDir(originPath);
+        this.rmEmptyDir(originPath, 1);
     }
     deleteFileOrDirectory(deleteList) {
         return new Promise((reslove, reject) => {
