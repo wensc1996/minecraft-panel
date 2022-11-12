@@ -14,7 +14,7 @@
             :default-expanded-keys="expandKeys"
         ></tree>
         <el-dialog title="文件上传" :visible.sync="dialogTableVisible">
-            <fileUpload :fileTree="fileTree" @getFileTree="getFileTree"/>
+            <fileUpload :fileTree="fileTree" @getFileTree="getFileTree" :dialogTableVisible="dialogTableVisible"/>
         </el-dialog>
     </div>
 </template>

@@ -34,26 +34,26 @@
     </el-table>
 
     <el-dialog
-    title="重置密码"
-    :visible.sync="dialogVisible"
-    width="30%" >
-    <Repassword :userId="repasswordUserId" ref="repasswordModel"></Repassword>
-    <span slot="footer" class="dialog-footer">
-        <el-button @click="dialogVisible = false">取 消</el-button>
-        <el-button type="primary" @click="submitRepassword">确 定</el-button>
-    </span>
+        title="重置密码"
+        :visible.sync="dialogVisible"
+        width="30%" >
+        <Repassword :userId="repasswordUserId" ref="repasswordModel"></Repassword>
+        <span slot="footer" class="dialog-footer">
+            <el-button @click="dialogVisible = false">取 消</el-button>
+            <el-button type="primary" @click="submitRepassword">确 定</el-button>
+        </span>
     </el-dialog>
 
     <el-dialog
-    title="新增用户"
-    :visible.sync="isShowNewUser"
-    width="50%"
-    :close-on-click-modal="false">
-    <AddNewUser ref="addNewUser"></AddNewUser>
-    <span slot="footer" class="dialog-footer">
-        <el-button @click="isShowNewUser = false">取 消</el-button>
-        <el-button type="primary" @click="submitAddNewUser">确 定</el-button>
-    </span>
+        title="新增用户"
+        :visible.sync="isShowNewUser"
+        width="50%"
+        :close-on-click-modal="false">
+        <AddNewUser ref="addNewUser"></AddNewUser>
+        <span slot="footer" class="dialog-footer">
+            <el-button @click="isShowNewUser = false">取 消</el-button>
+            <el-button type="primary" @click="submitAddNewUser">确 定</el-button>
+        </span>
     </el-dialog>
   </div>
 </template>
@@ -73,6 +73,13 @@ export default {
     components: {
         Repassword,
         AddNewUser
+    },
+    watch: {
+        isShowNewUser(val) {
+            if(val == false) {
+                this.getUserList()
+            }
+        }
     },
     mounted() {
         this.getUserList()

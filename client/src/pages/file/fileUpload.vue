@@ -58,9 +58,16 @@ export default {
             }
         }
     },
+    props: {
+        dialogTableVisible: {
+            type: Boolean,
+            default: false
+        }
+    },
     watch: {
         dialogTableVisible(val) {
             if (val) {
+                this.getDirectory()
             }
         }
     },

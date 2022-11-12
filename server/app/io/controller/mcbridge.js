@@ -55,7 +55,16 @@ class DefaultController extends Controller {
                 let logoutPlayer = res.match(/(\S+) lost connection/)
                 if(logoutPlayer) {
                     let onePlayer = logoutPlayer[1]
-                    playerList = playerList.filter(item => item!=onePlayer)
+                    playerList = playerList.filter(item => item != onePlayer)
+                    ctx.app.io.of('/').to(room).emit('wensc', {
+                        type: 'playerList',
+                        data: playerList
+                    });
+                }
+                let kickoutPlayer = res.match(/把 (\S+) 从游戏中踢出/)
+                if(kickoutPlayer) {
+                    let onePlayer = kickoutPlayer[1]
+                    playerList = playerList.filter(item => item != onePlayer)
                     ctx.app.io.of('/').to(room).emit('wensc', {
                         type: 'playerList',
                         data: playerList
@@ -86,6 +95,15 @@ class DefaultController extends Controller {
                 if(logoutPlayer) {
                     let onePlayer = logoutPlayer[1]
                     playerList = playerList.filter(item => item!=onePlayer)
+                    ctx.app.io.of('/').to(room).emit('wensc', {
+                        type: 'playerList',
+                        data: playerList
+                    });
+                }
+                let kickoutPlayer = res.match(/把 (\S+) 从游戏中踢出/)
+                if(kickoutPlayer) {
+                    let onePlayer = kickoutPlayer[1]
+                    playerList = playerList.filter(item => item != onePlayer)
                     ctx.app.io.of('/').to(room).emit('wensc', {
                         type: 'playerList',
                         data: playerList

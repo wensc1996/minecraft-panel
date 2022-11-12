@@ -29,7 +29,7 @@
                         </div>
                     </el-tab-pane>
                     <!-- <el-tab-pane label="队伍管理">队伍管理</el-tab-pane> -->
-                    <el-tab-pane label="坐标管理">
+                    <el-tab-pane label="坐标管理" v-if="checkEnabled('locationManage')">
                         <el-form :inline="true" :model="recordInfo" class="demo-form-inline">
                             <el-form-item label="游戏ID">
                                 <el-input v-model="recordInfo.playerId" placeholder="请输入需要传送的玩家游戏ID" size="small"></el-input>
