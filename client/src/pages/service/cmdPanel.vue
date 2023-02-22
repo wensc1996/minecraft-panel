@@ -60,6 +60,8 @@ export default {
                         name: item
                     }
                 }))
+            } else if(res.type == 'serverStatus') {
+                this.$store.commit('SETSERVERSTATUS', res.data)
             } else {
                 res = res.data
                 if (/Set \S+ spawn point to|将(\S+)的出生点设置到/.test(res)) {

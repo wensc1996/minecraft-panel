@@ -8,6 +8,7 @@ class LoginService extends Service {
         return crypto.createHash('md5').update(val).digest('hex')
     }
     async find(options) {
+        console.log(options)
         const ctx = this.ctx
         let res = await mysql.action('select * from user where user_id = ?', options.userId)
         let privileges = await mysql.action('select user.user_id,privilege.role_id,menu.menu_id,menu_func_name,menu_name from user,privilege,menu where user.role_id = privilege.role_id and privilege.menu_id = menu.menu_id and user.user_id = ?', options.userId)

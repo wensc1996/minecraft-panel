@@ -4,8 +4,8 @@
             <div class="service-control">
                 <span class="title">服务器状态控制</span>
                 <div class="btn-group">
-                    <el-button @click="startProcess" :disabled="serverStatus" type="primary" size="small">启动</el-button>
-                    <el-button @click="stopProcess" :disabled="!serverStatus" type="danger" size="small">关闭</el-button>
+                    <el-button @click="startProcess" :disabled="$store.state.serverStatus != 0" type="primary" size="small">启动</el-button>
+                    <el-button @click="stopProcess" :disabled="$store.state.serverStatus != 2" type="danger" size="small">关闭</el-button>
                     <el-popconfirm
                         confirm-button-text='确定'
                         cancel-button-text='取消'
@@ -14,7 +14,7 @@
                         @confirm="killProcess"
                         title="可能会造成游戏存档损坏，确定要强制关闭吗"
                     >
-                        <el-button slot="reference" :disabled="!serverStatus" size="small">强制关闭</el-button>
+                        <el-button slot="reference" :disabled="$store.state.serverStatus == 0" size="small">强制关闭</el-button>
                     </el-popconfirm>
                 </div>
             </div>
@@ -126,8 +126,8 @@ export default {
             coordinateTable: [],
             labelPosition: 'right',
             gameSetting: {},
-            serverStatus: true,
-            copyText: ''
+            copyText: '',
+            timer: null
         }
     },
     methods: {
@@ -198,9 +198,7 @@ export default {
         async getServerStatus() {
             let res = await this.get('wensc/serverStatus', {})
             if (res.data.code == 1) {
-                this.serverStatus = true
-            } else {
-                this.serverStatus = false
+                this.$store.commit('SETSERVERSTATUS', res.data.data)
             }
         },
         recordCoordinate() { // 纪录当前坐标点
@@ -225,50 +223,66 @@ export default {
         async startProcess() {
             let _this = this
             let res = await this.post('wensc/beginProcess', {})
-            let timer = setInterval(() => {
-                this.getServerStatus()
-                if (_this.serverStatus) {
-                    clearInterval(timer)
-                    _this.serverStatus = true
-                    this.$notify({
-                        title: '成功',
-                        message: res.data.msg,
-                        type: 'success'
-                    })
-                }
-            }, 1000)
+            this.$notify({
+                title: '成功',
+                message: res.data.msg,
+                type: 'success'
+            })
+            // let timer = setInterval(() => {
+            //     this.getServerStatus()
+            //     if (_this.serverStatus) {
+            //         clearInterval(timer)
+            //         _this.serverStatus = true
+            //         this.$notify({
+            //             title: '成功',
+            //             message: res.data.msg,
+            //             type: 'success'
+            //         })
+            //     }
+            // }, 1000)
         },
         async stopProcess() {
-            let _this = this
             this.$socket.emit('thread', '/stop')
-            let timer = setInterval(() => {
-                _this.getServerStatus()
-                if (!_this.serverStatus) {
-                    clearInterval(timer)
-                    _this.serverStatus = false
-                    this.$notify({
-                        title: '成功',
-                        message: '成功关闭服务器',
-                        type: 'success'
-                    })
-                }
-            }, 1000)
+            this.$notify({
+                title: '成功',
+                message: '已发送关闭指令',
+                type: 'success'
+            })
+            // if(this.timer) {
+            //     clearInterval(this.timer)
+            // }
+            // this.timer = setInterval(() => {
+            //     _this.getServerStatus()
+            //     if (!_this.serverStatus) {
+            //         clearInterval(this.timer)
+            //         _this.serverStatus = false
+            //         this.$notify({
+            //             title: '成功',
+            //             message: '成功关闭服务器',
+            //             type: 'success'
+            //         })
+            //     }
+            // }, 2000)
         },
         async killProcess() {
-            let _this = this
             let res = await this.post('wensc/killProcess', {})
-            let timer = setInterval(() => {
-                _this.getServerStatus()
-                if (!_this.serverStatus) {
-                    clearInterval(timer)
-                    _this.serverStatus = false
-                    this.$notify({
-                        title: '成功',
-                        message: res.data.msg,
-                        type: 'success'
-                    })
-                }
-            }, 1000)
+            this.$notify({
+                title: '成功',
+                message: '已发送强制关闭指令',
+                type: 'success'
+            })
+            // let timer = setInterval(() => {
+            //     _this.getServerStatus()
+            //     if (!_this.serverStatus) {
+            //         clearInterval(timer)
+            //         _this.serverStatus = false
+            //         this.$notify({
+            //             title: '成功',
+            //             message: res.data.msg,
+            //             type: 'success'
+            //         })
+            //     }
+            // }, 1000)
         },
         async deleteLocation(index, row) {
             let res = await this.post('wensc/deleteLocation', { locationId: row.location_id })
