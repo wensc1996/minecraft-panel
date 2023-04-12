@@ -12,7 +12,8 @@ module.exports = app => {
     router.post('/getLocationList', app.middleware.checkLoginStatusKeep(), controller.location.getLocationList);
     router.post('/addLocation', app.middleware.checkLoginStatusKeep(), controller.location.addLocation);
     router.post('/deleteLocation', app.middleware.checkLoginStatusKeep(), controller.location.deleteLocation);
-
+    
+    io.of('/').route('joinRoom', io.controller.mcbridge.joinRoom)
     io.of('/').route('thread', io.controller.mcbridge.thread)
     
     router.post('/killProcess', app.middleware.checkLoginStatusKeep(), io.controller.mcbridge.killProcess);

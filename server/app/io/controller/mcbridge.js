@@ -24,8 +24,16 @@ const map = {
     linux: 1
 }
 const platform = map[type]
+// 消息队列，防止短时内大量消息推送
+let messageQueue = []
+// 消息切片大小
+const messageSplice = 3
 class DefaultController extends Controller {
-
+    
+    trimBlank(str) {
+        return str.replace(/[\n\r\s]/g, '')
+    }
+    
     handleMessage(ctx, data, room) {
         let res = ''
         if(platform == 0) {
@@ -38,6 +46,30 @@ class DefaultController extends Controller {
             ctx.app.io.of('/').to(room).emit('wensc', {
                 type: 'serverStatus',
                 data: serverStatus
+            });
+        }
+
+        if(/That player cannot be found|无法找到该玩家/.test(res)) {
+            ctx.app.io.of('/').to(room).emit('wensc', {
+                type: 'notFound',
+                data: ''
+            });
+        }
+
+        if(/Set \S+ spawn point to|将(\S+)的出生点设置到/.test(res)) {
+            let playerIdArr = res.match(/Set (\S+)'s spawn point to|将(\S+)的出生点设置到/)
+            let playerId = ''
+            let coordinate = ''
+            if (playerIdArr[1]) {
+                playerId = playerIdArr[1]
+                coordinate = this.trimBlank(res.match(/(-?\d+, -?\d+, -?\d+)/)[1])
+            } else {
+                playerId = playerIdArr[2]
+                coordinate = this.trimBlank(res.match(/(-?\d+，-?\d+，-?\d+)/)[1]).replace(/，/g, ',')
+            }
+            ctx.app.io.of('/').to(room).emit('wensc', {
+                type: 'spawnPoint',
+                data: { playerId, coordinate }
             });
         }
 
@@ -68,10 +100,7 @@ class DefaultController extends Controller {
                 data: playerList
             });
         }
-        ctx.app.io.of('/').to(room).emit('wensc', {
-            type: 'console',
-            data: res
-        });
+        messageQueue.push(res)
     }
     
     async initialJava(ctx) {
@@ -116,10 +145,29 @@ class DefaultController extends Controller {
         let res = new Response({code: 1, msg: '获取玩家列表成功', data : playerList})
         ctx.body = res
     }
-    async thread() {
+    joinRoom() {
         const room = 'wensc'
         const { ctx, app } = this;
         if( ctx.socket) ctx.socket.join(room);
+        setInterval(() => {
+            if(messageQueue.length > 0) {
+                let sendQueue = []
+                if(messageQueue.length >= messageSplice) {
+                    sendQueue = messageQueue.splice(0, messageSplice)
+                } else {
+                    sendQueue = messageQueue
+                }
+                ctx.app.io.of('/').to(room).emit('wensc', {
+                    type: 'console',
+                    data: sendQueue
+                });
+                messageQueue = []
+            }
+        }, 1000)
+        ctx.body = new Response({code: 1, msg: '加入房间成功', data : ''})
+    }
+    async thread() {
+        const { ctx, app } = this;
         const message = ctx.args[0];
         if(message && serverStatus == 2){
             java.stdin.setEncoding('utf8');

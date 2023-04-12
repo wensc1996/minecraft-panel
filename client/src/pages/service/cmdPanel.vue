@@ -45,7 +45,7 @@ export default {
     },
     methods: {
         joinRoom() {
-            this.$socket.emit('thread', '')
+            this.$socket.emit('joinRoom', '')
         },
         actCMD() {
             this.$socket.emit('thread', this.cmd)
@@ -62,41 +62,33 @@ export default {
                 }))
             } else if(res.type == 'serverStatus') {
                 this.$store.commit('SETSERVERSTATUS', res.data)
+            } else if(res.type == 'spawnPoint') {
+                if (this.$store.state.rebornType == 'record') {
+                    this.$store.commit('SETCURRENTPOSITION', res.data)
+                    this.$store.state.rebornType = ''
+                }
+                this.$notify({
+                    title: '成功',
+                    message: '重生/定位成功',
+                    type: 'success'
+                })
+            } else if(res.type == 'notFound') {
+                this.$notify.error({
+                    title: '错误',
+                    message: '当前用户不在线或不存在'
+                })
             } else {
-                res = res.data
-                if (/Set \S+ spawn point to|将(\S+)的出生点设置到/.test(res)) {
-                    this.$notify({
-                        title: '成功',
-                        message: '重生/定位成功',
-                        type: 'success'
-                    })
-                    if (this.$store.state.rebornType == 'record') {
-                        let playerIdArr = res.match(/Set (\S+)'s spawn point to|将(\S+)的出生点设置到/)
-                        let playerId = ''
-                        let coordinate = ''
-                        if (playerIdArr[1]) {
-                            playerId = playerIdArr[1]
-                            coordinate = this.trimBlank(res.match(/(-?\d+, -?\d+, -?\d+)/)[1])
-                        } else {
-                            playerId = playerIdArr[2]
-                            coordinate = this.trimBlank(res.match(/(-?\d+，-?\d+，-?\d+)/)[1]).replace(/，/g, ',')
-                        }
-                        this.$store.commit('SETCURRENTPOSITION', { playerId, coordinate })
-                        this.$store.state.rebornType = ''
+                if(Array.isArray(res.data)) {
+                    if (this.msgContainer.length > 20) {
+                        this.msgContainer.splice(-1, res.data.length)
                     }
+                    this.msgContainer.unshift(...res.data)
+                } else {
+                    if (this.msgContainer.length > 20) {
+                        this.msgContainer.pop()
+                    }
+                    this.msgContainer.unshift(res.data)
                 }
-                // if (/(\S+ joined the game)/.test(res)) { // |(\S+ left the game)
-                //     this.listPlayers()
-                // }
-                if (/That player cannot be found/.test(res)) { // |(\S+ left the game)
-                    this.$notify.error({
-                        title: '错误',
-                        message: '当前用户不在线或不存在'
-                    })
-                }
-
-                if (this.msgContainer.length > 20) this.msgContainer.pop()
-                this.msgContainer.unshift(res)
             }
         },
         listPlayers() {
