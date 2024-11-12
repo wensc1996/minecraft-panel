@@ -7,3 +7,8 @@
 + 后端采用node环境搭配egg
 + 数据库使用mysql
 + node与MC桥连接通过node spawn子进程启动java,socket.io实现客户端与服务端通信
+
+# 安装附件说明
+1、下载安装Mysql 5.7：https://downloads.mysql.com/archives/get/p/25/file/mysql-installer-community-5.7.43.0.msi
+2、下载安装NodeJS v14：https://nodejs.org/dist/v14.21.3/node-v14.21.3-x64.msi
+3、安装Navicat以及破解
