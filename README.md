@@ -10,5 +10,5 @@
 
 # 安装附件说明
 + 下载安装Mysql 5.7：https://downloads.mysql.com/archives/get/p/25/file/mysql-installer-community-5.7.43.0.msi
-+ 下载安装NodeJS v14：https://nodejs.org/dist/v14.21.3/node-v14.21.3-x64.msi
++ 下载安装NodeJS v18：https://nodejs.org/dist/v18.20.6/node-v18.20.6-x64.msi
 + 安装Navicat以及破解
