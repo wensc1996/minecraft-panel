@@ -1,3 +1,3 @@
 @ECHO off
 cd /d %~dp0
-npm install
+cnpm install
