@@ -12,3 +12,32 @@
 + 下载安装Mysql 5.7：https://downloads.mysql.com/archives/get/p/25/file/mysql-installer-community-5.7.43.0.msi
 + 下载安装NodeJS v18：https://nodejs.org/dist/v18.20.6/node-v18.20.6-x64.msi
 + 安装Navicat以及破解
+
+# 如果前端页面需要nginx（webpack形式用移动端访问会崩掉）
+``` nginx
+server {
+        listen 21091;
+        server_name localhost;
+		
+		 proxy_http_version 1.1;
+		proxy_set_header Upgrade $http_upgrade;
+		proxy_set_header Connection "upgrade";
+        
+		location / {
+			root C:\Users\Administrator\Desktop\minecraft-panel-master\client-dist;
+		}
+        location ~ ^/wensc/(.*)$ {
+			proxy_pass http://127.0.0.1:7002/$1;
+			proxy_set_header Host $host;
+			proxy_set_header X-Real-IP $remote_addr;
+			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+			proxy_set_header X-Forwarded-Proto $scheme;
+		}
+		location /socket.io{
+			proxy_pass http://127.0.0.1:7002;    #将server_name的请求转发到81端口
+			proxy_set_header Host $host;
+			proxy_set_header X-Real-IP $remote_addr;
+			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		}
+    }
+```
