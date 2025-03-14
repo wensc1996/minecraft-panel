@@ -14,7 +14,7 @@
 + 安装Navicat以及破解
 
 # 如果前端页面需要nginx（webpack形式用移动端访问会崩掉）
-### 进入client目录，输入指令npm run build 然后把该目录文件转移到文件夹，例如C:\Users\Administrator\Desktop\minecraft-panel-master\client-dist
+### 进入client目录，输入指令npm run build 然后把client/dist目录下面文件转移到文件夹，例如C:\Users\Administrator\Desktop\minecraft-panel-master\client-dist
 ``` nginx
 server {
         listen 21091;
@@ -25,7 +25,7 @@ server {
 	proxy_set_header Connection "upgrade";
 
 	location / {
-		#前端页面打包之后的路径文件夹
+		#前端页面打包之后的目标路径文件夹
 		root C:\Users\Administrator\Desktop\minecraft-panel-master\client-dist;
 	}
 	#后端接口转发
