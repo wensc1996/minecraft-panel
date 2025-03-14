@@ -14,30 +14,34 @@
 + 安装Navicat以及破解
 
 # 如果前端页面需要nginx（webpack形式用移动端访问会崩掉）
+### 进入client目录，输入指令npm run build 然后把该目录文件转移到文件夹，例如C:\Users\Administrator\Desktop\minecraft-panel-master\client-dist
 ``` nginx
 server {
         listen 21091;
         server_name localhost;
 		
-		 proxy_http_version 1.1;
-		proxy_set_header Upgrade $http_upgrade;
-		proxy_set_header Connection "upgrade";
-        
-		location / {
-			root C:\Users\Administrator\Desktop\minecraft-panel-master\client-dist;
-		}
-        location ~ ^/wensc/(.*)$ {
-			proxy_pass http://127.0.0.1:7002/$1;
-			proxy_set_header Host $host;
-			proxy_set_header X-Real-IP $remote_addr;
-			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-			proxy_set_header X-Forwarded-Proto $scheme;
-		}
-		location /socket.io{
-			proxy_pass http://127.0.0.1:7002;    #将server_name的请求转发到81端口
-			proxy_set_header Host $host;
-			proxy_set_header X-Real-IP $remote_addr;
-			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-		}
+	proxy_http_version 1.1;
+	proxy_set_header Upgrade $http_upgrade;
+	proxy_set_header Connection "upgrade";
+
+	location / {
+		#前端页面打包之后的路径文件夹
+		root C:\Users\Administrator\Desktop\minecraft-panel-master\client-dist;
+	}
+	#后端接口转发
+	location ~ ^/wensc/(.*)$ {
+		proxy_pass http://127.0.0.1:7002/$1;
+		proxy_set_header Host $host;
+		proxy_set_header X-Real-IP $remote_addr;
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		proxy_set_header X-Forwarded-Proto $scheme;
+	}
+	#websocket转发
+	location /socket.io{
+		proxy_pass http://127.0.0.1:7002;    #将server_name的请求转发到81端口
+		proxy_set_header Host $host;
+		proxy_set_header X-Real-IP $remote_addr;
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+	}
     }
 ```
