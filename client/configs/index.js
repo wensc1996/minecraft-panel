@@ -1,15 +1,4 @@
-/*
- * @Description: 前端配置文件
- * @Version: 1.0
- * @Autor: niesc_SMEICS
- * @Date: 2020-12-07 13:48:37
- * @LastEditors: niesc_SMEICS niesc_SMEICS@si-tech.com.cn
- * @LastEditTime: 2022-08-12 16:19:30
- */
 'use strict'
-// Template version: 1.3.1
-// see http://vuejs-templates.github.io/webpack for documentation.
-
 const path = require('path')
 
 module.exports = {
