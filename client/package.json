@@ -2,7 +2,7 @@
   "name": "wensc",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "niesc_smeics <niesc_smeics@si-tech.com.cn>",
+  "author": "wensc1996",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
