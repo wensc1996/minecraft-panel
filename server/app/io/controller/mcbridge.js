@@ -5,7 +5,6 @@ const Controller = require('egg').Controller;
 const { exec, spawn } = require('child_process');
 const Response = require('../../../src/response')
 const iconv = require('iconv-lite');
-const Mysql = require('../../../src/mysql/connection')
 // const java = spawn('cd', ["server/src/bridge/mine"]);
 const path = require("path");
 const os = require('os');

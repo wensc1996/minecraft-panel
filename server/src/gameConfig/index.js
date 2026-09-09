@@ -1,11 +1,10 @@
-const Mysql = require('../mysql/connection')
+const db = require('../mysql/connection')
 const fs = require('fs');
 class checkGameConfig {
-    mysql = new Mysql()
     constructor(){
     }
     async getGameConfig() {
-        let res = await this.mysql.action('select * from dispose')
+        let res = await db.query('select * from dispose')
         if(res.length > 0) {
             this.config = res[0]
         } else {

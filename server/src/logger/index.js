@@ -1,4 +1,4 @@
-const Mysql = require('../mysql/connection')
+const db = require('../mysql/connection')
 class Logs {
     constructor(){
     }
@@ -13,8 +13,11 @@ class Logs {
         return (Y + '-' + M + '-' + D + ' ' + H + ':' + m + ':' + s);
     }
     log(ctx, msg) {
-        let mysql = new Mysql()
-        mysql.action('insert into logs (user_id, operation, op_time) values (?, ?, ?)', [ctx.session.userId, msg, this.now()])
+        db.query('insert into logs (user_id, operation, op_time) values (?, ?, ?)', [ctx.session.userId, msg, this.now()])
+            .catch((err) => {
+                // 写日志失败不应阻塞业务主流程，仅记录错误
+                console.error('[logger] 写入操作日志失败:', err)
+            })
     }
 }
 module.exports = Logs
