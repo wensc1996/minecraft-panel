@@ -1,1 +1,1 @@
-npm install -g cnpm --registry=https://registry.npmmirror.com/
+npm install cnpm@7.1.0 -g --registry=https://registry.npmmirror.com
