@@ -15,7 +15,7 @@
   "dependencies": {
     "axios": "^0.20.0",
     "clipboard": "^2.0.8",
-    "element-ui": "^2.13.2",
+    "element-ui": "^2.15.14",
     "monaco-editor": "^0.24.0",
     "mongodb": "^3.6.2",
     "mysql": "^2.18.1",

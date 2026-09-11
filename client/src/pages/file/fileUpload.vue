@@ -62,6 +62,18 @@ export default {
         dialogTableVisible: {
             type: Boolean,
             default: false
+        },
+        scope: {
+            type: String,
+            default: 'instance'
+        }
+    },
+    computed: {
+        instanceId() {
+            return this.scope === 'tenant' ? null : this.$store.state.currentInstanceId
+        },
+        ready() {
+            return this.scope === 'tenant' || this.instanceId
         }
     },
     watch: {
@@ -75,6 +87,9 @@ export default {
         this.getDirectory()
     },
     methods: {
+        scopeOpts() {
+            return this.scope === 'tenant' ? {} : { instanceId: this.instanceId }
+        },
         async createDirectory() {
             this.visibleDirectoryName = false
             if (!this.target) {
@@ -85,36 +100,28 @@ export default {
                 this.$message.error('请输入目录名称')
                 return
             }
-            let res = await this.post('wensc/createNewDirectory', { fullPath: `${this.target}/${this.directoryName}` })
-            if (res.data.code == 1) {
-                this.$notify({
-                    title: '成功',
-                    message: '创建目录成功',
-                    type: 'success'
-                })
+            let res = await this.post('wensc/createNewDirectory', { ...this.scopeOpts(), fullPath: `${this.target}/${this.directoryName}` })
+            if (res.data.code == 0) {
+                this.$notify({ title: '成功', message: '创建目录成功', type: 'success' })
                 this.getDirectory()
                 this.$emit('getFileTree')
             } else {
-                this.$notify({
-                    title: '失败',
-                    message: '创建目录失败',
-                    type: 'error'
-                })
+                this.$notify({ title: '失败', message: '创建目录失败', type: 'error' })
             }
         },
         activeDirec(node) {
             this.target = node.fullPath
         },
         async getDirectory() {
-            let res = await this.post('wensc/getDirectoryOrFile', { filed: 0 })
-            if(res.data.code == 1) {
+            if (!this.ready) {
+                this.directory = []
+                return
+            }
+            let res = await this.post('wensc/getDirectoryOrFile', { filed: 0, ...this.scopeOpts() })
+            if (res.data.code == 0) {
                 this.directory = res.data.data
             } else {
-                this.$notify({
-                    title: '失败',
-                    message: res.data.msg,
-                    type: 'error'
-                })
+                this.$notify({ title: '失败', message: res.data.msg, type: 'error' })
             }
         },
         async uploadFile(file) {
@@ -123,26 +130,25 @@ export default {
                 this.fileList = []
                 return
             }
+            if (!this.ready) {
+                this.$message.error('请先选择目标目录')
+                this.fileList = []
+                return
+            }
+            this.uploadForm = new FormData()
             this.uploadForm.append('target', this.target)
-            this.uploadForm.append('files', file.file) // 上传的文件放在files里面了
+            if (this.instanceId) this.uploadForm.append('instanceId', this.instanceId)
+            this.uploadForm.append('files', file.file)
             let res = await this.$axios({
                 method: 'post',
                 url: 'wensc/uploadFileToTargetDirec',
                 data: this.uploadForm
             })
-            if (res.data.code == 1) {
-                this.$notify({
-                    title: '成功',
-                    message: '上传文件成功',
-                    type: 'success'
-                })
+            if (res.data.code == 0) {
+                this.$notify({ title: '成功', message: '上传文件成功', type: 'success' })
                 this.$emit('getFileTree')
             } else {
-                this.$notify({
-                    title: '失败',
-                    message: '上传文件失败',
-                    type: 'error'
-                })
+                this.$notify({ title: '失败', message: '上传文件失败', type: 'error' })
             }
             this.fileList = []
         }

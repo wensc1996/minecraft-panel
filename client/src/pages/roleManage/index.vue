@@ -19,7 +19,7 @@
             label="操作"
             width="150">
             <template slot-scope="scope">
-                <el-button type="text" size="small" @click="assignPrivilege(scope.row)">编辑</el-button>
+                <el-button type="text" size="small" @click="assignPrivilege(scope.row)" v-permission="'roleManage.btn.edit'">编辑</el-button>
             </template>
             </el-table-column>
         </el-table>
@@ -56,7 +56,7 @@ export default {
         },
         async getRoleList() {
             let res = await this.get('wensc/getRoleList')
-            if (res.data.code == 1) {
+            if (res.data.code == 0) {
                 this.roleList = res.data.data
             }
         },

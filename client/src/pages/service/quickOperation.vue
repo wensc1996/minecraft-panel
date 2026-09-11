@@ -1,6 +1,6 @@
 <template>
     <div quickOperation>
-        <el-table :row-class-name="tableRowClassName"
+        <el-table border :row-class-name="tableRowClassName"
             :data="players">
             <el-table-column
             prop='name'
@@ -37,6 +37,11 @@ export default {
             players: []
         }
     },
+    computed: {
+        instanceId() {
+            return this.$store.state.currentInstanceId
+        }
+    },
     methods: {
         tableRowClassName({row, rowIndex}) {
             if (rowIndex % 2 == 0) {
@@ -49,25 +54,29 @@ export default {
             console.log(e)
         },
         randomTeleport(index, row) {
-            this.$socket.emit('thread', `/spreadplayers 0 0 0 100000 false ${row.name}`)
+            this.$socket.emit('thread', { instanceId: this.instanceId, cmd: `/spreadplayers 0 0 0 100000 false ${row.name}` })
         },
         reborn(index, row) {
-            this.$store.commit('SETREBORNTYPE', 'reborn') // 其中定位含有两个功能，这里用vuex来管理当前是定位还是纪录位置
-            this.$socket.emit('thread', `/spawnpoint ${row.name}`)
+            this.$store.commit('SETREBORNTYPE', 'reborn')
+            this.$socket.emit('thread', { instanceId: this.instanceId, cmd: `/spawnpoint ${row.name}` })
         },
         kickPlayer(index, row) {
-            this.$socket.emit('thread', `/kick ${row.name}`)
+            this.$socket.emit('thread', { instanceId: this.instanceId, cmd: `/kick ${row.name}` })
         },
         async getPlayerList() {
-            let res = await this.get('wensc/getOnlinePlayerList', {})
-            this.$store.state.players = res.data.data.map(item => {
-                return {
-                    name: item
-                }
-            })
+            let res = await this.get('wensc/getOnlinePlayerList', { instanceId: this.instanceId })
+            if (res.data.code === 0) {
+                this.players = res.data.data.map(item => {
+                    return { name: item }
+                })
+            }
         }
     },
     watch: {
+        '$store.state.currentInstanceId'(val) {
+            this.players = []
+            if (val) this.getPlayerList()
+        },
         '$store.state.players'(val) {
             if (val.length > 0) {
                 this.players = val
@@ -77,7 +86,7 @@ export default {
         }
     },
     mounted() {
-        this.getPlayerList()
+        if (this.instanceId) this.getPlayerList()
     }
 }
 </script>

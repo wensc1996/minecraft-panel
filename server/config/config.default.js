@@ -31,7 +31,11 @@ module.exports = appInfo => {
     }
     config.multipart = {
         mode: 'file',
-        fileExtensions: ['.dat', '.jar', '.txt', '.cfg', '.json', '.jar', '.rar', '.properties', '.exe'],
+        // 文件大小上限：Infinity 表示不限制（默认 10MB，MC 的 jar/mod/世界备份常超此值）
+        fileSize: Infinity,
+        // 单次请求最多允许的文件数（默认 10）
+        maxFiles: 100,
+        fileExtensions: ['.dat', '.jar', '.txt', '.cfg', '.json', '.properties', '.exe', '.zip', '.tar', '.gz', '.rar', '.yml', '.yaml', '.png', '.log', '.sh', '.bat'],
     }
     // 注意，开启此模式后，应用就默认自己处于反向代理之后，
     // 会支持通过解析约定的请求头来获取用户真实的 IP，协议和域名。

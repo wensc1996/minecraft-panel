@@ -1,6 +1,11 @@
 <template>
   <div newUser>
-       <div class="table-bar"><el-button type="primary" round @click="handleNewUser" v-if="checkEnabled('addNewUser')">新增用户</el-button></div>
+       <div class="table-bar">
+        <el-select v-if="isPlatformAdmin" v-model="filterTenantId" placeholder="全部租户" clearable @change="onFilterChange" style="margin-right:12px;width:200px">
+          <el-option :label="item.tenant_name" :value="item.tenant_id" v-for="(item) in tenantOptions" v-bind:key="item.tenant_id"></el-option>
+        </el-select>
+        <el-button type="primary" round @click="handleNewUser" v-if="checkEnabled('addNewUser')">新增用户</el-button>
+      </div>
       <el-table
         :data="userList"
         border
@@ -28,7 +33,7 @@
         <template slot-scope="scope">
             <el-button @click="handleClick(scope.row)" type="text" size="small">修改密码</el-button>
             <el-button @click="updatePlayerId(scope.row)" type="text" size="small">修改游戏ID</el-button>
-            <el-button type="text" size="small" @click="handleDelete(scope.row)">删除</el-button>
+            <el-button type="text" size="small" @click="handleDelete(scope.row)" v-permission="'userManage.btn.delete'">删除</el-button>
         </template>
         </el-table-column>
     </el-table>
@@ -67,7 +72,15 @@ export default {
             userList: [],
             dialogVisible: false,
             repasswordUserId: '',
-            isShowNewUser: false
+            isShowNewUser: false,
+            filterTenantId: '',
+            tenantOptions: []
+        }
+    },
+    computed: {
+        isPlatformAdmin() {
+            const info = this.$store.getters.GETUSERINFO
+            return info && info.tenant_id === 0
         }
     },
     components: {
@@ -83,6 +96,7 @@ export default {
     },
     mounted() {
         this.getUserList()
+        if (this.isPlatformAdmin) this.loadTenants()
     },
     methods: {
         updatePlayerId(item) {
@@ -131,10 +145,20 @@ export default {
             this.dialogVisible = !this.dialogVisible
         },
         async getUserList() {
-            let res = await this.get('wensc/getUserList', {})
-            if (res.data.code == 1) {
+            const params = (this.isPlatformAdmin && this.filterTenantId) ? { tenantId: this.filterTenantId } : {}
+            let res = await this.get('wensc/getUserList', params)
+            if (res.data.code == 0) {
                 this.userList = res.data.data
             }
+        },
+        async loadTenants() {
+            let res = await this.get('wensc/tenants')
+            if (res.data.code === 0) {
+                this.tenantOptions = res.data.data || []
+            }
+        },
+        onFilterChange() {
+            this.getUserList()
         }
     }
 }

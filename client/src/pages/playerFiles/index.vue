@@ -1,32 +1,43 @@
 <template>
     <div>
-        <el-upload
-            :http-request="uploadFile"
-            class="upload-demo"
-            action="wensc/uploadFile"
-            :limit="1"
-            :file-list="fileList">
-            <el-button size="small" type="primary">点击上传</el-button>
-            <div slot="tip" class="el-upload__tip">只能上传.dat文件</div>
-        </el-upload>
-        <el-table
-        :data="tableData"
-        style="width: 100%">
-            <el-table-column
-                prop="name"
-                label="玩家存档"
-                >
-            </el-table-column>
-            <el-table-column
-                label="操作"
-                width="180">
-                <template slot-scope="scope">
-                    <el-button @click="savePlayerFile(scope.$index, scope.row)" type="text" size="small">存档备份</el-button>
-                    <el-button @click="restorePlayerFile(scope.$index, scope.row)" type="text" size="small">回档还原</el-button>
-                    <el-button type="text" size="small" @click="deletePlayerFile(scope.$index, scope.row)">删除</el-button>
-                </template>
-            </el-table-column>
-        </el-table>
+        <el-alert
+            v-if="loadError"
+            title="获取玩家存档失败"
+            :description="loadErrorMsg || '无法读取该实例的玩家存档目录，上传功能已禁用'"
+            type="error"
+            show-icon
+            :closable="false"
+            style="margin-bottom: 12px;">
+        </el-alert>
+        <template v-else>
+            <el-upload
+                :http-request="uploadFile"
+                class="upload-demo"
+                action="wensc/uploadFile"
+                :limit="1"
+                :file-list="fileList">
+                <el-button size="small" type="primary">点击上传</el-button>
+                <div slot="tip" class="el-upload__tip">只能上传.dat文件</div>
+            </el-upload>
+            <el-table
+            :data="tableData"
+            style="width: 100%">
+                <el-table-column
+                    prop="name"
+                    label="玩家存档"
+                    >
+                </el-table-column>
+                <el-table-column
+                    label="操作"
+                    width="180">
+                    <template slot-scope="scope">
+                        <el-button @click="savePlayerFile(scope.$index, scope.row)" type="text" size="small">存档备份</el-button>
+                        <el-button @click="restorePlayerFile(scope.$index, scope.row)" type="text" size="small">回档还原</el-button>
+                        <el-button type="text" size="small" @click="deletePlayerFile(scope.$index, scope.row)">删除</el-button>
+                    </template>
+                </el-table-column>
+            </el-table>
+        </template>
     </div>
 </template>
 <script>
@@ -37,7 +48,9 @@ export default {
         return {
             tableData: [],
             fileList: [],
-            uploadForm: new FormData()
+            uploadForm: new FormData(),
+            loadError: false,
+            loadErrorMsg: ''
         }
     },
     created() {
@@ -55,12 +68,13 @@ export default {
                 return
             }
             this.uploadForm.append('files', file.file) // 上传的文件放在files里面了
+            this.uploadForm.append('instanceId', this.$store.state.currentInstanceId)
             let res = await this.$axios({
                 method: 'post',
                 url: 'wensc/uploadFile',
                 data: this.uploadForm
             })
-            if (res.data.code == 1) {
+            if (res.data.code == 0) {
                 this.$notify({
                     title: '成功',
                     message: '上传玩家存档成功',
@@ -76,8 +90,8 @@ export default {
             this.fileList = []
         },
         async savePlayerFile(index, row) {
-            let res = await this.post('wensc/backupPlayer', {playerId: row.name})
-            if (res.data.code == 1) {
+            let res = await this.post('wensc/backupPlayer', {playerId: row.name, instanceId: this.$store.state.currentInstanceId})
+            if (res.data.code == 0) {
                 this.$notify({
                     title: '成功',
                     message: res.data.msg,
@@ -91,8 +105,8 @@ export default {
             }
         },
         async restorePlayerFile(index, row) {
-            let res = await this.post('wensc/restorePlayer', { playerId: row.name })
-            if (res.data.code == 1) {
+            let res = await this.post('wensc/restorePlayer', { playerId: row.name, instanceId: this.$store.state.currentInstanceId })
+            if (res.data.code == 0) {
                 this.$notify({
                     title: '成功',
                     message: res.data.msg,
@@ -113,9 +127,10 @@ export default {
                 type: 'warning'
             }).then(() => {
                 this.post('wensc/deletePlayer', {
-                    playerId: row.name
+                    playerId: row.name,
+                    instanceId: this.$store.state.currentInstanceId
                 }).then((res) => {
-                    if (res.data.code == 1) {
+                    if (res.data.code == 0) {
                         this.$notify({
                             title: '成功',
                             message: res.data.msg,
@@ -134,17 +149,16 @@ export default {
             })
         },
         async getPlayerFileList() {
-            let res = await this.get('wensc/getPlayerFileList', {})
-            if (res.data.code == 1) {
+            let res = await this.get('wensc/getPlayerFileList', { instanceId: this.$store.state.currentInstanceId })
+            if (res.data.code == 0) {
+                this.loadError = false
+                this.loadErrorMsg = ''
                 this.tableData = res.data.data.map(item => {
                     return { name: item }
                 })
             } else {
-                this.$notify({
-                    title: '失败',
-                    message: res.data.msg,
-                    type: 'error'
-                })
+                this.loadError = true
+                this.loadErrorMsg = res.data.msg
             }
         }
     }

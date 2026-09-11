@@ -17,7 +17,7 @@ class PlayerFiles extends Controller {
     }
     async getPlayerFileList() {
         const { ctx } = this
-        ctx.body = await this.ctx.service.playerFiles.getPlayerFileList(ctx.request.body)
+        ctx.body = await this.ctx.service.playerFiles.getPlayerFileList(Object.assign({}, ctx.query, ctx.request.body))
     }
     async deletePlayer(){
         const { ctx } = this;

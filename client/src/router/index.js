@@ -24,7 +24,11 @@ const router = new Router({
         }, {
             path: 'service',
             name: 'Service',
-            component: () => import(/* webpackChunkName: "service", webpackPrefetch: true */ '@/pages/service')
+            component: () => import(/* webpackChunkName: "service", webpackPrefetch: true */ '@/pages/service/index')
+        }, {
+            path: 'service/:instanceId',
+            name: 'ServiceInstance',
+            component: () => import(/* webpackChunkName: "service-instance", webpackPrefetch: true */ '@/pages/service/instance')
         }, {
             path: 'roleManage',
             name: 'RoleManage',
@@ -38,6 +42,10 @@ const router = new Router({
             name: 'File',
             component: () => import(/* webpackChunkName: "file", webpackPrefetch: true */ '@/pages/file')
         }, {
+            path: 'fileManage',
+            name: 'FileManage',
+            component: () => import(/* webpackChunkName: "fileManage", webpackPrefetch: true */ '@/pages/fileManage')
+        }, {
             path: 'playerFiles',
             name: 'PlayerFiles',
             component: () => import(/* webpackChunkName: "playerFiles", webpackPrefetch: true */ '@/pages/playerFiles')
@@ -45,6 +53,10 @@ const router = new Router({
             path: 'logs',
             name: 'Logs',
             component: () => import(/* webpackChunkName: "logs", webpackPrefetch: true */ '@/pages/logs')
+        }, {
+            path: 'platform',
+            name: 'Platform',
+            component: () => import(/* webpackChunkName: "platform", webpackPrefetch: true */ '@/pages/platform')
         }]
     }]
 })

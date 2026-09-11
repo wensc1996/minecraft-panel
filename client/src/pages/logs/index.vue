@@ -78,7 +78,7 @@ export default {
                 current: this.current,
                 pageSize: this.pageSize
             })
-            if (res.data.code == 1) {
+            if (res.data.code == 0) {
                 this.logList = res.data.data.list
                 this.total = res.data.data.total
             }
@@ -94,7 +94,7 @@ export default {
             let res = await this.post('wensc/deleteLog', {
                 logId: row.log_id
             })
-            if (res.data.code == 1) {
+            if (res.data.code == 0) {
                 this.$notify({
                     title: '成功',
                     message: res.data.msg,

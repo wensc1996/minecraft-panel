@@ -6,21 +6,22 @@
         @open="handleOpen"
         @close="handleClose"
         @select="handleSelect"
-        background-color="transparent"
-        text-color="#fff"
-        active-text-color="#111b20" 
         router>
             <el-menu-item index="/home/introduction">
                 <i class="el-icon-menu menu-icon"></i>
                 <span slot="title">介绍</span>
             </el-menu-item>
+            <el-menu-item index="/home/platform" v-if="isPlatformAdmin">
+                <i class="el-icon-s-platform menu-icon"></i>
+                <span slot="title">平台后台</span>
+            </el-menu-item>
             <el-menu-item index="/home/service" v-if="checkEnabled('cmd')">
                 <i class="el-icon-document menu-icon"></i>
                 <span slot="title">控制面板</span>
             </el-menu-item>
-            <el-menu-item index="/home/playerFiles" v-if="checkEnabled('playerFiles')">
-                <i class="el-icon-document menu-icon"></i>
-                <span slot="title">玩家存档</span>
+            <el-menu-item index="/home/fileManage" v-if="!isPlatformAdmin && checkEnabled('fileManage')">
+                <i class="el-icon-folder menu-icon"></i>
+                <span slot="title">文件管理</span>
             </el-menu-item>
             <el-menu-item index="/home/user" v-if="checkEnabled('userManage')">
                 <i class="el-icon-setting menu-icon" ></i>
@@ -29,10 +30,6 @@
             <el-menu-item index="/home/roleManage" v-if="checkEnabled('roleManage')">
                 <i class="el-icon-setting menu-icon"></i>
                 <span slot="title">角色管理</span>
-            </el-menu-item>
-            <el-menu-item index="/home/file" v-if="checkEnabled('uploadFile')">
-                <i class="el-icon-document menu-icon"></i>
-                <span slot="title">文件管理</span>
             </el-menu-item>
             <el-menu-item index="/home/logs" v-if="checkEnabled('logManage')">
                 <i class="el-icon-document menu-icon"></i>
@@ -59,6 +56,12 @@ export default {
             activePath: '/home/introduction'
         }
     },
+    computed: {
+        // 仅平台管理员(tenant_id=0)可见平台后台菜单
+        isPlatformAdmin() {
+            return this.$store.getters.GETUSERINFO && this.$store.getters.GETUSERINFO.tenant_id === 0
+        }
+    },
     methods: {
         checkAdmin() {
             if (this.$store.getters.GETUSERINFO.role_id == 1) {
@@ -81,12 +84,77 @@ export default {
 </script>
 <style lang="less">
 div[side-bar]{
-    // min-height: 100vh;
-    // height: calc(100% - 100px);
-    .el-menu-item{
-        border-bottom: 1px solid #a7a2a2;
-        .menu-icon{
-            color: aqua;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 18px 20px;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        border-bottom: 1px solid rgba(255,255,255,.12);
+        .brand-logo {
+            width: 30px;
+            height: 30px;
+            border-radius: 8px;
+            background: rgba(255,255,255,.18);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+    }
+
+    .el-menu {
+        border-right: none;
+        flex: 1;
+        padding: 8px;
+        background-color: transparent;
+    }
+    .el-menu-item {
+        position: relative;
+        height: 46px;
+        line-height: 46px;
+        margin: 4px 0;
+        border-radius: 8px;
+        color: rgba(255,255,255,.82);
+        border: none;
+        background-color: transparent;
+        transition: all .2s;
+        .menu-icon {
+            color: rgba(255,255,255,.65);
+            transition: all .2s;
+        }
+        &:focus {
+            background-color: transparent;
+            outline: none;
+        }
+        &:hover {
+            background: rgba(64, 158, 255, .22);
+            color: #fff;
+            .menu-icon { color: #fff; }
+        }
+        &.is-active {
+            background: rgba(255,255,255,.22);
+            color: #fff;
+            font-weight: 600;
+            .menu-icon { color: #fff; }
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 4px;
+                height: 22px;
+                border-radius: 0 4px 4px 0;
+                background: #fff;
+            }
         }
     }
 }

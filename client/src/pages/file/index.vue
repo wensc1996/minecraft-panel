@@ -1,21 +1,24 @@
 <template>
     <div>
-        <el-button type="primary" @click="dialogTableVisible=!dialogTableVisible" dialogTableVisible="dialogTableVisible" size="small">创建目录/上传</el-button>
-        <el-button type="danger" @click="deleteFileOrDirectory" size="small" >删除</el-button>
-        <tree
-            :data="fileTree"
-            :show-checkbox="true"
-            :props="defaultProps"
-            @node-click="handleNodeClick"
-            node-key="id"
-            ref="tree"
-            @node-contextmenu="rename"
-            :check-strictly="true"
-            :default-expanded-keys="expandKeys"
-        ></tree>
-        <el-dialog title="文件上传" :visible.sync="dialogTableVisible">
-            <fileUpload :fileTree="fileTree" @getFileTree="getFileTree" :dialogTableVisible="dialogTableVisible"/>
-        </el-dialog>
+        <template v-if="ready">
+            <el-button type="primary" @click="dialogTableVisible=!dialogTableVisible" dialogTableVisible="dialogTableVisible" size="small">创建目录/上传</el-button>
+            <el-button type="danger" @click="deleteFileOrDirectory" size="small" >删除</el-button>
+            <tree
+                :data="fileTree"
+                :show-checkbox="true"
+                :props="defaultProps"
+                @node-click="handleNodeClick"
+                node-key="id"
+                ref="tree"
+                @node-contextmenu="rename"
+                :check-strictly="true"
+                :default-expanded-keys="expandKeys"
+            ></tree>
+            <el-dialog title="文件上传" :visible.sync="dialogTableVisible">
+                <fileUpload :scope="scope" :fileTree="fileTree" @getFileTree="getFileTree" :dialogTableVisible="dialogTableVisible"/>
+            </el-dialog>
+        </template>
+        <el-empty v-else :description="emptyText"></el-empty>
     </div>
 </template>
 <script>
@@ -25,6 +28,13 @@ export default {
     components: {
         tree,
         fileUpload
+    },
+    props: {
+        // 'instance'：按当前选中实例 work_path；'tenant'：按租户 storage_path（顶级文件管理）
+        scope: {
+            type: String,
+            default: 'instance'
+        }
     },
     data() {
         return {
@@ -38,14 +48,25 @@ export default {
             expandKeys: []
         }
     },
+    computed: {
+        instanceId() {
+            return this.scope === 'tenant' ? null : this.$store.state.currentInstanceId
+        },
+        ready() {
+            return this.scope === 'tenant' || this.instanceId
+        },
+        emptyText() {
+            return this.scope === 'tenant' ? '未配置租户存储目录' : '请先在“控制面板”选择一个服务器实例，再管理其文件'
+        }
+    },
     methods: {
+        // 租户级不传 instanceId，后端自动以 storage_path 作为根目录
+        scopeOpts() {
+            return this.scope === 'tenant' ? {} : { instanceId: this.instanceId }
+        },
         rename(event, oldNode, node, currentNode) {
-            if(oldNode.disabled){
-                this.$notify({
-                    title: '警告',
-                    message: '禁止重命名根目录',
-                    type: 'warning'
-                })
+            if (oldNode.disabled) {
+                this.$notify({ title: '警告', message: '禁止重命名根目录', type: 'warning' })
                 return
             }
             this.$prompt('【重命名】如果修改文件类型，有可能造成文件无法正常运行', '提示', {
@@ -58,62 +79,36 @@ export default {
                 let oldPath = oldNode.fullPath
                 let newPath = oldNode.fullPath.replace(new RegExp(`${oldNode.name}`), value)
                 let res = await this.post('wensc/renameDirectoryOrFile', {
+                    ...this.scopeOpts(),
                     oldPath,
                     newPath
                 })
-                if (res.data.code == 1) {
-                    this.$notify({
-                        title: '成功',
-                        message: '重命名成功',
-                        type: 'success'
-                    })
+                if (res.data.code == 0) {
+                    this.$notify({ title: '成功', message: '重命名成功', type: 'success' })
                     this.getFileTree()
                 } else {
-                    this.$notify({
-                        title: '失败',
-                        message: '重命名失败',
-                        type: 'error'
-                    })
+                    this.$notify({ title: '失败', message: '重命名失败', type: 'error' })
                 }
-            }).catch(() => {
-            })
+            }).catch(() => {})
         },
         deleteFileOrDirectory() {
             let treeNodes = this.$refs.tree.getCheckedNodes()
-            if(treeNodes.length == 0) {
-                this.$notify({
-                    title: '失败',
-                    message: '请先选择文件或者文件夹',
-                    type: 'error'
-                })
+            if (treeNodes.length == 0) {
+                this.$notify({ title: '失败', message: '请先选择文件或者文件夹', type: 'error' })
                 return
             }
-            this.$confirm('此操作将永久删除所选文件或目录, 是否继续?', '提示', {
-                confirmButtonText: '确定',
-                cancelButtonText: '取消',
-                type: 'warning'
-            }).then(async () => {
-                let res = await this.post('wensc/deleteFileOrDirectory', treeNodes)
-                if (res.data.code == 1) {
-                    this.$notify({
-                        title: '成功',
-                        message: '删除成功',
-                        type: 'success'
-                    })
+            this.$confirm('此操作将永久删除所选文件或目录, 是否继续?', '提示', { type: 'warning' }).then(async () => {
+                let res = await this.post('wensc/deleteFileOrDirectory', { ...this.scopeOpts(), list: treeNodes })
+                if (res.data.code == 0) {
+                    this.$notify({ title: '成功', message: '删除成功', type: 'success' })
                 } else {
-                    this.$notify({
-                        title: '失败',
-                        message: '部分删除或者未删除',
-                        type: 'error'
-                    })
+                    this.$notify({ title: '失败', message: '部分删除或者未删除', type: 'error' })
                 }
                 this.getFileTree()
-            })
+            }).catch(() => {})
         },
         executeDownload(data, name) {
-            if (!data) {
-                return
-            }
+            if (!data) return
             let url = window.URL.createObjectURL(new Blob([data]))
             let link = document.createElement('a')
             link.style.display = 'none'
@@ -128,7 +123,7 @@ export default {
                 this.$axios({
                     method: 'get',
                     url: 'wensc/download',
-                    params: { target: node.fullPath },
+                    params: { target: node.fullPath, ...this.scopeOpts() },
                     responseType: 'blob'
                 }).then(res => {
                     this.executeDownload(res.data, node.name)
@@ -136,24 +131,26 @@ export default {
             }
         },
         async getFileTree() {
-            let res = await this.post('wensc/getDirectoryOrFile', { filed: 1 })
-            if(res.data.code == 1) {
+            let res = await this.post('wensc/getDirectoryOrFile', { filed: 1, ...this.scopeOpts() })
+            if (res.data.code == 0) {
                 this.fileTree = res.data.data
-                if(this.fileTree.length > 0) {
+                if (this.fileTree.length > 0) {
                     this.fileTree[0].disabled = true
                     this.expandKeys = [this.fileTree[0].id]
                 }
             } else {
-                this.$notify({
-                    title: '失败',
-                    message: res.data.msg,
-                    type: 'error'
-                })
+                this.$notify({ title: '失败', message: res.data.msg, type: 'error' })
             }
         }
     },
+    watch: {
+        instanceId(val) {
+            this.fileTree = []
+            if (val) this.getFileTree()
+        }
+    },
     mounted() {
-        this.getFileTree()
+        if (this.ready) this.getFileTree()
     }
 }
 </script>

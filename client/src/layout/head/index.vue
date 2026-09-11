@@ -15,7 +15,7 @@ export default {
     methods: {
         async logout() {
             let res = await this.post('wensc/logout', {})
-            if(res.data.code == 1) {
+            if(res.data.code == 0) {
                 this.$router.push('/login')
             }
         }

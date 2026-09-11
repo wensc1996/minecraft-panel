@@ -3,7 +3,7 @@
         <el-tree
         :data="privilege"
         show-checkbox
-        node-key="menu_id"
+        node-key="perm_id"
         ref="tree"
         :props="defaultProps">
         </el-tree>
@@ -16,8 +16,8 @@ export default {
             privilege: [],
             defaultProps: {
                 children: 'children',
-                label: 'menu_name',
-                id: 'menu_id'
+                label: 'perm_name',
+                id: 'perm_id'
             }
         }
     },
@@ -36,13 +36,13 @@ export default {
         async getPrivilegeList() {
             if (this.privilege.length == 0) {
                 let privilegeList = await this.get('wensc/getPrivilegeList')
-                if (privilegeList.data.code == 1) {
+                if (privilegeList.data.code == 0) {
                     this.privilege = privilegeList.data.data
                 }
             }
             let rolePrivilege = await this.post('wensc/getRolePrivilege', {roleId: this.roleId})
             this.$refs.tree.setCheckedKeys(rolePrivilege.data.data.map(item => {
-                return item.menu_id
+                return item.perm_id
             }))
         },
         async submitPrivilegeAssign() {
@@ -51,7 +51,7 @@ export default {
                 privilgeList: this.$refs.tree.getCheckedKeys()
             }
             let res = await this.post('wensc/updatePrivilege', param)
-            if (res.data.code == 1) {
+            if (res.data.code == 0) {
                 this.$notify({
                     title: '成功',
                     message: res.data.msg,

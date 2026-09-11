@@ -20,35 +20,29 @@ export default {
         return {
             cmd: '',
             msgContainer: [],
-            id: '',
-            isAskedPlayer: false,
             players: [],
             timer: null
         }
     },
-    mounted() {
-        // this.$store.commit('increment')
-        // console.log(this.$store.getters.optCount)
-        // this.listPlayers()
+    computed: {
+        instanceId() {
+            return this.$store.state.currentInstanceId
+        }
     },
     sockets: {
-        // 这里是监听connect事件
         connect: function () {
-            // 接收服务端发来的推送
             this.id = this.$socket.id
         },
-        // 方法名与服务端的保持一致
         wensc: function (res) {
-            // 以下对接收来的数据进行操作
             this.resultFilter(res)
         }
     },
     methods: {
         joinRoom() {
-            this.$socket.emit('joinRoom', '')
+            this.$socket.emit('joinRoom', { instanceId: this.instanceId })
         },
         actCMD() {
-            this.$socket.emit('thread', this.cmd)
+            this.$socket.emit('thread', { instanceId: this.instanceId, cmd: this.cmd })
         },
         trimBlank(str) {
             return str.replace(/[\n\r\s]/g, '')
@@ -78,34 +72,34 @@ export default {
                     message: '当前用户不在线或不存在'
                 })
             } else {
-                if(Array.isArray(res.data)) {
-                    if (this.msgContainer.length > 20) {
-                        this.msgContainer.splice(-1, res.data.length)
-                    }
+                if (Array.isArray(res.data)) {
                     this.msgContainer.unshift(...res.data)
                 } else {
-                    if (this.msgContainer.length > 20) {
-                        this.msgContainer.pop()
-                    }
                     this.msgContainer.unshift(res.data)
+                }
+                if (this.msgContainer.length > 100) {
+                    this.msgContainer.length = 100
                 }
             }
         },
         listPlayers() {
-            this.$socket.emit('thread', '/list')
+            this.$socket.emit('thread', { instanceId: this.instanceId, cmd: '/list' })
         },
         recordPlayer(val) {
-            this.$socket.emit('thread', '/spawnpoint ' + val)
+            this.$socket.emit('thread', { instanceId: this.instanceId, cmd: '/spawnpoint ' + val })
         }
     },
     created() {
-        this.joinRoom()
+        if (this.instanceId) this.joinRoom()
         this.$bus.$on('record', (val) => {
             this.recordPlayer(val)
         })
     },
-    beforeRouteLeave(to, from, next) {
-        this.$bus.$off('record')
+    watch: {
+        '$store.state.currentInstanceId'(val) {
+            this.msgContainer = []
+            this.joinRoom()
+        }
     },
     beforeDestroy() {
         this.$bus.$off('record')
@@ -114,13 +108,31 @@ export default {
 </script>
 <style lang="less">
 div[cmd-panel] {
+    .cmd {
+        margin-bottom: 10px;
+    }
     .panel {
         height: 600px;
-        overflow-y: scroll;
-        padding: 1em;
+        overflow-y: auto;
+        padding: 10px 12px;
+        border: 1px solid #dcdfe6;
+        border-radius: 6px;
+        background-color: #fafafa;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+        font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+        font-size: 13px;
+        line-height: 1.6;
+        color: #303133;
 
         .line {
-            padding: 5px 0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            white-space: pre-wrap;
+            word-break: break-all;
+
+            &:nth-child(odd) {
+                background-color: #f0f2f5;
+            }
         }
     }
 }

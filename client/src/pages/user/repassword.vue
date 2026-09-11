@@ -41,7 +41,7 @@ export default {
                 })
             } else {
                 let res = await this.post('wensc/updatePassword', this.passwordForm)
-                if (res.data.code == 1) {
+                if (res.data.code == 0) {
                     this.$notify({
                         title: '成功',
                         message: res.data.msg,
