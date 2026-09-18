@@ -58,6 +58,7 @@ class DefaultController extends Controller {
     }
 
     async handleMessage(ctx, data, rt) {
+        try {
         const room = 'instance_' + rt.instanceId;
         let res = '';
         if (platform == 0) {
@@ -72,12 +73,14 @@ class DefaultController extends Controller {
         if (/That player cannot be found|无法找到该玩家/.test(res)) {
             ctx.app.io.of('/').to(room).emit('wensc', { type: 'notFound', data: '' });
         }
-        if (/Set \S+ spawn point to|将(\S+)的出生点设置到/.test(res)) {
-            const m = res.match(/Set (\S+)'s spawn point to|将(\S+)的出生点设置到/);
-            const playerId = m[1] || m[2];
-            const raw = (res.match(/(-?\d+, -?\d+, -?\d+)/) || res.match(/(-?\d+，-?\d+，-?\d+)/))[1];
-            const coordinate = this.trimBlank(raw).replace(/，/g, ',');
-            ctx.app.io.of('/').to(room).emit('wensc', { type: 'spawnPoint', data: { playerId, coordinate } });
+        const spawnPointMatch = res.match(/Set (\S+)'s spawn point to|将(\S+)的出生点设置到/);
+        if (spawnPointMatch) {
+            const playerId = spawnPointMatch[1] || spawnPointMatch[2];
+            const coordMatch = res.match(/(-?\d+, -?\d+, -?\d+)/) || res.match(/(-?\d+，-?\d+，-?\d+)/);
+            if (coordMatch && coordMatch[1]) {
+                const coordinate = this.trimBlank(coordMatch[1]).replace(/，/g, ',');
+                ctx.app.io.of('/').to(room).emit('wensc', { type: 'spawnPoint', data: { playerId, coordinate } });
+            }
         }
         const loginPlayer = res.match(/(\S+)\[\/\S+\] logged in with entity/);
         if (loginPlayer) {
@@ -97,6 +100,11 @@ class DefaultController extends Controller {
         rt.messageQueue.push(res);
         rt.messageHistory.push(res);
         if (rt.messageHistory.length > 200) rt.messageHistory.shift();
+        } catch (e) {
+            // 单条日志解析异常绝不可抛出到 stdout 事件回调外，否则会崩溃 worker 进程，
+            // 进而使 agent/master 向已关闭的 IPC 通道发消息而报 ERR_IPC_CHANNEL_CLOSED
+            console.error('[mcbridge] handleMessage parse error (ignored):', e && e.message);
+        }
     }
 
     async initialJava(ctx, instanceId) {

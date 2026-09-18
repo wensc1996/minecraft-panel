@@ -16,7 +16,7 @@
                 action="wensc/uploadFile"
                 :limit="1"
                 :file-list="fileList">
-                <el-button size="small" type="primary">点击上传</el-button>
+                <el-button size="small" type="primary" v-permission="'cmd.playerFiles.btn.upload'">点击上传</el-button>
                 <div slot="tip" class="el-upload__tip">只能上传.dat文件</div>
             </el-upload>
             <el-table
@@ -31,9 +31,9 @@
                     label="操作"
                     width="180">
                     <template slot-scope="scope">
-                        <el-button @click="savePlayerFile(scope.$index, scope.row)" type="text" size="small">存档备份</el-button>
-                        <el-button @click="restorePlayerFile(scope.$index, scope.row)" type="text" size="small">回档还原</el-button>
-                        <el-button type="text" size="small" @click="deletePlayerFile(scope.$index, scope.row)">删除</el-button>
+                        <el-button @click="savePlayerFile(scope.$index, scope.row)" type="text" size="small" v-permission="'cmd.playerFiles.btn.backup'">存档备份</el-button>
+                        <el-button @click="restorePlayerFile(scope.$index, scope.row)" type="text" size="small" v-permission="'cmd.playerFiles.btn.restore'">回档还原</el-button>
+                        <el-button type="text" size="small" @click="deletePlayerFile(scope.$index, scope.row)" v-permission="'cmd.playerFiles.btn.delete'">删除</el-button>
                     </template>
                 </el-table-column>
             </el-table>

@@ -19,7 +19,7 @@
                 <i class="el-icon-document menu-icon"></i>
                 <span slot="title">控制面板</span>
             </el-menu-item>
-            <el-menu-item index="/home/fileManage" v-if="!isPlatformAdmin && checkEnabled('fileManage')">
+            <el-menu-item index="/home/fileManage" v-if="checkEnabled('fileManage')">
                 <i class="el-icon-folder menu-icon"></i>
                 <span slot="title">文件管理</span>
             </el-menu-item>
@@ -57,9 +57,10 @@ export default {
         }
     },
     computed: {
-        // 仅平台管理员(tenant_id=0)可见平台后台菜单
+        // 平台管理员：基于登录身份(role_id=1 / isPlatformAdmin)，不受当前管理租户切换影响
         isPlatformAdmin() {
-            return this.$store.getters.GETUSERINFO && this.$store.getters.GETUSERINFO.tenant_id === 0
+            const info = this.$store.getters.GETUSERINFO
+            return !!(info && info.isPlatformAdmin)
         }
     },
     methods: {

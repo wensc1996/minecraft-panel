@@ -13,6 +13,13 @@ function fmtDateTime(val) {
     return d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()) + ' ' + p(d.getHours()) + ':' + p(d.getMinutes()) + ':' + p(d.getSeconds())
 }
 
+// 生成实例ID：毫秒时间戳(13位) * 1000 + 3位随机 → 16位以内整数，
+// 既落在 JS 安全整数范围（< 2^53）也落在 BIGINT 范围，非自增、不可简单枚举；
+// 时间戳前缀便于按创建时间排序
+function genInstanceId() {
+    return Date.now() * 1000 + (Math.floor(Math.random() * 900) + 100)
+}
+
 class DisposeService extends Service {
     // 本租户实例列表（不含 work_path 等敏感细节，按需再拉取）
     async getServerInstances() {
@@ -68,6 +75,10 @@ class DisposeService extends Service {
     }
     // 新增实例：端口全服唯一，work_path 后端在其租户 storage_path 下以“实例名称”生成子目录
     async addInstance(options) {
+        // 新增实例为平台级操作：仅平台管理员可执行（其余角色无此权限）
+        if (!this.ctx.isPlatformAdmin) {
+            return new Response({ code: -1, msg: '仅平台管理员可新增实例' })
+        }
         const tenantId = this.ctx.tenantId
         const name = options.name || '服务器实例'
         const launchMode = options.launchMode || 'jar'
@@ -109,12 +120,21 @@ class DisposeService extends Service {
         if (!t || !t.length || !t[0].storage_path) {
             return new Response({ code: -1, msg: '租户存储目录未配置' })
         }
+        // 生成非自增实例ID（毫秒时间戳*1000 + 3位随机），并校验唯一
+        let instanceId
+        for (let i = 0; i < 5; i++) {
+            const cand = genInstanceId()
+            const exist = await db.query('select instance_id from dispose where instance_id = ?', [cand])
+            if (!exist || !exist.length) { instanceId = cand; break }
+        }
+        if (!instanceId) {
+            return new Response({ code: -1, msg: '生成实例ID失败，请重试' })
+        }
         try {
-            const insert = await db.query(
-                'insert into dispose (tenant_id, name, game_port, max_players, max_memory_size, min_memory_size, jar_name, java_dict_id, launch_mode, raw_args, expire_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
-                [tenantId, name, gamePort, playerNum, maxMemorySize, minMemorySize, jarName, javaDictIdStored, launchMode, rawArgs, expireAt]
+            await db.query(
+                'insert into dispose (instance_id, tenant_id, name, game_port, max_players, max_memory_size, min_memory_size, jar_name, java_dict_id, launch_mode, raw_args, expire_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+                [instanceId, tenantId, name, gamePort, playerNum, maxMemorySize, minMemorySize, jarName, javaDictIdStored, launchMode, rawArgs, expireAt]
             )
-            const instanceId = insert.insertId
             // 工作目录 = 租户存储根目录 + 实例名称（name 仅含中文/字母/数字，天然安全），不落库
             const workPath = buildWorkPath(t[0].storage_path, name)
             // 若目录已存在于磁盘，则直接复用该目录（不清空、不重命名），否则创建
@@ -179,7 +199,8 @@ class DisposeService extends Service {
         fields.push('java_dict_id = ?'); params.push(javaDictIdStored)
         if (options.launchMode !== undefined) { fields.push('launch_mode = ?'); params.push(options.launchMode) }
         if (options.rawArgs !== undefined) { fields.push('raw_args = ?'); params.push(options.rawArgs) }
-        if (options.expireAt !== undefined) { fields.push('expire_at = ?'); params.push(options.expireAt ? options.expireAt : null) }
+        // 实例到期时间为平台级字段：仅平台管理员可覆盖，其余角色保存时忽略 expire_at（保持库中原值，防止越权改写到期时间）
+        if (this.ctx.isPlatformAdmin && options.expireAt !== undefined) { fields.push('expire_at = ?'); params.push(options.expireAt ? options.expireAt : null) }
         params.push(instanceId, tenantId)
         const res = await db.query(
             'update dispose set ' + fields.join(', ') + ' where instance_id = ? and tenant_id = ?',
@@ -205,6 +226,10 @@ class DisposeService extends Service {
     }
     // 删除实例：删记录 + 删工作目录（工作目录由租户 storage_path + name 推算，不落库）
     async deleteInstance(options) {
+        // 删除实例为平台级操作：仅平台管理员可执行
+        if (!this.ctx.isPlatformAdmin) {
+            return new Response({ code: -1, msg: '仅平台管理员可删除实例' })
+        }
         const tenantId = this.ctx.tenantId
         const instanceId = options.instanceId
         if (!instanceId) return new Response({ code: -1, msg: '缺少 instanceId' })

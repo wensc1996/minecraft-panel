@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "adm-zip": "^0.5.9",
+    "archiver": "^5.3.2",
     "egg": "^2.15.1",
     "egg-scripts": "^2.11.0",
     "egg-socket.io": "^4.1.6",

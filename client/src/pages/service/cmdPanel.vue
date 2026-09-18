@@ -1,7 +1,7 @@
 <template>
     <div cmd-panel>
         <div class="cmd">
-            <div style="margin-top: 15px;">
+            <div style="margin-top: 15px;" v-permission="'cmd.console.btn.input'">
                 <el-input placeholder="请输入指令" v-model="cmd" @keyup.enter.native="actCMD">
                     <template slot="append">
                         <el-button @click="actCMD">执行</el-button>

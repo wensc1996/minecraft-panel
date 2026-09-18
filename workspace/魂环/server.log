@@ -1,0 +1,144 @@
+2026-09-18 13:53:23 [INFO] Starting minecraft server version 1.6.4-MITE-Legend-HDS (V1.4.5)
+2026-09-18 13:53:23 [INFO] Using 64-bit JVM
+2026-09-18 13:53:23 [INFO] Loading properties
+2026-09-18 13:53:23 [WARNING] server.properties does not exist
+2026-09-18 13:53:23 [INFO] Generating new properties file
+2026-09-18 13:53:23 [INFO] Default game type: SURVIVAL
+2026-09-18 13:53:23 [INFO] Generating keypair
+2026-09-18 13:53:24 [INFO] Starting Minecraft server on *:25565
+2026-09-18 13:53:24 [WARNING] Failed to load white-list: java.io.FileNotFoundException: .\white-list.txt (系统找不到指定的文件。)
+2026-09-18 13:53:24 [INFO] White-list is ALL-INCLUSIVE
+2026-09-18 13:53:24 [INFO] Preparing level "world"
+2026-09-18 13:53:25 [INFO] Preparing start region for level 0
+2026-09-18 13:53:26 [INFO] Preparing spawn area: 1%
+2026-09-18 13:53:27 [INFO] Preparing spawn area: 5%
+2026-09-18 13:53:28 [INFO] Preparing spawn area: 11%
+2026-09-18 13:53:29 [INFO] Preparing spawn area: 18%
+2026-09-18 13:53:30 [INFO] Preparing spawn area: 31%
+2026-09-18 13:53:31 [INFO] Preparing spawn area: 48%
+2026-09-18 13:53:32 [INFO] Preparing spawn area: 63%
+2026-09-18 13:53:33 [INFO] Preparing spawn area: 80%
+2026-09-18 13:53:34 [INFO] Preparing spawn area: 95%
+2026-09-18 13:53:35 [INFO] World seed is -4396204402238575557
+2026-09-18 13:53:35 [INFO] Done (11.184s)! For help, type "help" or "?"
+2026-09-18 13:53:35 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2026-09-18 13:54:43 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2026-09-18 13:54:47 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2026-09-18 13:54:47 [INFO] lucy [/127.0.0.1:51561] lost connection
+2026-09-18 13:55:35 [INFO] 正在关闭服务器
+2026-09-18 13:55:35 [INFO] Stopping server
+2026-09-18 13:55:35 [INFO] Closing listening thread
+2026-09-18 13:55:35 [INFO] Saving players
+2026-09-18 13:55:35 [INFO] Saving worlds
+2026-09-18 13:55:35 [INFO] Finished saving all worlds in 0.29 seconds
+2026-09-18 13:55:35 [INFO] Saving world maps...
+2026-09-18 13:55:37 [INFO] Finished saving world maps
+2026-09-18 13:55:37 [INFO] Stopping server
+2026-09-18 13:55:37 [INFO] Saving players
+2026-09-18 13:55:37 [INFO] Saving worlds
+2026-09-18 13:55:45 [INFO] Starting minecraft server version 1.6.4-MITE-Legend-HDS (V1.4.5)
+2026-09-18 13:55:45 [INFO] Using 64-bit JVM
+2026-09-18 13:55:45 [INFO] Loading properties
+2026-09-18 13:55:45 [INFO] Default game type: SURVIVAL
+2026-09-18 13:55:45 [INFO] Generating keypair
+2026-09-18 13:55:45 [INFO] Starting Minecraft server on *:25565
+2026-09-18 13:55:45 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2026-09-18 13:55:45 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2026-09-18 13:55:45 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2026-09-18 13:55:45 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2026-09-18 13:55:46 [INFO] White-list is ALL-INCLUSIVE
+2026-09-18 13:55:46 [INFO] Preparing level "world"
+2026-09-18 13:55:46 [INFO] Preparing start region for level 0
+2026-09-18 13:55:47 [INFO] Preparing spawn area: 3%
+2026-09-18 13:55:48 [INFO] Preparing spawn area: 44%
+2026-09-18 13:55:49 [INFO] Preparing spawn area: 70%
+2026-09-18 13:55:49 [INFO] World seed is -4396204402238575557
+2026-09-18 13:55:49 [INFO] Done (3.833s)! For help, type "help" or "?"
+2026-09-18 13:55:49 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2026-09-18 13:55:49 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2026-09-18 13:56:09 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2026-09-18 13:56:15 [INFO] lucy[/127.0.0.1:51753] logged in with entity id 38 at (-3.5, 65.0, 9.5)
+2026-09-18 13:56:15 [INFO] lucy 加入了游戏
+2026-09-18 13:56:17 [WARNING] Can't keep up! Did the system time change, or is the server overloaded?
+2026-09-18 13:56:17 [WARNING] lucy sent a master hash that did not validate!
+2026-09-18 14:05:39 [INFO] [Server] 将在10秒后开始备份玩家存档!可能会有些许卡顿
+2026-09-18 14:05:49 [INFO] [Server] 服务器开始备份...
+2026-09-18 14:05:49 [INFO] 玩家存档 players 压缩备份完成，耗时：40 ms
+2026-09-18 14:05:49 [INFO] [Server] 服务端玩家存档备份完成!耗时:40ms
+2026-09-18 14:06:02 [INFO] lucy 被 闪光苦力怕 炸死了
+2026-09-18 14:09:16 [INFO] lucy lost connection: disconnect.quitting
+2026-09-18 14:09:16 [INFO] lucy 退出了游戏
+2026-09-18 14:09:19 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2026-09-18 14:12:39 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2026-09-18 14:12:41 [INFO] lucy[/127.0.0.1:53836] logged in with entity id 62487 at (2.5, 70.0, 2.5)
+2026-09-18 14:12:41 [INFO] lucy 加入了游戏
+2026-09-18 14:12:42 [WARNING] lucy sent a master hash that did not validate!
+2026-09-18 14:12:54 [INFO] lucy lost connection: disconnect.quitting
+2026-09-18 14:12:54 [INFO] lucy 退出了游戏
+2026-09-18 14:12:54 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2026-09-18 14:13:34 [INFO] Starting minecraft server version 1.6.4-MITE-Legend-HDS (V1.4.5)
+2026-09-18 14:13:34 [INFO] Using 64-bit JVM
+2026-09-18 14:13:34 [INFO] Loading properties
+2026-09-18 14:13:34 [INFO] Default game type: SURVIVAL
+2026-09-18 14:13:34 [INFO] Generating keypair
+2026-09-18 14:13:35 [INFO] Starting Minecraft server on *:25565
+2026-09-18 14:13:35 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2026-09-18 14:13:35 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2026-09-18 14:13:35 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2026-09-18 14:13:35 [WARNING] To change this, set "online-mode" to "true" in the server.properties file.
+2026-09-18 14:13:35 [INFO] White-list is ALL-INCLUSIVE
+2026-09-18 14:13:35 [INFO] Preparing level "world"
+2026-09-18 14:13:35 [INFO] Preparing start region for level 0
+2026-09-18 14:13:36 [INFO] Preparing spawn area: 30%
+2026-09-18 14:13:37 [INFO] Preparing spawn area: 83%
+2026-09-18 14:13:37 [INFO] World seed is -4396204402238575557
+2026-09-18 14:13:37 [INFO] Done (2.418s)! For help, type "help" or "?"
+2026-09-18 14:13:37 [INFO] Mapping enabled, default map size is 4096x4096 (64MB of memory)
+2026-09-18 14:13:37 [INFO] Map loaded, size is 4096x4096 (64MB of memory)
+2026-09-18 14:13:41 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2026-09-18 14:13:45 [INFO] lucy[/127.0.0.1:54001] logged in with entity id 42 at (2.5, 70.0, 2.5)
+2026-09-18 14:13:45 [INFO] lucy 加入了游戏
+2026-09-18 14:13:46 [WARNING] lucy sent a master hash that did not validate!
+2026-09-18 14:19:42 [INFO] 将lucy的出生点设置到(2，70，2)
+2026-09-18 14:23:27 [INFO] [Server] 将在10秒后开始备份玩家存档!可能会有些许卡顿
+2026-09-18 14:23:37 [INFO] [Server] 服务器开始备份...
+2026-09-18 14:23:37 [INFO] 玩家存档 players 压缩备份完成，耗时：5 ms
+2026-09-18 14:23:37 [INFO] [Server] 服务端玩家存档备份完成!耗时:5ms
+2026-09-18 14:27:09 [INFO] lucy 被 骷髅 射杀
+2026-09-18 14:27:26 [INFO] lucy 被 骷髅 射杀
+2026-09-18 14:27:35 [INFO] lucy 被 骷髅 射杀
+2026-09-18 14:27:37 [INFO] lucy lost connection: disconnect.quitting
+2026-09-18 14:27:37 [INFO] lucy 退出了游戏
+2026-09-18 14:27:41 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2026-09-18 14:27:42 [INFO] lucy[/127.0.0.1:55779] logged in with entity id 70681 at (2.5, 70.0, 2.5)
+2026-09-18 14:27:42 [INFO] lucy 加入了游戏
+2026-09-18 14:27:43 [WARNING] lucy sent a master hash that did not validate!
+2026-09-18 14:27:48 [INFO] lucy 被 骷髅 射杀
+2026-09-18 14:27:50 [INFO] lucy lost connection: disconnect.quitting
+2026-09-18 14:27:50 [INFO] lucy 退出了游戏
+2026-09-18 14:27:53 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2026-09-18 14:27:55 [INFO] lucy[/127.0.0.1:55817] logged in with entity id 71363 at (2.5, 70.0, 2.5)
+2026-09-18 14:27:55 [INFO] lucy 加入了游戏
+2026-09-18 14:27:56 [WARNING] lucy sent a master hash that did not validate!
+2026-09-18 14:28:01 [INFO] lucy lost connection: disconnect.quitting
+2026-09-18 14:28:01 [INFO] lucy 退出了游戏
+2026-09-18 14:28:03 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2026-09-18 14:28:04 [INFO] lucy[/127.0.0.1:55848] logged in with entity id 71636 at (2.5, 70.0, 2.5)
+2026-09-18 14:28:04 [INFO] lucy 加入了游戏
+2026-09-18 14:28:05 [WARNING] lucy sent a master hash that did not validate!
+2026-09-18 14:28:06 [INFO] lucy lost connection: disconnect.quitting
+2026-09-18 14:28:06 [INFO] lucy 退出了游戏
+2026-09-18 14:28:24 [SEVERE] Reached end of stream for /127.0.0.1, packet id=-1
+2026-09-18 14:28:26 [INFO] lucy[/127.0.0.1:55899] logged in with entity id 71735 at (6.5, 65.0, 18.5)
+2026-09-18 14:28:26 [INFO] lucy 加入了游戏
+2026-09-18 14:28:27 [WARNING] lucy sent a master hash that did not validate!
+2026-09-18 14:28:28 [INFO] lucy lost connection: disconnect.quitting
+2026-09-18 14:28:28 [INFO] lucy 退出了游戏
+2026-09-18 14:33:27 [INFO] [Server] 将在10秒后开始备份玩家存档!可能会有些许卡顿
+2026-09-18 14:33:37 [INFO] [Server] 服务器开始备份...
+2026-09-18 14:33:37 [INFO] 玩家存档 players 压缩备份完成，耗时：3 ms
+2026-09-18 14:33:37 [INFO] [Server] 服务端玩家存档备份完成!耗时:3ms
+2026-09-18 14:43:27 [INFO] [Server] 将在10秒后开始备份玩家存档!可能会有些许卡顿
+2026-09-18 14:43:37 [INFO] [Server] 服务器开始备份...
+2026-09-18 14:43:37 [INFO] 玩家存档 players 压缩备份完成，耗时：3 ms
+2026-09-18 14:43:37 [INFO] [Server] 服务端玩家存档备份完成!耗时:3ms

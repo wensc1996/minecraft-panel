@@ -87,13 +87,13 @@ ALTER TABLE `logs`      ADD COLUMN `tenant_id` INT UNSIGNED NOT NULL DEFAULT 0;
 ```sql
 ALTER TABLE `user`
   ADD COLUMN `account` VARCHAR(50) NOT NULL DEFAULT '' COMMENT '自定义登录账号',
-  ADD UNIQUE KEY `uk_tenant_account` (`tenant_id`, `account`);
+  ADD UNIQUE KEY `uk_account` (`account`);
 ```
 
 - `user_id`：保留为全局唯一主键（自增），作为唯一标识；
-- `account`：登录用自定义账号；`UNIQUE(tenant_id, account)` 保证**同一租户内唯一、跨租户可重复**；
+- `account`：登录用自定义账号；`UNIQUE(account)` 保证**全局唯一**——一个账号唯一对应一个租户，跨租户不可重复；
 - `player_id`：保留为游戏内 ID，与登录账号解耦；
-- 形态示例：用户"小明"在租户 1、2 各有一条 user 记录 —— `user_id` 分别为 1001/2001，`account` 均为 `'xiaoming'`，`tenant_id` 分别为 1/2，密码可各自独立。
+- 形态示例：每个账号只属于单一租户；用户"小明"若属租户 1，则其 `account='xiaoming'`、`tenant_id=1`；其它租户不可再注册 `'xiaoming'`。
 
 ### 4.4 层级关系小结
 
@@ -119,16 +119,14 @@ ALTER TABLE `user`
 - 新增 `app/middleware/tenant.js`：从 `ctx.session` 取出 `tenantId` 挂到 `ctx`，业务接口强制校验已登录。
 - 所有业务 SQL 必须带 `WHERE tenant_id = ?`，参数取自 `ctx.tenantId`。
 
-### 5.3 登录选组流程（`login.js`）
+### 5.3 登录流程（`login.js`）
 
-`find(options)` 改为按 `account` 定位，支持"选组"：
+因 `account` 全局唯一，`find(options)` 直接按账号定位唯一租户，无需选组：
 
-1. 带了 `tenantId`：`WHERE tenant_id = ? AND account = ?`，校验密码后登录该租户。
-2. 没带 `tenantId`：`SELECT * FROM user WHERE account = ?`（可能命中多租户）：
-   - 逐条比对密码（`md5`）：
-     - 0 条匹配 → 登录失败（不泄露存在哪些租户）；
-     - 1 条匹配 → 直接登录该租户，`session.tenantId = 该条.tenant_id`；
-     - ≥2 条匹配 → 返回 `code: 2` "请选择登录分组"，附带可选项 `tenant_id` / `tenant_name` 列表（不含敏感字段），前端二次提交带 `tenantId`。
+1. `SELECT * FROM user WHERE account = ?`（最多命中 1 条，由 `UNIQUE(account)` 保证）；
+2. 比对密码（`md5`）：
+   - 0 条匹配 / 密码不符 → 登录失败（统一提示"账号或密码错误"，不泄露账号归属）；
+   - 1 条匹配 → 登录成功，`session.tenantId = 该条.tenant_id`（恒取自库，绝不读取/信任前端传入的 `tenantId` 参数）。
 
 ---
 

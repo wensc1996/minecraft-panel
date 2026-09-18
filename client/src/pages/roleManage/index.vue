@@ -1,5 +1,8 @@
 <template>
     <div roleManage>
+        <div class="role-toolbar">
+            <el-button type="primary" size="small" @click="openCreate" v-permission="'roleManage.btn.add'">新增角色</el-button>
+        </div>
         <el-table
         :data="roleList"
         border
@@ -17,9 +20,10 @@
             <el-table-column
             fixed="right"
             label="操作"
-            width="150">
+            width="200">
             <template slot-scope="scope">
                 <el-button type="text" size="small" @click="assignPrivilege(scope.row)" v-permission="'roleManage.btn.edit'">编辑</el-button>
+                <el-button type="text" size="small" style="color:#f56c6c" @click="deleteRole(scope.row)" v-permission="'roleManage.btn.delete'">删除</el-button>
             </template>
             </el-table-column>
         </el-table>
@@ -35,6 +39,20 @@
             <el-button type="primary" @click="submitPrivilege">确 定</el-button>
         </span>
         </el-dialog>
+        <el-dialog
+        title="新增角色"
+        :visible.sync="createVisible"
+        width="30%">
+            <el-form label-width="80px">
+                <el-form-item label="角色名称">
+                    <el-input v-model="newRoleName" placeholder="请输入角色名称" maxlength="20" show-word-limit></el-input>
+                </el-form-item>
+            </el-form>
+            <span slot="footer" class="dialog-footer">
+                <el-button @click="createVisible = false">取 消</el-button>
+                <el-button type="primary" @click="createRole">确 定</el-button>
+            </span>
+        </el-dialog>
     </div>
 </template>
 <script>
@@ -47,7 +65,9 @@ export default {
         return {
             roleList: [],
             dialogVisible: false,
-            roleId: ''
+            roleId: '',
+            createVisible: false,
+            newRoleName: ''
         }
     },
     methods: {
@@ -66,6 +86,37 @@ export default {
         },
         closeAssignPrivilege() {
             this.dialogVisible = false
+        },
+        openCreate() {
+            this.newRoleName = ''
+            this.createVisible = true
+        },
+        async createRole() {
+            const name = (this.newRoleName || '').trim()
+            if (!name) {
+                this.$message.warning('请输入角色名称')
+                return
+            }
+            let res = await this.post('wensc/createRole', { roleName: name })
+            if (res.data.code == 0) {
+                this.$message.success('新增角色成功')
+                this.createVisible = false
+                this.newRoleName = ''
+                this.getRoleList()
+            } else {
+                this.$message.error(res.data.msg || '新增角色失败')
+            }
+        },
+        deleteRole(row) {
+            this.$confirm(`确定删除角色「${row.role_name}」吗？该角色下的权限分配将一并清除。`, '提示', { type: 'warning' }).then(async () => {
+                let res = await this.post('wensc/deleteRole', { roleId: row.role_id })
+                if (res.data.code == 0) {
+                    this.$message.success('删除成功')
+                    this.getRoleList()
+                } else {
+                    this.$message.error(res.data.msg || '删除失败')
+                }
+            }).catch(() => {})
         }
     },
     mounted() {
@@ -75,5 +126,8 @@ export default {
 </script>
 <style lang="less">
     div[roleManage]{
+        .role-toolbar {
+            margin-bottom: 12px;
+        }
     }
 </style>

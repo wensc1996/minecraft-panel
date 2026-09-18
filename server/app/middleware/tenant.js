@@ -12,8 +12,11 @@ module.exports = () => {
             ctx.body = new Response({ code: -998, msg: '租户信息缺失，请重新登录', data: '' })
             return
         }
-        // 业务侧统一从 ctx.tenantId 取，禁止读前端参数
+        // 业务侧统一从 ctx.tenantId 取，禁止读前端参数（ctx.tenantId 为"当前管理的作用域租户"）
         ctx.tenantId = tenantId
+        // 身份标识：恒定，用于判定是否平台管理员、是否允许切换作用域租户
+        ctx.identityTenantId = ctx.session && ctx.session.identityTenantId
+        ctx.isPlatformAdmin = !!(ctx.session && ctx.session.isPlatformAdmin)
         await next()
     }
 }

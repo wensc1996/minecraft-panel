@@ -119,25 +119,242 @@ class DirectoryTree extends Service {
         return new Promise(async (reslove) => {
             try {
                 const list = options.list || options;
+                const socketId = options.socketId;
                 const root = await this.resolveRoot(options);
                 list.forEach((o) => {
                     if (!withinRoot(o.fullPath, root)) throw new Error('路径越权: ' + o.fullPath);
                 });
-                list.forEach((o) => {
-                    if (o.type === 0) {
-                        Logger.log(this.ctx, `删除文件：${o.fullPath}`);
-                        fs.unlinkSync(o.fullPath);
+
+                // 统计待删除条目总数（文件+目录）用于进度；跳过符号链接避免误删目标
+                const files = [];
+                const dirs = [];
+                let total = 0;
+                const collect = (p) => {
+                    let st;
+                    try { st = fs.lstatSync(p); } catch (e) { return; }
+                    if (st.isSymbolicLink()) return;
+                    if (st.isDirectory()) {
+                        dirs.push(p);
+                        total++;
+                        let names = [];
+                        try { names = fs.readdirSync(p); } catch (e) { return; }
+                        for (const n of names) collect(path.join(p, n));
+                    } else if (st.isFile()) {
+                        files.push(p);
+                        total++;
                     }
-                });
-                list.forEach((o) => {
-                    if (o.type === 1) {
-                        Logger.log(this.ctx, `删除目录：${o.fullPath}`);
-                        this.clearDir(o.fullPath);
-                    }
-                });
+                };
+                for (const o of list) collect(o.fullPath);
+                if (total === 0) total = list.length;
+
+                let done = 0;
+                let lastPct = -1;
+                const emit = (msg) => {
+                    if (!socketId || !this.ctx || !this.ctx.app || !this.ctx.app.io) return;
+                    const pct = Math.floor((done / total) * 100);
+                    if (pct === lastPct && !msg) return;
+                    lastPct = pct;
+                    try {
+                        this.ctx.app.io.of('/').to(socketId).emit('wensc', {
+                            type: 'deleteProgress',
+                            data: { done, total, msg: msg || '' }
+                        });
+                    } catch (e) {}
+                };
+                const flush = () => new Promise((r) => setImmediate(r));
+
+                // 先删文件
+                for (const f of files) {
+                    try { fs.unlinkSync(f); } catch (e) { Logger.log(this.ctx, `删除文件失败(跳过): ${f} ${e.message}`); }
+                    done++;
+                    if (done % 200 === 0) { emit(); await flush(); }
+                }
+                // 再删目录（从深到浅），确保父目录清空后再删
+                dirs.sort((a, b) => b.split(path.sep).length - a.split(path.sep).length);
+                for (const d of dirs) {
+                    try { fs.rmdirSync(d); } catch (e) { Logger.log(this.ctx, `删除目录失败(跳过): ${d} ${e.message}`); }
+                    done++;
+                    if (done % 200 === 0) { emit(); await flush(); }
+                }
+                emit('done');
                 reslove(new Response({ code: 0, msg: '删除成功', data: '' }));
             } catch (e) {
                 reslove(new Response({ code: -1, msg: '删除失败：' + e.message, data: '' }));
+            }
+        });
+    }
+    // 将勾选的多个文件/目录打包为 zip，通过 archiver 流式压缩并直接 pipe 到响应（失败返回 Response）
+    // 相比 adm-zip 的 compressToBuffer（整包进内存），流式压缩不受内存限制，可打包任意大目录。
+    async packageDownload(options) {
+        return new Promise(async (resolve) => {
+            try {
+                const list = options.list || [];
+                const socketId = options.socketId;
+                if (!list.length) return resolve(new Response({ code: -1, msg: '未选择任何文件或目录' }));
+                const root = await this.resolveRoot(options);
+                const archiver = require('archiver');
+                const { PassThrough } = require('stream');
+                const pass = new PassThrough();
+                const archive = archiver('zip', { zlib: { level: 6 } });
+                archive.pipe(pass);
+
+                // 下载进度：自行统计每个文件实际读取的（未压缩）字节数，通过 socket 推送到前端
+                let totalBytes = 0;
+                let processedBytes = 0;
+                let lastDlPct = -1;
+                const emitDownload = (force) => {
+                    if (!socketId || !this.ctx || !this.ctx.app || !this.ctx.app.io) return;
+                    const total = totalBytes;
+                    const pct = total ? Math.floor((processedBytes / total) * 100) : 0;
+                    if (pct === lastDlPct && !force) return;
+                    lastDlPct = pct;
+                    try {
+                        this.ctx.app.io.of('/').to(socketId).emit('wensc', {
+                            type: 'downloadProgress',
+                            data: { done: processedBytes, total }
+                        });
+                    } catch (e) {}
+                };
+                // 包装文件读取流，按实际读取字节累计进度（未压缩字节，与 totalBytes 同口径）
+                const countingStream = (fullPath) => {
+                    const rs = fs.createReadStream(fullPath);
+                    rs.on('data', (chunk) => { processedBytes += chunk.length; emitDownload(false); });
+                    return rs;
+                };
+
+                const selected = list.map(item => item.fullPath);
+                let appended = 0;
+                // 递归收集条目并交给 archiver 流式压缩；跳过符号链接防止递归死循环
+                const walk = (fullPath, rel) => {
+                    let st;
+                    try { st = fs.lstatSync(fullPath); } catch (e) { return; }
+                    if (st.isSymbolicLink()) return; // 不跟随符号链接
+                    if (st.isDirectory()) {
+                        let names = [];
+                        try { names = fs.readdirSync(fullPath); } catch (e) { return; }
+                        if (names.length === 0 && rel) {
+                            // 空目录写入占位条目，保留目录结构
+                            archive.append(Buffer.alloc(0), { name: rel + '/' });
+                            appended++;
+                            return;
+                        }
+                        for (const n of names) {
+                            const childRel = rel ? rel + '/' + n : n;
+                            walk(path.join(fullPath, n), childRel);
+                        }
+                    } else if (st.isFile()) {
+                        const entryName = rel || path.basename(fullPath);
+                        archive.append(countingStream(fullPath), { name: entryName });
+                        totalBytes += st.size;
+                        appended++;
+                    }
+                };
+
+                for (const item of list) {
+                    const fullPath = item.fullPath;
+                    if (!withinRoot(fullPath, root)) throw new Error('路径越权: ' + fullPath);
+                    let st;
+                    try { st = fs.lstatSync(fullPath); } catch (e) { continue; }
+                    if (st.isSymbolicLink()) continue;
+                    // 本项已被其它已选项（目录）包含则跳过，避免重复打包
+                    const contained = selected.some(other => other !== fullPath && (fullPath === other || fullPath.startsWith(other + path.sep)));
+                    if (contained) continue;
+                    const rel = path.relative(root, fullPath).split(path.sep).join('/');
+                    if (st.isDirectory()) {
+                        walk(fullPath, rel === '' ? '' : rel);
+                    } else {
+                        archive.append(countingStream(fullPath), { name: rel || path.basename(fullPath) });
+                        appended++;
+                    }
+                }
+
+                if (appended === 0) {
+                    archive.abort();
+                    pass.destroy();
+                    return resolve(new Response({ code: -1, msg: '未找到可打包的文件（可能均为符号链接或已不存在）' }));
+                }
+
+                archive.finalize().then(() => {
+                    emitDownload(true); // 收尾推送 100%
+                }).catch(() => {});
+                archive.on('error', (err) => { pass.destroy(err); });
+                resolve({ stream: pass });
+            } catch (e) {
+                resolve(new Response({ code: -1, msg: e.message }));
+            }
+        });
+    }
+    // 解压 zip 到同级目录（以 zip 文件名命名的文件夹，避免覆盖已有目录），通过 socket 推送解压进度；含 zip 目录穿越防护
+    extractZip(options) {
+        return new Promise(async (resolve) => {
+            try {
+                const root = await this.resolveRoot(options);
+                const zipPath = options.target;
+                if (!withinRoot(zipPath, root)) {
+                    return resolve(new Response({ code: -1, msg: '路径越权', data: '' }));
+                }
+                if (!/\.zip$/i.test(zipPath)) {
+                    return resolve(new Response({ code: -1, msg: '仅支持 .zip 压缩包解压', data: '' }));
+                }
+                const AdmZip = require('adm-zip');
+                let zip;
+                try { zip = new AdmZip(zipPath); } catch (e) {
+                    return resolve(new Response({ code: -1, msg: '压缩包读取失败：' + e.message, data: '' }));
+                }
+                const entries = zip.getEntries();
+                if (!entries.length) {
+                    return resolve(new Response({ code: -1, msg: '压缩包为空', data: '' }));
+                }
+                const dir = path.dirname(zipPath);
+                const base = path.basename(zipPath, path.extname(zipPath));
+                let destDir = path.join(dir, base);
+                let idx = 1;
+                while (fs.existsSync(destDir)) {
+                    destDir = path.join(dir, base + '_' + idx);
+                    idx++;
+                }
+                if (!withinRoot(destDir, root)) {
+                    return resolve(new Response({ code: -1, msg: '解压目标路径越权', data: '' }));
+                }
+                // zip 目录穿越防护：逐个校验条目解压后不逃逸出根目录
+                for (const entry of entries) {
+                    const target = path.join(destDir, entry.entryName);
+                    if (!withinRoot(target, root)) {
+                        return resolve(new Response({ code: -1, msg: '压缩包内含越权路径，已中止：' + entry.entryName, data: '' }));
+                    }
+                }
+                fs.mkdirSync(destDir, { recursive: true });
+                const socketId = options.socketId;
+                const total = entries.length;
+                let done = 0;
+                let lastPct = -1;
+                const emit = (msg) => {
+                    if (!socketId || !this.ctx || !this.ctx.app || !this.ctx.app.io) return;
+                    const pct = Math.floor((done / total) * 100);
+                    if (pct === lastPct && !msg) return;
+                    lastPct = pct;
+                    try {
+                        this.ctx.app.io.of('/').to(socketId).emit('wensc', {
+                            type: 'extractProgress',
+                            data: { done, total, msg: msg || '' }
+                        });
+                    } catch (e) {}
+                };
+                const flush = () => new Promise((r) => setImmediate(r));
+                for (const entry of entries) {
+                    try {
+                        zip.extractEntryTo(entry, destDir, true, true); // 保留条目内部路径，覆盖已存在
+                    } catch (e) {
+                        Logger.log(this.ctx, `解压条目失败(跳过): ${entry.entryName} ${e.message}`);
+                    }
+                    done++;
+                    if (done % 200 === 0) { emit(); await flush(); }
+                }
+                emit('done');
+                Logger.log(this.ctx, `解压文件：${zipPath} -> ${destDir}`);
+                resolve(new Response({ code: 0, msg: '解压成功', data: { destDir } }));
+            } catch (e) {
+                resolve(new Response({ code: -1, msg: '解压失败：' + e.message, data: '' }));
             }
         });
     }
@@ -161,6 +378,9 @@ class DirectoryTree extends Service {
     }
     readDirRecur(folder, callback, container) {
         fs.readdir(folder, (err, files) => {
+            // 读取目录失败（路径不存在/权限不足/失效符号链接等）：files 为 undefined，
+            // 直接结束该分支并回调父级计数，避免 files.forEach 崩溃与父级 Promise 挂死
+            if (err) { return callback(); }
             var count = 0;
             var checkEnd = () => {
                 ++count == files.length && callback();

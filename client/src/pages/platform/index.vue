@@ -34,12 +34,16 @@
                 <el-table-column prop="instance_count" label="实例数" width="80"></el-table-column>
                 <el-table-column prop="user_count" label="用户数" width="80"></el-table-column>
                 <el-table-column prop="create_time" label="创建时间" min-width="160"></el-table-column>
-                <el-table-column label="操作" width="100">
+                <el-table-column label="到期时间" min-width="160">
+                    <template slot-scope="scope">{{ fmtDate(scope.row.expire_at) }}</template>
+                </el-table-column>
+                <el-table-column label="操作" width="180">
                     <template slot-scope="scope">
                         <el-button size="mini" :type="scope.row.status === 1 ? 'warning' : 'success'"
                                    @click="toggleStatus(scope.row)">
                             {{ scope.row.status === 1 ? '停用' : '启用' }}
                         </el-button>
+                        <el-button size="mini" type="primary" plain @click="openEdit(scope.row)">修改</el-button>
                     </template>
                 </el-table-column>
             </el-table>
@@ -65,6 +69,25 @@
                 <el-button type="primary" @click="submitAdd">确定</el-button>
             </span>
         </el-dialog>
+
+        <el-dialog title="修改租户" :visible.sync="editVisible" width="420px">
+            <el-form :model="editForm" label-width="90px">
+                <el-form-item label="租户名称">
+                    <el-input v-model="editForm.tenantName"></el-input>
+                </el-form-item>
+                <el-form-item label="存储目录">
+                    <el-input v-model="editForm.storagePath" placeholder="需为绝对路径，如 /data/mcpanel/tenants/1"></el-input>
+                </el-form-item>
+                <el-form-item label="到期时间">
+                    <el-date-picker v-model="editForm.expireAt" type="datetime"
+                        value-format="yyyy-MM-dd HH:mm:ss" placeholder="不选表示永久有效" style="width:100%"></el-date-picker>
+                </el-form-item>
+            </el-form>
+            <span slot="footer">
+                <el-button @click="editVisible = false">取消</el-button>
+                <el-button type="primary" @click="submitEdit">确定</el-button>
+            </span>
+        </el-dialog>
     </div>
 </template>
 <script>
@@ -74,7 +97,9 @@ export default {
             summary: { tenantTotal: 0, tenantEnabled: 0, tenantDisabled: 0, instanceTotal: 0, userTotal: 0 },
             tenants: [],
             dialogVisible: false,
-            form: { tenantName: '', account: '', password: '', storagePath: '' }
+            form: { tenantName: '', account: '', password: '', storagePath: '' },
+            editVisible: false,
+            editForm: { tenantId: null, tenantName: '', storagePath: '', expireAt: '' }
         }
     },
     mounted () {
@@ -116,6 +141,43 @@ export default {
             } else {
                 this.tip(-1, res.data.msg)
             }
+        },
+        openEdit (row) {
+            const d = row.expire_at
+            this.editForm = {
+                tenantId: row.tenant_id,
+                tenantName: row.tenant_name,
+                storagePath: row.storage_path,
+                expireAt: d ? (d instanceof Date ? this.fmtDate(d) : d) : ''
+            }
+            this.editVisible = true
+        },
+        async submitEdit () {
+            if (!this.editForm.tenantName) {
+                this.$message.warning('租户名称不能为空')
+                return
+            }
+            let res = await this.post('wensc/updateTenant', {
+                tenantId: this.editForm.tenantId,
+                tenantName: this.editForm.tenantName,
+                storagePath: this.editForm.storagePath || '',
+                expireAt: this.editForm.expireAt || ''
+            })
+            if (res.data.code === 0) {
+                this.tip(1, '修改成功')
+                this.editVisible = false
+                this.load()
+            } else {
+                this.tip(-1, res.data.msg)
+            }
+        },
+        fmtDate (v) {
+            if (!v) return '永久'
+            if (v instanceof Date) {
+                const p = n => String(n).padStart(2, '0')
+                return `${v.getFullYear()}-${p(v.getMonth() + 1)}-${p(v.getDate())} ${p(v.getHours())}:${p(v.getMinutes())}:${p(v.getSeconds())}`
+            }
+            return v
         }
     }
 }

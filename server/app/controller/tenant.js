@@ -13,9 +13,17 @@ class TenantController extends Controller {
         const { ctx } = this
         ctx.body = await this.ctx.service.tenant.updateTenantStatus(ctx.request.body)
     }
+    async switchTenant() {
+        const { ctx } = this
+        ctx.body = await this.ctx.service.tenant.switchTenant(ctx.request.body)
+    }
     async addTenant() {
         const { ctx } = this
         ctx.body = await this.ctx.service.tenant.addTenant(ctx.request.body)
+    }
+    async updateTenant() {
+        const { ctx } = this
+        ctx.body = await this.ctx.service.tenant.updateTenant(ctx.request.body)
     }
 }
 

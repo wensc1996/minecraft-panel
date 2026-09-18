@@ -166,17 +166,7 @@ Vue.mixin({
             }
         },
         checkEnabled(name) {
-            if (this.$store.getters.GETPRIVILEGES.find(item => {
-                if (item.menu_func_name == name) {
-                    return true
-                } else {
-                    return false
-                }
-            })) {
-                return true
-            } else {
-                return false
-            }
+            return (this.$store.getters.GETPRIVILEGES || []).some(p => p.perm_key === name || p.menu_func_name === name)
         },
         // 细粒度权限：按钮/页签级，按 perm_key 判断（与 v-permission 指令同源）
         hasPerm(key) {
@@ -196,12 +186,10 @@ const app = new Vue({
 })
 app._router.beforeEach((to, from, next) => {
     if (to.name === 'User' && !app.checkEnabled('userManage')) next(false)
-    else if (to.name === 'PlayerFiles' && !app.checkEnabled('playerFiles')) next(false)
-    else if (to.name === 'File' && !app.checkEnabled('uploadFile')) next(false)
     else if (to.name === 'FileManage' && !app.checkEnabled('fileManage')) next(false)
     else if (to.name === 'RoleManage' && !app.checkEnabled('roleManage')) next(false)
     else if ((to.name === 'Service' || to.name === 'ServiceInstance') && !app.checkEnabled('cmd')) next(false)
     else if (to.name === 'Logs' && !app.checkEnabled('logManage')) next(false)
-    else if (to.name === 'Platform' && app.$store.getters.GETUSERINFO.tenant_id !== 0) next(false)
+    else if (to.name === 'Platform' && !app.$store.getters.GETUSERINFO.isPlatformAdmin) next(false)
     else next()
 })

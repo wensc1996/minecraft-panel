@@ -6,8 +6,8 @@
                 <el-button icon="el-icon-back" @click="back" size="small">返回实例列表</el-button>
                 <div class="btn-group">
                     <el-tag v-if="gameSetting.expireAt" :type="isExpired ? 'danger' : 'warning'" size="small" effect="plain" class="expire-tag">{{ isExpired ? '已过期' : '到期' }}：{{ gameSetting.expireAt }}</el-tag>
-                    <el-button @click="startProcess" :disabled="$store.state.serverStatus != 0" type="primary" size="small">启动</el-button>
-                    <el-button @click="stopProcess" :disabled="$store.state.serverStatus != 2" type="danger" size="small">关闭</el-button>
+                    <el-button @click="startProcess" :disabled="$store.state.serverStatus != 0" type="primary" size="small" v-permission="'cmd.status.btn.start'">启动</el-button>
+                    <el-button @click="stopProcess" :disabled="$store.state.serverStatus != 2" type="danger" size="small" v-permission="'cmd.status.btn.stop'">关闭</el-button>
                     <el-popconfirm
                         confirm-button-text='确定'
                         cancel-button-text='取消'
@@ -16,7 +16,7 @@
                         @confirm="killProcess"
                         title="可能会造成游戏存档损坏，确定要强制关闭吗"
                     >
-                        <el-button slot="reference" :disabled="$store.state.serverStatus == 0" size="small">强制关闭</el-button>
+                        <el-button slot="reference" :disabled="$store.state.serverStatus == 0" size="small" v-permission="'cmd.status.btn.kill'">强制关闭</el-button>
                     </el-popconfirm>
                 </div>
             </div>
@@ -98,17 +98,17 @@
                                             <div style="display:flex; align-items:center; width:100%;">
                                                 <span style="min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">{{ item.dict_name || item.dict_value }}</span>
                                                 <span style="flex:1 1 auto; min-width:0; margin-left:8px; color:#8492a6; font-size:12px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">{{ item.dict_value }}</span>
-                                                <i class="el-icon-delete" style="flex:0 0 auto; margin-left:8px; color:#f56c6c; cursor:pointer;" title="删除该 JAVA 路径" @click.stop="delJavaPath(item.dict_id)"></i>
+                                                <i class="el-icon-delete" v-permission="'javaPath.btn.delete'" style="flex:0 0 auto; margin-left:8px; color:#f56c6c; cursor:pointer;" title="删除该 JAVA 路径" @click.stop="delJavaPath(item.dict_id)"></i>
                                             </div>
                                         </el-option>
                                     </el-select>
-                                    <el-button size="small" type="primary" icon="el-icon-plus" @click="openJavaPathDialog">新建</el-button>
+                                    <el-button size="small" type="primary" icon="el-icon-plus" v-permission="'javaPath.btn.add'" @click="openJavaPathDialog">新建</el-button>
                                 </div>
                             </el-form-item>
                             <el-form-item label="实例名称/目录">
                                 <el-input v-model="gameSetting.name" size="small" placeholder="仅支持中文、字母、数字，作为实例目录名"></el-input>
                             </el-form-item>
-                            <el-form-item label="到期时间">
+                            <el-form-item label="到期时间" v-permission="'instance.btn.expire'">
                                 <el-date-picker v-model="gameSetting.expireAt" type="datetime" value-format="yyyy-MM-dd HH:mm:ss" placeholder="为空表示不限制使用时间" size="small" style="width:100%"></el-date-picker>
                             </el-form-item>
                             <el-form-item label="启动模式">
@@ -132,7 +132,7 @@
                                 <el-input type="textarea" :rows="4" v-model="gameSetting.rawArgs" size="small" placeholder="填写 java 之后的完整参数，例如：-Xms2500M -Xmx4G @libraries/.../win_args.txt nogui"></el-input>
                             </el-form-item>
                             <el-form-item>
-                                <el-button @click="updateSetting" type="primary" v-permission="'programManage.btn.save'">保存</el-button>
+                                <el-button @click="updateSetting" type="primary" v-permission="'cmd.tab.config.btn.save'">保存</el-button>
                             </el-form-item>
                         </el-form>
                         </div>
@@ -145,14 +145,14 @@
                     </el-tab-pane>
                 </el-tabs>
             </el-collapse-item>
-            <el-collapse-item name="players" class="players-collapse">
+            <el-collapse-item name="players" class="players-collapse" v-if="hasPerm('cmd.tab.onlinePlayer')">
                 <template slot="title">
                     <i class="el-icon-user"></i>
                     <span class="collapse-item-title">在线玩家</span>
                 </template>
                 <QuickOperation></QuickOperation>
             </el-collapse-item>
-            <el-collapse-item name="console">
+            <el-collapse-item name="console" v-if="hasPerm('cmd.tab.console')">
                 <template slot="title">
                     <i class="el-icon-monitor"></i>
                     <span class="collapse-item-title">控制台</span>

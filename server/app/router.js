@@ -37,6 +37,8 @@ module.exports = app => {
     router.get('/getRoleList', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.privilege.getRoleList);
     router.get('/getPrivilegeList', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.privilege.getPrivilegeList);
     router.post('/updatePrivilege', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.privilege.updatePrivilege);
+    router.post('/createRole', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.privilege.createRole);
+    router.post('/deleteRole', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.privilege.deleteRole);
     
 
     router.post('/getGameDispose', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.dispose.getGameDispose);
@@ -53,6 +55,8 @@ module.exports = app => {
     router.post('/deleteFileOrDirectory', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.directoryTree.deleteFileOrDirectory)
     router.post('/createNewDirectory', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.directoryTree.createNewDirectory)
     router.post('/renameDirectoryOrFile', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.directoryTree.renameDirectoryOrFile)
+    router.post('/packageDownload', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.directoryTree.packageDownload)
+    router.post('/extractZip', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.directoryTree.extractZip)
 
     router.post('/getLogList', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.logs.getLogList);
     router.post('/deleteLog', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.logs.deleteLog);
@@ -61,7 +65,9 @@ module.exports = app => {
     router.get('/tenants', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.tenant.getTenantList);
     router.get('/dashboard', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.tenant.getDashboard);
     router.post('/updateTenantStatus', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.tenant.updateTenantStatus);
+    router.post('/switchTenant', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.tenant.switchTenant);
     router.post('/addTenant', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.tenant.addTenant);
+    router.post('/updateTenant', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.tenant.updateTenant);
 
     // M3 服务器实例配置 CRUD（按 tenant_id + instance_id 隔离）
     router.get('/server-instances', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.dispose.getInstanceList);

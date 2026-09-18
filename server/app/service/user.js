@@ -47,13 +47,13 @@ class UserService extends Service {
         if (!roleCheck || roleCheck.length === 0) {
             return new Response({ code: -1, msg: '所选角色不属于目标租户' })
         }
-        // 登录账号必填，且同租户内唯一（uk_tenant_account）
+        // 登录账号必填，且全局唯一（uk_account）：一个账号唯一对应一个租户
         if (!options.account) {
             return new Response({ code: -1, msg: '登录账号不能为空' })
         }
-        const accountCheck = await db.query('select user_id from user where tenant_id = ? and account = ?', [targetTenantId, options.account])
+        const accountCheck = await db.query('select user_id from user where account = ?', [options.account])
         if (accountCheck && accountCheck.length > 0) {
-            return new Response({ code: -1, msg: '该租户下登录账号已存在' })
+            return new Response({ code: -1, msg: '登录账号已存在' })
         }
         let res = await db.query('insert into user(account, player_id, login_ip, role_id, password, tenant_id) values (?, ?, ?, ?, ?, ?)', [options.account, options.playerId, options.loginIp, options.roleId, this.md5(options.password), targetTenantId])
         if(res){

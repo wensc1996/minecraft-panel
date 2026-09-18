@@ -19,5 +19,13 @@ class privilegeController extends Controller {
         const { ctx } = this
         ctx.body = await this.ctx.service.privilege.updatePrivilege(ctx.request.body)
     }
+    async createRole() {
+        const { ctx } = this
+        ctx.body = await this.ctx.service.privilege.createRole(ctx.request.body)
+    }
+    async deleteRole() {
+        const { ctx } = this
+        ctx.body = await this.ctx.service.privilege.deleteRole(ctx.request.body)
+    }
 }
 module.exports = privilegeController;

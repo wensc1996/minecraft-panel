@@ -23,8 +23,11 @@ class DictService extends Service {
         const list = await db.query(sql, params)
         return new Response({ code: 0, msg: '获取字典列表成功', data: list })
     }
-    // 新增字典项
+    // 新增字典项（java 路径等平台级配置，仅平台管理员可操作）
     async addDict(options) {
+        if (!this.ctx.isPlatformAdmin) {
+            return new Response({ code: -403, msg: '仅平台管理员可新增字典项' })
+        }
         const dictType = options.dictType
         const dictValue = options.dictValue
         const dictName = options.dictName || ''
@@ -58,8 +61,11 @@ class DictService extends Service {
         await db.query('update sys_dict set ' + fields.join(', ') + ' where dict_id = ?', params)
         return new Response({ code: 0, msg: '更新字典项成功', data: '' })
     }
-    // 删除字典项
+    // 删除字典项（java 路径等平台级配置，仅平台管理员可操作）
     async deleteDict(options) {
+        if (!this.ctx.isPlatformAdmin) {
+            return new Response({ code: -403, msg: '仅平台管理员可删除字典项' })
+        }
         const dictId = options.dictId
         if (!dictId) return new Response({ code: -1, msg: '缺少 dictId' })
         await db.query('delete from sys_dict where dict_id = ?', [dictId])

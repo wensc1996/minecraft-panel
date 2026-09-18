@@ -2,7 +2,7 @@
     <div class="service-page">
         <div class="list-head">
             <span class="list-title">服务器实例</span>
-            <el-button size="mini" type="primary" @click="showAdd = true">新增实例</el-button>
+            <el-button size="mini" type="primary" v-permission="'instance.btn.add'" @click="showAdd = true">新增实例</el-button>
         </div>
         <el-row :gutter="16" class="card-wrap">
             <el-col :span="8" v-for="item in instances" :key="item.instance_id">
@@ -11,7 +11,7 @@
                          @click.native="goInstance(item)">
                     <div slot="header" class="card-header">
                         <span class="name">{{ item.name }}</span>
-                        <el-button size="mini" type="danger" @click.stop="delInstance(item)">删除</el-button>
+                        <el-button size="mini" type="danger" v-permission="'instance.btn.delete'" @click.stop="delInstance(item)">删除</el-button>
                     </div>
                     <div class="card-body">
                         <div class="row">
@@ -47,11 +47,11 @@
                                 <div style="display:flex; align-items:center; width:100%;">
                                     <span style="min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">{{ item.dict_name || item.dict_value }}</span>
                                     <span style="flex:1 1 auto; min-width:0; margin-left:8px; color:#8492a6; font-size:12px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">{{ item.dict_value }}</span>
-                                    <i class="el-icon-delete" style="flex:0 0 auto; margin-left:8px; color:#f56c6c; cursor:pointer;" title="删除该 JAVA 路径" @click.stop="delJavaPath(item.dict_id)"></i>
+                                    <i class="el-icon-delete" v-permission="'javaPath.btn.delete'" style="flex:0 0 auto; margin-left:8px; color:#f56c6c; cursor:pointer;" title="删除该 JAVA 路径" @click.stop="delJavaPath(item.dict_id)"></i>
                                 </div>
                             </el-option>
                         </el-select>
-                        <el-button size="small" type="primary" icon="el-icon-plus" @click="openJavaPathDialog">新建</el-button>
+                        <el-button size="small" type="primary" icon="el-icon-plus" v-permission="'javaPath.btn.add'" @click="openJavaPathDialog">新建</el-button>
                     </div>
                 </el-form-item>
                 <div class="mode-section">
@@ -86,7 +86,7 @@
                     <el-form-item v-else label="原始启动参数" required>
                         <el-input type="textarea" :rows="4" v-model="form.rawArgs" placeholder="java 之后的完整参数，例如：-Xms2500M -Xmx4G @libraries/net/minecraftforge/forge/1.20.1-47.4.0/win_args.txt nogui"></el-input>
                     </el-form-item>
-                    <el-form-item label="到期时间">
+                    <el-form-item label="到期时间" v-permission="'instance.btn.expire'">
                         <el-date-picker v-model="form.expireAt" type="datetime" value-format="yyyy-MM-dd HH:mm:ss" placeholder="为空表示不限制使用时间" size="small" style="width:100%"></el-date-picker>
                     </el-form-item>
                 </div>

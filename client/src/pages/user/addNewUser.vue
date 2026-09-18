@@ -26,10 +26,10 @@
 <script>
 export default {
     computed: {
-        // 平台管理员(tenant_id===0)可在新增用户时选择租户并分配到具体群组
+        // 平台管理员(身份 isPlatformAdmin)可在新增用户时选择租户并分配到具体群组
         isPlatformAdmin() {
             const info = this.$store.getters.GETUSERINFO
-            return info && info.tenant_id === 0
+            return !!(info && info.isPlatformAdmin)
         }
     },
     data() {
