@@ -33,7 +33,7 @@ export default {
         connect: function () {
             this.id = this.$socket.id
         },
-        wensc: function (res) {
+        mcpanel: function (res) {
             this.resultFilter(res)
         }
     },
@@ -48,6 +48,9 @@ export default {
             return str.replace(/[\n\r\s]/g, '')
         },
         resultFilter(res) {
+            // 文件管理/删除等进度事件（extractProgress/downloadProgress/deleteProgress）
+            // 通过同一 socket 连接下发，不应写入服务器控制台
+            if (res.type && res.type.endsWith('Progress')) return
             if (res.type == 'playerList') {
                 this.$store.commit('SETPLAYERS', res.data.map(item => {
                     return {

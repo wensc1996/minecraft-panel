@@ -39,7 +39,7 @@ export default {
     },
     methods: {
         async submitLogin() {
-            let personInfo = await this.post('wensc/login', this.accountInfo)
+            let personInfo = await this.post('api/login', this.accountInfo)
             if (personInfo.data.code == 0) {
                 this.afterLogin(personInfo.data.data)
             } else if (personInfo.data.code == 2) {
@@ -60,7 +60,7 @@ export default {
                 this.$message.warning('请选择分组')
                 return
             }
-            let personInfo = await this.post('wensc/login', {
+            let personInfo = await this.post('api/login', {
                 ...this.accountInfo,
                 tenantId: this.selectedTenantId
             })
@@ -77,7 +77,7 @@ export default {
         },
         afterLogin(user) {
             this.$store.commit('SETUSERINFO', user)
-            this.post('wensc/getRolePrivilege', { roleId: user.role_id }).then(privileges => {
+            this.post('api/getRolePrivilege', { roleId: user.role_id }).then(privileges => {
                 this.$store.commit('SETPRIVILEGES', privileges.data.data)
             })
             this.$router.push('/home/introduction')

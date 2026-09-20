@@ -118,6 +118,12 @@ const webpackConfig = merge(baseWebpackConfig, {
         from: path.resolve(__dirname, '../static'),
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
+      },
+      // 拷贝 monaco-editor 的 min/vs（含 worker 与语言定义）到 static/monaco/vs，
+      // 供编辑器在 /static/monaco/vs 下加载 Web Worker
+      {
+        from: path.resolve(__dirname, '../node_modules/monaco-editor/min/vs'),
+        to: path.resolve(config.build.assetsRoot, config.build.assetsSubDirectory, 'monaco/vs')
       }
     ])
   ]

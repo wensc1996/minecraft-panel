@@ -145,7 +145,7 @@ export default {
             return null
         },
         async loadInstances () {
-            let res = await this.get('wensc/server-instances', {})
+            let res = await this.get('api/server-instances', {})
             if (res.data.code === 0) {
                 this.instances = (res.data.data || []).map(i => ({ ...i, status: 0, onlineCount: 0 }))
                 if (this.currentInstanceId && !this.instances.find(i => String(i.instance_id) === String(this.currentInstanceId))) {
@@ -161,8 +161,8 @@ export default {
             await Promise.all(this.instances.map(async inst => {
                 try {
                     const [st, pl] = await Promise.all([
-                        this.get('wensc/serverStatus', { instanceId: inst.instance_id }),
-                        this.get('wensc/getOnlinePlayerList', { instanceId: inst.instance_id })
+                        this.get('api/serverStatus', { instanceId: inst.instance_id }),
+                        this.get('api/getOnlinePlayerList', { instanceId: inst.instance_id })
                     ])
                     inst.status = (st.data && st.data.code === 0) ? st.data.data : 0
                     const list = (pl.data && pl.data.code === 0) ? pl.data.data : []
@@ -202,7 +202,7 @@ export default {
             }
             const selJava = this.javaPaths.find(i => i.dict_value === this.form.javaPath)
             const javaDictId = selJava ? selJava.dict_id : ''
-            let res = await this.post('wensc/addInstance', {
+            let res = await this.post('api/addInstance', {
                 name: this.form.name,
                 javaPath: this.form.javaPath,
                 javaDictId: javaDictId,
@@ -225,7 +225,7 @@ export default {
         },
         async delInstance (row) {
             this.$confirm('确认删除该实例及其文件？', '提示', { type: 'warning' }).then(async () => {
-                let res = await this.post('wensc/deleteInstance', { instanceId: row.instance_id })
+                let res = await this.post('api/deleteInstance', { instanceId: row.instance_id })
                 if (res.data.code === 0) {
                     this.tip(1, '删除成功')
                     if (this.currentInstanceId == row.instance_id) this.$store.commit('SETINSTANCE', '')
@@ -237,7 +237,7 @@ export default {
         },
         async loadJavaPaths () {
             try {
-                let res = await this.post('wensc/dict/list', { dictType: 'java_path' })
+                let res = await this.post('api/dict/list', { dictType: 'java_path' })
                 if (res.data.code === 0) {
                     this.javaPaths = res.data.data || []
                 }
@@ -252,7 +252,7 @@ export default {
                 this.$message.warning('Java 路径必填')
                 return
             }
-            let res = await this.post('wensc/dict/add', {
+            let res = await this.post('api/dict/add', {
                 dictType: 'java_path',
                 dictValue: this.javaForm.dictValue,
                 dictName: this.javaForm.dictName || this.javaForm.dictValue
@@ -272,7 +272,7 @@ export default {
                     type: 'warning', confirmButtonText: '删除', cancelButtonText: '取消'
                 })
             } catch (e) { return }
-            let res = await this.post('wensc/dict/delete', { dictId })
+            let res = await this.post('api/dict/delete', { dictId })
             if (res.data.code === 0) {
                 this.tip(1, '删除成功')
                 await this.loadJavaPaths()

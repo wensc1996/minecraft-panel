@@ -54,7 +54,7 @@ export default {
     },
     methods: {
         async loadTenants() {
-            let res = await this.get('wensc/tenants')
+            let res = await this.get('api/tenants')
             if (res.data.code === 0) {
                 this.tenantList = res.data.data || []
             }
@@ -68,7 +68,7 @@ export default {
         },
         async getRoleList(tenantId) {
             const params = tenantId ? { tenantId } : {}
-            let res = await this.get('wensc/getRoleList', params)
+            let res = await this.get('api/getRoleList', params)
             this.roleList = res.data.data
         },
         async submitNewUser() {
@@ -92,7 +92,7 @@ export default {
                 this.tip(0, '请选择用户角色')
                 return
             }
-            let res = await this.post('wensc/addNewUser', this.newUser)
+            let res = await this.post('api/addNewUser', this.newUser)
             this.tip(res.data.code, res.data.msg)
         }
     }

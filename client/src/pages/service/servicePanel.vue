@@ -141,7 +141,7 @@
                         <PlayerFiles ref="playerFiles"></PlayerFiles>
                     </el-tab-pane>
                     <el-tab-pane label="文件管理" name="fileManage" v-if="hasPerm('cmd.tab.fileManage')">
-                        <FileManage ref="fileManage"></FileManage>
+                        <FileManage ref="fileManage" class="instance-file"></FileManage>
                     </el-tab-pane>
                 </el-tabs>
             </el-collapse-item>
@@ -241,7 +241,7 @@ export default {
                 this.$message.error('请先停止实例后再保存配置')
                 return
             }
-            let res = await this.post('wensc/updateGameDispose', {
+            let res = await this.post('api/updateGameDispose', {
                 instanceId: this.instanceId,
                 name: this.gameSetting.name,
                 gamePort: this.gameSetting.gamePort,
@@ -259,7 +259,7 @@ export default {
         },
         async loadJavaPaths() {
             try {
-                let res = await this.post('wensc/dict/list', { dictType: 'java_path' })
+                let res = await this.post('api/dict/list', { dictType: 'java_path' })
                 if (res.data.code === 0) this.javaPaths = res.data.data || []
             } catch (e) { /* 字典表可能尚未创建，忽略 */ }
         },
@@ -272,7 +272,7 @@ export default {
                 this.$message.warning('Java 路径必填')
                 return
             }
-            let res = await this.post('wensc/dict/add', {
+            let res = await this.post('api/dict/add', {
                 dictType: 'java_path',
                 dictValue: this.javaForm.dictValue,
                 dictName: this.javaForm.dictName || this.javaForm.dictValue
@@ -292,7 +292,7 @@ export default {
                     type: 'warning', confirmButtonText: '删除', cancelButtonText: '取消'
                 })
             } catch (e) { return }
-            let res = await this.post('wensc/dict/delete', { dictId })
+            let res = await this.post('api/dict/delete', { dictId })
             if (res.data.code === 0) {
                 this.tip(1, '删除成功')
                 await this.loadJavaPaths()
@@ -307,7 +307,7 @@ export default {
         },
         async getGameDispose() {
             if (!this.instanceId) return
-            let res = await this.post('wensc/getGameDispose', { instanceId: this.instanceId })
+            let res = await this.post('api/getGameDispose', { instanceId: this.instanceId })
             if (res.data.code == 0) {
                 const d = res.data.data
                 this.historyId = null
@@ -330,7 +330,7 @@ export default {
         },
         async loadDisposeHistory() {
             try {
-                let res = await this.post('wensc/disposeHistory/list', {})
+                let res = await this.post('api/disposeHistory/list', {})
                 if (res.data.code === 0) this.disposeHistoryList = res.data.data || []
             } catch (e) { /* 历史表可能尚未创建，忽略 */ }
         },
@@ -356,7 +356,7 @@ export default {
                     type: 'warning', confirmButtonText: '删除', cancelButtonText: '取消'
                 })
             } catch (e) { return }
-            let res = await this.post('wensc/disposeHistory/delete', { id })
+            let res = await this.post('api/disposeHistory/delete', { id })
             if (res.data.code === 0) {
                 this.$message.success('已删除历史配置')
                 await this.loadDisposeHistory()
@@ -366,7 +366,7 @@ export default {
         },
         async onHistoryPick(id) {
             if (!id) return
-            let res = await this.post('wensc/disposeHistory/detail', { id })
+            let res = await this.post('api/disposeHistory/detail', { id })
             if (res.data.code === 0) {
                 const cfg = typeof res.data.data.config === 'string' ? JSON.parse(res.data.data.config) : (res.data.data.config || {})
                 this.gameSetting = {
@@ -424,11 +424,11 @@ export default {
             this.$notify({ title: '成功', message: '关闭队伤成功', type: 'success' })
         },
         async getLocation() {
-            let res = await this.post('wensc/getLocationList', { instanceId: this.instanceId })
+            let res = await this.post('api/getLocationList', { instanceId: this.instanceId })
             this.coordinateTable = res.data.data
         },
         async getServerStatus() {
-            let res = await this.get('wensc/serverStatus', { instanceId: this.instanceId })
+            let res = await this.get('api/serverStatus', { instanceId: this.instanceId })
             if (res.data.code == 0) {
                 this.$store.commit('SETSERVERSTATUS', res.data.data)
             }
@@ -450,7 +450,7 @@ export default {
             this.recordInfo.playerId = this.$store.getters.GETUSERINFO.player_id
         },
         async startProcess() {
-            let res = await this.post('wensc/beginProcess', { instanceId: this.instanceId })
+            let res = await this.post('api/beginProcess', { instanceId: this.instanceId })
             if (res.data.code === 0) {
                 this.$notify({ title: '成功', message: res.data.msg, type: 'success' })
             } else {
@@ -462,11 +462,11 @@ export default {
             this.$notify({ title: '成功', message: '已发送关闭指令', type: 'success' })
         },
         async killProcess() {
-            let res = await this.post('wensc/killProcess', { instanceId: this.instanceId })
+            let res = await this.post('api/killProcess', { instanceId: this.instanceId })
             this.$notify({ title: '成功', message: '已发送强制关闭指令', type: 'success' })
         },
         async deleteLocation(index, row) {
-            let res = await this.post('wensc/deleteLocation', { instanceId: this.instanceId, locationId: row.location_id })
+            let res = await this.post('api/deleteLocation', { instanceId: this.instanceId, locationId: row.location_id })
             if (res.data.code == 0) {
                 this.$notify({ title: '成功', message: res.data.msg, type: 'success' })
                 this.getLocation()
@@ -492,7 +492,7 @@ export default {
         '$store.state.currentPosition'(val) {
             val.remarks = 2
             val.name = this.recordInfo.remark
-            this.post('wensc/addLocation', { instanceId: this.instanceId, ...val }).then((res) => {
+            this.post('api/addLocation', { instanceId: this.instanceId, ...val }).then((res) => {
                 if (res.status == 200 && res.data.code == 0) {
                     this.recordInfo.playerId = this.$store.getters.GETUSERINFO.player_id
                     this.getLocation()
@@ -504,6 +504,9 @@ export default {
 </script>
 <style lang="less">
 div[servicePanel] {
+    .instance-file .file-body{
+        max-height: calc(50vh - 80px);
+    }
     .el-form-item{
         margin-bottom: 15px;
     }

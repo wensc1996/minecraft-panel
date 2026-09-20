@@ -1,16 +1,17 @@
 <template>
-    <div>
+    <div FileManage>
         <template v-if="ready">
             <div class="file-body">
                 <div class="file-toolbar">
                     <el-button type="primary" @click="dialogTableVisible=!dialogTableVisible" dialogTableVisible="dialogTableVisible" size="small" v-permission="permPrefix + '.create'">创建目录/上传</el-button>
                     <el-button type="danger" @click="deleteFileOrDirectory" size="small" v-permission="permPrefix + '.delete'">删除</el-button>
-                    <el-button type="success" @click="packageDownload" size="small" v-permission="permPrefix + '.batchDownload'">打包下载</el-button>
+                    <el-button type="success" @click="packageDownload()" size="small" v-permission="permPrefix + '.batchDownload'">打包下载</el-button>
                 </div>
                 <div class="file-tree">
                     <tree
                         :data="fileTree"
                         :show-checkbox="true"
+                        :highlight-current="true"
                         :props="defaultProps"
                         node-key="id"
                         ref="tree"
@@ -20,10 +21,10 @@
                     ></tree>
                 </div>
             </div>
-            <el-dialog title="文件上传" :visible.sync="dialogTableVisible">
+            <el-dialog title="文件上传" :visible.sync="dialogTableVisible" width="700px" top="8vh">
                 <fileUpload :scope="scope" :fileTree="fileTree" @getFileTree="getFileTree" :dialogTableVisible="dialogTableVisible"/>
             </el-dialog>
-            <el-dialog title="处理进度" :visible.sync="progress.visible" width="420px" :close-on-click-modal="false" :show-close="false">
+            <el-dialog title="处理进度" :visible.sync="progress.visible" width="420px" :close-on-click-modal="false" :show-close="true" @close="onProgressClose">
                 <el-progress
                     :percentage="progress.percent"
                     :indeterminate="progress.total === 0"
@@ -34,18 +35,24 @@
                     <span v-else-if="progress.type === 'extract'">已解压 {{ progress.done }} / {{ progress.total }} 项</span>
                     <span v-else>已处理 {{ progress.done }} / {{ progress.total }} 项</span>
                 </div>
+                <span slot="footer" class="dialog-footer">
+                    <el-button size="small" @click="progress.visible = false">关闭</el-button>
+                </span>
             </el-dialog>
+            <file-editor :visible.sync="editorVisible" :node="editorNode" :scope="scope" @saved="getFileTree" />
         </template>
         <el-empty v-else :description="emptyText"></el-empty>
     </div>
 </template>
 <script>
 import fileUpload from './fileUpload'
+import fileEditor from './fileEditor'
 import tree from '@/components/tree'
 export default {
     components: {
         tree,
-        fileUpload
+        fileUpload,
+        fileEditor
     },
     props: {
         // 'instance'：按当前选中实例 work_path；'tenant'：按租户 storage_path（顶级文件管理）
@@ -57,6 +64,8 @@ export default {
     data() {
         return {
             dialogTableVisible: false,
+            editorVisible: false,
+            editorNode: null,
             fileTree: [],
             defaultProps: {
                 children: 'children',
@@ -82,6 +91,7 @@ export default {
                 const canDelete = self.checkEnabled(self.permPrefix + '.delete');
                 const canRename = self.checkEnabled(self.permPrefix + '.rename');
                 const canExtract = self.checkEnabled(self.permPrefix + '.create'); // 解压会写入文件，复用“创建/上传”权限
+                const canEdit = self.checkEnabled(self.permPrefix + '.edit'); // 编辑文件使用独立权限项
                 const ops = [];
                 if (canDownload) {
                     ops.push(h('span', {
@@ -89,6 +99,13 @@ export default {
                         attrs: { title: isFile ? '下载' : '打包下载' },
                         on: { click: (e) => { e.stopPropagation(); if (isFile) self.downloadSingle(data); else self.packageDownload([data]); } }
                     }, [h('i', { class: isFile ? 'el-icon-download' : 'el-icon-folder-checked' })]));
+                }
+                if (isFile && canEdit) {
+                    ops.push(h('span', {
+                        class: 'node-op',
+                        attrs: { title: '编辑' },
+                        on: { click: (e) => { e.stopPropagation(); self.editFile(data); } }
+                    }, [h('i', { class: 'el-icon-edit-outline' })]));
                 }
                 if (isZip && canExtract) {
                     ops.push(h('span', {
@@ -138,7 +155,7 @@ export default {
         connect() {
             this.socketId = this.$socket.id
         },
-        wensc(res) {
+        mcpanel(res) {
             if (!res || !res.type) return
             const typeMap = { deleteProgress: 'delete', downloadProgress: 'download', extractProgress: 'extract' }
             const t = typeMap[res.type]
@@ -165,6 +182,11 @@ export default {
         // 打开进度弹窗（type: delete/download）
         openProgress(type) {
             this.progress = { visible: true, type, done: 0, total: 0, percent: 0, label: '' }
+        },
+        // 用户手动关闭进度弹窗：仅隐藏弹窗，后台任务（如解压）仍会继续执行；
+        // 后续若收到完成事件，mcpanel 中再次置 visible=false 不会出错
+        onProgressClose() {
+            this.progress.visible = false
         },
         // 字节数格式化（B/KB/MB/GB/TB）
         formatBytes(bytes) {
@@ -196,7 +218,7 @@ export default {
             }).then(async ({ value }) => {
                 let oldPath = node.fullPath
                 let newPath = node.fullPath.replace(new RegExp(`${node.name}`), value)
-                let res = await this.post('wensc/renameDirectoryOrFile', {
+                let res = await this.post('api/renameDirectoryOrFile', {
                     ...this.scopeOpts(),
                     oldPath,
                     newPath
@@ -216,7 +238,7 @@ export default {
             }
             this.$confirm('此操作将永久删除所选文件或目录, 是否继续?', '提示', { type: 'warning' }).then(async () => {
                 this.openProgress('delete')
-                let res = await this.post('wensc/deleteFileOrDirectory', { ...this.scopeOpts(), list: nodes, socketId: this.socketId || (this.$socket && this.$socket.id) || '' })
+                let res = await this.post('api/deleteFileOrDirectory', { ...this.scopeOpts(), list: nodes, socketId: this.socketId || (this.$socket && this.$socket.id) || '' })
                 this.progress.visible = false
                 if (res.data.code == 0) {
                     this.$notify({ title: '成功', message: '删除成功', type: 'success' })
@@ -237,6 +259,10 @@ export default {
         deleteSingle(node) {
             this.deleteNodes([node])
         },
+        editFile(node) {
+            this.editorNode = node
+            this.editorVisible = true
+        },
         async extractZip(node) {
             if (!this.checkEnabled(this.permPrefix + '.create')) {
                 this.$notify({ title: '警告', message: '无解压权限（需要“创建/上传”权限）', type: 'warning' })
@@ -248,7 +274,7 @@ export default {
             }
             this.openProgress('extract')
             try {
-                let res = await this.post('wensc/extractZip', {
+                let res = await this.post('api/extractZip', {
                     target: node.fullPath,
                     ...this.scopeOpts(),
                     socketId: this.socketId || (this.$socket && this.$socket.id) || ''
@@ -266,7 +292,9 @@ export default {
             }
         },
         async packageDownload(nodes) {
-            if (!nodes) nodes = this.$refs.tree.getCheckedNodes();
+            if (!Array.isArray(nodes) || !nodes.length) {
+                nodes = this.$refs.tree.getCheckedNodes();
+            }
             if (!nodes.length) {
                 this.$message.warning('请先勾选要下载的文件或目录');
                 return;
@@ -276,7 +304,7 @@ export default {
             try {
                 const res = await this.$axios({
                     method: 'post',
-                    url: 'wensc/packageDownload',
+                    url: 'api/packageDownload',
                     data: { list, ...this.scopeOpts(), socketId: this.socketId || (this.$socket && this.$socket.id) || '' },
                     responseType: 'blob'
                 });
@@ -325,7 +353,7 @@ export default {
             this.openProgress('download')
             this.$axios({
                 method: 'get',
-                url: 'wensc/download',
+                url: 'api/download',
                 params: { target: node.fullPath, ...this.scopeOpts() },
                 responseType: 'blob',
                 onDownloadProgress: (e) => {
@@ -341,7 +369,7 @@ export default {
             }).catch(() => { this.progress.visible = false })
         },
         async getFileTree() {
-            let res = await this.post('wensc/getDirectoryOrFile', { filed: 1, ...this.scopeOpts() })
+            let res = await this.post('api/getDirectoryOrFile', { filed: 1, ...this.scopeOpts() })
             if (res.data.code == 0) {
                 this.fileTree = res.data.data
                 if (this.fileTree.length > 0) {
@@ -365,6 +393,12 @@ export default {
 }
 </script>
 <style lang="less">
+    div[FileManage]{
+        height: 100%;
+        .file-body{
+            height: 100%;
+        }
+    }
     .el-dialog__body{
         padding: 10px 30px;
     }
@@ -391,12 +425,22 @@ export default {
         border-radius: 6px;
         padding: 6px 4px;
         background: #fff;
+        overflow:auto;
+        
     }
     .file-tree .el-tree-node__content {
         position: relative;
         height: 28px;
         line-height: 28px;
         padding-right: 70px; /* 为右侧悬浮操作层留出空间，避免文字与图标重叠 */
+        border-radius: 6px;
+        transition: background .15s ease;
+    }
+    .file-tree .el-tree-node__content:hover {
+        background: #f5f7fa;
+    }
+    .file-tree .el-tree-node.is-current > .el-tree-node__content {
+        background: #ecf5ff;
     }
     .file-tree .el-tree-node {
         margin: 2px 0; /* 节点之间增加间距，不再拥挤 */

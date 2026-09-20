@@ -56,6 +56,14 @@ class DirectoryTree extends Controller {
         const { ctx } = this;
         ctx.body = await this.ctx.service.directoryTree.extractZip(ctx.request.body);
     }
+    async readFile() {
+        const { ctx } = this;
+        ctx.body = await this.ctx.service.directoryTree.readFile(ctx.request.body);
+    }
+    async writeFile() {
+        const { ctx } = this;
+        ctx.body = await this.ctx.service.directoryTree.writeFile(ctx.request.body);
+    }
     async packageDownload() {
         const { ctx } = this;
         const result = await this.ctx.service.directoryTree.packageDownload(ctx.request.body);

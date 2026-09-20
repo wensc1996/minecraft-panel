@@ -154,7 +154,9 @@ INSERT INTO `permission` (`perm_id`, `parent_id`, `perm_type`, `perm_key`, `perm
 (140, 2, 'tab', 'cmd.tab.onlinePlayer', '在线玩家', 'tenant', 7),
 (141, 140, 'button', 'cmd.onlinePlayer.btn.kick', '踢出服务器', 'tenant', 1),
 (142, 140, 'button', 'cmd.onlinePlayer.btn.randomTeleport', '随机传送', 'tenant', 2),
-(143, 140, 'button', 'cmd.onlinePlayer.btn.reborn', '重生', 'tenant', 3) ON DUPLICATE KEY UPDATE perm_id = perm_id;
+(143, 140, 'button', 'cmd.onlinePlayer.btn.reborn', '重生', 'tenant', 3),
+(144, 11, 'button', 'fileManage.btn.edit', '编辑文件', 'tenant', 6),
+(145, 104, 'button', 'cmd.fileManage.btn.edit', '编辑文件', 'tenant', 7) ON DUPLICATE KEY UPDATE perm_id = perm_id;
 
 -- ----------------------------
 -- Table structure for privilege

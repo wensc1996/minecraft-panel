@@ -8,7 +8,7 @@ module.exports = {
     assetsPublicPath: '/',
     // 配置反向代理，解决跨域问题
     proxyTable: {
-      '/wensc': {
+      '/api': {
           // 此处的写法，目的是为了 将 /api 替换成 https://www.baidu.com/
           target: 'http://127.0.0.1:7002',
           // 允许跨域
@@ -16,7 +16,7 @@ module.exports = {
           // ws: true,
           secure: false,
           pathRewrite: {
-              '^/wensc': '/'
+              '^/api': '/'
           }
       },
       '/socket.io':{

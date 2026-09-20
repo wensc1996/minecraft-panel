@@ -148,7 +148,7 @@ function getRuntime(instanceId) {
 
 ### 6.2 房间按实例拆分 —— 必须
 
-原代码所有 `emit` 写死 `room = 'wensc'`，多实例会互相泄露控制台/玩家/状态。改为：
+原代码所有 `emit` 写死 `room = 'mcpanel'`，多实例会互相泄露控制台/玩家/状态。改为：
 
 ```js
 function instanceRoom(instanceId) { return 'instance_' + instanceId; }
@@ -156,8 +156,8 @@ function instanceRoom(instanceId) { return 'instance_' + instanceId; }
 
 - 所有 `to(room)` → `to(instanceRoom(instanceId))`；
 - `joinRoom(instanceId)`：`ctx.socket.join(instanceRoom(instanceId))`，且**必须校验该实例归属当前 `session.tenantId`**（防越权进入他人实例）；
-- **客户端同样以实例 id 为准**：`joinRoom` 必须携带 `instanceId`（来自当前选中的实例卡片），`thread`（发指令）也需携带 `instanceId`；服务端据此把 socket 加入 `instance_<id>` 房间并将指令写入该实例 `runtimes.get(id).java.stdin`。消息事件名（如 `wensc`）保持不变，仅按房间隔离；
-- **room 命名铁律**：房间名唯一基准为 `instance_<instance_id>`，服务端推送与客户端收发统一使用该房间；注意 `wensc` 此处仅是历史 HTTP 路由前缀 / socket 消息事件名，不可再用作房间名。
+- **客户端同样以实例 id 为准**：`joinRoom` 必须携带 `instanceId`（来自当前选中的实例卡片），`thread`（发指令）也需携带 `instanceId`；服务端据此把 socket 加入 `instance_<id>` 房间并将指令写入该实例 `runtimes.get(id).java.stdin`。消息事件名（如 `mcpanel`）保持不变，仅按房间隔离；
+- **room 命名铁律**：房间名唯一基准为 `instance_<instance_id>`，服务端推送与客户端收发统一使用该房间；注意 `mcpanel` 此处仅是历史 HTTP 路由前缀 / socket 消息事件名，不可再用作房间名。
 - `initialJava` 闭包捕获 `instanceId`，使 `java.stdout` 回调推到对应实例房间；
 - **每个实例各自的 `messageQueue` + 各自的推送定时器**（放在 `runtimes.get(instanceId)` 中），不可再用全局单一 `setInterval`；
 - 不必再按功能（控制台/状态/玩家）拆房间，消息仍用 `type` 字段区分。
@@ -210,7 +210,7 @@ function instanceRoom(instanceId) { return 'instance_' + instanceId; }
 1. 登录后按 `session.tenantId` 路由到"平台后台"或"租户后台"；
 2. 收到 `code: 2` 时弹出"选择登录分组"，选完带 `tenantId` 重新登录；
 3. 租户后台"控制面板"菜单展示**多个服务器实例卡片**（来自 `GET /server-instances`），点击某实例进入该实例的控制台 / 状态 / 指令页；**当前选中实例的 `instanceId` 作为后续所有 socket 通信的基准**；
-4. **socket 房间以 instanceId 为准（joinRoom）**：进入实例页时 `emit('joinRoom', { instanceId })`（前端不传 tenantId，仅传来自卡片点击的 `instanceId`）；服务端校验该实例归属当前租户后将其加入 `instance_<id>` 房间；客户端监听消息事件（如 `wensc`）即可收到该房间推送，天然按实例隔离；
+4. **socket 房间以 instanceId 为准（joinRoom）**：进入实例页时 `emit('joinRoom', { instanceId })`（前端不传 tenantId，仅传来自卡片点击的 `instanceId`）；服务端校验该实例归属当前租户后将其加入 `instance_<id>` 房间；客户端监听消息事件（如 `mcpanel`）即可收到该房间推送，天然按实例隔离；
 5. **发指令以 instanceId 为准（thread）**：所有指令（`cmdPanel` / `servicePanel` / `quickOperation` 等）统一 `emit('thread', { instanceId, cmd })`，必须携带 `instanceId`，服务端据此写入对应实例 `runtimes.get(id).java.stdin`；
 6. 启停 / 指令 / 日志面板只针对当前实例，且服务端校验该实例属于当前租户。
 7. **控制面板 + 实例操作面板**：

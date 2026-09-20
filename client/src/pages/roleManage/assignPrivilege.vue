@@ -66,12 +66,12 @@ export default {
         },
         async getPrivilegeList() {
             if (this.privilege.length == 0) {
-                let privilegeList = await this.get('wensc/getPrivilegeList')
+                let privilegeList = await this.get('api/getPrivilegeList')
                 if (privilegeList.data.code == 0) {
                     this.privilege = privilegeList.data.data
                 }
             }
-            let rolePrivilege = await this.post('wensc/getRolePrivilege', {roleId: this.roleId})
+            let rolePrivilege = await this.post('api/getRolePrivilege', {roleId: this.roleId})
             this.$refs.tree.setCheckedKeys(rolePrivilege.data.data.map(item => {
                 return item.perm_id
             }))
@@ -81,7 +81,7 @@ export default {
                 roleId: this.roleId,
                 privilgeList: this.$refs.tree.getCheckedKeys()
             }
-            let res = await this.post('wensc/updatePrivilege', param)
+            let res = await this.post('api/updatePrivilege', param)
             if (res.data.code == 0) {
                 this.$notify({
                     title: '成功',

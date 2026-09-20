@@ -107,7 +107,7 @@ export default {
     },
     methods: {
         async load () {
-            let res = await this.get('wensc/dashboard')
+            let res = await this.get('api/dashboard')
             if (res.data.code === 0) {
                 this.summary = res.data.data.summary
                 this.tenants = res.data.data.list
@@ -116,7 +116,7 @@ export default {
             }
         },
         async toggleStatus (row) {
-            let res = await this.post('wensc/updateTenantStatus', {
+            let res = await this.post('api/updateTenantStatus', {
                 tenantId: row.tenant_id,
                 status: row.status === 1 ? 0 : 1
             })
@@ -132,7 +132,7 @@ export default {
                 this.$message.warning('租户名称/管理员账号/密码必填')
                 return
             }
-            let res = await this.post('wensc/addTenant', this.form)
+            let res = await this.post('api/addTenant', this.form)
             if (res.data.code === 0) {
                 this.tip(1, '开通租户成功')
                 this.dialogVisible = false
@@ -157,7 +157,7 @@ export default {
                 this.$message.warning('租户名称不能为空')
                 return
             }
-            let res = await this.post('wensc/updateTenant', {
+            let res = await this.post('api/updateTenant', {
                 tenantId: this.editForm.tenantId,
                 tenantName: this.editForm.tenantName,
                 storagePath: this.editForm.storagePath || '',

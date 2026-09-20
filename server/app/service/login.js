@@ -29,6 +29,13 @@ class LoginService extends Service {
         // tenantId 恒来自库（账号全局唯一），绝不信前端提交，确保进入正确租户
         const isPlatformAdmin = (user.tenant_id === 0)
         user.isPlatformAdmin = isPlatformAdmin
+        // 附带租户名称，供前端右上角展示
+        let tenantName = '平台'
+        if (user.tenant_id && user.tenant_id !== 0) {
+            const tRows = await db.query('select tenant_name from tenant where tenant_id = ?', [user.tenant_id])
+            if (tRows && tRows.length) tenantName = tRows[0].tenant_name
+        }
+        user.tenant_name = tenantName
         ctx.session.userId = user.user_id
         ctx.session.tenantId = user.tenant_id
         ctx.session.identityTenantId = user.tenant_id

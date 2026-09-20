@@ -1,9 +1,6 @@
 <template>
     <div>
         <el-form :model="passwordForm" label-width="100px">
-            <el-form-item label="旧密码">
-                <el-input v-model="passwordForm.oldPassword" type="password"></el-input>
-            </el-form-item>
             <el-form-item label="新密码">
                 <el-input v-model="passwordForm.password" type="password"></el-input>
             </el-form-item>
@@ -19,7 +16,6 @@ export default {
         return {
             passwordForm: {
                 userId: '',
-                oldPassword: '',
                 password: '',
                 repassword: ''
             }
@@ -40,7 +36,7 @@ export default {
                     type: 'warning'
                 })
             } else {
-                let res = await this.post('wensc/updatePassword', this.passwordForm)
+                let res = await this.post('api/updatePassword', this.passwordForm)
                 if (res.data.code == 0) {
                     this.$notify({
                         title: '成功',

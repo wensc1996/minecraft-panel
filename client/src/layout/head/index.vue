@@ -19,18 +19,23 @@
                     </el-option>
                 </el-select>
                 <span v-if="isPlatformAdmin" class="current-tenant-tip">当前：{{ currentTenantName }}</span>
+                <user-center></user-center>
                 <el-button @click="logout" class="logout-btn">退出登录</el-button>
             </div>
         </div>
     </div>
 </template>
 <script>
+import userCenter from './userCenter'
 export default {
     data () {
         return {
             tenantList: [],
             currentTenant: 0
         }
+    },
+    components: {
+        userCenter
     },
     computed: {
         isPlatformAdmin() {
@@ -51,18 +56,18 @@ export default {
     methods: {
         async loadTenants() {
             try {
-                const res = await this.get('wensc/tenants')
+                const res = await this.get('api/tenants')
                 if (res.data && res.data.code === 0) this.tenantList = res.data.data || []
             } catch (e) {}
         },
         async onSwitchTenant(val) {
-            const res = await this.post('wensc/switchTenant', { tenantId: val })
+            const res = await this.post('api/switchTenant', { tenantId: val })
             if (res.data && res.data.code === 0) {
                 const info = this.$store.getters.GETUSERINFO
                 info.tenant_id = Number(val)
                 this.$store.commit('SETUSERINFO', info)
                 // 切换作用域后重新拉取权限（平台管理员权限恒为全部），并清空当前实例态
-                this.post('wensc/getRolePrivilege', { roleId: info.role_id }).then(privileges => {
+                this.post('api/getRolePrivilege', { roleId: info.role_id }).then(privileges => {
                     this.$store.commit('SETPRIVILEGES', privileges.data.data)
                     this.$store.commit('SETINSTANCE', '')
                     this.$router.push('/home/introduction')
@@ -74,7 +79,7 @@ export default {
             }
         },
         async logout() {
-            let res = await this.post('wensc/logout', {})
+            let res = await this.post('api/logout', {})
             if(res.data.code == 0) {
                 this.$router.push('/login')
             }

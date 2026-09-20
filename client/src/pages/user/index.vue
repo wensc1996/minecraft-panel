@@ -12,6 +12,10 @@
         label="用户ID">
         </el-table-column>
         <el-table-column
+        prop="account"
+        label="账户ID">
+        </el-table-column>
+        <el-table-column
         prop="player_id"
         label="游戏ID">
         </el-table-column>
@@ -94,7 +98,7 @@ export default {
                 inputPattern: /\S/,
                 inputErrorMessage: '游戏ID不能为空'
             }).then(async ({ value }) => {
-                let res = await this.post('wensc/updatePlayerId', {
+                let res = await this.post('api/updatePlayerId', {
                     userId: item.user_id,
                     playerId: value
                 })
@@ -114,7 +118,7 @@ export default {
         async handleDelete(item) {
             let _this = this
             this.$confirm('确认删除？', '提示').then((res) => {
-                this.post('wensc/deleteUser', {
+                this.post('api/deleteUser', {
                     userId: item.user_id
                 }).then(ress => {
                     _this.tip(ress.data.code, ress.data.msg)
@@ -137,7 +141,7 @@ export default {
             const isPlatformAdmin = !!(info && info.isPlatformAdmin)
             const curTenant = (info && info.tenant_id) || 0
             const params = (isPlatformAdmin && curTenant) ? { tenantId: curTenant } : {}
-            let res = await this.get('wensc/getUserList', params)
+            let res = await this.get('api/getUserList', params)
             if (res.data.code == 0) {
                 this.userList = res.data.data
             }

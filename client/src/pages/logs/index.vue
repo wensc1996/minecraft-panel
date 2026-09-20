@@ -11,9 +11,9 @@
             >
             </el-table-column>
             <el-table-column
-                prop="user_id"
-                label="用户ID"
-                width="100"
+                prop="account_id"
+                label="账户ID"
+                width="120"
             >
             </el-table-column>
             <el-table-column
@@ -74,7 +74,7 @@ export default {
             this.getLogList()
         },
         async getLogList() {
-            let res = await this.post('wensc/getLogList', {
+            let res = await this.post('api/getLogList', {
                 current: this.current,
                 pageSize: this.pageSize
             })
@@ -91,7 +91,7 @@ export default {
             this.dialogVisible = false
         },
         async deleteLog(row) {
-            let res = await this.post('wensc/deleteLog', {
+            let res = await this.post('api/deleteLog', {
                 logId: row.log_id
             })
             if (res.data.code == 0) {

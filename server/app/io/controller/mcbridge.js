@@ -68,10 +68,10 @@ class DefaultController extends Controller {
         }
         if (/Done \(\S+s\)\!/.test(res)) {
             rt.serverStatus = 2;
-            ctx.app.io.of('/').to(room).emit('wensc', { type: 'serverStatus', data: rt.serverStatus });
+            ctx.app.io.of('/').to(room).emit('mcpanel', { type: 'serverStatus', data: rt.serverStatus });
         }
         if (/That player cannot be found|无法找到该玩家/.test(res)) {
-            ctx.app.io.of('/').to(room).emit('wensc', { type: 'notFound', data: '' });
+            ctx.app.io.of('/').to(room).emit('mcpanel', { type: 'notFound', data: '' });
         }
         const spawnPointMatch = res.match(/Set (\S+)'s spawn point to|将(\S+)的出生点设置到/);
         if (spawnPointMatch) {
@@ -79,23 +79,23 @@ class DefaultController extends Controller {
             const coordMatch = res.match(/(-?\d+, -?\d+, -?\d+)/) || res.match(/(-?\d+，-?\d+，-?\d+)/);
             if (coordMatch && coordMatch[1]) {
                 const coordinate = this.trimBlank(coordMatch[1]).replace(/，/g, ',');
-                ctx.app.io.of('/').to(room).emit('wensc', { type: 'spawnPoint', data: { playerId, coordinate } });
+                ctx.app.io.of('/').to(room).emit('mcpanel', { type: 'spawnPoint', data: { playerId, coordinate } });
             }
         }
         const loginPlayer = res.match(/(\S+)\[\/\S+\] logged in with entity/);
         if (loginPlayer) {
             rt.playerList.push(loginPlayer[1]);
-            ctx.app.io.of('/').to(room).emit('wensc', { type: 'playerList', data: rt.playerList });
+            ctx.app.io.of('/').to(room).emit('mcpanel', { type: 'playerList', data: rt.playerList });
         }
         const logoutPlayer = res.match(/(\S+) lost connection/);
         if (logoutPlayer) {
             rt.playerList = rt.playerList.filter(item => item !== logoutPlayer[1]);
-            ctx.app.io.of('/').to(room).emit('wensc', { type: 'playerList', data: rt.playerList });
+            ctx.app.io.of('/').to(room).emit('mcpanel', { type: 'playerList', data: rt.playerList });
         }
         const kickoutPlayer = res.match(/把 (\S+) 从游戏中踢出/);
         if (kickoutPlayer) {
             rt.playerList = rt.playerList.filter(item => item !== kickoutPlayer[1]);
-            ctx.app.io.of('/').to(room).emit('wensc', { type: 'playerList', data: rt.playerList });
+            ctx.app.io.of('/').to(room).emit('mcpanel', { type: 'playerList', data: rt.playerList });
         }
         rt.messageQueue.push(res);
         rt.messageHistory.push(res);
@@ -144,18 +144,18 @@ class DefaultController extends Controller {
         rt.java = spawn(config.java_path, javaArgs, { cwd: config.work_path });
         // 每次启动先重置在线玩家列表，避免上一次运行的残留玩家显示在 UI 上
         rt.playerList = [];
-        ctx.app.io.of('/').to(room).emit('wensc', { type: 'playerList', data: rt.playerList });
+        ctx.app.io.of('/').to(room).emit('mcpanel', { type: 'playerList', data: rt.playerList });
         rt.java.stdout.on('data', (data) => this.handleMessage(ctx, data, rt));
         rt.java.stderr.on('data', (data) => this.handleMessage(ctx, data, rt));
         rt.java.on('close', () => {
             rt.playerList = [];
-            ctx.app.io.of('/').to(room).emit('wensc', { type: 'playerList', data: rt.playerList });
+            ctx.app.io.of('/').to(room).emit('mcpanel', { type: 'playerList', data: rt.playerList });
             rt.java = null;
             rt.serverStatus = 0;
-            ctx.app.io.of('/').to(room).emit('wensc', { type: 'serverStatus', data: rt.serverStatus });
+            ctx.app.io.of('/').to(room).emit('mcpanel', { type: 'serverStatus', data: rt.serverStatus });
         });
         rt.serverStatus = 1;
-        ctx.app.io.of('/').to(room).emit('wensc', { type: 'serverStatus', data: rt.serverStatus });
+        ctx.app.io.of('/').to(room).emit('mcpanel', { type: 'serverStatus', data: rt.serverStatus });
         return new Response({ code: 0, msg: '已执行启动命令', data: '' });
     }
 
@@ -192,12 +192,12 @@ class DefaultController extends Controller {
                     const sendQueue = rt.messageQueue.length >= messageSplice
                         ? rt.messageQueue.splice(0, messageSplice)
                         : rt.messageQueue.splice(0, rt.messageQueue.length);
-                    ctx.app.io.of('/').to(room).emit('wensc', { type: 'console', data: sendQueue });
+                    ctx.app.io.of('/').to(room).emit('mcpanel', { type: 'console', data: sendQueue });
                 }
             }, 1000);
         }
-        ctx.app.io.of('/').to(room).emit('wensc', { type: 'serverStatus', data: rt.serverStatus });
-        ctx.app.io.of('/').to(room).emit('wensc', { type: 'playerList', data: rt.playerList });
+        ctx.app.io.of('/').to(room).emit('mcpanel', { type: 'serverStatus', data: rt.serverStatus });
+        ctx.app.io.of('/').to(room).emit('mcpanel', { type: 'playerList', data: rt.playerList });
         // 首次进入：把已产生的历史控制台消息回推给当前 socket，避免与定时器重复推送未 flush 的 messageQueue
         if (ctx.socket) {
             const tail = rt.messageQueue.length;
@@ -205,7 +205,7 @@ class DefaultController extends Controller {
                 ? rt.messageHistory.slice(0, rt.messageHistory.length - tail)
                 : rt.messageHistory.slice();
             if (history.length) {
-                ctx.socket.emit('wensc', { type: 'console', data: history.reverse() });
+                ctx.socket.emit('mcpanel', { type: 'console', data: history.reverse() });
             }
         }
         ctx.body = new Response({ code: 0, msg: '加入房间成功', data: '' });
@@ -239,7 +239,7 @@ class DefaultController extends Controller {
         if (rt && rt.java) {
             rt.java.kill('SIGINT');
             rt.playerList = [];
-            ctx.app.io.of('/').to('instance_' + instanceId).emit('wensc', { type: 'playerList', data: rt.playerList });
+            ctx.app.io.of('/').to('instance_' + instanceId).emit('mcpanel', { type: 'playerList', data: rt.playerList });
             ctx.body = new Response({ code: 0, msg: '进程关闭成功', data: '' });
         } else {
             ctx.body = new Response({ code: 0, msg: '进程已结束', data: '' });

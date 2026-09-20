@@ -64,7 +64,7 @@ export default {
             this.$socket.emit('thread', { instanceId: this.instanceId, cmd: `/kick ${row.name}` })
         },
         async getPlayerList() {
-            let res = await this.get('wensc/getOnlinePlayerList', { instanceId: this.instanceId })
+            let res = await this.get('api/getOnlinePlayerList', { instanceId: this.instanceId })
             if (res.data.code === 0) {
                 this.players = res.data.data.map(item => {
                     return { name: item }

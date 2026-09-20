@@ -2,6 +2,7 @@ const Service = require('egg').Service;
 const Response = require('../../src/response')
 const path = require('path');
 const fs = require('fs');
+const iconv = require('iconv-lite');
 const Logs = require('../../src/logger')
 const Logger = new Logs()
 const db = require('../../src/mysql/connection')
@@ -155,7 +156,7 @@ class DirectoryTree extends Service {
                     if (pct === lastPct && !msg) return;
                     lastPct = pct;
                     try {
-                        this.ctx.app.io.of('/').to(socketId).emit('wensc', {
+                        this.ctx.app.io.of('/').to(socketId).emit('mcpanel', {
                             type: 'deleteProgress',
                             data: { done, total, msg: msg || '' }
                         });
@@ -209,7 +210,7 @@ class DirectoryTree extends Service {
                     if (pct === lastDlPct && !force) return;
                     lastDlPct = pct;
                     try {
-                        this.ctx.app.io.of('/').to(socketId).emit('wensc', {
+                        this.ctx.app.io.of('/').to(socketId).emit('mcpanel', {
                             type: 'downloadProgress',
                             data: { done: processedBytes, total }
                         });
@@ -284,7 +285,7 @@ class DirectoryTree extends Service {
             }
         });
     }
-    // 解压 zip 到同级目录（以 zip 文件名命名的文件夹，避免覆盖已有目录），通过 socket 推送解压进度；含 zip 目录穿越防护
+    // 解压 zip 到压缩包所在的当前目录（不额外建子目录），通过 socket 推送解压进度；含 zip 目录穿越防护
     extractZip(options) {
         return new Promise(async (resolve) => {
             try {
@@ -305,14 +306,7 @@ class DirectoryTree extends Service {
                 if (!entries.length) {
                     return resolve(new Response({ code: -1, msg: '压缩包为空', data: '' }));
                 }
-                const dir = path.dirname(zipPath);
-                const base = path.basename(zipPath, path.extname(zipPath));
-                let destDir = path.join(dir, base);
-                let idx = 1;
-                while (fs.existsSync(destDir)) {
-                    destDir = path.join(dir, base + '_' + idx);
-                    idx++;
-                }
+                const destDir = path.dirname(zipPath); // 直接解压到压缩包所在目录，不额外建以压缩包名命名的子目录
                 if (!withinRoot(destDir, root)) {
                     return resolve(new Response({ code: -1, msg: '解压目标路径越权', data: '' }));
                 }
@@ -334,7 +328,7 @@ class DirectoryTree extends Service {
                     if (pct === lastPct && !msg) return;
                     lastPct = pct;
                     try {
-                        this.ctx.app.io.of('/').to(socketId).emit('wensc', {
+                        this.ctx.app.io.of('/').to(socketId).emit('mcpanel', {
                             type: 'extractProgress',
                             data: { done, total, msg: msg || '' }
                         });
@@ -373,6 +367,47 @@ class DirectoryTree extends Service {
                 reslove(new Response({ code: 0, msg: '上传成功', data: '' }));
             } catch (err) {
                 reslove(new Response({ code: -1, msg: '上传失败：' + err.message, data: '' }));
+            }
+        });
+    }
+    // 读取文本文件内容（在线编辑用）：校验在根目录内、非目录、大小限制（5MB），按指定编码(默认 utf-8)解码
+    readFile(options) {
+        return new Promise(async (resolve) => {
+            try {
+                const root = await this.resolveRoot(options);
+                const target = options.target;
+                if (!withinRoot(target, root)) return resolve(new Response({ code: -1, msg: '路径越权', data: '' }));
+                let stats;
+                try { stats = fs.statSync(target); } catch (e) { return resolve(new Response({ code: -1, msg: '文件不存在', data: '' })); }
+                if (stats.isDirectory()) return resolve(new Response({ code: -1, msg: '不能编辑目录', data: '' }));
+                const MAX = 5 * 1024 * 1024;
+                if (stats.size > MAX) return resolve(new Response({ code: -1, msg: '文件过大（超过 5MB），请改用下载后编辑', data: '' }));
+                const enc = (options.encoding && String(options.encoding).trim()) || 'utf-8';
+                const content = iconv.decode(fs.readFileSync(target), enc);
+                resolve(new Response({ code: 0, msg: '读取成功', data: { content, encoding: enc } }));
+            } catch (e) {
+                resolve(new Response({ code: -1, msg: '读取失败：' + e.message, data: '' }));
+            }
+        });
+    }
+    // 写回文本文件内容（保存编辑）：校验在根目录内、非目录、大小限制（5MB），按指定编码(默认 utf-8)编码
+    writeFile(options) {
+        return new Promise(async (resolve) => {
+            try {
+                const root = await this.resolveRoot(options);
+                const target = options.target;
+                if (!withinRoot(target, root)) return resolve(new Response({ code: -1, msg: '路径越权', data: '' }));
+                let stats;
+                try { stats = fs.statSync(target); } catch (e) { return resolve(new Response({ code: -1, msg: '文件不存在', data: '' })); }
+                if (stats.isDirectory()) return resolve(new Response({ code: -1, msg: '不能写入目录', data: '' }));
+                const MAX = 5 * 1024 * 1024;
+                if (stats.size > MAX) return resolve(new Response({ code: -1, msg: '文件过大（超过 5MB），禁止在线编辑写入', data: '' }));
+                const enc = (options.encoding && String(options.encoding).trim()) || 'utf-8';
+                fs.writeFileSync(target, iconv.encode(options.content || '', enc));
+                Logger.log(this.ctx, `在线编辑保存文件：${target} (编码:${enc})`);
+                resolve(new Response({ code: 0, msg: '保存成功', data: '' }));
+            } catch (e) {
+                resolve(new Response({ code: -1, msg: '保存失败：' + e.message, data: '' }));
             }
         });
     }

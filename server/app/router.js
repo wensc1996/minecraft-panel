@@ -32,6 +32,8 @@ module.exports = app => {
     router.post('/deleteUser', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.user.deleteUser);
     router.post('/addNewUser', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.user.addNewUser);
     router.post('/updatePlayerId', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.user.updatePlayerId);
+    router.post('/updateSelfPassword', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.user.updateSelfPassword);
+    router.post('/updateSelfPlayerId', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.user.updateSelfPlayerId);
 
     router.post('/getRolePrivilege', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.privilege.getRolePrivilege);
     router.get('/getRoleList', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.privilege.getRoleList);
@@ -57,6 +59,8 @@ module.exports = app => {
     router.post('/renameDirectoryOrFile', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.directoryTree.renameDirectoryOrFile)
     router.post('/packageDownload', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.directoryTree.packageDownload)
     router.post('/extractZip', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.directoryTree.extractZip)
+    router.post('/readFile', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.directoryTree.readFile)
+    router.post('/writeFile', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.directoryTree.writeFile)
 
     router.post('/getLogList', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.logs.getLogList);
     router.post('/deleteLog', app.middleware.checkLoginStatusKeep(), app.middleware.tenant(), controller.logs.deleteLog);

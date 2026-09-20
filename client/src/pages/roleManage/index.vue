@@ -75,7 +75,7 @@ export default {
             this.$refs.privilegeAssign.submitPrivilegeAssign()
         },
         async getRoleList() {
-            let res = await this.get('wensc/getRoleList')
+            let res = await this.get('api/getRoleList')
             if (res.data.code == 0) {
                 this.roleList = res.data.data
             }
@@ -97,7 +97,7 @@ export default {
                 this.$message.warning('请输入角色名称')
                 return
             }
-            let res = await this.post('wensc/createRole', { roleName: name })
+            let res = await this.post('api/createRole', { roleName: name })
             if (res.data.code == 0) {
                 this.$message.success('新增角色成功')
                 this.createVisible = false
@@ -109,7 +109,7 @@ export default {
         },
         deleteRole(row) {
             this.$confirm(`确定删除角色「${row.role_name}」吗？该角色下的权限分配将一并清除。`, '提示', { type: 'warning' }).then(async () => {
-                let res = await this.post('wensc/deleteRole', { roleId: row.role_id })
+                let res = await this.post('api/deleteRole', { roleId: row.role_id })
                 if (res.data.code == 0) {
                     this.$message.success('删除成功')
                     this.getRoleList()

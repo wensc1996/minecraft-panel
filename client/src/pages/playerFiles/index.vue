@@ -13,7 +13,7 @@
             <el-upload
                 :http-request="uploadFile"
                 class="upload-demo"
-                action="wensc/uploadFile"
+                action="api/uploadFile"
                 :limit="1"
                 :file-list="fileList">
                 <el-button size="small" type="primary" v-permission="'cmd.playerFiles.btn.upload'">点击上传</el-button>
@@ -71,7 +71,7 @@ export default {
             this.uploadForm.append('instanceId', this.$store.state.currentInstanceId)
             let res = await this.$axios({
                 method: 'post',
-                url: 'wensc/uploadFile',
+                url: 'api/uploadFile',
                 data: this.uploadForm
             })
             if (res.data.code == 0) {
@@ -90,7 +90,7 @@ export default {
             this.fileList = []
         },
         async savePlayerFile(index, row) {
-            let res = await this.post('wensc/backupPlayer', {playerId: row.name, instanceId: this.$store.state.currentInstanceId})
+            let res = await this.post('api/backupPlayer', {playerId: row.name, instanceId: this.$store.state.currentInstanceId})
             if (res.data.code == 0) {
                 this.$notify({
                     title: '成功',
@@ -105,7 +105,7 @@ export default {
             }
         },
         async restorePlayerFile(index, row) {
-            let res = await this.post('wensc/restorePlayer', { playerId: row.name, instanceId: this.$store.state.currentInstanceId })
+            let res = await this.post('api/restorePlayer', { playerId: row.name, instanceId: this.$store.state.currentInstanceId })
             if (res.data.code == 0) {
                 this.$notify({
                     title: '成功',
@@ -126,7 +126,7 @@ export default {
                 cancelButtonText: '取消',
                 type: 'warning'
             }).then(() => {
-                this.post('wensc/deletePlayer', {
+                this.post('api/deletePlayer', {
                     playerId: row.name,
                     instanceId: this.$store.state.currentInstanceId
                 }).then((res) => {
@@ -149,7 +149,7 @@ export default {
             })
         },
         async getPlayerFileList() {
-            let res = await this.get('wensc/getPlayerFileList', { instanceId: this.$store.state.currentInstanceId })
+            let res = await this.get('api/getPlayerFileList', { instanceId: this.$store.state.currentInstanceId })
             if (res.data.code == 0) {
                 this.loadError = false
                 this.loadErrorMsg = ''

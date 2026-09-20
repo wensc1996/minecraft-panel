@@ -16,21 +16,60 @@ class UserService extends Service {
         if (ctx.tenantId === 0 && ctx.query && ctx.query.tenantId) {
             tenantId = Number(ctx.query.tenantId)
         }
-        let res = await db.query('select user_id,player_id,login_ip,role_name as role from user,role where user.role_id = role.role_id and user.tenant_id = ?', [tenantId])
+        let res = await db.query('select user_id, account, player_id,login_ip,role_name as role from user,role where user.role_id = role.role_id and user.tenant_id = ?', [tenantId])
         return new Response({code: 0, msg: '查询成功', data : res})
     }
     async updatePassword(options) {
         const ctx = this.ctx
         let oldInfo = await db.query('select * from user where user_id = ? and tenant_id = ?', [options.userId, ctx.tenantId])
-        if(oldInfo[0].password == this.md5(options.oldPassword)){
-            let res = await db.query('update user set password = ? where user_id = ? and tenant_id = ?', [this.md5(options.password), options.userId, ctx.tenantId])
-            if(res){
-                Logger.log(this.ctx, `修改密码：${[this.md5(options.password), options.userId].join(',')}`)
-                return new Response({code: 0, msg: '修改密码成功', data: res})
-            }else{
-                return new Response({code: -1, msg: '修改密码失败', data: ''})
+        if (!oldInfo || oldInfo.length === 0) return new Response({ code: -1, msg: '用户不存在' })
+        // 旧密码校验为可选：个人修改密码场景会传入 oldPassword 并校验；管理员重置可不传，直接改
+        if (options.oldPassword) {
+            if (oldInfo[0].password !== this.md5(options.oldPassword)) {
+                return new Response({ code: -1, msg: '原密码错误' })
             }
-        }   
+        }
+        if (!options.password) return new Response({ code: -1, msg: '新密码不能为空' })
+        let res = await db.query('update user set password = ? where user_id = ? and tenant_id = ?', [this.md5(options.password), options.userId, ctx.tenantId])
+        if (res) {
+            Logger.log(this.ctx, `修改密码：${options.userId}`)
+            return new Response({ code: 0, msg: '修改密码成功', data: res })
+        } else {
+            return new Response({ code: -1, msg: '修改密码失败', data: '' })
+        }
+    }
+    // 个人修改密码：目标用户取自身份(session.userId)，必须先验证原密码，再校验两次新密码一致
+    async updateSelfPassword(options) {
+        const ctx = this.ctx
+        const userId = ctx.session.userId
+        let oldInfo = await db.query('select * from user where user_id = ?', [userId])
+        if (!oldInfo || oldInfo.length === 0) return new Response({ code: -1, msg: '用户不存在' })
+        if (!options.oldPassword) return new Response({ code: -1, msg: '请输入原密码' })
+        if (oldInfo[0].password !== this.md5(options.oldPassword)) {
+            return new Response({ code: -1, msg: '原密码错误' })
+        }
+        if (!options.password) return new Response({ code: -1, msg: '新密码不能为空' })
+        if (options.password !== options.repassword) return new Response({ code: -1, msg: '两次新密码不一致' })
+        let res = await db.query('update user set password = ? where user_id = ?', [this.md5(options.password), userId])
+        if (res) {
+            Logger.log(this.ctx, `个人修改密码：${userId}`)
+            return new Response({ code: 0, msg: '密码修改成功', data: res })
+        } else {
+            return new Response({ code: -1, msg: '密码修改失败', data: '' })
+        }
+    }
+    // 个人修改游戏ID：目标用户取自身份(session.userId)
+    async updateSelfPlayerId(options) {
+        const ctx = this.ctx
+        const userId = ctx.session.userId
+        if (!options.playerId || !String(options.playerId).trim()) return new Response({ code: -1, msg: '游戏ID不能为空' })
+        let res = await db.query('update user set player_id = ? where user_id = ?', [options.playerId, userId])
+        if (res) {
+            Logger.log(this.ctx, `个人修改游戏ID：${userId}`)
+            return new Response({ code: 0, msg: '游戏ID修改成功', data: res })
+        } else {
+            return new Response({ code: -1, msg: '游戏ID修改失败', data: '' })
+        }
     }
     async addNewUser(options) {
         const ctx = this.ctx
