@@ -5,6 +5,7 @@ const Controller = require('egg').Controller;
 const { spawn } = require('child_process');
 const Response = require('../../../src/response')
 const iconv = require('iconv-lite');
+const fs = require('fs');
 const path = require('path');
 const os = require('os');
 const db = require('../../../src/mysql/connection')
@@ -134,6 +135,19 @@ class DefaultController extends Controller {
                 return new Response({ code: -1, msg: '实例运行配置不完整', data: '' });
             }
         }
+        // 启动前校验关键路径，缺项直接拦截，避免盲目 spawn 导致进程瞬间退出且难以定位
+        if (!fs.existsSync(config.work_path)) {
+            return new Response({ code: -1, msg: '游戏工作目录不存在：' + config.work_path, data: '' });
+        }
+        if (!fs.existsSync(config.java_path)) {
+            return new Response({ code: -1, msg: 'JAVA 可执行文件不存在：' + config.java_path, data: '' });
+        }
+        if (config.launch_mode !== 'raw') {
+            const jarFull = path.join(config.work_path, config.jar_name);
+            if (!fs.existsSync(jarFull)) {
+                return new Response({ code: -1, msg: '服务端核心 jar 不存在：' + jarFull, data: '' });
+            }
+        }
         // 启动参数组装：raw 模式使用用户填写的原始整段参数；jar 模式使用结构化拼接
         let javaArgs;
         if (config.launch_mode === 'raw' && config.raw_args) {
@@ -257,7 +271,7 @@ class DefaultController extends Controller {
             if (!isNaN(expire.getTime()) && expire.getTime() <= Date.now()) {
                 const p = n => (n < 10 ? '0' + n : '' + n);
                 const expStr = expire.getFullYear() + '-' + p(expire.getMonth() + 1) + '-' + p(expire.getDate()) + ' ' + p(expire.getHours()) + ':' + p(expire.getMinutes());
-                ctx.body = new Response({ code: -1, msg: '实例已过期（到期时间 ' + expStr + '），无法启动，请先在配置管理中延长或清空到期时间' });
+                ctx.body = new Response({ code: -1, msg: '实例已过期（到期时间 ' + expStr + '），无法启动，请联系平台管理员' });
                 return;
             }
         }

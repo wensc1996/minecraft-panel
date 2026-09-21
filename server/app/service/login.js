@@ -22,6 +22,13 @@ class LoginService extends Service {
         if (user.password !== this.md5(password)) {
             return new Response({ code: -1, msg: '登录失败,账号或密码错误' })
         }
+        // 租户停用后，该租户下所有账号禁止登录（平台管理员 tenant_id=0 不受影响，便于重新启用租户）
+        if (user.tenant_id && user.tenant_id !== 0) {
+            const tRows = await db.query('select status from tenant where tenant_id = ?', [user.tenant_id])
+            if (!tRows || tRows.length === 0 || Number(tRows[0].status) !== 1) {
+                return new Response({ code: -1, msg: '该租户已停用，禁止登录' })
+            }
+        }
         const privileges = await db.query('select user.user_id,privilege.role_id,p.perm_id,p.perm_key,p.perm_name,p.perm_type,p.perm_key as menu_func_name from user,privilege,permission p where user.role_id = privilege.role_id and privilege.perm_id = p.perm_id and user.user_id = ?', [user.user_id])
         await db.query('update user set login_ip = ? where user_id = ?', [options.ip, user.user_id])
         delete user.password
